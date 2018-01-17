@@ -1,0 +1,19 @@
+language: generic
+
+sudo: required
+dist: trusty
+
+before_install:
+  - .travis/before_install.sh
+
+script:
+  - .travis/script.sh
+
+matrix:
+  include:
+    - env: BUILD_TARGET="arc-gcc-emsk23-11d"
+      os: linux
+      compiler: gcc
+    - env: BUILD_TARGET="arc-gcc-emsk23-7d"
+      os: linux
+      compiler: gcc
