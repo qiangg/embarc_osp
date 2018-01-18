@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set_1="TOOLCHAIN=gnu BOARD=emsk BD_VER=23 CUR_CORE=arcem11d"
-set_2="TOOLCHAIN=gnu BOARD=emsk BD_VER=11 CUR_CORE=arcem6"
+set_2="TOOLCHAIN=gnu BOARD=emsk BD_VER=23 CUR_CORE=arcem7d"
 
 die() {
     echo " *** ERROR: " $*
@@ -20,7 +20,7 @@ set -x
         python3 build.py "${set_1}" || die
     }
 
-    [ $BUILD_TARGET != arc-gcc-emsk23-11d ] || {
+    [ $BUILD_TARGET != arc-gcc-emsk23-7d ] || {
         python3 build.py "${set_2}" || die
     }
 }
