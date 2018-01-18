@@ -17,10 +17,10 @@ set -x
     cd .travis || die
 
     [ $BUILD_TARGET != arc-gcc-emsk23-11d ] || {
-        python3 test.py "${set_1}" || die
+        python3 build.py "${set_1}" || die
     }
 
     [ $BUILD_TARGET != arc-gcc-emsk23-11d ] || {
-        python3 test.py "${set_2}" || die
+        python3 build.py "${set_2}" || die
     }
 }
