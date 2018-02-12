@@ -11,9 +11,12 @@ script:
 
 matrix:
   include:
-    - env: BUILD_TARGET="arc-gcc-emsk23-11d"
+    - env: TOOLCHAIN="gnu" BOARD="emsk" BD_VER="23" CUR_CORE="arcem7d"
       os: linux
       compiler: gcc
-    - env: BUILD_TARGET="arc-gcc-emsk23-7d"
+    - env: TOOLCHAIN="gnu" BOARD="emsk" BD_VER="23" CUR_CORE="arcem9d"
+      os: linux
+      compiler: gcc
+    - env: TOOLCHAIN="gnu" BOARD="emsk" BD_VER="23" CUR_CORE="arcem11d"
       os: linux
       compiler: gcc

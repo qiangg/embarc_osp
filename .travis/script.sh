@@ -1,8 +1,5 @@
 #!/bin/sh
 
-set_1="TOOLCHAIN=gnu BOARD=emsk BD_VER=23 CUR_CORE=arcem11d"
-set_2="TOOLCHAIN=gnu BOARD=emsk BD_VER=23 CUR_CORE=arcem7d"
-
 die() {
     echo " *** ERROR: " $*
     exit 1
@@ -16,11 +13,11 @@ set -x
     bash apply_embARC_patch.sh || die
     cd .travis || die
 
-    [ $BUILD_TARGET != arc-gcc-emsk23-11d ] || {
-        python3 build.py "${set_1}" || die
+    [ $TOOLCHAIN != gnu -o $BOARD != emsk -o $BD_VER != 23 -o $CUR_CORE != arcem7d ] || {
+        python3 build.py "TOOLCHAIN=${TOOLCHAIN} BOARD=${BOARD} BD_VER=${BD_VER} CUR_CORE=${CUR_CORE}" || die
     }
 
-    [ $BUILD_TARGET != arc-gcc-emsk23-7d ] || {
-        python3 build.py "${set_2}" || die
+    [ $TOOLCHAIN != gnu -o $BOARD != emsk -o $BD_VER != 23 -o $CUR_CORE != arcem9d ] || {
+        python3 build.py "TOOLCHAIN=${TOOLCHAIN} BOARD=${BOARD} BD_VER=${BD_VER} CUR_CORE=${CUR_CORE}" || die
     }
 }
