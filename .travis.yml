@@ -4,10 +4,10 @@ sudo: required
 dist: trusty
 
 before_install:
-  - .travis/before_install.sh
+  - chmod +x .travis/before_install.sh
 
 script:
-  - .travis/script.sh
+  - chmod +x .travis/script.sh
 
 matrix:
   include:
