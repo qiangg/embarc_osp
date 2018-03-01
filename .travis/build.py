@@ -10,8 +10,8 @@ example = {"arc_feature_cache":"baremetal/arc_feature/cache",
 		"blinky":"baremetal/blinky",
 		"cxx":"baremetal/cxx",
 		"graphic_u8glib":"baremetal/graphic_u8glib",
-		"kernel":"freertos/kernel",
-		"net_httpserver":"freertos/net/httpserver"}
+		"kernel":"freertos/kernel"
+		}
 '''
 "bootloader":"baremetal/bootloader",
 "dma_spiflash":"baremetal/dma_spiflash",
@@ -21,6 +21,7 @@ example = {"arc_feature_cache":"baremetal/arc_feature/cache",
 "iot_lwm2m_lwm2m_client":"freertos/iot/lwm2m/lwm2m_client",
 "iot_lwm2m_lwm2m_server":"freertos/iot/lwm2m/lwm2m_server",
 "kernel_secure":"freertos/kernel_secure",
+"net_httpserver":"freertos/net/httpserver"
 "net_ntshell":"freertos/net/ntshell",
 "secureshield_secret_normal":"baremetal/secureshield/secret_normal",
 "secureshield_secret_secure":"baremetal/secureshield/secret_secure",
