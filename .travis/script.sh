@@ -13,11 +13,11 @@ set -x
     bash apply_embARC_patch.sh || die
     cd .travis || die
 
-    [ $TOOLCHAIN != gnu -o $BOARD != emsk -o $BD_VER != 10 -o $CUR_CORE != arcem4 ] || {
+    [ $TOOLCHAIN != gnu -o $BOARD != emsk -o $BD_VER != 11 -o $CUR_CORE != arcem4 ] || {
         python3 build.py "TOOLCHAIN=${TOOLCHAIN} BOARD=${BOARD} BD_VER=${BD_VER} CUR_CORE=${CUR_CORE}" || die
     }
 
-    [ $TOOLCHAIN != gnu -o $BOARD != emsk -o $BD_VER != 10 -o $CUR_CORE != arcem6 ] || {
+    [ $TOOLCHAIN != gnu -o $BOARD != emsk -o $BD_VER != 11 -o $CUR_CORE != arcem6 ] || {
         python3 build.py "TOOLCHAIN=${TOOLCHAIN} BOARD=${BOARD} BD_VER=${BD_VER} CUR_CORE=${CUR_CORE}" || die
     }
 

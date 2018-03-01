@@ -11,8 +11,7 @@ example = {"arc_feature_cache":"baremetal/arc_feature/cache",
 		"cxx":"baremetal/cxx",
 		"graphic_u8glib":"baremetal/graphic_u8glib",
 		"kernel":"freertos/kernel",
-		"net_httpserver":"freertos/net/httpserver",
-	}
+		"net_httpserver":"freertos/net/httpserver"}
 '''
 "bootloader":"baremetal/bootloader",
 "dma_spiflash":"baremetal/dma_spiflash",
@@ -40,7 +39,7 @@ if __name__ == '__main__':
 	print(example)
 	result = {}
 	for (k,v) in example.items():
-		result[k] = 0;
+		result[k] = 0
 		print("example[%s]=" %k,v)
 		pathin = "../example/"+v
 		os.chdir(pathin)
