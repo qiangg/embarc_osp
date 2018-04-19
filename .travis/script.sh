@@ -48,4 +48,8 @@ set -x
     [ $TOOLCHAIN != gnu -o $BOARD != hsdk -o $BD_VER != 10 -o $CUR_CORE != archs38_c0 ] || {
         python3 build.py "TOOLCHAIN=${TOOLCHAIN} BOARD=${BOARD} BD_VER=${BD_VER} CUR_CORE=${CUR_CORE}" || die
     }
+
+    [ GH_REPO_TOOL="doxygen" ] || {
+        python3 build.py "TOOLCHAIN=${TOOLCHAIN} BOARD=${BOARD} BD_VER=${BD_VER} CUR_CORE=${CUR_CORE}" || die
+    }
 }

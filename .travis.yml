@@ -3,6 +3,11 @@ language: generic
 sudo: required
 dist: trusty
 
+# Blacklist
+branches:
+  except:
+    - gh-pages
+
 before_install:
   - bash .travis/before_install.sh
 
@@ -38,3 +43,5 @@ matrix:
     - env: TOOLCHAIN="gnu" BOARD="hsdk" BD_VER="10" CUR_CORE="archs38_c0"
       os: linux
       compiler: gcc
+    - env: GH_REPO_TOOL="doxygen"
+      os: linux

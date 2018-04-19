@@ -17,4 +17,5 @@ cd /tmp || die
     tar xzf arc_gnu_2017.09_prebuilt_elf32_le_linux_install.tar.gz || die
     export PATH=/tmp/arc_gnu_2017.09_prebuilt_elf32_le_linux_install/bin:$PATH || die
     arc-elf32-gcc --version || die
+    sudo apt-get install doxygen || die
 }
