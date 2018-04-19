@@ -14,7 +14,11 @@ echo 'Generating documentation ...'
 cd ../doc || die
 make || die
 
+tar czvf doc.tar.gz embARC_Document.html embARC_Document
 
-mkdir  ../../document || die
-cp -rf {embARC_Document,embARC_Document.html} ../../document
+rm -rf embARC_Document.html embARC_Document
+tar xzvf doc.tar.gz
+
+#mkdir  ../../document || die
+#cp -rf {embARC_Document,embARC_Document.html} ../../document
 
