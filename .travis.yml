@@ -43,5 +43,5 @@ matrix:
     - env: TOOLCHAIN="gnu" BOARD="hsdk" BD_VER="10" CUR_CORE="archs38_c0"
       os: linux
       compiler: gcc
-    - env: GH_REPO_TOOL="doxygen"
+    - env: TOOLCHAIN="doxygen"
       os: linux

@@ -13,6 +13,10 @@ set -x
     bash apply_embARC_patch.sh || die
     cd .travis || die
 
+    [ $TOOLCHAIN != doxygen ] || {
+        bash deploy_doc.sh || die
+    }
+
     [ $TOOLCHAIN != gnu -o $BOARD != emsk -o $BD_VER != 11 -o $CUR_CORE != arcem4 ] || {
         python3 build.py "TOOLCHAIN=${TOOLCHAIN} BOARD=${BOARD} BD_VER=${BD_VER} CUR_CORE=${CUR_CORE}" || die
     }
@@ -47,9 +51,5 @@ set -x
 
     [ $TOOLCHAIN != gnu -o $BOARD != hsdk -o $BD_VER != 10 -o $CUR_CORE != archs38_c0 ] || {
         python3 build.py "TOOLCHAIN=${TOOLCHAIN} BOARD=${BOARD} BD_VER=${BD_VER} CUR_CORE=${CUR_CORE}" || die
-    }
-
-    [ GH_REPO_TOOL="doxygen" ] || {
-        bash deploy_doc.sh || die
     }
 }
