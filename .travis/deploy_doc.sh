@@ -22,11 +22,11 @@ tar czvf doc.tar.gz embARC_Document.html embARC_Document || die
 
 mkdir gh-pages || die
 cd gh-pages || die
-git init .
-git remote add origin ${REPO_LINK}
-git fetch origin -t
+git init . || die
+git remote add origin ${REPO_LINK} || die
+git fetch origin -t || die
 git checkout -b gh-pages origin/gh-pages || die
-cd doc
+cd doc || die
 rm -rf embARC_Document.html embARC_Document || die
 cp ../../doc.tar.gz . || die
 tar xzvf doc.tar.gz || die
