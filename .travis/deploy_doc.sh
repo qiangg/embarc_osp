@@ -15,6 +15,8 @@ cd ../doc || die
 make || die
 
 tar czvf doc.tar.gz embARC_Document.html embARC_Document || die
+git fetch origin
+git branch -a
 git checkout -b gh-pages origin/gh-pages || die
 rm -rf embARC_Document.html embARC_Document || die
 tar xzvf doc.tar.gz || die
