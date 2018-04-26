@@ -16,7 +16,7 @@ script:
 
 matrix:
   include:
-    - env: TOOLCHAIN="doxygen"
+    - env: TOOLCHAIN="doxygen" BOARD="none" BD_VER="none" CUR_CORE="none"
       os: linux
     - env: TOOLCHAIN="gnu" BOARD="emsk" BD_VER="11" CUR_CORE="arcem4"
       os: linux
