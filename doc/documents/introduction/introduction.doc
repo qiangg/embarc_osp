@@ -10,7 +10,7 @@
 
 \section sect_intro_overview Overview
 
-<b>embARC</b> is an open software platform to facilitate the development of embedded systems based on ARC processors.
+<b>embARC</b> is an open software platform to facilitate the development of embedded systems based on arc processors.
 
 [embARC](https://embarc.org/) provides a solid starting foundation for embedded developers, simplifying development and improving time-to-market through software reuse.
 

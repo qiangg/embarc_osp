@@ -22,11 +22,11 @@ rm -rf doc.tar.gz || die
 
 git add --all || die
 git commit -s -a -m "Update gh-pages branch"
-if [ $? -eq 1 ]; then
-	echo 'No update in gh-pages branch'
-	exit 0
-else
+if [ $? -eq 0 ]; then
 	git push origin gh-pages || die
+else
+	echo 'No update in gh-pages branch'
+	exit 0	
 fi
 
 #mkdir  ../../document || die
