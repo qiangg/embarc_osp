@@ -16,6 +16,8 @@ script:
 
 matrix:
   include:
+    - env: TOOLCHAIN="doxygen"
+      os: linux
     - env: TOOLCHAIN="gnu" BOARD="emsk" BD_VER="11" CUR_CORE="arcem4"
       os: linux
       compiler: gcc
@@ -43,5 +45,3 @@ matrix:
     - env: TOOLCHAIN="gnu" BOARD="hsdk" BD_VER="10" CUR_CORE="archs38_c0"
       os: linux
       compiler: gcc
-    - env: TOOLCHAIN="doxygen"
-      os: linux
