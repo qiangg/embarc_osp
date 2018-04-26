@@ -20,13 +20,13 @@ rm -rf embARC_Document.html embARC_Document || die
 tar xzvf doc.tar.gz || die
 rm -rf doc.tar.gz || die
 
-git diff --quiet
+git add --all || die
+git commit -s -a -m "Update gh-pages branch"
 if [ $? -eq 1 ]; then
-	git add --all || die
-	git commit -s -a -m "Update gh-pages branch" || die
-	git push origin gh-pages || die
-else
 	echo 'No update in gh-pages branch'
+	exit 0
+else
+	git push origin gh-pages || die
 fi
 
 #mkdir  ../../document || die
