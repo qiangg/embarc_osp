@@ -1,5 +1,6 @@
 var group___a_r_c___h_a_l___e_x_c_e_p_t_i_o_n___c_p_u =
 [
+    [ "arc_exc_asm.s", "arc__exc__asm_8s.html", null ],
     [ "arc_exception.c", "arc__exception_8c.html", null ],
     [ "arc_exception.h", "arc__exception_8h.html", null ],
     [ "int_exc_frame", "structint__exc__frame.html", [

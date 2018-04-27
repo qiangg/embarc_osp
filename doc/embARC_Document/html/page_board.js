@@ -29,6 +29,7 @@ var page_board =
     ] ],
     [ "ARC HS Development Kit", "page_board_hsdk.html", [
       [ "ARC HS Development Kit Description", "page_board_hsdk.html#sect_bdhsdk_description", null ],
-      [ "ARC HS Development Chip Description", "page_board_hsdk.html#sect_bdhsdk_chip", null ]
+      [ "ARC HS Development Chip Description", "page_board_hsdk.html#sect_bdhsdk_chip", null ],
+      [ "Tools", "page_board_hsdk.html#sect_bdemsk_tools_required", null ]
     ] ]
 ];
