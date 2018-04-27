@@ -38,13 +38,9 @@ rm -rf doc.tar.gz || die
 git add --all || die
 git commit -s -a -m "Update gh-pages branch, Travis build: $TRAVIS_BUILD_NUMBER"
 if [ $? -eq 0 ]; then
-	git push origin gh-pages ${REPO_LINK} > /dev/null 2>&1 || die
+        git push ${REPO_LINK} gh-pages:gh-pages > /dev/null 2>&1 || die
 else
-	echo 'No update in gh-pages branch'
+        echo 'No update in gh-pages branch'
 fi
 
 exit 0
-
-#mkdir  ../../document || die
-#cp -rf {embARC_Document,embARC_Document.html} ../../document
-
