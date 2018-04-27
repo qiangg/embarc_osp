@@ -37,18 +37,18 @@ var group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t =
     [ "GPIO_INT_NO_DEBOUNCE", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ga593c2f076bdb6d88ca004fed48c7a12f", null ],
     [ "GPIO_INT_NO_DEBOUNCE_ALL", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ga2c0e952816e5c67259a674a6010ad41c", null ],
     [ "DEV_GPIO_BIT_ISR", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ga620e465b53c10b6718d12fdc29e963b8", null ],
-    [ "DEV_GPIO_HANDLER", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ga8b480cf689e0b43585d081d51d1b6ff6", null ],
+    [ "DEV_GPIO_HANDLER", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#gad63a55aa4fd71c10bcb4f7d3dc5ea11f", null ],
     [ "DEV_GPIO_INT_CFG", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ga3cd4a71b300b56dcf96373a00fd03e02", null ],
     [ "GPIO_INT_POLARITY", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ga58ce96f05f5aed30f6101586fdecb750", null ],
     [ "gpio_int_polarity", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#gaf7acf5e0cba8e4d0fea85668a51e747f", [
       [ "GPIO_INT_ACTIVE_LOW", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ggaf7acf5e0cba8e4d0fea85668a51e747fac05bf506d475a58b45649c05c7448d7a", null ],
       [ "GPIO_INT_FALLING_EDGE", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ggaf7acf5e0cba8e4d0fea85668a51e747fa3b03ffd1c638cd0bc6a0074e4b9b9d58", null ],
       [ "GPIO_INT_ACTIVE_HIGH", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ggaf7acf5e0cba8e4d0fea85668a51e747faffb4e64179063c63edb6e9ee78f6f075", null ],
-      [ "GPIO_INI_RISING_EDGE", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ggaf7acf5e0cba8e4d0fea85668a51e747fa87441b1eacd71eb5440985ff5c32c481", null ],
+      [ "GPIO_INT_RISING_EDGE", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ggaf7acf5e0cba8e4d0fea85668a51e747fa972a50f714b96ed7a41f9e5ee734ed9e", null ],
       [ "GPIO_INT_ACTIVE_LOW_ALL", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ggaf7acf5e0cba8e4d0fea85668a51e747faba4811b0bbe2fe6a60641961df5b8e19", null ],
       [ "GPIO_INT_FALLING_EDGE_ALL", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ggaf7acf5e0cba8e4d0fea85668a51e747fa35b1957a6688067545c9f1134bddc45b", null ],
       [ "GPIO_INT_ACTIVE_HIGH_ALL", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ggaf7acf5e0cba8e4d0fea85668a51e747fa31944f1136e77883ead79055e60ff5f1", null ],
-      [ "GPIO_INI_RISING_EDGE_ALL", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ggaf7acf5e0cba8e4d0fea85668a51e747faaa080f7cd6a5aeb85a0834855d284ddf", null ]
+      [ "GPIO_INT_RISING_EDGE_ALL", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ggaf7acf5e0cba8e4d0fea85668a51e747fadba09c91f686ef5ae7289fc16f49d33f", null ]
     ] ],
     [ "gpio_int_cfg_default", "group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t.html#ga25fcd68b3e78f18559a32d0bacd9bcb1", null ]
 ];
