@@ -36,7 +36,8 @@ tar xzvf doc.tar.gz || die
 rm -rf doc.tar.gz || die
 
 git add --all || die
-git commit -s -a -m "Update gh-pages branch, Travis build: $TRAVIS_BUILD_NUMBER, commit: ${TRAVIS_COMMIT}"
+# git commit -s -a -m "Update gh-pages branch, Travis build: $TRAVIS_BUILD_NUMBER, commit: ${TRAVIS_COMMIT}"
+git commit -s -a -m "Update gh-pages branch, Travis build: $TRAVIS_BUILD_NUMBER"
 if [ $? -eq 0 ]; then
         git push ${REPO_LINK} gh-pages:gh-pages > /dev/null 2>&1 || die
 else
