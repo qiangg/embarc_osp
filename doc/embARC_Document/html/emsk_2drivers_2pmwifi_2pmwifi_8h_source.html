@@ -136,34 +136,41 @@ $(document).ready(function(){initNavTree('emsk_2drivers_2pmwifi_2pmwifi_8h_sourc
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dev__wnic_8h.html">dev_wnic.h</a>&quot;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define EMSK_PMWIFI_0_ID                0</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define USE_EMSK_PMWIFI_0               1</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/* configurations for RW009 */</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#define RW009_SPI_CPULOCK_ENABLE</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define EMSK_PMWIFI_0_MAC_ADDR0         (0x00)</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EMSK_PMWIFI_0_MAC_ADDR1         (0x1e)</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EMSK_PMWIFI_0_MAC_ADDR2         (0xc0)</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EMSK_PMWIFI_0_MAC_ADDR3         (0x0e)</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EMSK_PMWIFI_0_MAC_ADDR4         (0x71)</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EMSK_PMWIFI_0_MAC_ADDR5         (0xac)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EMSK_SLIPWIFI_0_ID              1</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#ifdef  USE_SLIP</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define USE_EMSK_PMWIFI_0               0</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define USE_EMSK_SLIPWIFI_0             1</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define USE_EMSK_PMWIFI_0               1</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define USE_EMSK_SLIPWIFI_0             0</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">/* configurations for RW009 */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define RW009_SPI_CPULOCK_ENABLE</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group___b_o_a_r_d___e_m_s_k___d_r_v___p_m_o_d_w_i_f_i.html#ga7861cbf3a1afabd29778ad7c6a39ef45">pmwifi_all_install</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* MID_LWIP &amp;&amp; MID_LWIP_CONTRIB */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* _PMWIFI_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define EMSK_PMWIFI_0_MAC_ADDR0         (0x00)</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EMSK_PMWIFI_0_MAC_ADDR1         (0x1e)</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EMSK_PMWIFI_0_MAC_ADDR2         (0xc0)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EMSK_PMWIFI_0_MAC_ADDR3         (0x0e)</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EMSK_PMWIFI_0_MAC_ADDR4         (0x71)</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EMSK_PMWIFI_0_MAC_ADDR5         (0xac)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group___b_o_a_r_d___e_m_s_k___d_r_v___p_m_o_d_w_i_f_i.html#ga7861cbf3a1afabd29778ad7c6a39ef45">pmwifi_all_install</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* MID_LWIP &amp;&amp; MID_LWIP_CONTRIB */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* _PMWIFI_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="dev__wnic_8h_html"><div class="ttname"><a href="dev__wnic_8h.html">dev_wnic.h</a></div><div class="ttdoc">wireless network interface controller device hardware layer definitions </div></div>
-<div class="ttc" id="group___b_o_a_r_d___e_m_s_k___d_r_v___p_m_o_d_w_i_f_i_html_ga7861cbf3a1afabd29778ad7c6a39ef45"><div class="ttname"><a href="group___b_o_a_r_d___e_m_s_k___d_r_v___p_m_o_d_w_i_f_i.html#ga7861cbf3a1afabd29778ad7c6a39ef45">pmwifi_all_install</a></div><div class="ttdeci">void pmwifi_all_install(void)</div><div class="ttdoc">install all wnic objects </div><div class="ttdef"><b>Definition:</b> <a href="emsk_2drivers_2pmwifi_2pmwifi_8c_source.html#l00862">emsk/drivers/pmwifi/pmwifi.c:862</a></div></div>
+<div class="ttc" id="group___b_o_a_r_d___e_m_s_k___d_r_v___p_m_o_d_w_i_f_i_html_ga7861cbf3a1afabd29778ad7c6a39ef45"><div class="ttname"><a href="group___b_o_a_r_d___e_m_s_k___d_r_v___p_m_o_d_w_i_f_i.html#ga7861cbf3a1afabd29778ad7c6a39ef45">pmwifi_all_install</a></div><div class="ttdeci">void pmwifi_all_install(void)</div><div class="ttdoc">install all wnic objects </div><div class="ttdef"><b>Definition:</b> <a href="emsk_2drivers_2pmwifi_2pmwifi_8c_source.html#l01075">emsk/drivers/pmwifi/pmwifi.c:1075</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
@@ -171,7 +178,7 @@ $(document).ready(function(){initNavTree('emsk_2drivers_2pmwifi_2pmwifi_8h_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7149141a7e3af1ee95dfb0598e371427.html">board</a></li><li class="navelem"><a class="el" href="dir_ba790842f448632b805827035471586a.html">emsk</a></li><li class="navelem"><a class="el" href="dir_2f7e22bd2ce967436634585d9443b467.html">drivers</a></li><li class="navelem"><a class="el" href="dir_946890b5ad17938803d7490eac11919c.html">pmwifi</a></li><li class="navelem"><a class="el" href="emsk_2drivers_2pmwifi_2pmwifi_8h.html">pmwifi.h</a></li>
-    <li class="footer">Generated on Fri Apr 27 2018 04:59:07 for embARC by
+    <li class="footer">Generated on Wed May 9 2018 09:27:04 for embARC by
     <a href="http://www.synopsys.com">
     <img class="footer" src="pic/snps_logo.png" alt="snps_logo"/></a>. All Rights Reserved. </li>
   </ul>

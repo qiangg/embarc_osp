@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('test__object_8c_source.html','');});
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> * The lwm2m_object_t object structure - which represent every object of the liblwm2m as seen in the single instance</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> * object - contain a chained list called instanceList with the object specific structure prv_instance_t:</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__prv__instance__.html">_prv_instance_</a></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="struct__prv__instance__.html">   92</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__prv__instance__.html">_prv_instance_</a></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">     * The first two are mandatories and represent the pointer to the next instance and the ID of this one. The rest</span></div>
@@ -354,7 +354,7 @@ $(document).ready(function(){initNavTree('test__object_8c_source.html','');});
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                <span class="keywordflow">if</span> (value &gt;= 0 &amp;&amp; value &lt;= BOARD_LED_MASK)</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                {</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                    targetP-&gt;led = value;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                    <a class="code" href="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#ga0d116692517e4c11de41ec07145b8404">led_write</a>(targetP-&gt;led, BOARD_LED_MASK);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                    led_write(targetP-&gt;led, BOARD_LED_MASK);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                    result = COAP_204_CHANGED;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                }</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                <span class="keywordflow">else</span></div>
@@ -528,10 +528,9 @@ $(document).ready(function(){initNavTree('test__object_8c_source.html','');});
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordflow">return</span> testObj;</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
-<div class="ttc" id="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o_html_ga0d116692517e4c11de41ec07145b8404"><div class="ttname"><a href="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#ga0d116692517e4c11de41ec07145b8404">led_write</a></div><div class="ttdeci">void led_write(uint32_t led_val, uint32_t mask)</div><div class="ttdoc">write 1 to light on led bit, else light off led </div><div class="ttdef"><b>Definition:</b> <a href="emsk__gpio_8c_source.html#l00123">emsk_gpio.c:123</a></div></div>
 <div class="ttc" id="emb_a_r_c__debug_8h_html"><div class="ttname"><a href="emb_a_r_c__debug_8h.html">embARC_debug.h</a></div><div class="ttdoc">necessary definitions of debug </div></div>
 <div class="ttc" id="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o_html_ga0dc68bc0b79209469f458809e464b178"><div class="ttname"><a href="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#ga0dc68bc0b79209469f458809e464b178">led_read</a></div><div class="ttdeci">uint32_t led_read(uint32_t mask)</div><div class="ttdoc">read led value, on for 1, off for 0 </div><div class="ttdef"><b>Definition:</b> <a href="emsk__gpio_8c_source.html#l00147">emsk_gpio.c:147</a></div></div>
-<div class="ttc" id="struct__prv__instance___html"><div class="ttname"><a href="struct__prv__instance__.html">_prv_instance_</a></div><div class="ttdef"><b>Definition:</b> <a href="object__button_8c_source.html#l00076">object_button.c:76</a></div></div>
+<div class="ttc" id="struct__prv__instance___html"><div class="ttname"><a href="struct__prv__instance__.html">_prv_instance_</a></div><div class="ttdef"><b>Definition:</b> <a href="test__object_8c_source.html#l00092">test_object.c:92</a></div></div>
 <div class="ttc" id="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o_html_gacf651d7f9071df560e583ba654d4b3d0"><div class="ttname"><a href="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#gacf651d7f9071df560e583ba654d4b3d0">switch_read</a></div><div class="ttdeci">uint32_t switch_read(uint32_t mask)</div><div class="ttdoc">Pull down switch return 1, else 0. </div><div class="ttdef"><b>Definition:</b> <a href="emsk__gpio_8c_source.html#l00164">emsk_gpio.c:164</a></div></div>
 <div class="ttc" id="emb_a_r_c_8h_html"><div class="ttname"><a href="emb_a_r_c_8h.html">embARC.h</a></div><div class="ttdoc">header files wrapper </div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -541,7 +540,7 @@ $(document).ready(function(){initNavTree('test__object_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cfafba98a580ce4b62f8a6fa96d7cbb0.html">example</a></li><li class="navelem"><a class="el" href="dir_002d729648cb1aa21ba35be242d803d3.html">freertos</a></li><li class="navelem"><a class="el" href="dir_717d1eb839f89675d53f200dfc3658fb.html">iot</a></li><li class="navelem"><a class="el" href="dir_68c14c075e01943a947e998014771f10.html">lwm2m</a></li><li class="navelem"><a class="el" href="dir_c2325b645aafdf61888715c98d0663a8.html">lwm2m_client</a></li><li class="navelem"><a class="el" href="dir_dba9cdec6d5294ee6e9649af5091f5f0.html">objects</a></li><li class="navelem"><b>test_object.c</b></li>
-    <li class="footer">Generated on Fri Apr 27 2018 04:59:07 for embARC by
+    <li class="footer">Generated on Wed May 9 2018 09:27:04 for embARC by
     <a href="http://www.synopsys.com">
     <img class="footer" src="pic/snps_logo.png" alt="snps_logo"/></a>. All Rights Reserved. </li>
   </ul>

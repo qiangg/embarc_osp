@@ -83,6 +83,7 @@ var searchData=
   ['arc_5flock',['arc_lock',['../group___a_r_c___h_a_l___e_x_c_e_p_t_i_o_n___i_n_t_e_r_r_u_p_t.html#ga0ad1316b54cc369a21190b8f2a79a008',1,'arc_exception.h']]],
   ['arc_5flock_5fsave',['arc_lock_save',['../group___a_r_c___h_a_l___e_x_c_e_p_t_i_o_n___i_n_t_e_r_r_u_p_t.html#ga740985b8ca473a2a4060b87ecdeafac6',1,'arc_exception.h']]],
   ['arc_5flocked',['arc_locked',['../group___a_r_c___h_a_l___e_x_c_e_p_t_i_o_n___i_n_t_e_r_r_u_p_t.html#ga438ddb16196a0dc06b45a04d40c8d875',1,'arc_exception.h']]],
+  ['arc_5fmpu_5fregion',['arc_mpu_region',['../structarc__mpu__region.html',1,'']]],
   ['arc_5fstartup_2es',['arc_startup.s',['../arc__startup_8s.html',1,'']]],
   ['arc_5ftimer_2ec',['arc_timer.c',['../arc__timer_8c.html',1,'']]],
   ['arc_5ftimer_2eh',['arc_timer.h',['../arc__timer_8h.html',1,'']]],

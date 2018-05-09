@@ -8,7 +8,6 @@ var searchData=
   ['_5flwm2m_5fclient_5finfo_5f',['_lwm2m_client_info_',['../struct__lwm2m__client__info__.html',1,'']]],
   ['_5flwm2m_5fop_5finfo_5f',['_lwm2m_op_info_',['../struct__lwm2m__op__info__.html',1,'']]],
   ['_5flwm2m_5fserver_5finfo_5f',['_lwm2m_server_info_',['../struct__lwm2m__server__info__.html',1,'']]],
-  ['_5fobj_5finfo_5f',['_obj_info_',['../struct__obj__info__.html',1,'']]],
   ['_5fprv_5finstance_5f',['_prv_instance_',['../struct__prv__instance__.html',1,'']]],
   ['_5frw009_5fap_5finfo',['_rw009_ap_info',['../struct__rw009__ap__info.html',1,'']]],
   ['_5frw009_5fcmd_5feasy_5fjoin',['_rw009_cmd_easy_join',['../struct__rw009__cmd__easy__join.html',1,'']]],
@@ -21,5 +20,7 @@ var searchData=
   ['_5frw009_5ft',['_rw009_t',['../struct__rw009__t.html',1,'']]],
   ['_5fsample',['_sample',['../struct__sample.html',1,'']]],
   ['_5fsecurity_5finstance_5f',['_security_instance_',['../struct__security__instance__.html',1,'']]],
-  ['_5fserver_5finstance_5f',['_server_instance_',['../struct__server__instance__.html',1,'']]]
+  ['_5fserver_5finstance_5f',['_server_instance_',['../struct__server__instance__.html',1,'']]],
+  ['_5fslip_5fesp_5fap_5finfo',['_slip_esp_ap_info',['../struct__slip__esp__ap__info.html',1,'']]],
+  ['_5fslip_5fesp_5ft',['_slip_esp_t',['../struct__slip__esp__t.html',1,'']]]
 ];

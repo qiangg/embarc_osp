@@ -18,6 +18,8 @@ var searchData=
   ['hm1x_5ftest_5fcommand',['hm1x_test_command',['../hm1x_8c.html#a72ef9100a54daa3258e7cef84098f7a7',1,'hm1x.c']]],
   ['hm1x_5fwrite',['hm1x_write',['../hm1x_8c.html#a28d8a66e71cee93ff911a10b1b78c385',1,'hm1x.c']]],
   ['hsdk_5fhardware_5finit',['hsdk_hardware_init',['../group___b_o_a_r_d___h_s_d_k___c_o_m_m_o_n___i_n_i_t.html#ga36a06770dfe3e551388ab82d68aa103f',1,'hsdk_hardware_init(void):&#160;hsdk_hardware.c'],['../group___b_o_a_r_d___h_s_d_k___c_o_m_m_o_n___i_n_i_t.html#ga36a06770dfe3e551388ab82d68aa103f',1,'hsdk_hardware_init(void):&#160;hsdk_hardware.c']]],
+  ['hsdk_5fio_5finit',['hsdk_io_init',['../group___b_o_a_r_d___h_s_d_k___d_r_v___i_o.html#gaf6d565dffaac6c29217ffb23e5cad4d7',1,'hsdk_io.c']]],
+  ['hsdk_5fled_5finit',['hsdk_led_init',['../group___b_o_a_r_d___h_s_d_k___d_r_v___i_o.html#ga701d2fab00f692f41c27c1b5d0a5d24d',1,'hsdk_io.c']]],
   ['hsdk_5ftimer_5finit',['hsdk_timer_init',['../group___b_o_a_r_d___h_s_d_k___c_o_m_m_o_n___t_i_m_e_r.html#gafc627eb1f5c5a1da8802715539e312a3',1,'hsdk_timer.c']]],
   ['hsdk_5ftimer_5fisr',['hsdk_timer_isr',['../group___b_o_a_r_d___h_s_d_k___c_o_m_m_o_n___t_i_m_e_r.html#gabf3f825b29aa5e212da907cdc3fadf6e',1,'hsdk_timer.c']]]
 ];

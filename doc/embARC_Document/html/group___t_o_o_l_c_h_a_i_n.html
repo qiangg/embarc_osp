@@ -114,9 +114,6 @@ Files</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gaf317ecff3487ec13aaa1456b45187dff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf317ecff3487ec13aaa1456b45187dff"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_EMBARC_TOOLCHAIN_H_</b></td></tr>
-<tr class="separator:gaf317ecff3487ec13aaa1456b45187dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga00d24c7231be28dbaf71f5408f30e44c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga00d24c7231be28dbaf71f5408f30e44c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>inline</b>&#160;&#160;&#160;__inline__			/* inline function */</td></tr>
 <tr class="separator:ga00d24c7231be28dbaf71f5408f30e44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +162,17 @@ Macros</h2></td></tr>
 <tr class="memitem:gadeaf7f3efeb3df3a6a2d9095bce5ff91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadeaf7f3efeb3df3a6a2d9095bce5ff91"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>EMBARC_TO_STRING</b>(x)&#160;&#160;&#160;__EMBARC_TO_STRING(x)</td></tr>
 <tr class="separator:gadeaf7f3efeb3df3a6a2d9095bce5ff91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2119a36a3b0667a4fb14fe45e4384bc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2119a36a3b0667a4fb14fe45e4384bc2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EMBARC_CLZ</b>(x)&#160;&#160;&#160;(x == 0 ? 32 : __builtin_clz(x))</td></tr>
+<tr class="separator:ga2119a36a3b0667a4fb14fe45e4384bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e94225846f8c87b3ac79ad277f93592"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4e94225846f8c87b3ac79ad277f93592"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EMBARC_BITS</b>(x)&#160;&#160;&#160;(32 - EMBARC_CLZ(x))</td></tr>
+<tr class="separator:ga4e94225846f8c87b3ac79ad277f93592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d162bce8710f0b82bd165188529beeb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>EMBARC_POW2_CEIL</b>(x)</td></tr>
+<tr class="separator:ga1d162bce8710f0b82bd165188529beeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff6165db3fa02d1c8646031870230232"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaff6165db3fa02d1c8646031870230232"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DIV_ROUND_UP</b>(x, y)&#160;&#160;&#160;(((x) + (y) - 1) / (y))</td></tr>
+<tr class="separator:gaff6165db3fa02d1c8646031870230232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Toolchain dependent definitions. </p>
@@ -177,13 +185,35 @@ Data type definitions using stdint.h </li>
 Compiler extensions, such as inline functions, assembly in C. </li>
 </ul>
 <p>Please refer to source code in <a class="el" href="emb_a_r_c__toolchain_8h.html" title="toolchain dependent definitions ">embARC_toolchain.h</a> for code comments. </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga1d162bce8710f0b82bd165188529beeb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EMBARC_POW2_CEIL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">((1 &lt;&lt; (31 - EMBARC_CLZ(x))) &lt; x ?  \</div>
+<div class="line">                1 &lt;&lt; (31 - EMBARC_CLZ(x) + 1) : \</div>
+<div class="line">                1 &lt;&lt; (31 - EMBARC_CLZ(x)))</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="emb_a_r_c__toolchain_8h_source.html#l00097">97</a> of file <a class="el" href="emb_a_r_c__toolchain_8h_source.html">embARC_toolchain.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Apr 27 2018 04:59:10 for embARC by
+    <li class="footer">Generated on Wed May 9 2018 09:27:08 for embARC by
     <a href="http://www.synopsys.com">
     <img class="footer" src="pic/snps_logo.png" alt="snps_logo"/></a>. All Rights Reserved. </li>
   </ul>

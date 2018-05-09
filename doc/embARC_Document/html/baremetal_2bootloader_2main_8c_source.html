@@ -250,12 +250,12 @@ $(document).ready(function(){initNavTree('baremetal_2bootloader_2main_8c_source.
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        }</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">if</span>(default_bt_flag == 0 &amp;&amp; boot_cfg.ntshell == 1 || load_flag == 0){</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                EMBARC_PRINTF(<span class="stringliteral">&quot;\r\nStart NTShell Runtime...\r\n&quot;</span>);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                <a class="code" href="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#ga0d116692517e4c11de41ec07145b8404">led_write</a>(0x00, 0xFF); <span class="comment">/* Load application finished */</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                led_write(0x00, 0xFF); <span class="comment">/* Load application finished */</span></div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                nt_io = <a class="code" href="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o.html#ga12b79a5c5ba42300fa5c34e863e29a7b">get_ntshell_io</a>(BOARD_ONBOARD_NTSHELL_ID);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                ntshell_task((<span class="keywordtype">void</span> *)nt_io);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        }</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        EMBARC_PRINTF(<span class="stringliteral">&quot;\r\nStart loading %s from sdcard to 0x%x and run...\r\n&quot;</span>, boot_cfg.boot_file, boot_cfg.ram_startaddress);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <a class="code" href="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#ga0d116692517e4c11de41ec07145b8404">led_write</a>(0xF, 0xFF); <span class="comment">/* Start to load application */</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        led_write(0xF, 0xFF); <span class="comment">/* Start to load application */</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">if</span>(boot_cfg.boot_file[strlen(boot_cfg.boot_file) - 3] == <span class="charliteral">&#39;h&#39;</span>){</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                ihex_start();</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                res = ihex_load(IHEX_SD_CARD, (<span class="keywordtype">void</span> *)boot_cfg.boot_file);</div>
@@ -284,13 +284,13 @@ $(document).ready(function(){initNavTree('baremetal_2bootloader_2main_8c_source.
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        }</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">if</span>(load_flag == 0){</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                EMBARC_PRINTF(<span class="stringliteral">&quot;\r\nStart NTShell Runtime...\r\n&quot;</span>);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                <a class="code" href="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#ga0d116692517e4c11de41ec07145b8404">led_write</a>(0x00, 0xFF); <span class="comment">/* Load application finished */</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                led_write(0x00, 0xFF); <span class="comment">/* Load application finished */</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                nt_io = <a class="code" href="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o.html#ga12b79a5c5ba42300fa5c34e863e29a7b">get_ntshell_io</a>(BOARD_ONBOARD_NTSHELL_ID);</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                ntshell_task((<span class="keywordtype">void</span> *)nt_io);</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        }</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#ga0d116692517e4c11de41ec07145b8404">led_write</a>(0xF0, 0xFF); <span class="comment">/* Load application finished */</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        led_write(0xF0, 0xFF); <span class="comment">/* Load application finished */</span></div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        ram = (<span class="keywordtype">void</span> *)<a class="code" href="group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___b_o_o_t_l_o_a_d_e_r.html#ga55d7be649325d97ae16ea0dfaaeeabd3">APP_CFG_ADDR</a>;</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        memcpy(ram, boot_cfg.app_cfg, strlen(boot_cfg.app_cfg) + 1);</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <a class="code" href="arc__exception_8c.html#a733e45f48f9fe46022e47acd9677d980">cpu_lock</a>();</div>
@@ -306,7 +306,7 @@ $(document).ready(function(){initNavTree('baremetal_2bootloader_2main_8c_source.
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                <span class="comment">//dcache_flush();</span></div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                <a class="code" href="arc__cache_8h.html#afe35f8ca9a557b9394e2b801b84ea031">dcache_invalidate</a>();</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        }</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <a class="code" href="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#ga0d116692517e4c11de41ec07145b8404">led_write</a>(0xFF, 0xFF); <span class="comment">/* Start application */</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        led_write(0xFF, 0xFF); <span class="comment">/* Start application */</span></div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        fp = (fp_t)(boot_cfg.ram_startaddress + 4);</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        fp();   <span class="comment">/* jump to program */</span></div>
@@ -315,7 +315,6 @@ $(document).ready(function(){initNavTree('baremetal_2bootloader_2main_8c_source.
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
 <div class="ttc" id="structboot__cfg__t_html"><div class="ttname"><a href="structboot__cfg__t.html">boot_cfg_t</a></div><div class="ttdef"><b>Definition:</b> <a href="baremetal_2bootloader_2main_8c_source.html#l00192">baremetal/bootloader/main.c:192</a></div></div>
 <div class="ttc" id="arc__exception_8c_html_aa06cd81d78d066c1cdc46dde7dabeb57"><div class="ttname"><a href="arc__exception_8c.html#aa06cd81d78d066c1cdc46dde7dabeb57">int_disable</a></div><div class="ttdeci">int32_t int_disable(const uint32_t intno)</div><div class="ttdoc">disable the specific interrupt </div><div class="ttdef"><b>Definition:</b> <a href="arc__exception_8c_source.html#l00279">arc_exception.c:279</a></div></div>
-<div class="ttc" id="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o_html_ga0d116692517e4c11de41ec07145b8404"><div class="ttname"><a href="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#ga0d116692517e4c11de41ec07145b8404">led_write</a></div><div class="ttdeci">void led_write(uint32_t led_val, uint32_t mask)</div><div class="ttdoc">write 1 to light on led bit, else light off led </div><div class="ttdef"><b>Definition:</b> <a href="emsk__gpio_8c_source.html#l00123">emsk_gpio.c:123</a></div></div>
 <div class="ttc" id="group___e_m_b_a_r_c___e_r_r_o_r_html_gae5989e632e687010b35b613304089823"><div class="ttname"><a href="group___e_m_b_a_r_c___e_r_r_o_r.html#gae5989e632e687010b35b613304089823">E_SYS</a></div><div class="ttdeci">#define E_SYS</div><div class="ttdef"><b>Definition:</b> <a href="emb_a_r_c__error_8h_source.html#l00056">embARC_error.h:56</a></div></div>
 <div class="ttc" id="arc__exception_8c_html_aa93883b650c91f0e9b31a4cd6e935dc8"><div class="ttname"><a href="arc__exception_8c.html#aa93883b650c91f0e9b31a4cd6e935dc8">cpu_unlock</a></div><div class="ttdeci">void cpu_unlock(void)</div><div class="ttdoc">unlock cpu, enable interrupts to happen </div><div class="ttdef"><b>Definition:</b> <a href="arc__exception_8c_source.html#l00462">arc_exception.c:462</a></div></div>
 <div class="ttc" id="group___b_o_a_r_d___a_x_s___c_o_m_m_o_n___i_n_i_t_html_ga916f2adc2080b4fe88034086d107a8dc"><div class="ttname"><a href="group___b_o_a_r_d___a_x_s___c_o_m_m_o_n___i_n_i_t.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a></div><div class="ttdeci">void board_init(void)</div><div class="ttdoc">Board init routine MUST be called in each application. </div><div class="ttdef"><b>Definition:</b> <a href="axs__init_8c_source.html#l00062">axs_init.c:62</a></div></div>
@@ -340,7 +339,7 @@ $(document).ready(function(){initNavTree('baremetal_2bootloader_2main_8c_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cfafba98a580ce4b62f8a6fa96d7cbb0.html">example</a></li><li class="navelem"><a class="el" href="dir_4a90417cf3b801ec833de2fe59fe3550.html">baremetal</a></li><li class="navelem"><a class="el" href="dir_3a42d35321ec98df120afc9cf0504f98.html">bootloader</a></li><li class="navelem"><a class="el" href="baremetal_2bootloader_2main_8c.html">main.c</a></li>
-    <li class="footer">Generated on Fri Apr 27 2018 04:59:07 for embARC by
+    <li class="footer">Generated on Wed May 9 2018 09:27:04 for embARC by
     <a href="http://www.synopsys.com">
     <img class="footer" src="pic/snps_logo.png" alt="snps_logo"/></a>. All Rights Reserved. </li>
   </ul>

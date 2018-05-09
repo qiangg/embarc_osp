@@ -2,6 +2,12 @@ var group___a_r_c___h_a_l___m_i_s_c___t_i_m_e_r =
 [
     [ "arc_timer.c", "arc__timer_8c.html", null ],
     [ "arc_timer.h", "arc__timer_8h.html", null ],
+    [ "INTNO_SECURE_TIMER0", "group___a_r_c___h_a_l___m_i_s_c___t_i_m_e_r.html#ga1b6b40e3f0ebe066e905bd8f172ab4c6", null ],
+    [ "INTNO_SECURE_TIMER1", "group___a_r_c___h_a_l___m_i_s_c___t_i_m_e_r.html#ga6931c1288639bbf0568139926abecbdc", null ],
+    [ "INTNO_TIMER0", "group___a_r_c___h_a_l___m_i_s_c___t_i_m_e_r.html#ga7b8512078a0c7ba91d2f2058ca8e66b6", null ],
+    [ "INTNO_TIMER1", "group___a_r_c___h_a_l___m_i_s_c___t_i_m_e_r.html#gab79d104685fb9b67358a5534ea059dd9", null ],
+    [ "SECURE_TIMER_0", "group___a_r_c___h_a_l___m_i_s_c___t_i_m_e_r.html#gad2e35fb10b4dfd3616530b9975339803", null ],
+    [ "SECURE_TIMER_1", "group___a_r_c___h_a_l___m_i_s_c___t_i_m_e_r.html#ga0d8b8775af92a5eea182f5bec22bedfb", null ],
     [ "TIMER_0", "group___a_r_c___h_a_l___m_i_s_c___t_i_m_e_r.html#gacc9ff9df4a9674a1ce9ba08fc4a4679e", null ],
     [ "TIMER_1", "group___a_r_c___h_a_l___m_i_s_c___t_i_m_e_r.html#gac62c99c2a9289891c1b83052242cca49", null ],
     [ "TIMER_CTRL_IE", "group___a_r_c___h_a_l___m_i_s_c___t_i_m_e_r.html#ga3d86ac7ea9125720c6117abaae649e1a", null ],

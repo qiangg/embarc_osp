@@ -183,6 +183,12 @@ cache related helper function</h2></td></tr>
 <tr class="memitem:gab41428f421e9539fb507467584998b43"><td class="memItemLeft" align="right" valign="top">Inline int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___b_u_i_l_t_i_n.html#gab41428f421e9539fb507467584998b43">_arc_goto_main</a> (int argc, char **argv)</td></tr>
 <tr class="memdesc:gab41428f421e9539fb507467584998b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">go to main function with proper arguments  <a href="#gab41428f421e9539fb507467584998b43">More...</a><br/></td></tr>
 <tr class="separator:gab41428f421e9539fb507467584998b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeda112966176865ad5182340a80f43ef"><td class="memItemLeft" align="right" valign="top">Inline uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___b_u_i_l_t_i_n.html#gaeda112966176865ad5182340a80f43ef">_arc_find_msb</a> (uint32_t val)</td></tr>
+<tr class="memdesc:gaeda112966176865ad5182340a80f43ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">find most significant bit set in a 32-bit word  <a href="#gaeda112966176865ad5182340a80f43ef">More...</a><br/></td></tr>
+<tr class="separator:gaeda112966176865ad5182340a80f43ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade2fbcddaaa9e3de0c0769fd7a3b7cee"><td class="memItemLeft" align="right" valign="top">Inline uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___b_u_i_l_t_i_n.html#gade2fbcddaaa9e3de0c0769fd7a3b7cee">_arc_find_lsb</a> (uint32_t val)</td></tr>
+<tr class="memdesc:gade2fbcddaaa9e3de0c0769fd7a3b7cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">find least significant bit set in a 32-bit word  <a href="#gade2fbcddaaa9e3de0c0769fd7a3b7cee">More...</a><br/></td></tr>
+<tr class="separator:gade2fbcddaaa9e3de0c0769fd7a3b7cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Built-in and helper functions to access ARC hardware layer. </p>
@@ -215,7 +221,7 @@ cache related helper function</h2></td></tr>
 
 <p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00059">59</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
 
-<p>Referenced by <a class="el" href="arc__exception_8h_source.html#l00418">arc_lock_save()</a>.</p>
+<p>Referenced by <a class="el" href="arc__exception_8h_source.html#l00427">arc_lock_save()</a>.</p>
 
 </div>
 </div>
@@ -339,7 +345,7 @@ cache related helper function</h2></td></tr>
 
 <p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00061">61</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
 
-<p>Referenced by <a class="el" href="arc__exception_8h_source.html#l00428">arc_unlock_restore()</a>.</p>
+<p>Referenced by <a class="el" href="arc__exception_8h_source.html#l00437">arc_unlock_restore()</a>.</p>
 
 </div>
 </div>
@@ -407,6 +413,50 @@ cache related helper function</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gade2fbcddaaa9e3de0c0769fd7a3b7cee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Inline uint32_t _arc_find_lsb </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>find least significant bit set in a 32-bit word </p>
+<p>This routine finds the first bit set starting from the least significant bit in the argument passed in and returns the index of that bit. Bits are numbered starting at 1 from the least significant bit. A return value of zero indicates that the value passed is zero.</p>
+<dl class="section return"><dt>Returns</dt><dd>least significant bit set, 0 if <em>val</em> is 0 </dd></dl>
+
+<p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00331">331</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaeda112966176865ad5182340a80f43ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Inline uint32_t _arc_find_msb </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>find most significant bit set in a 32-bit word </p>
+<p>This routine finds the first bit set starting from the most significant bit in the argument passed in and returns the index of that bit. Bits are numbered starting at 1 from the least significant bit. A return value of zero indicates that the value passed is zero.</p>
+<dl class="section return"><dt>Returns</dt><dd>most significant bit set, 0 if <em>val</em> is 0 </dd></dl>
+
+<p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00307">307</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gab41428f421e9539fb507467584998b43"></a>
 <div class="memitem">
 <div class="memproto">
@@ -446,7 +496,7 @@ cache related helper function</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00281">281</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
+<p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00282">282</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
 
 </div>
 </div>
@@ -473,7 +523,7 @@ cache related helper function</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value in the memory </dd></dl>
 
-<p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00256">256</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
+<p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00257">257</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
 
 <p>Referenced by <a class="el" href="baremetal_2arc__feature_2cache_2main_8c_source.html#l00070">__attribute__()</a>.</p>
 
@@ -502,7 +552,7 @@ cache related helper function</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value in the memory </dd></dl>
 
-<p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00233">233</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
+<p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00234">234</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
 
 <p>Referenced by <a class="el" href="baremetal_2arc__feature_2cache_2main_8c_source.html#l00070">__attribute__()</a>.</p>
 
@@ -542,7 +592,7 @@ cache related helper function</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>description </dd></dl>
 
-<p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00270">270</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
+<p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00271">271</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
 
 </div>
 </div>
@@ -579,7 +629,7 @@ cache related helper function</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00246">246</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
+<p>Definition at line <a class="el" href="arc__builtin_8h_source.html#l00247">247</a> of file <a class="el" href="arc__builtin_8h_source.html">arc_builtin.h</a>.</p>
 
 <p>Referenced by <a class="el" href="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c_source.html#l00093">dw_spi_0_control()</a>.</p>
 
@@ -591,7 +641,7 @@ cache related helper function</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Apr 27 2018 04:59:10 for embARC by
+    <li class="footer">Generated on Wed May 9 2018 09:27:08 for embARC by
     <a href="http://www.synopsys.com">
     <img class="footer" src="pic/snps_logo.png" alt="snps_logo"/></a>. All Rights Reserved. </li>
   </ul>

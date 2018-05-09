@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['embarc_5faligned',['EMBARC_ALIGNED',['../group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gad875d605835bec0ffdbbcdf699efa7d0',1,'_dma_state']]],
   ['emsk_5fbutton_5finit',['emsk_button_init',['../group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#ga1c5aeb4ab0898b4d756415644ff65c68',1,'emsk_gpio.c']]],
   ['emsk_5fgpio_5finit',['emsk_gpio_init',['../group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#gaa1c3c3474fcd341b7f0c8c2dd8318e97',1,'emsk_gpio.c']]],
   ['emsk_5fled_5finit',['emsk_led_init',['../group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o.html#gac9f916612edd3260bf1282c25ceea192',1,'emsk_gpio.c']]],

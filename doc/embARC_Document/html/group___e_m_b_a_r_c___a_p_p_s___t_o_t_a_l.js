@@ -12,7 +12,6 @@ var group___e_m_b_a_r_c___a_p_p_s___t_o_t_a_l =
     [ "embARC FreeRTOS Kernel Example", "group___e_m_b_a_r_c___a_p_p___f_r_e_e_r_t_o_s___k_e_r_n_e_l.html", "group___e_m_b_a_r_c___a_p_p___f_r_e_e_r_t_o_s___k_e_r_n_e_l" ],
     [ "embARC FreeRTOS kernel example with secureshield", "group___e_m_b_a_r_c___a_p_p___f_r_e_e_r_t_o_s___k_e_r_n_e_l___s_e_c_u_r_e.html", "group___e_m_b_a_r_c___a_p_p___f_r_e_e_r_t_o_s___k_e_r_n_e_l___s_e_c_u_r_e" ],
     [ "embARC Graphic Example on SSD1306", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___g_r_a_p_h_i_c___u8_g_l_i_b.html", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___g_r_a_p_h_i_c___u8_g_l_i_b" ],
-    [ "embARC IoT Demo with LwM2M Example", "group___e_m_b_a_r_c___a_p_p___f_r_e_e_r_t_o_s___i_o_t___l_w_m2_m___i_o_t___d_e_m_o.html", "group___e_m_b_a_r_c___a_p_p___f_r_e_e_r_t_o_s___i_o_t___l_w_m2_m___i_o_t___d_e_m_o" ],
     [ "embARC LwIP CoAP Server Example", "group___e_m_b_a_r_c___a_p_p___f_r_e_e_r_t_o_s___i_o_t___c_o_a_p___c_o_a_p___s_e_r_v_e_r.html", "group___e_m_b_a_r_c___a_p_p___f_r_e_e_r_t_o_s___i_o_t___c_o_a_p___c_o_a_p___s_e_r_v_e_r" ],
     [ "embARC LwIP HTTPServer Example", "group___e_m_b_a_r_c___a_p_p___f_r_e_e_r_t_o_s___n_e_t___h_t_t_p_s_e_r_v_e_r.html", "group___e_m_b_a_r_c___a_p_p___f_r_e_e_r_t_o_s___n_e_t___h_t_t_p_s_e_r_v_e_r" ],
     [ "embARC LwIP LwM2M Client Example", "group___e_m_b_a_r_c___a_p_p___f_r_e_e_r_t_o_s___i_o_t___l_w_m2_m___l_w_m2_m___c_l_i_e_n_t.html", "group___e_m_b_a_r_c___a_p_p___f_r_e_e_r_t_o_s___i_o_t___l_w_m2_m___l_w_m2_m___c_l_i_e_n_t" ],
@@ -26,6 +25,5 @@ var group___e_m_b_a_r_c___a_p_p_s___t_o_t_a_l =
     [ "embARC Secondary Bootloader Example", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___b_o_o_t_l_o_a_d_e_r.html", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___b_o_o_t_l_o_a_d_e_r" ],
     [ "embARC SecureShield Secret Secure Example", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___s_e_c_u_r_e_s_h_i_e_l_d___s_e_c_r_e_t___s_e_c_u_r_e.html", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___s_e_c_u_r_e_s_h_i_e_l_d___s_e_c_r_e_t___s_e_c_u_r_e" ],
     [ "embARC Secureshield Secret Normal Example", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___s_e_c_u_r_e_s_h_i_e_l_d___s_e_c_r_e_t___n_o_r_m_a_l.html", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___s_e_c_u_r_e_s_h_i_e_l_d___s_e_c_r_e_t___n_o_r_m_a_l" ],
-    [ "embARC Secureshield Secret with SID Example", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___s_e_c_u_r_e_s_h_i_e_l_d___s_e_c_r_e_t___s_e_c_u_r_e___s_i_d.html", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___s_e_c_u_r_e_s_h_i_e_l_d___s_e_c_r_e_t___s_e_c_u_r_e___s_i_d" ],
-    [ "embARC Secureshield Test Cases Example", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___s_e_c_u_r_e_s_h_i_e_l_d___t_e_s_t___c_a_s_e.html", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___s_e_c_u_r_e_s_h_i_e_l_d___t_e_s_t___c_a_s_e" ]
+    [ "embARC Secureshield Secret with SID Example", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___s_e_c_u_r_e_s_h_i_e_l_d___s_e_c_r_e_t___s_e_c_u_r_e___s_i_d.html", "group___e_m_b_a_r_c___a_p_p___b_a_r_e_m_e_t_a_l___s_e_c_u_r_e_s_h_i_e_l_d___s_e_c_r_e_t___s_e_c_u_r_e___s_i_d" ]
 ];

@@ -6,6 +6,7 @@ var searchData=
   ['adt7420_5fdef',['ADT7420_DEF',['../struct_a_d_t7420___d_e_f.html',1,'']]],
   ['apcfg',['apcfg',['../structwnic__ap__config_1_1apcfg.html',1,'wnic_ap_config']]],
   ['arc_5fconnect_5fop',['arc_connect_op',['../structarc__connect__op.html',1,'']]],
+  ['arc_5fmpu_5fregion',['arc_mpu_region',['../structarc__mpu__region.html',1,'']]],
   ['aux_5firq_5fctrl_5ffield',['aux_irq_ctrl_field',['../structaux__irq__ctrl__field.html',1,'']]],
   ['aux_5firq_5fctrl_5ft',['aux_irq_ctrl_t',['../unionaux__irq__ctrl__t.html',1,'']]]
 ];

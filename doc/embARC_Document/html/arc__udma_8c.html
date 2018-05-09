@@ -124,103 +124,99 @@ Macros</h2></td></tr>
 <tr class="memitem:gaec1509d88af981e060a059d0f5554d0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaec1509d88af981e060a059d0f5554d0c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>_MEMORY_FENCE</b>()&#160;&#160;&#160;<a class="el" href="group___a_r_c___h_a_l___b_u_i_l_t_i_n.html#gae036cd29e75a50a6e98090522cbb3968">_arc_sync</a>()</td></tr>
 <tr class="separator:gaec1509d88af981e060a059d0f5554d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4232393d3d52c0cedfedf119e07b4d85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4232393d3d52c0cedfedf119e07b4d85"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>_ISR</b>(vector, func)&#160;&#160;&#160;void func(void* ptr)</td></tr>
-<tr class="separator:ga4232393d3d52c0cedfedf119e07b4d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e0a8ae89976b159f7da6f566806399d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>_ENABLE_INT</b>(vector, sensitivity, enable)</td></tr>
-<tr class="separator:ga8e0a8ae89976b159f7da6f566806399d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5ddbba4d9d5f0381f992ce460cdc173"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac5ddbba4d9d5f0381f992ce460cdc173"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>_INT_LEVEL_SENS</b>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:gac5ddbba4d9d5f0381f992ce460cdc173"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae92cabbe10bf184a7cf88640a4f0646a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>_SETVECTI_PRIOR</b>(vector, handler, prior)</td></tr>
-<tr class="separator:gae92cabbe10bf184a7cf88640a4f0646a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga373a63440e363c118467735b04be349a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga373a63440e363c118467735b04be349a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA_INT_OK_VECTOR</b>(channel)&#160;&#160;&#160;((channel)+<a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga8e05b31d51dbe30264e2467c9d1650c9">DMA_IRQ_NUM_START</a>)</td></tr>
 <tr class="separator:ga373a63440e363c118467735b04be349a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga866d76e37a45411c2e95074f20981bdd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga866d76e37a45411c2e95074f20981bdd"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DMA_INT_ERR_VECTOR</b>(channel)&#160;&#160;&#160;((channel)+<a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga8e05b31d51dbe30264e2467c9d1650c9">DMA_IRQ_NUM_START</a>+1)</td></tr>
 <tr class="separator:ga866d76e37a45411c2e95074f20981bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5318932542e1186f45774c43f7f18819"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga5318932542e1186f45774c43f7f18819">DMA_ADD_IRQ_PROC</a>(ofs, priority)</td></tr>
-<tr class="memdesc:ga5318932542e1186f45774c43f7f18819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install uDMA interrupt service, set interrupt as level sensitive, and enable interrupt.  <a href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga5318932542e1186f45774c43f7f18819">More...</a><br/></td></tr>
-<tr class="separator:ga5318932542e1186f45774c43f7f18819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga41f4b63838fb703cd9089ce4b5b9ab9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga41f4b63838fb703cd9089ce4b5b9ab9e">_ISR</a> (0, _dmac_interrupt_completed)</td></tr>
-<tr class="memdesc:ga41f4b63838fb703cd9089ce4b5b9ab9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt about DMA transaction completion.  <a href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga41f4b63838fb703cd9089ce4b5b9ab9e">More...</a><br/></td></tr>
-<tr class="separator:ga41f4b63838fb703cd9089ce4b5b9ab9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gade0915c4d62aa821ce9a5cdf7f6137d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gade0915c4d62aa821ce9a5cdf7f6137d5">_ISR</a> (0, _dmac_interrupt_error)</td></tr>
-<tr class="memdesc:gade0915c4d62aa821ce9a5cdf7f6137d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt about DMA transaction completion with error.  <a href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gade0915c4d62aa821ce9a5cdf7f6137d5">More...</a><br/></td></tr>
-<tr class="separator:gade0915c4d62aa821ce9a5cdf7f6137d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga07489a748a11c6890ac6557323bd4f0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga07489a748a11c6890ac6557323bd4f0a"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_enable</b> (void)</td></tr>
-<tr class="separator:ga07489a748a11c6890ac6557323bd4f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga67036f8014c06c5613781a4f68534be2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga67036f8014c06c5613781a4f68534be2"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_disable</b> (void)</td></tr>
-<tr class="separator:ga67036f8014c06c5613781a4f68534be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7ffe317d4e4630eda57296a7c71c34dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7ffe317d4e4630eda57296a7c71c34dc"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_enable_channel</b> (uint32_t channel)</td></tr>
-<tr class="separator:ga7ffe317d4e4630eda57296a7c71c34dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac23bd17f2962dc192586d61040743607"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac23bd17f2962dc192586d61040743607"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_enable_channels</b> (uint32_t mask)</td></tr>
-<tr class="separator:gac23bd17f2962dc192586d61040743607"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab441229f06429c1b48ee93798dba835"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaab441229f06429c1b48ee93798dba835"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_enable_all_channels</b> (void)</td></tr>
-<tr class="separator:gaab441229f06429c1b48ee93798dba835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf49854d359ba386fcec2f58cd2a8ee27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf49854d359ba386fcec2f58cd2a8ee27"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_disable_channel</b> (uint32_t channel)</td></tr>
-<tr class="separator:gaf49854d359ba386fcec2f58cd2a8ee27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf381b78a59b23e3702b67f9979a276d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadf381b78a59b23e3702b67f9979a276d"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_disable_channels</b> (uint32_t mask)</td></tr>
-<tr class="separator:gadf381b78a59b23e3702b67f9979a276d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac8d7f567e0a97de1bd64203cb03694ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac8d7f567e0a97de1bd64203cb03694ff"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_disable_all_channels</b> (void)</td></tr>
-<tr class="separator:gac8d7f567e0a97de1bd64203cb03694ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc71c653114d429cd191fbac6a9d84a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabc71c653114d429cd191fbac6a9d84a1"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_reset_channel</b> (uint32_t channel)</td></tr>
-<tr class="separator:gabc71c653114d429cd191fbac6a9d84a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5cd60a3783381fd56da30c8a05097de4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5cd60a3783381fd56da30c8a05097de4"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_reset_channels</b> (uint32_t mask)</td></tr>
-<tr class="separator:ga5cd60a3783381fd56da30c8a05097de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea2fdac3c7a4f7d47e91fe4dd5bc6039"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaea2fdac3c7a4f7d47e91fe4dd5bc6039"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_reset_all_channels</b> (void)</td></tr>
-<tr class="separator:gaea2fdac3c7a4f7d47e91fe4dd5bc6039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf68d5fd917054abb7879a0c4f6e757c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf68d5fd917054abb7879a0c4f6e757c9"></a>
-static __inline__ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_reset_status</b> (void)</td></tr>
-<tr class="separator:gaf68d5fd917054abb7879a0c4f6e757c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga408ecd9302515ba71b5cff1358d67332"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga408ecd9302515ba71b5cff1358d67332"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_set_hp_channels</b> (uint32_t mask)</td></tr>
-<tr class="separator:ga408ecd9302515ba71b5cff1358d67332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2188913ff8bc242763941257444d05de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2188913ff8bc242763941257444d05de"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_set_np_channels</b> (uint32_t mask)</td></tr>
-<tr class="separator:ga2188913ff8bc242763941257444d05de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9747d69537739a338d8d85f49ab17e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac9747d69537739a338d8d85f49ab17e4"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_start_trigger</b> (uint32_t channel)</td></tr>
-<tr class="separator:gac9747d69537739a338d8d85f49ab17e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga697a7e7fbf6defbaecd87faa0c9e3a1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga697a7e7fbf6defbaecd87faa0c9e3a1f"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_start_trigger_mask</b> (uint32_t mask)</td></tr>
-<tr class="separator:ga697a7e7fbf6defbaecd87faa0c9e3a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7fdba2d131a23bacb3fafb382534ad23"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7fdba2d131a23bacb3fafb382534ad23"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_irq_clear</b> (uint32_t channel)</td></tr>
-<tr class="separator:ga7fdba2d131a23bacb3fafb382534ad23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga81c576cf5ecdba7379b3be4fc975aa46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga81c576cf5ecdba7379b3be4fc975aa46"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_irq_clear_all</b> (void)</td></tr>
-<tr class="separator:ga81c576cf5ecdba7379b3be4fc975aa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0f564bcaa5487abcfdbab6ef9932cd95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0f564bcaa5487abcfdbab6ef9932cd95"></a>
-static __inline__ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_irq_status</b> (void)</td></tr>
-<tr class="separator:ga0f564bcaa5487abcfdbab6ef9932cd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf21b2bb8f353766be70927e24bbe2b6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf21b2bb8f353766be70927e24bbe2b6b"></a>
-static __inline__ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_channel_status</b> (void)</td></tr>
-<tr class="separator:gaf21b2bb8f353766be70927e24bbe2b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0f9ef49584fb9082ff4ff0642ece1105"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0f9ef49584fb9082ff4ff0642ece1105"></a>
-static __inline__ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_complete_status</b> (void)</td></tr>
-<tr class="separator:ga0f9ef49584fb9082ff4ff0642ece1105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff5a1411709846fda673d46849af0f36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaff5a1411709846fda673d46849af0f36"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_clear_error</b> (uint32_t channel)</td></tr>
-<tr class="separator:gaff5a1411709846fda673d46849af0f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga80c2be4065097d5d826fa5564b4158d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga80c2be4065097d5d826fa5564b4158d9"></a>
-static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_clear_all_error</b> (void)</td></tr>
-<tr class="separator:ga80c2be4065097d5d826fa5564b4158d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga107a89b989ee59962d38425fbb22b187"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga107a89b989ee59962d38425fbb22b187">_dmac_interrupt_completed</a> (void *ptr)</td></tr>
+<tr class="memdesc:ga107a89b989ee59962d38425fbb22b187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt about DMA transaction completion.  <a href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga107a89b989ee59962d38425fbb22b187">More...</a><br/></td></tr>
+<tr class="separator:ga107a89b989ee59962d38425fbb22b187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5238116dea5cf21c53018ff6423eaed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae5238116dea5cf21c53018ff6423eaed"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_interrupt_completed_channel</b> (uint32_t channel)</td></tr>
+<tr class="separator:gae5238116dea5cf21c53018ff6423eaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga804207997607d5a3bad949188b6c5300"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga804207997607d5a3bad949188b6c5300">_dmac_interrupt_error</a> (void *ptr)</td></tr>
+<tr class="memdesc:ga804207997607d5a3bad949188b6c5300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt about DMA transaction completion with error.  <a href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga804207997607d5a3bad949188b6c5300">More...</a><br/></td></tr>
+<tr class="separator:ga804207997607d5a3bad949188b6c5300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e1014c6abedaf828a825d5b8b339182"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4e1014c6abedaf828a825d5b8b339182"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_interrupt_error_channel</b> (uint32_t channel)</td></tr>
+<tr class="separator:ga4e1014c6abedaf828a825d5b8b339182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae59c092bffc8dfec7e2ee710db91c3d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae59c092bffc8dfec7e2ee710db91c3d6"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_enable</b> (void)</td></tr>
+<tr class="separator:gae59c092bffc8dfec7e2ee710db91c3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga426a4b786d37b75aba17ef399168d0cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga426a4b786d37b75aba17ef399168d0cd"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_disable</b> (void)</td></tr>
+<tr class="separator:ga426a4b786d37b75aba17ef399168d0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga647bcb768f3365e15577c78b0dcd5aad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga647bcb768f3365e15577c78b0dcd5aad"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_enable_channel</b> (uint32_t channel)</td></tr>
+<tr class="separator:ga647bcb768f3365e15577c78b0dcd5aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b445fac2f19872acde1c5d75cfbcce6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0b445fac2f19872acde1c5d75cfbcce6"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_enable_channels</b> (uint32_t mask)</td></tr>
+<tr class="separator:ga0b445fac2f19872acde1c5d75cfbcce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf771868824a438ece07658ef1619367"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaaf771868824a438ece07658ef1619367"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_enable_all_channels</b> (void)</td></tr>
+<tr class="separator:gaaf771868824a438ece07658ef1619367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94d300a94517e15550ba145b2ead8e71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga94d300a94517e15550ba145b2ead8e71"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_disable_channel</b> (uint32_t channel)</td></tr>
+<tr class="separator:ga94d300a94517e15550ba145b2ead8e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c3c5a87fbb06df1c7c3d86465241603"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8c3c5a87fbb06df1c7c3d86465241603"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_disable_channels</b> (uint32_t mask)</td></tr>
+<tr class="separator:ga8c3c5a87fbb06df1c7c3d86465241603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga468fa79163368719d7b3cee868ec5eee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga468fa79163368719d7b3cee868ec5eee"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_disable_all_channels</b> (void)</td></tr>
+<tr class="separator:ga468fa79163368719d7b3cee868ec5eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37548b8dd67f6c52bdcb887ad023fff0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga37548b8dd67f6c52bdcb887ad023fff0"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_reset_channel</b> (uint32_t channel)</td></tr>
+<tr class="separator:ga37548b8dd67f6c52bdcb887ad023fff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga823ea4c35876ca6c5807fd6ec38f0b2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga823ea4c35876ca6c5807fd6ec38f0b2b"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_reset_channels</b> (uint32_t mask)</td></tr>
+<tr class="separator:ga823ea4c35876ca6c5807fd6ec38f0b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2aaf27f718632fb88b35d97cdbec1c10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2aaf27f718632fb88b35d97cdbec1c10"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_reset_all_channels</b> (void)</td></tr>
+<tr class="separator:ga2aaf27f718632fb88b35d97cdbec1c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff82e453b188844590d34c9145c24248"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaff82e453b188844590d34c9145c24248"></a>
+Inline uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_reset_status</b> (void)</td></tr>
+<tr class="separator:gaff82e453b188844590d34c9145c24248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ee804577df0ca2aa271bf41539df304"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2ee804577df0ca2aa271bf41539df304"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_set_hp_channels</b> (uint32_t mask)</td></tr>
+<tr class="separator:ga2ee804577df0ca2aa271bf41539df304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ae9e3ec4850dcc6b070e46050ffc085"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8ae9e3ec4850dcc6b070e46050ffc085"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_set_np_channels</b> (uint32_t mask)</td></tr>
+<tr class="separator:ga8ae9e3ec4850dcc6b070e46050ffc085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab577f7d50161bd2833ef81f723a29920"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab577f7d50161bd2833ef81f723a29920"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_start_trigger</b> (uint32_t channel)</td></tr>
+<tr class="separator:gab577f7d50161bd2833ef81f723a29920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac33d8eaea734a82f0b69ff048d1b5b49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac33d8eaea734a82f0b69ff048d1b5b49"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_start_trigger_mask</b> (uint32_t mask)</td></tr>
+<tr class="separator:gac33d8eaea734a82f0b69ff048d1b5b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada4d45c307454e195e6c2b5aac4fc563"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gada4d45c307454e195e6c2b5aac4fc563"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_irq_clear</b> (uint32_t channel)</td></tr>
+<tr class="separator:gada4d45c307454e195e6c2b5aac4fc563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d359bc38681d40b9739cd2c7dee1759"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6d359bc38681d40b9739cd2c7dee1759"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_irq_clear_all</b> (void)</td></tr>
+<tr class="separator:ga6d359bc38681d40b9739cd2c7dee1759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05dcd77b550970bc612affdd24ce88b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga05dcd77b550970bc612affdd24ce88b9"></a>
+Inline uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_irq_status</b> (void)</td></tr>
+<tr class="separator:ga05dcd77b550970bc612affdd24ce88b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac79141a5754ce3b3854ec2490d793260"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac79141a5754ce3b3854ec2490d793260"></a>
+Inline uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_channel_status</b> (void)</td></tr>
+<tr class="separator:gac79141a5754ce3b3854ec2490d793260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ff5d34dd56fcd30beb1c937b3ec0c2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7ff5d34dd56fcd30beb1c937b3ec0c2e"></a>
+Inline uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_complete_status</b> (void)</td></tr>
+<tr class="separator:ga7ff5d34dd56fcd30beb1c937b3ec0c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b7dc75f521d5a033d6804c101aa8a1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6b7dc75f521d5a033d6804c101aa8a1f"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_clear_error</b> (uint32_t channel)</td></tr>
+<tr class="separator:ga6b7dc75f521d5a033d6804c101aa8a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34e187887adcc54dd77f4fc2ad0717b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga34e187887adcc54dd77f4fc2ad0717b2"></a>
+Inline void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_clear_all_error</b> (void)</td></tr>
+<tr class="separator:ga34e187887adcc54dd77f4fc2ad0717b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9b04318ce5c5f1470d3a6b8c507c299b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9b04318ce5c5f1470d3a6b8c507c299b"></a>
 static <a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gae2b60a27d68acd095c27cab358a2ce9d">dma_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_wait_channel</b> (uint32_t channel)</td></tr>
 <tr class="separator:ga9b04318ce5c5f1470d3a6b8c507c299b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,6 +244,12 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_fill_des
 <tr class="memitem:gae06eefba765e595748af588b8d4a0fef"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gae06eefba765e595748af588b8d4a0fef">dmac_init</a> (<a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gaf5a20874bcce56e9dfa0554ffa808322">dma_state_t</a> *state)</td></tr>
 <tr class="memdesc:gae06eefba765e595748af588b8d4a0fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init uDMA controller with a valid dma_state_t structure.  <a href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gae06eefba765e595748af588b8d4a0fef">More...</a><br/></td></tr>
 <tr class="separator:gae06eefba765e595748af588b8d4a0fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bd75cc78ae9dee01fe4b5c3e631fdae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7bd75cc78ae9dee01fe4b5c3e631fdae"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_process_desc</b> (<a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga70e62b9d60cf124ecc6427a59cf5e43a">dma_desc_t</a> *desc, uint32_t <a class="el" href="group___b_o_a_r_d___h_s_d_k___i_n_t_e_r_r_u_p_t.html#gab709d97aa7dcc618975fc7e8d5860c7f">int_enable</a>)</td></tr>
+<tr class="separator:ga7bd75cc78ae9dee01fe4b5c3e631fdae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9cc2481196669c5b4ecb1e422ff0d49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac9cc2481196669c5b4ecb1e422ff0d49"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>_dma_claim_channel</b> (int32_t channel, <a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga0d1854ef6ca92f26e35a4e869f8a157f">dma_channel_t</a> *dma_chn, <a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga87fac76863c6c941e6363236dde6f58e">dma_request_source_t</a> source)</td></tr>
+<tr class="separator:gac9cc2481196669c5b4ecb1e422ff0d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa077df81d09f99dc06f9f09746bee81a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa077df81d09f99dc06f9f09746bee81a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gaa077df81d09f99dc06f9f09746bee81a">dmac_close</a> (void)</td></tr>
 <tr class="memdesc:gaa077df81d09f99dc06f9f09746bee81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-init uDMA controller. <br/></td></tr>
@@ -264,15 +266,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:ga6f154bbe1f60e53ef950cfd83463bfd6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga6f154bbe1f60e53ef950cfd83463bfd6">dmac_config_channel</a> (<a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga0d1854ef6ca92f26e35a4e869f8a157f">dma_channel_t</a> *dma_chn, <a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga70e62b9d60cf124ecc6427a59cf5e43a">dma_desc_t</a> *desc)</td></tr>
 <tr class="memdesc:ga6f154bbe1f60e53ef950cfd83463bfd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure uDMA channel with uDMA descriptor.  <a href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga6f154bbe1f60e53ef950cfd83463bfd6">More...</a><br/></td></tr>
 <tr class="separator:ga6f154bbe1f60e53ef950cfd83463bfd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82db73d6adf25015d1e699bfdbc4577c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga82db73d6adf25015d1e699bfdbc4577c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>dma_claim_channel</b> (int32_t channel, <a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga0d1854ef6ca92f26e35a4e869f8a157f">dma_channel_t</a> *dma_chn, <a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga87fac76863c6c941e6363236dde6f58e">dma_request_source_t</a> source)</td></tr>
-<tr class="separator:ga82db73d6adf25015d1e699bfdbc4577c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaff2446b924c369ec11cd71a6aa0f185"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gaaff2446b924c369ec11cd71a6aa0f185">dmac_reserve_channel</a> (int32_t channel, <a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga0d1854ef6ca92f26e35a4e869f8a157f">dma_channel_t</a> *dma_chn, <a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga87fac76863c6c941e6363236dde6f58e">dma_request_source_t</a> source)</td></tr>
 <tr class="memdesc:gaaff2446b924c369ec11cd71a6aa0f185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a DMA channel, and bind it with dma_chn, and set the dma trigger source.  <a href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gaaff2446b924c369ec11cd71a6aa0f185">More...</a><br/></td></tr>
 <tr class="separator:gaaff2446b924c369ec11cd71a6aa0f185"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga25537e98368a2a3223312aa3a2720db0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga25537e98368a2a3223312aa3a2720db0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>dmac_process_desc</b> (<a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga70e62b9d60cf124ecc6427a59cf5e43a">dma_desc_t</a> *desc, uint32_t <a class="el" href="group___b_o_a_r_d___h_s_d_k___i_n_t_e_r_r_u_p_t.html#gab709d97aa7dcc618975fc7e8d5860c7f">int_enable</a>)</td></tr>
-<tr class="separator:ga25537e98368a2a3223312aa3a2720db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8def3178273523539defa6f8b832b1a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gaa8def3178273523539defa6f8b832b1a">dmac_start_channel</a> (<a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga0d1854ef6ca92f26e35a4e869f8a157f">dma_channel_t</a> *dma_chn, <a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga67d148aa2be7a7fe322355a6474aa91e">dma_callback_t</a> callback, uint32_t priority)</td></tr>
 <tr class="memdesc:gaa8def3178273523539defa6f8b832b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start uDMA transfer for dma_chn, and set callback and transfer priority.  <a href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gaa8def3178273523539defa6f8b832b1a">More...</a><br/></td></tr>
 <tr class="separator:gaa8def3178273523539defa6f8b832b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,12 +287,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>dmac_process_d
 <tr class="memitem:ga5cdbefc94c44553c2e42d016d6cfb54f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga5cdbefc94c44553c2e42d016d6cfb54f">dmac_check_channel</a> (<a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga0d1854ef6ca92f26e35a4e869f8a157f">dma_channel_t</a> *dma_chn)</td></tr>
 <tr class="memdesc:ga5cdbefc94c44553c2e42d016d6cfb54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check channel transfer status.  <a href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga5cdbefc94c44553c2e42d016d6cfb54f">More...</a><br/></td></tr>
 <tr class="separator:ga5cdbefc94c44553c2e42d016d6cfb54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf63639047b5c5ac983d069448fa5f268"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf63639047b5c5ac983d069448fa5f268"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_interrupt_completed_channel</b> (uint32_t channel)</td></tr>
-<tr class="separator:gaf63639047b5c5ac983d069448fa5f268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd2c7de8dc04e045c98ab75abcf3bc0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafd2c7de8dc04e045c98ab75abcf3bc0c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>_dmac_interrupt_error_channel</b> (uint32_t channel)</td></tr>
-<tr class="separator:gafd2c7de8dc04e045c98ab75abcf3bc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -316,7 +306,7 @@ static <a class="el" href="group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#gaf5a2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_50526d25fa03077c0daec69aea47e99d.html">arc</a></li><li class="navelem"><a class="el" href="arc__udma_8c.html">arc_udma.c</a></li>
-    <li class="footer">Generated on Fri Apr 27 2018 04:59:07 for embARC by
+    <li class="footer">Generated on Wed May 9 2018 09:27:05 for embARC by
     <a href="http://www.synopsys.com">
     <img class="footer" src="pic/snps_logo.png" alt="snps_logo"/></a>. All Rights Reserved. </li>
   </ul>

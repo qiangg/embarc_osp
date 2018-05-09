@@ -13,6 +13,8 @@ var group___a_r_c___h_a_l___b_u_i_l_t_i_n =
     [ "_arc_sr_reg", "group___a_r_c___h_a_l___b_u_i_l_t_i_n.html#ga8ee255d46720ce1489efdc9d18f2756e", null ],
     [ "_arc_swi", "group___a_r_c___h_a_l___b_u_i_l_t_i_n.html#gac5e596c9be37023b785d097061ec14d7", null ],
     [ "_arc_sync", "group___a_r_c___h_a_l___b_u_i_l_t_i_n.html#gae036cd29e75a50a6e98090522cbb3968", null ],
+    [ "_arc_find_lsb", "group___a_r_c___h_a_l___b_u_i_l_t_i_n.html#gade2fbcddaaa9e3de0c0769fd7a3b7cee", null ],
+    [ "_arc_find_msb", "group___a_r_c___h_a_l___b_u_i_l_t_i_n.html#gaeda112966176865ad5182340a80f43ef", null ],
     [ "_arc_goto_main", "group___a_r_c___h_a_l___b_u_i_l_t_i_n.html#gab41428f421e9539fb507467584998b43", null ],
     [ "_arc_read_cached_32", "group___a_r_c___h_a_l___b_u_i_l_t_i_n.html#ga5c784703529f421a8c6a0fd3a2749e0b", null ],
     [ "_arc_read_uncached_32", "group___a_r_c___h_a_l___b_u_i_l_t_i_n.html#gaa94be405be89c127168cb98cc47ffdf2", null ],

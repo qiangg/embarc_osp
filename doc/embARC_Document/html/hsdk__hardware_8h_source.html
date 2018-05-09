@@ -329,37 +329,36 @@ $(document).ready(function(){initNavTree('hsdk__hardware_8h_source.html','');});
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#define ARC_CONNECT_NUM_INT_ALL                 (HSDK_MAX_NUM_ISR-HSDC_CREG_SW0_ISR)</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="group___b_o_a_r_d___h_s_d_k___c_o_m_m_o_n___i_n_i_t.html#ga7b8512078a0c7ba91d2f2058ca8e66b6">  243</a></span>&#160;<span class="preprocessor">#define INTNO_TIMER0                            16    </span></div>
-<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="group___b_o_a_r_d___h_s_d_k___c_o_m_m_o_n___i_n_i_t.html#gab79d104685fb9b67358a5534ea059dd9">  244</a></span>&#160;<span class="preprocessor">#define INTNO_TIMER1                            17    </span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">//DMA flow control mapping</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_SPI0_TX                       (0)</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_SPI0_RX                       (1)</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_I2C0_TX                       (2)</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_I2C0_RX                       (3)</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_UART0_TX                      (4)</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_UART0_RX                      (5)</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_I2S0_TX                       (6)</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_I2S0_RX                       (7)</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">//DMA flow control mapping</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">#define HSDC_DMAC_SPI0_TX                       (0)</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_SPI0_RX                       (1)</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_I2C0_TX                       (2)</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_I2C0_RX                       (3)</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_UART0_TX                      (4)</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_UART0_RX                      (5)</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_I2S0_TX                       (6)</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_DMAC_I2S0_RX                       (7)</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#define HSDC_SRAM_SIZE                          (0x00040000U)</span></div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#define HSDC_SRAM_SIZE                          (0x00040000U)</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#define HSDC_SPI_CS_0                           DEV_SPI_CS_LINE_0</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_SPI_CS_1                           DEV_SPI_CS_LINE_1</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_SPI_CS_2                           DEV_SPI_CS_LINE_2</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_SPI_CS_3                           DEV_SPI_CS_LINE_3</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group___b_o_a_r_d___h_s_d_k___c_o_m_m_o_n___i_n_i_t.html#ga36a06770dfe3e551388ab82d68aa103f">hsdk_hardware_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#define HSDC_SPI_CS_0                           DEV_SPI_CS_LINE_0</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_SPI_CS_1                           DEV_SPI_CS_LINE_1</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_SPI_CS_2                           DEV_SPI_CS_LINE_2</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HSDC_SPI_CS_3                           DEV_SPI_CS_LINE_3</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group___b_o_a_r_d___h_s_d_k___c_o_m_m_o_n___i_n_i_t.html#ga36a06770dfe3e551388ab82d68aa103f">hsdk_hardware_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* _HSDK_HARDWARE_H_ */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* _HSDK_HARDWARE_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="arc__feature__config_8h_html"><div class="ttname"><a href="arc__feature__config_8h.html">arc_feature_config.h</a></div><div class="ttdoc">header file for arc feature configuration </div></div>
 <div class="ttc" id="group___b_o_a_r_d___h_s_d_k___c_o_m_m_o_n___i_n_i_t_html_ga36a06770dfe3e551388ab82d68aa103f"><div class="ttname"><a href="group___b_o_a_r_d___h_s_d_k___c_o_m_m_o_n___i_n_i_t.html#ga36a06770dfe3e551388ab82d68aa103f">hsdk_hardware_init</a></div><div class="ttdeci">void hsdk_hardware_init(void)</div><div class="ttdoc">hsdk hardware initialization </div><div class="ttdef"><b>Definition:</b> <a href="hsdk__hardware_8c_source.html#l00050">hsdk_hardware.c:50</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -369,7 +368,7 @@ $(document).ready(function(){initNavTree('hsdk__hardware_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7149141a7e3af1ee95dfb0598e371427.html">board</a></li><li class="navelem"><a class="el" href="dir_53ac457870d48cc84ae1a82aa24d0ca1.html">hsdk</a></li><li class="navelem"><a class="el" href="dir_70635d7ac8b93bce19fd737cf0fd7058.html">configs</a></li><li class="navelem"><a class="el" href="dir_d433aeb4b6fb7c4c242e839fa2d38d64.html">10</a></li><li class="navelem"><a class="el" href="hsdk__hardware_8h.html">hsdk_hardware.h</a></li>
-    <li class="footer">Generated on Fri Apr 27 2018 04:59:07 for embARC by
+    <li class="footer">Generated on Wed May 9 2018 09:27:04 for embARC by
     <a href="http://www.synopsys.com">
     <img class="footer" src="pic/snps_logo.png" alt="snps_logo"/></a>. All Rights Reserved. </li>
   </ul>

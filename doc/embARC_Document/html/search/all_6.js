@@ -238,7 +238,6 @@ var searchData=
   ['device_5fuse_5fdesignware_5fuart',['DEVICE_USE_DESIGNWARE_UART',['../dw__uart_8h.html#a09bdb44e74b75daad91da4985ab12568',1,'dw_uart.h']]],
   ['dfs',['dfs',['../structdev__spi__info.html#a409c9d6670ab1aededfcbdd2ad05f655',1,'dev_spi_info']]],
   ['direction',['direction',['../structdev__gpio__info.html#ad127dface06d3090d4041e97d45e9104',1,'dev_gpio_info']]],
-  ['dma_5fadd_5firq_5fproc',['DMA_ADD_IRQ_PROC',['../group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga5318932542e1186f45774c43f7f18819',1,'arc_udma.c']]],
   ['dma_5fall_5fchannel_5fnum',['DMA_ALL_CHANNEL_NUM',['../group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ga33e5192848954a63f872b0c7df80367a',1,'arc_udma.h']]],
   ['dma_5fam_5fsrcinc_5fdstinc',['DMA_AM_SRCINC_DSTINC',['../group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ggab14325a2538ebe990ccdde4c92e586d3a22d76671c5f492fa9350378691cf0ca3',1,'arc_udma.h']]],
   ['dma_5fam_5fsrcinc_5fdstnot',['DMA_AM_SRCINC_DSTNOT',['../group___a_r_c___h_a_l___m_i_s_c___u_d_m_a.html#ggab14325a2538ebe990ccdde4c92e586d3a607efac1f9e60075c29e336e0a3c7446',1,'arc_udma.h']]],

@@ -137,6 +137,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gaea9c8745e17c7340aac1b83ca78f0bd4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaea9c8745e17c7340aac1b83ca78f0bd4"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_mikro_config</b> (uint32_t config)</td></tr>
 <tr class="separator:gaea9c8745e17c7340aac1b83ca78f0bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0477e74135e8f4e76128b000f025f00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac0477e74135e8f4e76128b000f025f00"></a>
+static int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_arduino_config_pwm</b> (uint32_t num, uint32_t config)</td></tr>
+<tr class="separator:gac0477e74135e8f4e76128b000f025f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac98a8d76ffd2c6c70e8a55fa670090ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac98a8d76ffd2c6c70e8a55fa670090ed"></a>
+static int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_arduino_config_gpio</b> (uint32_t num, uint32_t config)</td></tr>
+<tr class="separator:gac98a8d76ffd2c6c70e8a55fa670090ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8981ef574064d7afe0b09b193834773c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8981ef574064d7afe0b09b193834773c"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_arduino_config</b> (uint32_t pin_num, uint32_t type, uint32_t config)</td></tr>
+<tr class="separator:ga8981ef574064d7afe0b09b193834773c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaed6d84e2f298582850bade46596b82fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaed6d84e2f298582850bade46596b82fc"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_arduino_config_spi</b> (uint32_t config)</td></tr>
 <tr class="separator:gaed6d84e2f298582850bade46596b82fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,15 +155,6 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_arduino_config_
 <tr class="memitem:ga89a57c39917f80eb6379d0d353780729"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga89a57c39917f80eb6379d0d353780729"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_arduino_config_i2c</b> (uint32_t config)</td></tr>
 <tr class="separator:ga89a57c39917f80eb6379d0d353780729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac21ff8dd77e494cdb202fbee068aac3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac21ff8dd77e494cdb202fbee068aac3f"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_arduino_config_ad</b> (uint32_t num, uint32_t config)</td></tr>
-<tr class="separator:gac21ff8dd77e494cdb202fbee068aac3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga091f6746e8ae1a1f40f2b6a1db1f0d35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga091f6746e8ae1a1f40f2b6a1db1f0d35"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_arduino_config_pwm</b> (uint32_t num, uint32_t config)</td></tr>
-<tr class="separator:ga091f6746e8ae1a1f40f2b6a1db1f0d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4404c8248fba121378a136e92519eeac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4404c8248fba121378a136e92519eeac"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_arduino_config_gpio</b> (uint32_t num, uint32_t config)</td></tr>
-<tr class="separator:ga4404c8248fba121378a136e92519eeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8fc8550242f1a2dee25a8b1612f6bce1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8fc8550242f1a2dee25a8b1612f6bce1"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>io_pmod_config</b> (uint32_t pmod, uint32_t type, uint32_t config)</td></tr>
 <tr class="separator:ga8fc8550242f1a2dee25a8b1612f6bce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,7 +178,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7149141a7e3af1ee95dfb0598e371427.html">board</a></li><li class="navelem"><a class="el" href="dir_53ac457870d48cc84ae1a82aa24d0ca1.html">hsdk</a></li><li class="navelem"><a class="el" href="dir_93cdfed1b28625b9aaac9a36bce7234d.html">drivers</a></li><li class="navelem"><a class="el" href="dir_7eb868d5dbf7aefa49665aa0ebb398c3.html">mux</a></li><li class="navelem"><a class="el" href="hsdk_2drivers_2mux_2mux_8c.html">mux.c</a></li>
-    <li class="footer">Generated on Fri Apr 27 2018 04:59:10 for embARC by
+    <li class="footer">Generated on Wed May 9 2018 09:27:07 for embARC by
     <a href="http://www.synopsys.com">
     <img class="footer" src="pic/snps_logo.png" alt="snps_logo"/></a>. All Rights Reserved. </li>
   </ul>

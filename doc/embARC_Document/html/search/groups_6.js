@@ -10,6 +10,7 @@ var searchData=
   ['hsdk_20dw_20iic_20object',['HSDK DW IIC Object',['../group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j.html',1,'']]],
   ['hsdk_20dw_20spi_20object',['HSDK DW SPI Object',['../group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___s_p_i___o_b_j.html',1,'']]],
   ['hsdk_20dw_20uart_20object',['HSDK DW UART Object',['../group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___u_a_r_t___o_b_j.html',1,'']]],
+  ['hsdk_20io_20expander',['HSDK IO Expander',['../group___b_o_a_r_d___h_s_d_k___d_r_v___i_o.html',1,'']]],
   ['hsdk_20fatfs_20middleware_20sdcard_20driver',['HSDK Fatfs Middleware SDCard Driver',['../group___b_o_a_r_d___h_s_d_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d.html',1,'']]],
   ['hsdk_20sdcard_20sdio_20interface_20driver',['HSDK SDCard SDIO Interface Driver',['../group___b_o_a_r_d___h_s_d_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_d_i_o.html',1,'']]],
   ['hsdk_20ntshell_20middleware_20io_20driver',['HSDK NTShell Middleware IO Driver',['../group___b_o_a_r_d___h_s_d_k___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o.html',1,'']]],
