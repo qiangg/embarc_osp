@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="v1_2secureshield__entry_8s" kind="file" language="C++">
+    <compoundname>v1/secureshield_entry.s</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">---------------------------------------------<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#define<sp/>__ASSEMBLY__</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;arc.h&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;arc_asm_common.h&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;secureshield_secure_call_exports.h&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#define<sp/>MPU_DISABLE<sp/><sp/><sp/><sp/><sp/>0x0</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>MPU_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/>0x40000000</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.file<sp/>&quot;secureshield_entry.s&quot;</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>entry<sp/>for<sp/>secureshield<sp/>cpu<sp/>exception<sp/>handling<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.text</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.global<sp/>secureshield_exc_entry_cpu</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.align<sp/>4</highlight></codeline>
+<codeline><highlight class="normal">secureshield_exc_entry_cpu:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXCEPTION_PROLOGUE</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>disable<sp/>MPU,<sp/>runtime<sp/>can<sp/>do<sp/>everything<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>MPU_DISABLE,<sp/>[AUX_MPU_EN]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#if<sp/>!defined(__MW__)<sp/>||<sp/>!defined(_NO_SMALL_DATA_)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>gp,<sp/>_f_sdata</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>find<sp/>the<sp/>exception<sp/>cause<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_ECR]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lsr<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>16</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bmsk<sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>7</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r1,<sp/>secureshield_exc_handler_table</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld.as<sp/><sp/><sp/>r2,<sp/>[r1,<sp/>r0]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>jump<sp/>to<sp/>exception<sp/>handler<sp/>where<sp/>interrupts<sp/>are<sp/>not<sp/>allowed!<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>sp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>[r2]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>_ret_exc</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>there<sp/>is<sp/>a<sp/>context<sp/>switch<sp/>request<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SAVE_CALLEE_REGS</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>sp,<sp/>r0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RESTORE_CALLEE_REGS</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_ret_exc:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXCEPTION_EPILOGUE</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>leave<sp/>runtime,<sp/>re-enable<sp/>the<sp/>mpu<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>MPU_ENABLE,<sp/>[AUX_MPU_EN]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rtie</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*************************************************************************************/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.global<sp/>secureshield_exc_entry_int</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.align<sp/>4</highlight></codeline>
+<codeline><highlight class="normal">secureshield_exc_entry_int:</highlight></codeline>
+<codeline><highlight class="normal">#if<sp/>ARC_FEATURE_FIRQ<sp/>==<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>the<sp/>ret<sp/>is<sp/>saved<sp/>or<sp/>in<sp/>ERET,<sp/>so<sp/>ilink<sp/>can<sp/>be<sp/>used<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>ilink,<sp/>[AUX_IRQ_ACT]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btst<sp/><sp/><sp/><sp/>ilink,<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bz<sp/><sp/><sp/><sp/><sp/><sp/>.L_normal_irq</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>ilink,<sp/>[AUX_STATUS32_P0]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>ilink,<sp/>[AUX_ERSTATUS]</highlight></codeline>
+<codeline><highlight class="normal">#if<sp/>ARC_FEATURE_RGF_NUM_BANKS<sp/>&gt;<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btst<sp/><sp/><sp/><sp/>ilink,<sp/>AUX_STATUS_BIT_U</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bz<sp/><sp/><sp/><sp/><sp/><sp/>_firq_from_secure</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>sp,<sp/>[AUX_USER_SP]</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>sp<sp/>is<sp/>also<sp/>banked<sp/>when<sp/>there<sp/>are<sp/>more<sp/>than<sp/>16<sp/>banked<sp/>regs.*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>kflag<sp/><sp/><sp/>0x1000<sp/><sp/>/*<sp/>switch<sp/>bank0,<sp/>loop<sp/>enable,<sp/>get<sp/>the<sp/>original<sp/>sp<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aex<sp/><sp/><sp/><sp/><sp/>sp,<sp/>[AUX_USER_SP]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b<sp/><sp/><sp/><sp/><sp/><sp/><sp/>_firq_hanlde</highlight></codeline>
+<codeline><highlight class="normal">_firq_from_secure:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>kflag<sp/><sp/><sp/>0x1000</highlight></codeline>
+<codeline><highlight class="normal">_firq_hanlde:</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>ilink,<sp/>[AUX_ERRET]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXCEPTION_PROLOGUE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b<sp/>.L_common_for_irq_and_firq</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline><highlight class="normal">.L_normal_irq:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INTERRUPT_PROLOGUE</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">.L_common_for_irq_and_firq:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clri<sp/><sp/><sp/><sp/>/*<sp/>disable<sp/>interrupt<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>disable<sp/>MPU,<sp/>runtime<sp/>can<sp/>do<sp/>everything<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>MPU_DISABLE,<sp/>[AUX_MPU_EN]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>sp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>secureshield_interrupt_handle</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>if<sp/>r0<sp/>is<sp/>not<sp/>0,<sp/>it<sp/>means:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>1:<sp/>interrupt<sp/>belongs<sp/>to<sp/>different<sp/>secure<sp/>container</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>2:<sp/>interrupt<sp/>belongs<sp/>to<sp/>normal<sp/>container</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>beq<sp/><sp/><sp/><sp/><sp/>_ret_int_directly</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>take<sp/>interrupt<sp/>as<sp/>exception,<sp/>return<sp/>as<sp/>an<sp/>exception<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>kflag<sp/><sp/><sp/>AUX_STATUS_MASK_AE</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SAVE_CALLEE_REGS</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld<sp/><sp/><sp/><sp/><sp/><sp/>r1,<sp/>[dst_container_user_sp]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>r1,<sp/>[AUX_USER_SP]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CLEAR_CALLEE_REGS</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CLEAR_SCRATCH_REGS</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>sp,<sp/>r0</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>AUX_ERET,<sp/>AUX_ERSTATUS,<sp/>AUX_ERBTA<sp/>are<sp/>set<sp/>in</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>secureshield_interrupt_handle</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>set<sp/>blink<sp/>to<sp/>interrupt<sp/>return<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>blink,<sp/>secureshield_secure_call_int_out</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>MPU_ENABLE,<sp/>[AUX_MPU_EN]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rtie<sp/><sp/><sp/><sp/>/*<sp/>rtie<sp/>will<sp/>do<sp/>an<sp/>exception<sp/>return<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_ret_int_directly:</highlight></codeline>
+<codeline><highlight class="normal">#if<sp/>ARC_FEATURE_FIRQ<sp/>==<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_IRQ_ACT]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btst<sp/><sp/><sp/><sp/>r0,<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bz<sp/><sp/><sp/><sp/><sp/><sp/>_ret_int_rirq</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXCEPTION_EPILOGUE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/>ilink,<sp/>[AUX_ERRET]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>MPU_ENABLE,<sp/>[AUX_MPU_EN]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rtie</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_ret_int_rirq:</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INTERRUPT_EPILOGUE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>MPU_ENABLE,<sp/>[AUX_MPU_EN]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rtie</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*************************************************************************************/</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>the<sp/>following<sp/>are<sp/>return<sp/>entries<sp/>of<sp/>secure<sp/>call,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>because<sp/>of<sp/>this,<sp/>user<sp/>mode<sp/>is<sp/>given<sp/>execute<sp/>privilege<sp/>of<sp/>secureshield<sp/>runtime,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>but<sp/>no<sp/>read<sp/>and<sp/>write<sp/>privilege</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.text</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.align<sp/>4</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.global<sp/>secureshield_secure_call_int_out</highlight></codeline>
+<codeline><highlight class="normal">secureshield_secure_call_int_out:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trap_s<sp/>SECURESHIELD_SECURE_CALL_INT_OUT</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.align<sp/>4</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.global<sp/>secureshield_secure_call_container_out</highlight></codeline>
+<codeline><highlight class="normal">secureshield_secure_call_container_out:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trap_s<sp/>SECURESHIELD_SECURE_CALL_CONTAINER_OUT</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/v1/secureshield_entry.s"/>
+  </compounddef>
+</doxygen>

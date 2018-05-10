@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="arc__startup_8s" kind="file" language="C++">
+    <compoundname>arc_startup.s</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">---------------------------------------------<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\file</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\ingroup<sp/>ARC_HAL_STARTUP</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\brief<sp/>assembly<sp/>part<sp/>of<sp/>startup<sp/>process</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\addtogroup<sp/>ARC_HAL_STARTUP</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">/**<sp/>@cond<sp/>STARTUP_ASM<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#define<sp/>__ASSEMBLY__</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;arc.h&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.file<sp/>&quot;arc_startup.s&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">.weak<sp/><sp/><sp/>_f_sdata<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>start<sp/>of<sp/>small<sp/>data,<sp/>defined<sp/>in<sp/>link<sp/>script<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">.weak<sp/><sp/><sp/>init_hardware_hook<sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>app<sp/>hardware<sp/>init<sp/>hook<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">.weak<sp/><sp/><sp/>init_software_hook<sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>app<sp/>software<sp/>init<sp/>hook<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">.extern<sp/>board_main</highlight></codeline>
+<codeline><highlight class="normal">.extern<sp/>exc_entry_table</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>initial<sp/>vector<sp/>table<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.section<sp/>.init_vector,<sp/>&quot;a&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.long<sp/>_arc_reset</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.section<sp/>.init_bootstrap,<sp/>&quot;ax&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.global<sp/>_arc_reset</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.global<sp/>_start</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.align<sp/>4</highlight></codeline>
+<codeline><highlight class="normal">_start:</highlight></codeline>
+<codeline><highlight class="normal">_arc_reset:</highlight></codeline>
+<codeline><highlight class="normal">_arc_reset_stage1:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>kflag<sp/><sp/><sp/>STATUS32_RESET_VALUE</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>STAGE<sp/>1<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>necessary<sp/>hardware<sp/>should<sp/>be<sp/>done<sp/>first<sp/>to<sp/>speed<sp/>up<sp/>initialization</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>system<sp/>clk</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>mem<sp/>controller<sp/>must<sp/>be<sp/>initialized<sp/>before<sp/>any<sp/>access<sp/>to<sp/>external</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mem.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3.<sp/>others</highlight></codeline>
+<codeline><highlight class="normal">*/</highlight></codeline>
+<codeline><highlight class="normal">_arc_cache_init_start:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_BCR_D_CACHE]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>invalidate<sp/>dcache<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jle<sp/><sp/><sp/><sp/><sp/>_arc_icache_init</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_DC_IVDC]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_DC_CTRL]</highlight></codeline>
+<codeline><highlight class="normal">_arc_icache_init:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_BCR_I_CACHE]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jle<sp/><sp/><sp/><sp/><sp/>_arc_cache_init_end</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>invalidate<sp/>icache<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_IC_IVIC]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nop_s</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nop_s</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nop_s</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_IC_CTRL]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_arc_cache_init_end:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>init_hardware_hook</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jlne<sp/><sp/><sp/><sp/>[r0]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>STAGE<sp/>2:<sp/>init<sp/>necessary<sp/>registers<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_arc_reset_stage2:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>0</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>interrupt<sp/>related<sp/>init<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_IRQ_ACT]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_IRQ_CTRL]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_IRQ_HINT]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>use<sp/>the<sp/>new<sp/>vector<sp/>table<sp/>to<sp/>replace<sp/>the<sp/>old<sp/>one<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">#if<sp/>defined(ARC_FEATURE_SEC_PRESENT)<sp/>&amp;&amp;<sp/>(SECURESHIELD_VERSION<sp/>&lt;<sp/>2)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>exc_entry_table,<sp/>[AUX_INT_VECT_BASE_S]</highlight></codeline>
+<codeline><highlight class="normal">#else</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>exc_entry_table,<sp/>[AUX_INT_VECT_BASE]</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>init<sp/>stack<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">#if<sp/>ARC_FEATURE_RGF_BANKED_REGS<sp/>&gt;=<sp/>16<sp/>&amp;&amp;<sp/>ARC_FEATURE_RGF_BANKED_REGS<sp/>&gt;<sp/>1<sp/>&amp;&amp;<sp/>ARC_FEATURE_FIRQ<sp/>==<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">#if<sp/>_STACKSIZE<sp/>&lt;<sp/>512</highlight></codeline>
+<codeline><highlight class="normal">#error<sp/>&quot;not<sp/>enough<sp/>stack<sp/>size<sp/>for<sp/>irq<sp/>and<sp/>firq&quot;</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>switch<sp/>to<sp/>register<sp/>bank1<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_STATUS32]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bic<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>0x70000</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>or<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>0x10000</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>kflag<sp/><sp/><sp/>r0</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>set<sp/>sp,<sp/>gp,<sp/>fp<sp/>in<sp/>bank1<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>sp,<sp/>_e_stack</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>gp,<sp/>_f_sdata</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>fp,<sp/>0</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>come<sp/>back<sp/>to<sp/>bank0<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_STATUS32]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bic<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>0x70000</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>kflag<sp/><sp/><sp/>r0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>sp,<sp/>_e_stack-256</highlight></codeline>
+<codeline><highlight class="normal">#else</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>sp,<sp/>_e_stack<sp/><sp/><sp/><sp/>/*<sp/>init<sp/>stack<sp/>pointer<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>gp,<sp/>_f_sdata<sp/><sp/><sp/><sp/>/*<sp/>init<sp/>small-data<sp/>base<sp/>register<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>fp,<sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>init<sp/>fp<sp/>register<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_arc_reset_stage3:</highlight></codeline>
+<codeline><highlight class="normal">_s3_copy_text:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>_f_text</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r1,<sp/>_load_addr_text</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>if<sp/>load<sp/>addr<sp/>==<sp/>run<sp/>addr,<sp/>no<sp/>need<sp/>to<sp/>copy<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jeq<sp/><sp/><sp/><sp/><sp/>_s3_copy_rodata</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r3,<sp/>_e_text</highlight></codeline>
+<codeline><highlight class="normal">_s3_copy_text_loop:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld.ab<sp/><sp/><sp/>r2,<sp/>[r1,<sp/>4]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>st.ab<sp/><sp/><sp/>r2,<sp/>[r0,<sp/>4]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r3</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jlt<sp/><sp/><sp/><sp/><sp/>_s3_copy_text_loop</highlight></codeline>
+<codeline><highlight class="normal">_s3_copy_rodata:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>_f_rodata</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r1,<sp/>_load_addr_rodata</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>if<sp/>load<sp/>addr<sp/>==<sp/>run<sp/>addr,<sp/>no<sp/>need<sp/>to<sp/>copy<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jeq<sp/><sp/><sp/><sp/><sp/>_s3_copy_data</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r3,<sp/>_e_rodata</highlight></codeline>
+<codeline><highlight class="normal">_s3_copy_rodata_loop:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld.ab<sp/><sp/><sp/>r2,<sp/>[r1,<sp/>4]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>st.ab<sp/><sp/><sp/>r2,<sp/>[r0,<sp/>4]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r3</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jlt<sp/><sp/><sp/><sp/><sp/>_s3_copy_rodata_loop</highlight></codeline>
+<codeline><highlight class="normal">_s3_copy_data:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>_f_data</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r1,<sp/>_load_addr_data</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jeq<sp/><sp/><sp/><sp/><sp/>_s3_clear_bss</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>if<sp/>load<sp/>addr<sp/>==<sp/>run<sp/>addr,<sp/>no<sp/>need<sp/>to<sp/>copy<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r3,<sp/>_e_data</highlight></codeline>
+<codeline><highlight class="normal">_s3_copy_data_loop:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld.ab<sp/><sp/><sp/>r2,<sp/>[r1,<sp/>4]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>st.ab<sp/><sp/><sp/>r2,<sp/>[r0,<sp/>4]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r3</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jlt<sp/><sp/><sp/><sp/><sp/>_s3_copy_data_loop</highlight></codeline>
+<codeline><highlight class="normal">_s3_clear_bss:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>_f_bss</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r1,<sp/>_e_bss</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jge<sp/><sp/><sp/><sp/><sp/>_arc_reset_call_main</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r2,<sp/>0</highlight></codeline>
+<codeline><highlight class="normal">_s3_clear_bss_loop:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>st.ab<sp/><sp/><sp/>r2,<sp/>[r0,<sp/>4]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jlt<sp/><sp/><sp/><sp/><sp/>_s3_clear_bss_loop</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>STAGE<sp/>3:<sp/>go<sp/>to<sp/>main<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">_arc_reset_call_main:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>init_software_hook</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r0,<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jlne<sp/><sp/><sp/><sp/>[r0]</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>board<sp/>level<sp/>library<sp/>init<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">#ifdef<sp/><sp/>LIB_SECURESHIELD</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>init<sp/>cache<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>arc_cache_init</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>secureshield_start</highlight></codeline>
+<codeline><highlight class="normal">#if<sp/>SECURESHIELD_VERSION<sp/>==<sp/>2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>secureshield_except_bit_clear</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline><highlight class="normal">#else</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>early<sp/>init<sp/>of<sp/>interrupt<sp/>and<sp/>exception<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>exc_int_init</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>init<sp/>cache<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>arc_cache_init</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#if<sp/>defined(__MW__)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>_init</highlight></codeline>
+<codeline><highlight class="normal">#elif<sp/>defined(__GNU__)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>__do_global_ctors_aux</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>__do_init_array_aux</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>board_main<sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>board-level<sp/>main<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">#if<sp/>defined(__MW__)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>_fini</highlight></codeline>
+<codeline><highlight class="normal">#elif<sp/>defined(__GNU__)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>__do_global_dtors_aux</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.global<sp/>_exit_loop</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.global<sp/>_exit_halt</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.align<sp/>4</highlight></codeline>
+<codeline><highlight class="normal">_exit_halt:</highlight></codeline>
+<codeline><highlight class="normal">_exit_loop:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flag<sp/><sp/><sp/><sp/>AUX_STATUS_MASK_HALT</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nop</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nop</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nop</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b<sp/><sp/><sp/><sp/><sp/><sp/><sp/>_exit_loop</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#if<sp/>defined(__MW__)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.global<sp/>_init,<sp/>_fini</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.section<sp/>&quot;.init&quot;,text</highlight></codeline>
+<codeline><highlight class="normal">_init:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.cfa_bf<sp/>_init</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>push<sp/><sp/><sp/><sp/>%blink</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.cfa_push<sp/><sp/><sp/><sp/><sp/><sp/><sp/>{%blink}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.section<sp/>&quot;.init$999999&quot;,<sp/>text,<sp/>1,<sp/>2,<sp/>check_text_align=0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pop<sp/><sp/><sp/><sp/><sp/>%blink</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.cfa_pop<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{%blink}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/><sp/><sp/><sp/><sp/><sp/><sp/>[%blink]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.cfa_ef</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.section<sp/>&quot;.fini&quot;,<sp/>text</highlight></codeline>
+<codeline><highlight class="normal">_fini:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.cfa_bf<sp/>_fini</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>push<sp/><sp/><sp/><sp/>%blink</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.cfa_push<sp/><sp/><sp/><sp/><sp/><sp/><sp/>{%blink}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.section<sp/>&quot;.fini$999999&quot;,<sp/>text,<sp/>1,<sp/>2,<sp/>check_text_align=0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pop<sp/><sp/><sp/><sp/><sp/>%blink</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.cfa_pop<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{%blink}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/><sp/><sp/><sp/><sp/><sp/><sp/>[%blink]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.cfa_ef</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline><highlight class="normal">/**<sp/>@endcond<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**<sp/>}@*/</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/arc/startup/arc_startup.s"/>
+  </compounddef>
+</doxygen>

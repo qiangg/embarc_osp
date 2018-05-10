@@ -1,0 +1,589 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___d_e_v_i_c_e___d_w___i_i_c___f_u_n_c_d_l_r" kind="group">
+    <compoundname>DEVICE_DW_IIC_FUNCDLR</compoundname>
+    <title>DesignWare IIC Function Declaration</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_e_v_i_c_e___d_w___i_i_c___f_u_n_c_d_l_r_1gad75471c3a8e98385a58d6b887316f8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_open</definition>
+        <argsstring>(DEV_IIC *iic_obj, uint32_t mode, uint32_t param)</argsstring>
+        <name>dw_iic_open</name>
+        <param>
+          <type><ref refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gaf976c496ff5f91bfaa0eeb8383fbdd5a" kindref="member">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>open a designware iic device </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iic device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iic working mode (master or slave) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When mode is <ref refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_m_o_d_e_1ga9b1ad5abdf677288f655dd4bc9dc188d" kindref="member">DEV_MASTER_MODE</ref>, param stands for <ref refid="structdev__iic__info_1a1a2e7b90305a97b08510632ced7a0585" kindref="member">speed mode</ref>, when mode is <ref refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_m_o_d_e_1gaf070489d9f19e9000cb9700bb859a079" kindref="member">DEV_SLAVE_MODE</ref>, param stands for <ref refid="structdev__iic__info_1a155d96f61944dba9f8b8834772725302" kindref="member">slave device 7bit address</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open successfully without any issues </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If device was opened before with different parameters, then just increase the <ref refid="structdev__iic__info_1af6488d79474addfec5a4b34993c69251" kindref="member">opn_cnt</ref> and return <ref refid="group___e_m_b_a_r_c___e_r_r_o_r_1gaa5935765e74b9d1a7e72c9c8f9018b42" kindref="member">E_OPNED</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is opened for different mode before, if you want to open it with different mode, you need to fully close it first. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Open settings are not supported </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/designware/iic/dw_iic.h" line="221" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/designware/iic/dw_iic.c" bodystart="1170" bodyend="1264"/>
+        <references refid="structdev__iic__info_1afa0cae75f31df2cdc3230ead0c25a115" compoundref="dev__iic_8h" startline="391">dev_iic_info::addr_mode</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_m_o_d_e_1ga9b1ad5abdf677288f655dd4bc9dc188d" compoundref="dev__common_8h" startline="101">DEV_MASTER_MODE</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_m_o_d_e_1gaf070489d9f19e9000cb9700bb859a079" compoundref="dev__common_8h" startline="102">DEV_SLAVE_MODE</references>
+        <references refid="dw__iic_8c_1a51b5fcb72255b754b9a3fd668dd7ae6b" compoundref="dw__iic_8c" startline="53">DW_IIC_CHECK_EXP</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1ga2fa16fd659cc33f352eb5d1ca99889c0" compoundref="dw__iic_8c" startline="141" endline="148">dw_iic_get_rxfifo_len</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1ga953532207e3a6e63887bfa2d28f2c409" compoundref="dw__iic_8c" startline="131" endline="138">dw_iic_get_txfifo_len</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___i_n_f_o_1gacfcefe0d62276098440b81c0216b0466" compoundref="dw__iic_8h" startline="56">DW_IIC_MASTER_SUPPORTED</references>
+        <references refid="structdw__iic__ctrl_1ac932344f1a0028b710e44591ec589443" compoundref="dw__iic_8h" startline="163">dw_iic_ctrl::dw_iic_regs</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___i_n_f_o_1ga857d13cb0b37e0aa5efdfd886f5d859f" compoundref="dw__iic_8h" startline="57">DW_IIC_SLAVE_SUPPORTED</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1gac05cde47c29052935fd39d6d8a6c5ff4" compoundref="emb_a_r_c__error_8h" startline="57">E_NOSPT</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1ga1e7cc741c56207a8872ea58373276925" compoundref="emb_a_r_c__error_8h" startline="55">E_OK</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1gaa5935765e74b9d1a7e72c9c8f9018b42" compoundref="emb_a_r_c__error_8h" startline="78">E_OPNED</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1ga28d0303b78b18735ae91a99ecc11bc8e" compoundref="emb_a_r_c__error_8h" startline="60">E_PAR</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1gae5989e632e687010b35b613304089823" compoundref="emb_a_r_c__error_8h" startline="56">E_SYS</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1ggabb0fc11890f54f9950aea71a61531b5babb8cb7b016c72f0700ea7c917bb91fe3" compoundref="dev__iic_8h" startline="97">IIC_10BIT_ADDRESS</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1ga10509d398d5845ac8a23d81bd3df6500" compoundref="dev__iic_8h" startline="115">IIC_10BIT_ADDRESS_MASK</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1ggabb0fc11890f54f9950aea71a61531b5ba0d2d3865e7df7b55f8b71a8b29e688ac" compoundref="dev__iic_8h" startline="96">IIC_7BIT_ADDRESS</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1ga2ac0c6c6c231574f9548fd997cd51bac" compoundref="dev__iic_8h" startline="113">IIC_7BIT_ADDRESS_MASK</references>
+        <references refid="structdev__iic__info_1a13f93fe4cc7af7293b1671e8f1ff4d42" compoundref="dev__iic_8h" startline="384">dev_iic_info::iic_ctrl</references>
+        <references refid="structdev__iic_1abaccd43eb5eff8e589fd54529abf3deb" compoundref="dev__iic_8h" startline="416">dev_iic::iic_info</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1gga82ea200aecdbcda84ee6e118f7098fa8ab314670a486e8922eea476940ccab620" compoundref="dev__iic_8h" startline="63">IIC_SPEED_STANDARD</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1gga82ea200aecdbcda84ee6e118f7098fa8a12c26a3ffab1692a311a1416cb2de82c" compoundref="dev__iic_8h" startline="67">IIC_SPEED_ULTRA</references>
+        <references refid="structdev__iic__info_1a40a1d2bf518dbfcfbaec5ef26a8e1aa6" compoundref="dev__iic_8h" startline="387">dev_iic_info::mode</references>
+        <references refid="structdev__iic__info_1af6488d79474addfec5a4b34993c69251" compoundref="dev__iic_8h" startline="385">dev_iic_info::opn_cnt</references>
+        <references refid="structdw__iic__ctrl_1a6dcc169444abe7a8b61207931b0fdc60" compoundref="dw__iic_8h" startline="169">dw_iic_ctrl::rx_fifo_len</references>
+        <references refid="structdev__iic__info_1a155d96f61944dba9f8b8834772725302" compoundref="dev__iic_8h" startline="392">dev_iic_info::slv_addr</references>
+        <references refid="structdev__iic__info_1a1a2e7b90305a97b08510632ced7a0585" compoundref="dev__iic_8h" startline="388">dev_iic_info::speed_mode</references>
+        <references refid="structdw__iic__ctrl_1a108a29c499446a29626d61ffa11bcafa" compoundref="dw__iic_8h" startline="167">dw_iic_ctrl::support_modes</references>
+        <references refid="structdev__iic__info_1a053f6977e28df5bdc0ed484681aa3a0a" compoundref="dev__iic_8h" startline="393">dev_iic_info::tar_addr</references>
+        <references refid="structdw__iic__ctrl_1a59f80eae8a76e157428aaa3e9aa461f6" compoundref="dw__iic_8h" startline="168">dw_iic_ctrl::tx_fifo_len</references>
+        <references refid="dw__iic_8c_1a862eeda09f2ba444263a7648e186dc16" compoundref="dw__iic_8c" startline="57">VALID_CHK_IIC_INFO_OBJECT</references>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga5dce75365e6d96d49e49449540dcf77f" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="82" endline="85">dw_iic_0_open</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga03581b49a4d71c080bf437b7c80e2d90" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="177" endline="180">dw_iic_1_open</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1gad2bf218d0f32b24080eafc233e8cd250" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="273" endline="276">dw_iic_2_open</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_e_v_i_c_e___d_w___i_i_c___f_u_n_c_d_l_r_1ga0d998694893c2cb383ff14e0d0bb7fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_close</definition>
+        <argsstring>(DEV_IIC *iic_obj)</argsstring>
+        <name>dw_iic_close</name>
+        <param>
+          <type><ref refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gaf976c496ff5f91bfaa0eeb8383fbdd5a" kindref="member">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <briefdescription>
+<para>Close a DesignWare IIC device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iic device object pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Close successfully without any issues(including secenary that device is already closed) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OPNED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still opened, the device <ref refid="structdev__iic__info_1af6488d79474addfec5a4b34993c69251" kindref="member">opn_cnt</ref> decreased by 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/designware/iic/dw_iic.h" line="222" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/designware/iic/dw_iic.c" bodystart="1273" bodyend="1301"/>
+        <references refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_s_t_a_t_u_s_1gacacfd9a0d19ea1f779312ce02f789269" compoundref="dev__common_8h" startline="111">DEV_DISABLED</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1gaba89e631ee83b589d4968d103e831062" compoundref="dw__iic_8c" startline="786" endline="799">dw_iic_abort_rx</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1gaeabc4119586e0201a57b77ece5307a39" compoundref="dw__iic_8c" startline="770" endline="783">dw_iic_abort_tx</references>
+        <references refid="dw__iic_8c_1a51b5fcb72255b754b9a3fd668dd7ae6b" compoundref="dw__iic_8c" startline="53">DW_IIC_CHECK_EXP</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1gaa920d810dee5e6336d731cca0e46f8f2" compoundref="dw__iic_8c" startline="579" endline="592">dw_iic_disable_device</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1ga6fbae7ca12acf7924eddef838445514e" compoundref="dw__iic_8c" startline="755" endline="767">dw_iic_disable_interrupt</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1ga1e7cc741c56207a8872ea58373276925" compoundref="emb_a_r_c__error_8h" startline="55">E_OK</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1gaa5935765e74b9d1a7e72c9c8f9018b42" compoundref="emb_a_r_c__error_8h" startline="78">E_OPNED</references>
+        <references refid="structdev__iic__info_1a9f40d63b98dc84e1e88fe9953f483021" compoundref="dev__iic_8h" startline="399">dev_iic_info::extra</references>
+        <references refid="structdev__iic__info_1a9646a44d1ef6ae6fe94e8f6499a7ca26" compoundref="dev__iic_8h" startline="398">dev_iic_info::iic_cbs</references>
+        <references refid="structdev__iic_1abaccd43eb5eff8e589fd54529abf3deb" compoundref="dev__iic_8h" startline="416">dev_iic::iic_info</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1gga96503315f5aac1c2564adc51f76ef7c1a2466a7db8f39e362701cead7d24f7284" compoundref="dev__iic_8h" startline="72">IIC_MODE_STOP</references>
+        <references refid="structdev__iic__info_1a755b249f9a0a60949939fbabda039592" compoundref="dev__iic_8h" startline="394">dev_iic_info::next_cond</references>
+        <references refid="structdev__iic__info_1af6488d79474addfec5a4b34993c69251" compoundref="dev__iic_8h" startline="385">dev_iic_info::opn_cnt</references>
+        <references refid="structdev__iic__info_1a78364a009ece3edafbb91675459a68b3" compoundref="dev__iic_8h" startline="397">dev_iic_info::rx_buf</references>
+        <references refid="structdev__iic__info_1a0ff4a5fe458048c77cfcaa17f78bae0e" compoundref="dev__iic_8h" startline="386">dev_iic_info::status</references>
+        <references refid="structdev__iic__info_1a5cbc1ba3c206cec0eaa3f5c1737eb924" compoundref="dev__iic_8h" startline="396">dev_iic_info::tx_buf</references>
+        <references refid="dw__iic_8c_1a862eeda09f2ba444263a7648e186dc16" compoundref="dw__iic_8c" startline="57">VALID_CHK_IIC_INFO_OBJECT</references>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga4fec7bafe9e89e314348234784b8ae18" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="87" endline="90">dw_iic_0_close</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga6f4c97d0566006167f717745f2341485" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="182" endline="185">dw_iic_1_close</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1gab01283e474426146141ea6faa9b3453a" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="278" endline="281">dw_iic_2_close</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_e_v_i_c_e___d_w___i_i_c___f_u_n_c_d_l_r_1ga9b0726e986686e7279abb1c4005ce93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_control</definition>
+        <argsstring>(DEV_IIC *iic_obj, uint32_t ctrl_cmd, void *param)</argsstring>
+        <name>dw_iic_control</name>
+        <param>
+          <type><ref refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gaf976c496ff5f91bfaa0eeb8383fbdd5a" kindref="member">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ctrl_cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>Control iic by ctrl command. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iic device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ctrl_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_t_r_l_c_m_d" kindref="compound">control command</ref>, to change or get some thing related to iic </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameters that maybe argument of the command, or return values of the command, must not be NULL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>E_OK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device successfully </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CLSED</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is not opened </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid for current control command </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control device failed, due to different reasons like in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_NOSPT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control command is not supported or not valid </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/designware/iic/dw_iic.h" line="223" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/designware/iic/dw_iic.c" bodystart="1317" bodyend="1524"/>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1gace3d588dc25676d080bcf53ee3522d63" compoundref="emb_a_r_c__error_8h" startline="143">CHECK_ALIGN_4BYTES</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_s_t_a_t_u_s_1gaad1f383b0e8eb7feec60f52998730eff" compoundref="dev__common_8h" startline="112">DEV_ENABLED</references>
+        <references refid="dw__iic_8c_1a51b5fcb72255b754b9a3fd668dd7ae6b" compoundref="dw__iic_8c" startline="53">DW_IIC_CHECK_EXP</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1gaa920d810dee5e6336d731cca0e46f8f2" compoundref="dw__iic_8c" startline="579" endline="592">dw_iic_disable_device</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1gab429edc5ef8f5e365bbcddc89eae5758" compoundref="dw__iic_8c" startline="567" endline="576">dw_iic_enable_device</references>
+        <references refid="structdw__iic__ctrl_1ac932344f1a0028b710e44591ec589443" compoundref="dw__iic_8h" startline="163">dw_iic_ctrl::dw_iic_regs</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1gac4e674c971a46afe82377d02a2d19451" compoundref="emb_a_r_c__error_8h" startline="79">E_CLSED</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1ga1e7cc741c56207a8872ea58373276925" compoundref="emb_a_r_c__error_8h" startline="55">E_OK</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1ga28d0303b78b18735ae91a99ecc11bc8e" compoundref="emb_a_r_c__error_8h" startline="60">E_PAR</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1gae5989e632e687010b35b613304089823" compoundref="emb_a_r_c__error_8h" startline="56">E_SYS</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_t_r_l_c_m_d_1ga31dd079e2cf9b01407c4df6dbf495442" compoundref="dev__iic_8h" startline="291">IIC_CMD_DIS_DEV</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_t_r_l_c_m_d_1gad175bd28b3fd454adea1ee7a600524c9" compoundref="dev__iic_8h" startline="281">IIC_CMD_ENA_DEV</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_t_r_l_c_m_d_1ga53392a7c9df5f8f7685ce8dcdab8ff27" compoundref="dev__iic_8h" startline="152">IIC_CMD_GET_STATUS</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_t_r_l_c_m_d_1gaac52df5aa71b69575c68d448a42b784e" compoundref="dev__iic_8h" startline="260">IIC_CMD_RESET</references>
+        <references refid="structdev__iic__info_1a13f93fe4cc7af7293b1671e8f1ff4d42" compoundref="dev__iic_8h" startline="384">dev_iic_info::iic_ctrl</references>
+        <references refid="structdev__iic_1abaccd43eb5eff8e589fd54529abf3deb" compoundref="dev__iic_8h" startline="416">dev_iic::iic_info</references>
+        <references refid="structdev__iic__info_1af6488d79474addfec5a4b34993c69251" compoundref="dev__iic_8h" startline="385">dev_iic_info::opn_cnt</references>
+        <references refid="structdev__iic__info_1a0ff4a5fe458048c77cfcaa17f78bae0e" compoundref="dev__iic_8h" startline="386">dev_iic_info::status</references>
+        <references refid="dw__iic_8c_1a862eeda09f2ba444263a7648e186dc16" compoundref="dw__iic_8c" startline="57">VALID_CHK_IIC_INFO_OBJECT</references>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga8a90bee5ad034d1eee4677467ea15564" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="92" endline="95">dw_iic_0_control</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1gaee986a3ba1bd1423cf4237d3f60c31a2" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="187" endline="190">dw_iic_1_control</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga2ffba30975962258bd66c1c15039a8cd" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="283" endline="286">dw_iic_2_control</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_e_v_i_c_e___d_w___i_i_c___f_u_n_c_d_l_r_1ga303d46be4dadd7fedf77e96e1144d14e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_write</definition>
+        <argsstring>(DEV_IIC *iic_obj, const void *data, uint32_t len)</argsstring>
+        <name>dw_iic_write</name>
+        <param>
+          <type><ref refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gaf976c496ff5f91bfaa0eeb8383fbdd5a" kindref="member">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>poll transmit data through DesignWare IIC as master or slave </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iic device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data that need to send (data must be uint8_t type) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data length need to send </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte count that was successfully sent for poll method, it might can&apos;t send that much due to <ref refid="structdev__iic__info_1a802367295ef5ed3c9452bbbb44cf9e29" kindref="member">different error state</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t write data to hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/designware/iic/dw_iic.h" line="224" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/designware/iic/dw_iic.c" bodystart="1538" bodyend="1595"/>
+        <references refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_s_t_a_t_u_s_1gaad1f383b0e8eb7feec60f52998730eff" compoundref="dev__common_8h" startline="112">DEV_ENABLED</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_m_o_d_e_1ga9b1ad5abdf677288f655dd4bc9dc188d" compoundref="dev__common_8h" startline="101">DEV_MASTER_MODE</references>
+        <references refid="dw__iic_8c_1a51b5fcb72255b754b9a3fd668dd7ae6b" compoundref="dw__iic_8c" startline="53">DW_IIC_CHECK_EXP</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1ga6d69ae6b2463526079a29e7227ae4884" compoundref="dw__iic_8c" startline="842" endline="856">dw_iic_mst_write_data</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1gacdf17d2a10a6acdfdf1be12796933533" compoundref="dw__iic_8c" startline="859" endline="892">dw_iic_slv_write_data</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1gac4e674c971a46afe82377d02a2d19451" compoundref="emb_a_r_c__error_8h" startline="79">E_CLSED</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1ga1e7cc741c56207a8872ea58373276925" compoundref="emb_a_r_c__error_8h" startline="55">E_OK</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1ga28d0303b78b18735ae91a99ecc11bc8e" compoundref="emb_a_r_c__error_8h" startline="60">E_PAR</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1gae5989e632e687010b35b613304089823" compoundref="emb_a_r_c__error_8h" startline="56">E_SYS</references>
+        <references refid="structdev__iic__info_1a802367295ef5ed3c9452bbbb44cf9e29" compoundref="dev__iic_8h" startline="390">dev_iic_info::err_state</references>
+        <references refid="dw__iic__hal_8h_1ad09ff40d527c777bcded251daa01d35f" compoundref="dw__iic__hal_8h" startline="53">IC_DATA_CMD_NONE</references>
+        <references refid="dw__iic__hal_8h_1a16d1e4772a530f8f497a8609e1235334" compoundref="dw__iic__hal_8h" startline="51">IC_DATA_CMD_RESTART</references>
+        <references refid="dw__iic__hal_8h_1af6f27688dbc31eb34671de4d5153524b" compoundref="dw__iic__hal_8h" startline="49">IC_DATA_CMD_STOP</references>
+        <references refid="structdev__iic__info_1a13f93fe4cc7af7293b1671e8f1ff4d42" compoundref="dev__iic_8h" startline="384">dev_iic_info::iic_ctrl</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1gga4c7135d3f4dabda890b9a8eb27c1c97bac9c901374108da2d82f421e89d229101" compoundref="dev__iic_8h" startline="78">IIC_ERR_NONE</references>
+        <references refid="structdev__iic_1abaccd43eb5eff8e589fd54529abf3deb" compoundref="dev__iic_8h" startline="416">dev_iic::iic_info</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1gga96503315f5aac1c2564adc51f76ef7c1a2466a7db8f39e362701cead7d24f7284" compoundref="dev__iic_8h" startline="72">IIC_MODE_STOP</references>
+        <references refid="structdev__iic__info_1a40a1d2bf518dbfcfbaec5ef26a8e1aa6" compoundref="dev__iic_8h" startline="387">dev_iic_info::mode</references>
+        <references refid="structdev__iic__info_1a755b249f9a0a60949939fbabda039592" compoundref="dev__iic_8h" startline="394">dev_iic_info::next_cond</references>
+        <references refid="structdev__iic__info_1af6488d79474addfec5a4b34993c69251" compoundref="dev__iic_8h" startline="385">dev_iic_info::opn_cnt</references>
+        <references refid="structdev__iic__info_1a0ff4a5fe458048c77cfcaa17f78bae0e" compoundref="dev__iic_8h" startline="386">dev_iic_info::status</references>
+        <references refid="dw__iic_8c_1a862eeda09f2ba444263a7648e186dc16" compoundref="dw__iic_8c" startline="57">VALID_CHK_IIC_INFO_OBJECT</references>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gac261255f8afde57d9db77b80a938c0b2" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="97" endline="100">dw_iic_0_write</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga1e67e271a1a610c03118862455fddb5a" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="192" endline="195">dw_iic_1_write</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga7aecd827ea637e9b480c8df616d87b83" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="288" endline="291">dw_iic_2_write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_e_v_i_c_e___d_w___i_i_c___f_u_n_c_d_l_r_1ga4f612550978cf8c1543325ed9b4a5dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t dw_iic_read</definition>
+        <argsstring>(DEV_IIC *iic_obj, void *data, uint32_t len)</argsstring>
+        <name>dw_iic_read</name>
+        <param>
+          <type><ref refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gaf976c496ff5f91bfaa0eeb8383fbdd5a" kindref="member">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>read data through DesignWare IIC </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iic device object pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data that need to read (data must be uint8_t type) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data count need to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte count that was successfully received for poll method, it might can&apos;t send that much due to <ref refid="structdev__iic__info_1a802367295ef5ed3c9452bbbb44cf9e29" kindref="member">different error state</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_OBJ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device object is not valid or not exists </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_CTX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device is still in transfer state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_PAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter is not valid </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>E_SYS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Can&apos;t receive data from hardware due to hardware issues, such as device is disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/designware/iic/dw_iic.h" line="225" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/designware/iic/dw_iic.c" bodystart="1609" bodyend="1672"/>
+        <references refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_s_t_a_t_u_s_1gaad1f383b0e8eb7feec60f52998730eff" compoundref="dev__common_8h" startline="112">DEV_ENABLED</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_m_o_d_e_1ga9b1ad5abdf677288f655dd4bc9dc188d" compoundref="dev__common_8h" startline="101">DEV_MASTER_MODE</references>
+        <references refid="dw__iic_8c_1a51b5fcb72255b754b9a3fd668dd7ae6b" compoundref="dw__iic_8c" startline="53">DW_IIC_CHECK_EXP</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1gab1790672c1112112bb4227bdf58ff881" compoundref="dw__iic_8c" startline="899" endline="921">dw_iic_mst_read_data</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1ga65f4b6a842a7a51ab49f9c245ce5f950" compoundref="dw__iic_8c" startline="924" endline="956">dw_iic_slv_read_data</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1gac4e674c971a46afe82377d02a2d19451" compoundref="emb_a_r_c__error_8h" startline="79">E_CLSED</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1ga1e7cc741c56207a8872ea58373276925" compoundref="emb_a_r_c__error_8h" startline="55">E_OK</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1ga28d0303b78b18735ae91a99ecc11bc8e" compoundref="emb_a_r_c__error_8h" startline="60">E_PAR</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1gae5989e632e687010b35b613304089823" compoundref="emb_a_r_c__error_8h" startline="56">E_SYS</references>
+        <references refid="structdev__iic__info_1a802367295ef5ed3c9452bbbb44cf9e29" compoundref="dev__iic_8h" startline="390">dev_iic_info::err_state</references>
+        <references refid="dw__iic__hal_8h_1ad09ff40d527c777bcded251daa01d35f" compoundref="dw__iic__hal_8h" startline="53">IC_DATA_CMD_NONE</references>
+        <references refid="dw__iic__hal_8h_1a16d1e4772a530f8f497a8609e1235334" compoundref="dw__iic__hal_8h" startline="51">IC_DATA_CMD_RESTART</references>
+        <references refid="dw__iic__hal_8h_1af6f27688dbc31eb34671de4d5153524b" compoundref="dw__iic__hal_8h" startline="49">IC_DATA_CMD_STOP</references>
+        <references refid="structdev__iic__info_1a13f93fe4cc7af7293b1671e8f1ff4d42" compoundref="dev__iic_8h" startline="384">dev_iic_info::iic_ctrl</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1gga4c7135d3f4dabda890b9a8eb27c1c97bac9c901374108da2d82f421e89d229101" compoundref="dev__iic_8h" startline="78">IIC_ERR_NONE</references>
+        <references refid="structdev__iic_1abaccd43eb5eff8e589fd54529abf3deb" compoundref="dev__iic_8h" startline="416">dev_iic::iic_info</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1gga96503315f5aac1c2564adc51f76ef7c1a2466a7db8f39e362701cead7d24f7284" compoundref="dev__iic_8h" startline="72">IIC_MODE_STOP</references>
+        <references refid="structdev__iic__info_1a40a1d2bf518dbfcfbaec5ef26a8e1aa6" compoundref="dev__iic_8h" startline="387">dev_iic_info::mode</references>
+        <references refid="structdev__iic__info_1a755b249f9a0a60949939fbabda039592" compoundref="dev__iic_8h" startline="394">dev_iic_info::next_cond</references>
+        <references refid="structdev__iic__info_1af6488d79474addfec5a4b34993c69251" compoundref="dev__iic_8h" startline="385">dev_iic_info::opn_cnt</references>
+        <references refid="structdev__iic__info_1a0ff4a5fe458048c77cfcaa17f78bae0e" compoundref="dev__iic_8h" startline="386">dev_iic_info::status</references>
+        <references refid="dw__iic_8c_1a862eeda09f2ba444263a7648e186dc16" compoundref="dw__iic_8c" startline="57">VALID_CHK_IIC_INFO_OBJECT</references>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gacb7b813dddebcba44fd4383646fd1654" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="102" endline="105">dw_iic_0_read</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga08f73e294271c5f7cad81a42e7dce290" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="197" endline="200">dw_iic_1_read</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga74dc4fafcb406407585cb966b4d964f1" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="293" endline="296">dw_iic_2_read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___d_e_v_i_c_e___d_w___i_i_c___f_u_n_c_d_l_r_1gacd0ef0be9b50cb36286b1ec5ca663d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dw_iic_isr</definition>
+        <argsstring>(DEV_IIC *iic_obj, void *ptr)</argsstring>
+        <name>dw_iic_isr</name>
+        <param>
+          <type><ref refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gaf976c496ff5f91bfaa0eeb8383fbdd5a" kindref="member">DEV_IIC</ref> *</type>
+          <declname>iic_obj</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>DesignWare IIC interrupt processing routine. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iic_info_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DEV_IIC *iic_obj </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>extra information </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/designware/iic/dw_iic.h" line="226" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/designware/iic/dw_iic.c" bodystart="1679" bodyend="1700"/>
+        <references refid="structdev__iic__info_1a91dd1c13dce262f38de4be839e9bc077" compoundref="dev__iic_8h" startline="389">dev_iic_info::cur_state</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_m_o_d_e_1ga9b1ad5abdf677288f655dd4bc9dc188d" compoundref="dev__common_8h" startline="101">DEV_MASTER_MODE</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1ga3cfb7d2b7fe0fed58f124ff5357047a1" compoundref="dw__iic_8c" startline="1026" endline="1104">dw_iic_mst_int_read</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1ga7b1ef35775b39fcacf25a4e0edb14b55" compoundref="dw__iic_8c" startline="959" endline="1023">dw_iic_mst_int_write</references>
+        <references refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1gafb441be4cc0f33dd1695e7623292289c" compoundref="dw__iic_8c" startline="1107" endline="1145">dw_iic_slv_int_process</references>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1ga1e7cc741c56207a8872ea58373276925" compoundref="emb_a_r_c__error_8h" startline="55">E_OK</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1ggae863a55b2b105ffcee20c18c5168da91acda00d47d3e541868c3586d22749cfd1" compoundref="dev__iic_8h" startline="90">IIC_IN_TX</references>
+        <references refid="structdev__iic_1abaccd43eb5eff8e589fd54529abf3deb" compoundref="dev__iic_8h" startline="416">dev_iic::iic_info</references>
+        <references refid="structdev__iic__info_1a40a1d2bf518dbfcfbaec5ef26a8e1aa6" compoundref="dev__iic_8h" startline="387">dev_iic_info::mode</references>
+        <references refid="dw__iic_8c_1a862eeda09f2ba444263a7648e186dc16" compoundref="dw__iic_8c" startline="57">VALID_CHK_IIC_INFO_OBJECT</references>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga7f4abe9efd60ed468860ee6dd7bf219c" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="107" endline="110">dw_iic_0_isr</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga9b7402764577f9e616c33bd6100ce2b6" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="202" endline="205">dw_iic_1_isr</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga7d1b26d715d6a0cb16b024c7426c684c" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="298" endline="301">dw_iic_2_isr</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains declarations of designware iic functions. </para>    </briefdescription>
+    <detaileddescription>
+<para>This are only used in iic object implementation source file </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

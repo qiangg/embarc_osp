@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="arc__exc__asm_8s" kind="file" language="C++">
+    <compoundname>arc_exc_asm.s</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/*<sp/>------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Synopsys,<sp/>Inc.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/>modification,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>1)<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>2)<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>3)<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>Synopsys,<sp/>Inc.,<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/>contributors<sp/>may</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/>from<sp/>this<sp/>software<sp/>without</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;<sp/>AND</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">---------------------------------------------<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\file</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\ingroup<sp/>ARC_HAL_EXCEPTION_CPU</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\brief<sp/><sp/>assembly<sp/>part<sp/>of<sp/>exception<sp/>and<sp/>interrupt<sp/>processing</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\addtogroup<sp/>ARC_HAL_EXCEPTION_CPU</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>function<sp/>documentation<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\fn<sp/>void<sp/>exc_entry_cpu(void)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\brief<sp/>default<sp/>entry<sp/>of<sp/>CPU<sp/>exceptions,<sp/>such<sp/>as<sp/>TLB<sp/>miss<sp/>and<sp/>swap.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\fn<sp/>void<sp/>exc_entry_int(void)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\brief<sp/>normal<sp/>interrupt<sp/>exception<sp/>entry.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>In<sp/>default,<sp/>all<sp/>interrupt<sp/>exceptions<sp/>are<sp/>installed<sp/>with<sp/>normal<sp/>entry.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>FIRQ<sp/>is<sp/>required,<sp/>exc_entry_firq<sp/>should<sp/>be<sp/>the<sp/>entry.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\fn<sp/>void<sp/>exc_entry_firq(void)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>\brief<sp/>firq<sp/>exception<sp/>entry</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">/**<sp/>}@<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**<sp/>@cond<sp/>EXCEPTION_ASM<sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#define<sp/>__ASSEMBLY__</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;arc.h&quot;</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;arc_asm_common.h&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.file<sp/>&quot;arc_exc_asm.s&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>entry<sp/>for<sp/>cpu<sp/>exception<sp/>handling<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.text</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.global<sp/>exc_entry_cpu</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.weak<sp/>exc_entry_cpu</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.align<sp/>4</highlight></codeline>
+<codeline><highlight class="normal">exc_entry_cpu:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXCEPTION_PROLOGUE</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>exc_nest_count<sp/>+1<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[exc_nest_count]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>st<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[exc_nest_count]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>find<sp/>the<sp/>exception<sp/>cause<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_ECR]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lsr<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>16</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bmsk<sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>7</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r1,<sp/>exc_int_handler_table</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld.as<sp/><sp/><sp/>r2,<sp/>[r1,<sp/>r0]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>jump<sp/>to<sp/>exception<sp/>handler<sp/>where<sp/>interrupts<sp/>are<sp/>not<sp/>allowed!<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>sp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>[r2]</highlight></codeline>
+<codeline><highlight class="normal">exc_return:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>exc_nest_count<sp/>-1<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[exc_nest_count]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sub<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>st<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[exc_nest_count]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXCEPTION_EPILOGUE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rtie</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/******<sp/>entry<sp/>for<sp/>normal<sp/>interrupt<sp/>exception<sp/>handling<sp/>******/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.global<sp/>exc_entry_int</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.weak<sp/>exc_entry_int</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.align<sp/>4</highlight></codeline>
+<codeline><highlight class="normal">exc_entry_int:</highlight></codeline>
+<codeline><highlight class="normal">#if<sp/>ARC_FEATURE_FIRQ<sp/>==<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">#if<sp/>ARC_FEATURE_RGF_NUM_BANKS<sp/>&gt;<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/><sp/>check<sp/>whether<sp/>it<sp/>is<sp/>P0<sp/>interrupt<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_IRQ_ACT]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btst<sp/><sp/><sp/><sp/>r0,<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bnz<sp/><sp/><sp/><sp/><sp/>exc_entry_firq</highlight></codeline>
+<codeline><highlight class="normal">#else</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PUSH<sp/><sp/><sp/><sp/>r10</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r10,<sp/>[AUX_IRQ_ACT]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btst<sp/><sp/><sp/><sp/>r10,<sp/>0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>POP<sp/><sp/><sp/><sp/><sp/>r10</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bnz<sp/><sp/><sp/><sp/><sp/>exc_entry_firq</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>save<sp/>scratch<sp/>regs<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INTERRUPT_PROLOGUE</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>critical<sp/>area<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>exc_nest_count<sp/>is<sp/>designed<sp/>to<sp/>record<sp/>the<sp/>nest<sp/>interrupts<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clri</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[exc_nest_count]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>st<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[exc_nest_count]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>seti</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_IRQ_CAUSE]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r1,<sp/>exc_int_handler_table</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>r2<sp/>=<sp/>_kernel_exc_tbl<sp/>+<sp/>irqno<sp/>*4<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld.as<sp/><sp/><sp/>r2,<sp/>[r1,<sp/>r0]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>for<sp/>the<sp/>case<sp/>of<sp/>software<sp/>triggered<sp/>interrupt<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r3,<sp/>[AUX_IRQ_HINT]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r3,<sp/>r0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bne.d<sp/><sp/><sp/>irq_hint_handled</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xor<sp/><sp/><sp/><sp/><sp/>r3,<sp/>r3,<sp/>r3</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>r3,<sp/>[AUX_IRQ_HINT]</highlight></codeline>
+<codeline><highlight class="normal">irq_hint_handled:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>jump<sp/>to<sp/>interrupt<sp/>handler<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>sp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>[r2]</highlight></codeline>
+<codeline><highlight class="normal">int_return:</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>critical<sp/>area<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>exc_nest_count<sp/>is<sp/>designed<sp/>to<sp/>record<sp/>the<sp/>nest<sp/>interrupts<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clri</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[exc_nest_count]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sub<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>st<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[exc_nest_count]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>seti</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INTERRUPT_EPILOGUE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rtie</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/******<sp/>entry<sp/>for<sp/>fast<sp/>irq<sp/>exception<sp/>handling<sp/>******/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.global<sp/>exc_entry_firq</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.weak<sp/>exc_entry_firq</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.align<sp/>4</highlight></codeline>
+<codeline><highlight class="normal">exc_entry_firq:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SAVE_FIQ_EXC_REGS</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>firq&apos;s<sp/>priority<sp/>is<sp/>the<sp/>highest<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[exc_nest_count]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>add<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>st<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[exc_nest_count]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[AUX_IRQ_CAUSE]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r1,<sp/>exc_int_handler_table</highlight></codeline>
+<codeline><highlight class="normal">/*<sp/>r2<sp/>=<sp/>_kernel_exc_tbl<sp/>+<sp/>irqno<sp/>*4<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld.as<sp/><sp/><sp/>r2,<sp/>[r1,<sp/>r0]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>for<sp/>the<sp/>case<sp/>of<sp/>software<sp/>triggered<sp/>interrupt<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lr<sp/><sp/><sp/><sp/><sp/><sp/>r3,<sp/>[AUX_IRQ_HINT]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/>r3,<sp/>r0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bne.d<sp/><sp/><sp/>firq_hint_handled</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xor<sp/><sp/><sp/><sp/><sp/>r3,<sp/>r3,<sp/>r3</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/><sp/><sp/><sp/>r3,<sp/>[AUX_IRQ_HINT]</highlight></codeline>
+<codeline><highlight class="normal">firq_hint_handled:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>jump<sp/>to<sp/>interrupt<sp/>handler<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mov<sp/><sp/><sp/><sp/><sp/>r0,<sp/>sp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jl<sp/><sp/><sp/><sp/><sp/><sp/>[r2]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">firq_return:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/>exc_nest_count<sp/>-1<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ld<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[exc_nest_count]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sub<sp/><sp/><sp/><sp/><sp/>r0,<sp/>r0,<sp/>1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>st<sp/><sp/><sp/><sp/><sp/><sp/>r0,<sp/>[exc_nest_count]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RESTORE_FIQ_EXC_REGS</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rtie</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**<sp/>@endcond<sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/arc/arc_exc_asm.s"/>
+  </compounddef>
+</doxygen>

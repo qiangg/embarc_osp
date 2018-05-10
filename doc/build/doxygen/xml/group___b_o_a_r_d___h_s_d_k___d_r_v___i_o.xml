@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o" kind="group">
+    <compoundname>BOARD_HSDK_DRV_IO</compoundname>
+    <title>HSDK IO Expander</title>
+    <innerfile refid="hsdk__io_8c">hsdk_io.c</innerfile>
+    <innerfile refid="hsdk__io_8h">hsdk_io.h</innerfile>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1gaa646b78cf2ea90f623e720f554559b14" prot="public" static="yes" mutable="no">
+        <type>CY8C95XX_DEF</type>
+        <definition>CY8C95XX_DEF cy8c95xx_obj</definition>
+        <argsstring></argsstring>
+        <name>cy8c95xx_obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.c" line="59" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1ga56409a4fef3e60db140392a64d7d9d57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void cy8c95xx_delay_us</definition>
+        <argsstring>(uint32_t us)</argsstring>
+        <name>cy8c95xx_delay_us</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>us</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.c" line="61" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.c" bodystart="61" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1ga701d2fab00f692f41c27c1b5d0a5d24d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hsdk_led_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>hsdk_led_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>hsdk on-board led init, led default off </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.c" line="71" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.c" bodystart="71" bodyend="114"/>
+        <references refid="group___e_m_b_a_r_c___e_r_r_o_r_1ga1e7cc741c56207a8872ea58373276925" compoundref="emb_a_r_c__error_8h" startline="55">E_OK</references>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1gaf6d565dffaac6c29217ffb23e5cad4d7" compoundref="hsdk__io_8c" startline="127" endline="130">hsdk_io_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1ga0d116692517e4c11de41ec07145b8404" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void led_write</definition>
+        <argsstring>(uint32_t led_val, uint32_t mask)</argsstring>
+        <name>led_write</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>led_val</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>write 1 to light on led bit, else light off led </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.c" line="117" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.c" bodystart="117" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1gaf6d565dffaac6c29217ffb23e5cad4d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hsdk_io_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>hsdk_io_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>hsdk on board io init </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.c" line="127" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.c" bodystart="127" bodyend="130"/>
+        <references refid="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1ga701d2fab00f692f41c27c1b5d0a5d24d" compoundref="hsdk__io_8c" startline="71" endline="114">hsdk_led_init</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1ga82b59e32d0623ccb7e400a493a71185a" prot="public" static="no">
+        <name>HSDK_LED_GPORT_OFFSET</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.c" line="57" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1gadda11df6d7fed916a5ee7fc49cbf3b5e" prot="public" static="no">
+        <name>HSDK_I2C_ADDR_CY8C95XX_IO</name>
+        <initializer>(0x20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.h" line="44" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1gadb932469b9aaf2682ec51c2f3b1dcdca" prot="public" static="no">
+        <name>HSDK_I2C_ADDR_CY8C95XX_EEP</name>
+        <initializer>(0x40)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.h" line="45" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1gaa1039577ad6017835a87ccc433b8b117" prot="public" static="no">
+        <name>HSDK_I2C_ID_CY8C95XX</name>
+        <initializer>(<ref refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga9dad39587e7f20b0e80aca04791dbb09" kindref="member">DW_IIC_0_ID</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.h" line="46" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/common/hsdk_io.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HSDK Onboard IO Peripherals Driver. </para>    </briefdescription>
+    <detaileddescription>
+<para>Implementation of HSDK on-board button, led, dip switch driver, this is for better use, you don&apos;t have to get a gpio object before operating led,button,switch, because some basic functions for usage are provided. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___a_r_c___h_a_l___s_t_a_r_t_u_p" kind="group">
+    <compoundname>ARC_HAL_STARTUP</compoundname>
+    <title>Startup</title>
+    <innerfile refid="arc__cxx__support_8c">arc_cxx_support.c</innerfile>
+    <briefdescription>
+<para>ARC startup module. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

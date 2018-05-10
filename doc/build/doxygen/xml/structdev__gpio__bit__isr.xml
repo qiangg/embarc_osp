@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structdev__gpio__bit__isr" kind="struct" language="C++" prot="public">
+    <compoundname>dev_gpio_bit_isr</compoundname>
+    <includes refid="dev__gpio_8h" local="no">dev_gpio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdev__gpio__bit__isr_1ac46b214e96ed33acaa2394e2fb75fe34" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t dev_gpio_bit_isr::int_bit_ofs</definition>
+        <argsstring></argsstring>
+        <name>int_bit_ofs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>int bit offset </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="359" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdev__gpio__bit__isr_1a4c3106c9eedd78f6b1dec60069db08b6" prot="public" static="no" mutable="no">
+        <type><ref refid="group___d_e_v_i_c_e___h_a_l___g_p_i_o___i_n_t___c_f_g___s_e_t_1gad63a55aa4fd71c10bcb4f7d3dc5ea11f" kindref="member">DEV_GPIO_HANDLER</ref></type>
+        <definition>DEV_GPIO_HANDLER dev_gpio_bit_isr::int_bit_handler</definition>
+        <argsstring></argsstring>
+        <name>int_bit_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>interrupt handler </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="360" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>interrupt handler for each port bit </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="56">
+        <label>dev_gpio_bit_isr</label>
+        <link refid="structdev__gpio__bit__isr"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="358" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="358" bodyend="361"/>
+    <listofallmembers>
+      <member refid="structdev__gpio__bit__isr_1a4c3106c9eedd78f6b1dec60069db08b6" prot="public" virt="non-virtual"><scope>dev_gpio_bit_isr</scope><name>int_bit_handler</name></member>
+      <member refid="structdev__gpio__bit__isr_1ac46b214e96ed33acaa2394e2fb75fe34" prot="public" virt="non-virtual"><scope>dev_gpio_bit_isr</scope><name>int_bit_ofs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

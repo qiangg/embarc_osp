@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_m_o_d_e" kind="group">
+    <compoundname>DEVICE_HAL_COMMON_DEVMODE</compoundname>
+    <title>Common Device Working Mode</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_m_o_d_e_1ga9b1ad5abdf677288f655dd4bc9dc188d" prot="public" static="no">
+        <name>DEV_MASTER_MODE</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that the device working as master </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/inc/dev_common.h" line="101" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/inc/dev_common.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1ga4294ad641aea08f46deafacdcf07ad11" compoundref="dw__iic_8c" startline="690" endline="708">dw_iic_dis_cbr</referencedby>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___i_i_c___s_t_a_t_i_c_1ga26c7c147baa2add68f423ca274c5e75a" compoundref="dw__iic_8c" startline="715" endline="733">dw_iic_ena_cbr</referencedby>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___i_i_c___f_u_n_c_d_l_r_1gacd0ef0be9b50cb36286b1ec5ca663d64" compoundref="dw__iic_8c" startline="1679" endline="1700">dw_iic_isr</referencedby>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___i_i_c___f_u_n_c_d_l_r_1gad75471c3a8e98385a58d6b887316f8f5" compoundref="dw__iic_8c" startline="1170" endline="1264">dw_iic_open</referencedby>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___i_i_c___f_u_n_c_d_l_r_1ga4f612550978cf8c1543325ed9b4a5dbd" compoundref="dw__iic_8c" startline="1609" endline="1672">dw_iic_read</referencedby>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___i_i_c___f_u_n_c_d_l_r_1ga303d46be4dadd7fedf77e96e1144d14e" compoundref="dw__iic_8c" startline="1538" endline="1595">dw_iic_write</referencedby>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga237c47561c92859edb1272a2446732d8" compoundref="dw__spi_8c" startline="825" endline="910">dw_spi_open</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n___d_e_v_m_o_d_e_1gaf070489d9f19e9000cb9700bb859a079" prot="public" static="no">
+        <name>DEV_SLAVE_MODE</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that the device working as slave </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/inc/dev_common.h" line="102" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/inc/dev_common.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___i_i_c___f_u_n_c_d_l_r_1gad75471c3a8e98385a58d6b887316f8f5" compoundref="dw__iic_8c" startline="1170" endline="1264">dw_iic_open</referencedby>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga237c47561c92859edb1272a2446732d8" compoundref="dw__spi_8c" startline="825" endline="910">dw_spi_open</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>definitions for device working mode(master or slave) </para>    </briefdescription>
+    <detaileddescription>
+<para>here defines macros for working mode, Master or Slave mode,used in DEV_HAL_IIC, DEV_HAL_SPI. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>
