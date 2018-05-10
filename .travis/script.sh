@@ -13,7 +13,7 @@ set -x
     bash apply_embARC_patch.sh || die
     cd .travis || die
 
-    [ $TOOLCHAIN != doxygen ] || {
+    [ $TOOLCHAIN != sphinx -o $BOARD != none -o $BD_VER != none -o $CUR_CORE != none ] || {
         bash deploy_doc.sh || die
     }
 

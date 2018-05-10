@@ -10,13 +10,16 @@ branches:
 
 before_install:
   - bash .travis/before_install.sh
+  # setup git
+  - git config --local user.name "embARC"
+  - git config --local user.email "embarc@embarc.org"
 
 script:
   - bash .travis/script.sh
 
 matrix:
   include:
-    - env: TOOLCHAIN="doxygen" BOARD="none" BD_VER="none" CUR_CORE="none"
+    - env: TOOLCHAIN="sphinx" BOARD="none" BD_VER="none" CUR_CORE="none"
       os: linux
     - env: TOOLCHAIN="gnu" BOARD="emsk" BD_VER="11" CUR_CORE="arcem4"
       os: linux
