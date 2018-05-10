@@ -22,10 +22,12 @@ make doxygen || die
 # Generate by sphinx 
 make html || die
 
+# tar doc
 tar czvf doc.tar.gz build || die
+
+
 git fetch origin || die
 git branch -a || die
-
 mkdir gh-pages || die
 cd gh-pages || die
 git init . || die
