@@ -37,7 +37,7 @@ Building Document in Windows
 
   .. code-block:: console
 
-    >mkdir build\doxygen\xml
+    >mkdir -p build\doxygen\xml
     >make doxygen
 
 * Go to *<embARC>/doc* and enter ``make html`` to generate html. The html files are in *<embARC>/doc/build/html*.

@@ -17,7 +17,7 @@ cd ../doc/documents/example || die
 ln -s ../../../example example || die
 # Generate xml by doxygen
 cd ../..
-mkdir build/doxygen/xml || die
+mkdir -p build/doxygen/xml || die
 make doxygen || die
 # Generate by sphinx 
 make html || die
