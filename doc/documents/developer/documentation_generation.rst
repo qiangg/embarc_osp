@@ -14,7 +14,7 @@ Building Document in Windows
 
 * Install `Doxygen <http://www.doxygen.nl/>`_ in the Windows machine.
   
-    .. code-block:: console
+  .. code-block:: console
 
     >doxygen --version
     1.8.13
@@ -26,18 +26,18 @@ Building Document in Windows
     >mklink /D example ..\..\..\example
     symbolic link created for example <<===>> ..\..\..\example
 
-  * If ``Cannot create a file when that file already exists.``, it means you have already have a file or folder *example*. Make sure the link is accessible to *<embARC>/example*.
+* If ``Cannot create a file when that file already exists.``, it means you have already have a file or folder *example*. Make sure the link is accessible to *<embARC>/example*.
 
-    .. code-block:: console
+  .. code-block:: console
   
-      >mklink /D example ..\..\..\example
-      Cannot create a file when that file already exists.
+    >mklink /D example ..\..\..\example
+    Cannot create a file when that file already exists.
 
 * Go to *<embARC>/doc* and generate xml files by Doxygen.
 
   .. code-block:: console
 
-    >mkdir -p build\doxygen\xml
+    >mkdir build\doxygen\xml
     >make doxygen
 
 * Go to *<embARC>/doc* and enter ``make html`` to generate html. The html files are in *<embARC>/doc/build/html*.
