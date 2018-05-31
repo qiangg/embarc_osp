@@ -19,5 +19,6 @@ cd /tmp || die
     arc-elf32-gcc --version || die
     sudo apt-get install doxygen || die
     #sudo apt-get install python3-sphinx || die
-    pip install git+https://github.com/sphinx-doc/sphinx
+    sudo pip install --upgrade pip || die
+    sudo pip install git+https://github.com/sphinx-doc/sphinx || die
 }
