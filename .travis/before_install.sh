@@ -21,4 +21,5 @@ cd /tmp || die
     #sudo apt-get install python3-sphinx || die
     sudo pip install --upgrade pip || die
     sudo pip install git+https://github.com/sphinx-doc/sphinx || die
+    sudo pip install breathe || die
 }
