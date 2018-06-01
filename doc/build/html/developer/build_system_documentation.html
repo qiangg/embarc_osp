@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="embARC 2018.01 documentation" href="../index.html"/>
-        <link rel="up" title="Developer Guides" href="developer_guides.html"/>
-        <link rel="next" title="Porting Guides" href="porting_guides.html"/>
-        <link rel="prev" title="Application Development" href="application_development.html"/> 
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Porting Guides" href="porting_guides.html" />
+    <link rel="prev" title="Application Development" href="application_development.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -136,7 +127,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">embARC</a>
@@ -144,9 +135,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -196,18 +188,18 @@
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>The embARC build system is based on the makefile system as shown below. To add new components, add a new makefile to the system. All embARC components are compiled into libraries, which are then merged into one final library called <strong>libembarc.a</strong>. The application objects are then linked against <strong>libembarc.a</strong> to produce the target .elf file.</p>
 <div class="figure" id="id1">
-<a class="reference internal image-reference" href="../_images/build.jpg"><img alt="../_images/build.jpg" src="../_images/build.jpg" style="width: 570.8000000000001px; height: 352.40000000000003px;" /></a>
+<a class="reference internal image-reference" href="../_images/build.jpg"><img alt="../_images/build.jpg" src="../_images/build.jpg" style="width: 570.8px; height: 352.4px;" /></a>
 <p class="caption"><span class="caption-text">embARC build system</span></p>
 </div>
 <p>The <strong>options</strong> directory under the embARC root contains the common makefiles as shown below.</p>
 <ul class="simple">
-<li><code class="file docutils literal"><span class="pre">debug.mk</span></code>: target debug options for the MetaWare debugger, which supports Ashling OpellaXD and Digilent USB-JTAG connections.</li>
-<li><code class="file docutils literal"><span class="pre">files.mk</span></code>: files and directory collections in embARC.</li>
-<li><code class="file docutils literal"><span class="pre">options.mk</span></code>: entry makefile with common definitions, path definitions, other makefiles, and so on.</li>
-<li><code class="file docutils literal"><span class="pre">rule.mk</span></code>: make targets and rules.</li>
-<li><code class="file docutils literal"><span class="pre">scripts.mk</span></code>: common makefile functions</li>
-<li><code class="file docutils literal"><span class="pre">toolchain.mk</span></code>: General definitions for toolchain, including <strong>toolchain_gnu.mk</strong> for ARC GNU toolchain and <strong>toolchain_mw.mk</strong> for MetaWare toolchain.</li>
-<li><code class="file docutils literal"><span class="pre">toolchain_gnu.mk</span></code> &amp; <code class="file docutils literal"><span class="pre">toolchain_mw.mk</span></code>: toolchain specific compile and link options</li>
+<li><code class="file docutils literal notranslate"><span class="pre">debug.mk</span></code>: target debug options for the MetaWare debugger, which supports Ashling OpellaXD and Digilent USB-JTAG connections.</li>
+<li><code class="file docutils literal notranslate"><span class="pre">files.mk</span></code>: files and directory collections in embARC.</li>
+<li><code class="file docutils literal notranslate"><span class="pre">options.mk</span></code>: entry makefile with common definitions, path definitions, other makefiles, and so on.</li>
+<li><code class="file docutils literal notranslate"><span class="pre">rule.mk</span></code>: make targets and rules.</li>
+<li><code class="file docutils literal notranslate"><span class="pre">scripts.mk</span></code>: common makefile functions</li>
+<li><code class="file docutils literal notranslate"><span class="pre">toolchain.mk</span></code>: General definitions for toolchain, including <strong>toolchain_gnu.mk</strong> for ARC GNU toolchain and <strong>toolchain_mw.mk</strong> for MetaWare toolchain.</li>
+<li><code class="file docutils literal notranslate"><span class="pre">toolchain_gnu.mk</span></code> &amp; <code class="file docutils literal notranslate"><span class="pre">toolchain_mw.mk</span></code>: toolchain specific compile and link options</li>
 </ul>
 </div>
 <div class="section" id="make-targets">
@@ -238,7 +230,7 @@
 <h3>Options to Set Using Make Command<a class="headerlink" href="#options-to-set-using-make-command" title="Permalink to this headline">¶</a></h3>
 <p>Most options are located in <em>&lt;embARC&gt;/options/options.mk</em>. If you change an option value in <em>&lt;embARC&gt;/options/options.mk</em>, it will affect all the applications. You can set the value of the options in your own application makefile for the specified hardware.</p>
 <ul class="simple">
-<li><strong>BOARD</strong>: Select the target board. The default value of this option is defined in <em>board/board.mk</em>. Optional values as below, default value is emsk. For example, <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span></code> selects the EMSK board as the target board.</li>
+<li><strong>BOARD</strong>: Select the target board. The default value of this option is defined in <em>board/board.mk</em>. Optional values as below, default value is emsk. For example, <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span></code> selects the EMSK board as the target board.</li>
 </ul>
 <table border="1" class="colwidths-auto docutils" id="id2">
 <caption><span class="caption-text">Make option - BOARD</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
@@ -263,7 +255,7 @@
 </tbody>
 </table>
 <ul>
-<li><p class="first"><strong>BD_VER</strong>: Select the board version. The default value of this option is defined in one of the following makefiles according to the <strong>BOARD</strong> option. For example, <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span></code> selects 2.2 as the EMSK target board version.</p>
+<li><p class="first"><strong>BD_VER</strong>: Select the board version. The default value of this option is defined in one of the following makefiles according to the <strong>BOARD</strong> option. For example, <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span></code> selects 2.2 as the EMSK target board version.</p>
 <blockquote>
 <div><ul>
 <li><p class="first">For the EMSK board, three versions are supported in embARC: 1.1, 2.2, and 2.3. The optional values of <strong>BD_VER</strong> are 11, 22 and 23. The default value of BD_VER for the emsk board is 22.</p>
@@ -310,7 +302,7 @@
 <p class="last">The BD_VER must match the target EMSK version. For example, programs built for 1.1 cannot run on an EMSK 2.x board.</p>
 </div>
 <ul>
-<li><p class="first"><strong>CUR_CORE</strong>: Select the core configuration for the specified board version. For example, <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=23</span> <span class="pre">CUR_CORE=arcem11d</span></code> selects the arcem11d core configuration for emsk 2.3.</p>
+<li><p class="first"><strong>CUR_CORE</strong>: Select the core configuration for the specified board version. For example, <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=23</span> <span class="pre">CUR_CORE=arcem11d</span></code> selects the arcem11d core configuration for emsk 2.3.</p>
 <blockquote>
 <div><ul class="simple">
 <li>For EMSK 1.1, the default value of this option is <strong>arcem6</strong> defined in <em>&lt;embARC&gt;/board/emsk/configs/11/core_config.mk</em>.</li>
@@ -443,7 +435,7 @@
 </table>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>TOOLCHAIN</strong>: Select the toolchain to compile the embARC software. For example, <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=23</span> <span class="pre">CUR_CORE=arcem11d</span> <span class="pre">TOOLCHAIN=gnu</span></code> selects the ARC GNU toolchain to compile embARC applications for EMSK 2.3, ARC EM11d. The default value of this option is <strong>mw</strong> defined in <em>&lt;embARC&gt;/options/options.mk</em></p>
+<li><p class="first"><strong>TOOLCHAIN</strong>: Select the toolchain to compile the embARC software. For example, <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=23</span> <span class="pre">CUR_CORE=arcem11d</span> <span class="pre">TOOLCHAIN=gnu</span></code> selects the ARC GNU toolchain to compile embARC applications for EMSK 2.3, ARC EM11d. The default value of this option is <strong>mw</strong> defined in <em>&lt;embARC&gt;/options/options.mk</em></p>
 </li>
 </ul>
 <table border="1" class="colwidths-auto docutils" id="id10">
@@ -496,7 +488,7 @@
 <div><ul class="simple">
 <li>This option uses absolute file path or relative file path (relative to where your application makefile located) to specify the tcf file .</li>
 <li>This option is not supported for the nSIM 1506 board.</li>
-<li>For example, when the current board and core is EMSK 2.3 and ARC EM7D, you can pass your own tcf file arcem.tcf to replace the default one. Copy arcem.tcf file into the folder where application makefile located. Run <code class="docutils literal"><span class="pre">gmake</span> <span class="pre">BD_VER=23</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TCF=arcem.tcf</span></code> to select it.</li>
+<li>For example, when the current board and core is EMSK 2.3 and ARC EM7D, you can pass your own tcf file arcem.tcf to replace the default one. Copy arcem.tcf file into the folder where application makefile located. Run <code class="docutils literal notranslate"><span class="pre">gmake</span> <span class="pre">BD_VER=23</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TCF=arcem.tcf</span></code> to select it.</li>
 </ul>
 </div></blockquote>
 </li>
@@ -513,14 +505,14 @@
 <li><p class="first"><strong>OLEVEL</strong>: Select the compiler optimization level, including <strong>O</strong>, <strong>O0</strong>, <strong>O1</strong>, <strong>O2</strong>, <strong>O3</strong>, <strong>Os</strong>, <strong>Os1</strong>, <strong>Oz</strong>, <strong>Ofast</strong>, <strong>Og</strong>. The default value of this option is defined in <em>&lt;embARC&gt;/options/options.mk</em>. The OLEVEL can be blank to not select any optimization, like <strong>OLEVEL=</strong>.</p>
 <blockquote>
 <div><ul class="simple">
-<li>For example, <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem11d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">OLEVEL=O2</span></code> selects optimization level <strong>O2</strong> of the ARC GNU toolchain to compile embARC applications for EMSK 2.2 and ARC EM11D.</li>
+<li>For example, <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem11d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">OLEVEL=O2</span></code> selects optimization level <strong>O2</strong> of the ARC GNU toolchain to compile embARC applications for EMSK 2.2 and ARC EM11D.</li>
 </ul>
 </div></blockquote>
 </li>
 <li><p class="first"><strong>JTAG</strong>: Select the JTAG probe to load and debug the target program. The default value of this option is <strong>usb</strong> defined in <em>&lt;embARC&gt;/options/options.mk</em>.</p>
 <blockquote>
 <div><ul class="simple">
-<li>For example, <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem11d</span> <span class="pre">OLEVEL=O2</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">run</span></code> selects the ARC GNU toolchain to compile embARC applications with optimization level O2 for EMSK 2.2, ARC EM11D, and load the applications using Digilent USB JTAG.</li>
+<li>For example, <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem11d</span> <span class="pre">OLEVEL=O2</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">run</span></code> selects the ARC GNU toolchain to compile embARC applications with optimization level O2 for EMSK 2.2, ARC EM11D, and load the applications using Digilent USB JTAG.</li>
 </ul>
 </div></blockquote>
 </li>
@@ -798,9 +790,7 @@
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -822,7 +812,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -841,6 +831,7 @@
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'2018.01',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -858,14 +849,11 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

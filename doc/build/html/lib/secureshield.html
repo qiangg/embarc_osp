@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="embARC 2018.01 documentation" href="../index.html"/>
-        <link rel="up" title="Libraries" href="library.html"/>
-        <link rel="next" title="Examples" href="../example/example.html"/>
-        <link rel="prev" title="C Library Support" href="c_lib.html"/> 
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Examples" href="../example/example.html" />
+    <link rel="prev" title="C Library Support" href="c_lib.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -142,7 +133,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">embARC</a>
@@ -150,9 +141,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -297,7 +289,7 @@ to as the access-control table or access-control list.</p>
 <p>Each item in this table or list is called an access-control item. An access
 control item has the type access control, and additional attributes that
 constitute a triplet: {attribute1, attribute2, type|access}.</p>
-<div class="highlight-c"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="k">struct</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="k">struct</span>
 <span class="p">{</span>
     <span class="kt">void</span><span class="o">*</span> <span class="n">param1</span><span class="p">;</span>       <span class="cm">/* address parameter or function pointer */</span>
     <span class="kt">uint32_t</span> <span class="n">param2</span><span class="p">;</span>    <span class="cm">/* size or no. */</span>
@@ -306,7 +298,7 @@ constitute a triplet: {attribute1, attribute2, type|access}.</p>
 </pre></div>
 </div>
 <p>An access-control table example is shown below:</p>
-<div class="highlight-c"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="n">CONTAINER_AC_TABLE</span> <span class="n">g_container_act</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="n">CONTAINER_AC_TABLE</span> <span class="n">g_container_act</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
    <span class="cm">/* memory mapper peripheral, {start_address, size in bytes, type | access} */</span>
    <span class="p">{(</span><span class="kt">void</span> <span class="o">*</span><span class="p">)(</span><span class="n">PERIPHERAL_ADDR_BASE</span> <span class="o">+</span> <span class="n">REL_REGBASE_PINMUX</span><span class="p">),</span> <span class="mh">0x1000</span><span class="p">,</span> <span class="n">SECURESHIELD_ACDEF_UPERIPH</span><span class="p">},</span>
    <span class="cm">/* memory, {start_address, size in bytes, type | access} */</span>
@@ -421,10 +413,10 @@ services. The following SecureShield runtime services are provided:</p>
 <li>container call: call the services provided by other containers</li>
 <li>interrupt management: see secureshield_int_exports.h</li>
 <li>auxiliary-register access and benchmark function: see
-<code class="docutils literal"><span class="pre">secureshield_sys_ops_exports.h</span></code></li>
+<code class="docutils literal notranslate"><span class="pre">secureshield_sys_ops_exports.h</span></code></li>
 </ul>
 <img alt="Secure call" src="../_images/secureshield_secure_call.jpg" />
-<div class="highlight-c"><div class="highlight"><pre><span></span><span class="cp">#define SECURESHIELD_SECURE_CALL(id, metadata, ...) \</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#define SECURESHIELD_SECURE_CALL(id, metadata, ...) \</span>
 <span class="cp">    ({ \</span>
 <span class="cp">        SECURESHIELD_MACRO_REGS_ARGS(uint32_t, ##__VA_ARGS__) \</span>
 <span class="cp">        SECURESHIELD_MACRO_REGS_RETVAL(uint32_t, res) \</span>
@@ -450,7 +442,7 @@ container has no interface as its resources are shared to all other
 containers.</p>
 <p>To call a container interface, container all is required. The following is an
 example.</p>
-<div class="highlight-c"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="nf">tst_func2</span><span class="p">(</span><span class="kt">int</span> <span class="n">arg1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">arg2</span><span class="p">)</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="nf">tst_func2</span><span class="p">(</span><span class="kt">int</span> <span class="n">arg1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">arg2</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="k">return</span> <span class="n">arg1</span><span class="o">+</span><span class="n">arg2</span><span class="p">;</span>
 <span class="p">}</span>
@@ -463,12 +455,12 @@ example.</p>
 <p>In the above code, container1 has one interface named tst_func2 with two
 arguments to provide services. If other containers want to call this service,
 the following container call should be made:</p>
-<div class="highlight-c"><div class="highlight"><pre><span></span><span class="n">ret</span> <span class="o">=</span> <span class="n">container_call</span><span class="p">(</span><span class="n">container1</span><span class="p">,</span> <span class="n">tst_func2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">ret</span> <span class="o">=</span> <span class="n">container_call</span><span class="p">(</span><span class="n">container1</span><span class="p">,</span> <span class="n">tst_func2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
 </pre></div>
 </div>
 <img alt="Container call" src="../_images/secureshield_container_call.jpg" />
 <p>The container_call will be expanded into the following assembly.</p>
-<div class="highlight-c"><div class="highlight"><pre><span></span><span class="n">mov</span> <span class="n">r0</span><span class="p">,</span> <span class="mi">1</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">mov</span> <span class="n">r0</span><span class="p">,</span> <span class="mi">1</span>
 <span class="n">mov</span> <span class="n">r1</span><span class="p">,</span> <span class="mi">2</span>
 <span class="n">SECURE_INSTN</span> <span class="n">SECURESHIELD_SECURE_CALL_CONTAINER_IN</span>
 <span class="n">b</span> <span class="n">skip_args1</span>
@@ -550,7 +542,7 @@ SECURE_ROM  (secure containers only)</li>
 <li>SECURE_REGION_CONTAINERS_SECURE_RAM : the regions need to be generated in
 SECURE_RAM (secure containers only)</li>
 </ul>
-<div class="highlight-c"><div class="highlight"><pre><span></span><span class="cm">/* tell linker script template the rom region information of containers */</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/* tell linker script template the rom region information of containers */</span>
 <span class="cp">#define SECURESHIELD_REGION_CONTAINERS_ROM \</span>
 <span class="cp">                    GEN_CONTAINER_ROM_SECTION(container1, 2048, *container1.o*)</span>
 
@@ -561,7 +553,7 @@ SECURE_RAM (secure containers only)</li>
 </div>
 <p>The above code segment will generate the following sections in final linker
 script if LIB_SECURESHIELD_VERSION=2</p>
-<div class="highlight-c"><div class="highlight"><pre><span></span><span class="p">.</span><span class="n">rom</span><span class="p">.</span><span class="n">container1</span> <span class="n">ALIGN</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span><span class="o">:</span> <span class="p">{</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="n">rom</span><span class="p">.</span><span class="n">container1</span> <span class="n">ALIGN</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span><span class="o">:</span> <span class="p">{</span>
     <span class="n">_f_text_container1</span> <span class="o">=</span> <span class="p">.;</span>
     <span class="o">*</span><span class="p">(.</span><span class="n">text</span><span class="p">.</span><span class="n">container1</span><span class="p">)</span>
     <span class="s">&quot;*container1.o*&quot;</span><span class="p">(</span><span class="n">TYPE</span> <span class="n">text</span><span class="p">)</span>
@@ -607,14 +599,14 @@ file named container_cfg.c</p>
 </ol>
 <p>secure_symbol.txt contains the symbols (container interface) exported to normal application from secure binary. This file is only required when normal application needs to call the symbol in secure binary. It also needs to be defined in makefile.
 For example, the following container (container4) will be compiled and linked with secure binary, it has two interfaces:</p>
-<div class="highlight-c"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="n">CONTAINER_AC_TABLE</span> <span class="n">g_container4_act</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="n">CONTAINER_AC_TABLE</span> <span class="n">g_container4_act</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
 <span class="p">{</span><span class="n">tst_func_sec1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">SECURESHIELD_AC_INTERFACE</span><span class="p">},</span>
 <span class="p">{</span><span class="n">tst_func_sec2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">SECURESHIELD_AC_INTERFACE</span><span class="p">}</span>
 <span class="p">};</span>
 </pre></div>
 </div>
 <p>Then the secure_symbol.txt should be:</p>
-<div class="highlight-c"><div class="highlight"><pre><span></span><span class="n">tst_func_sec1</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">tst_func_sec1</span>
 <span class="n">tst_func_sec2</span>
 </pre></div>
 </div>
@@ -636,9 +628,7 @@ For example, the following container (container4) will be compiled and linked wi
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -660,7 +650,7 @@ For example, the following container (container4) will be compiled and linked wi
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -679,6 +669,7 @@ For example, the following container (container4) will be compiled and linked wi
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'2018.01',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -696,14 +687,11 @@ For example, the following container (container4) will be compiled and linked wi
     <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="emb_a_r_c__syscalls_8c" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="emb_a_r_c__syscalls_8c" kind="file">
     <compoundname>embARC_syscalls.c</compoundname>
     <includes local="no">errno.h</includes>
     <includes local="no">stdarg.h</includes>
@@ -17,43 +17,179 @@
     <includes refid="emb_a_r_c_8h" local="yes">embARC.h</includes>
     <includes local="yes">ff.h</includes>
     <incdepgraph>
-      <node id="2208">
+      <node id="2223">
         <label>sys/stat.h</label>
       </node>
-      <node id="2216">
-        <label>embARC_toolchain.h</label>
-        <link refid="emb_a_r_c__toolchain_8h"/>
-        <childnode refid="2217" relation="include">
+      <node id="2234">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2215">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2244">
+        <label>arc_mpu.h</label>
+        <link refid="arc__mpu_8h_source"/>
+        <childnode refid="2238" relation="include">
         </childnode>
-        <childnode refid="2211" relation="include">
+        <childnode refid="2236" relation="include">
+        </childnode>
+      </node>
+      <node id="2225">
+        <label>embARC_target.h</label>
+        <link refid="emb_a_r_c__target_8h"/>
+        <childnode refid="2220" relation="include">
+        </childnode>
+        <childnode refid="2226" relation="include">
+        </childnode>
+        <childnode refid="2227" relation="include">
+        </childnode>
+      </node>
+      <node id="2247">
+        <label>console_io.h</label>
+      </node>
+      <node id="2238">
+        <label>arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="2239" relation="include">
+        </childnode>
+      </node>
+      <node id="2250">
+        <label>ntshell_task.h</label>
+      </node>
+      <node id="2232">
+        <label>stdint.h</label>
+      </node>
+      <node id="2217">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2236">
+        <label>arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="2231" relation="include">
+        </childnode>
+      </node>
+      <node id="2214">
+        <label>errno.h</label>
+      </node>
+      <node id="2230">
+        <label>embARC.h</label>
+        <link refid="emb_a_r_c_8h"/>
+        <childnode refid="2231" relation="include">
+        </childnode>
+        <childnode refid="2235" relation="include">
+        </childnode>
+        <childnode refid="2236" relation="include">
+        </childnode>
+        <childnode refid="2237" relation="include">
+        </childnode>
+        <childnode refid="2240" relation="include">
+        </childnode>
+        <childnode refid="2241" relation="include">
+        </childnode>
+        <childnode refid="2242" relation="include">
+        </childnode>
+        <childnode refid="2244" relation="include">
+        </childnode>
+        <childnode refid="2245" relation="include">
+        </childnode>
+        <childnode refid="2246" relation="include">
+        </childnode>
+        <childnode refid="2247" relation="include">
+        </childnode>
+        <childnode refid="2229" relation="include">
+        </childnode>
+        <childnode refid="2248" relation="include">
+        </childnode>
+        <childnode refid="2249" relation="include">
+        </childnode>
+        <childnode refid="2250" relation="include">
+        </childnode>
+      </node>
+      <node id="2219">
+        <label>fcntl.h</label>
+      </node>
+      <node id="2243">
+        <label>arc_udma_config.h</label>
+        <link refid="arc__udma__config_8h"/>
+        <childnode refid="2239" relation="include">
+        </childnode>
+        <childnode refid="2240" relation="include">
+        </childnode>
+      </node>
+      <node id="2242">
+        <label>arc_udma.h</label>
+        <link refid="arc__udma_8h"/>
+        <childnode refid="2232" relation="include">
+        </childnode>
+        <childnode refid="2233" relation="include">
+        </childnode>
+        <childnode refid="2218" relation="include">
+        </childnode>
+        <childnode refid="2231" relation="include">
+        </childnode>
+        <childnode refid="2238" relation="include">
+        </childnode>
+        <childnode refid="2236" relation="include">
+        </childnode>
+        <childnode refid="2241" relation="include">
+        </childnode>
+        <childnode refid="2243" relation="include">
+        </childnode>
+      </node>
+      <node id="2227">
+        <label>ya_getopt.h</label>
+        <link refid="ya__getopt_8h_source"/>
+      </node>
+      <node id="2233">
+        <label>stddef.h</label>
+      </node>
+      <node id="2246">
+        <label>os_hal_inc.h</label>
+        <link refid="os__hal__inc_8h"/>
+      </node>
+      <node id="2249">
+        <label>diskio.h</label>
+      </node>
+      <node id="2226">
+        <label>limits.h</label>
+      </node>
+      <node id="2228">
+        <label>embARC_debug.h</label>
+        <link refid="emb_a_r_c__debug_8h"/>
+        <childnode refid="2229" relation="include">
+        </childnode>
+      </node>
+      <node id="2218">
+        <label>string.h</label>
+      </node>
+      <node id="2245">
+        <label>board.h</label>
+        <link refid="board_8h"/>
+      </node>
+      <node id="2237">
+        <label>arc_timer.h</label>
+        <link refid="arc__timer_8h"/>
+        <childnode refid="2238" relation="include">
+        </childnode>
+        <childnode refid="2236" relation="include">
+        </childnode>
+        <childnode refid="2231" relation="include">
+        </childnode>
+      </node>
+      <node id="2213">
+        <label>embARC_syscalls.c</label>
+        <link refid="embARC_syscalls.c"/>
+        <childnode refid="2214" relation="include">
+        </childnode>
+        <childnode refid="2215" relation="include">
+        </childnode>
+        <childnode refid="2216" relation="include">
+        </childnode>
+        <childnode refid="2217" relation="include">
         </childnode>
         <childnode refid="2218" relation="include">
         </childnode>
         <childnode refid="2219" relation="include">
-        </childnode>
-      </node>
-      <node id="2219">
-        <label>stdbool.h</label>
-      </node>
-      <node id="2200">
-        <label>stdarg.h</label>
-      </node>
-      <node id="2232">
-        <label>console_io.h</label>
-      </node>
-      <node id="2235">
-        <label>ntshell_task.h</label>
-      </node>
-      <node id="2217">
-        <label>stdint.h</label>
-      </node>
-      <node id="2202">
-        <label>stdlib.h</label>
-      </node>
-      <node id="2215">
-        <label>embARC.h</label>
-        <link refid="emb_a_r_c_8h"/>
-        <childnode refid="2216" relation="include">
         </childnode>
         <childnode refid="2220" relation="include">
         </childnode>
@@ -61,222 +197,86 @@
         </childnode>
         <childnode refid="2222" relation="include">
         </childnode>
-        <childnode refid="2225" relation="include">
+        <childnode refid="2223" relation="include">
         </childnode>
-        <childnode refid="2226" relation="include">
+        <childnode refid="2224" relation="include">
         </childnode>
-        <childnode refid="2227" relation="include">
-        </childnode>
-        <childnode refid="2229" relation="include">
+        <childnode refid="2228" relation="include">
         </childnode>
         <childnode refid="2230" relation="include">
         </childnode>
+        <childnode refid="2248" relation="include">
+        </childnode>
+      </node>
+      <node id="2224">
+        <label>embARC_syscalls.h</label>
+        <link refid="emb_a_r_c__syscalls_8h"/>
+        <childnode refid="2225" relation="include">
+        </childnode>
+      </node>
+      <node id="2239">
+        <label>arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="2220">
+        <label>time.h</label>
+      </node>
+      <node id="2240">
+        <label>arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
         <childnode refid="2231" relation="include">
         </childnode>
+        <childnode refid="2238" relation="include">
+        </childnode>
+        <childnode refid="2236" relation="include">
+        </childnode>
+      </node>
+      <node id="2229">
+        <label>xprintf.h</label>
+      </node>
+      <node id="2222">
+        <label>sys/time.h</label>
+      </node>
+      <node id="2241">
+        <label>arc_cache.h</label>
+        <link refid="arc__cache_8h"/>
+        <childnode refid="2231" relation="include">
+        </childnode>
+        <childnode refid="2238" relation="include">
+        </childnode>
+        <childnode refid="2236" relation="include">
+        </childnode>
+        <childnode refid="2240" relation="include">
+        </childnode>
+      </node>
+      <node id="2248">
+        <label>ff.h</label>
+      </node>
+      <node id="2221">
+        <label>ctype.h</label>
+      </node>
+      <node id="2216">
+        <label>stdio.h</label>
+      </node>
+      <node id="2231">
+        <label>embARC_toolchain.h</label>
+        <link refid="emb_a_r_c__toolchain_8h"/>
         <childnode refid="2232" relation="include">
         </childnode>
-        <childnode refid="2214" relation="include">
+        <childnode refid="2226" relation="include">
         </childnode>
         <childnode refid="2233" relation="include">
         </childnode>
         <childnode refid="2234" relation="include">
         </childnode>
-        <childnode refid="2235" relation="include">
-        </childnode>
       </node>
-      <node id="2213">
-        <label>embARC_debug.h</label>
-        <link refid="emb_a_r_c__debug_8h"/>
-        <childnode refid="2214" relation="include">
-        </childnode>
-      </node>
-      <node id="2199">
-        <label>errno.h</label>
-      </node>
-      <node id="2210">
-        <label>embARC_target.h</label>
-        <link refid="emb_a_r_c__target_8h"/>
-        <childnode refid="2205" relation="include">
-        </childnode>
-        <childnode refid="2211" relation="include">
-        </childnode>
-        <childnode refid="2212" relation="include">
-        </childnode>
-      </node>
-      <node id="2204">
-        <label>fcntl.h</label>
-      </node>
-      <node id="2198">
-        <label>embARC_syscalls.c</label>
-        <link refid="emb_a_r_c__syscalls_8c"/>
-        <childnode refid="2199" relation="include">
-        </childnode>
-        <childnode refid="2200" relation="include">
-        </childnode>
-        <childnode refid="2201" relation="include">
-        </childnode>
-        <childnode refid="2202" relation="include">
-        </childnode>
-        <childnode refid="2203" relation="include">
-        </childnode>
-        <childnode refid="2204" relation="include">
-        </childnode>
-        <childnode refid="2205" relation="include">
-        </childnode>
-        <childnode refid="2206" relation="include">
-        </childnode>
-        <childnode refid="2207" relation="include">
-        </childnode>
-        <childnode refid="2208" relation="include">
-        </childnode>
-        <childnode refid="2209" relation="include">
-        </childnode>
-        <childnode refid="2213" relation="include">
-        </childnode>
-        <childnode refid="2215" relation="include">
-        </childnode>
-        <childnode refid="2233" relation="include">
-        </childnode>
-      </node>
-      <node id="2209">
-        <label>embARC_syscalls.h</label>
-        <link refid="emb_a_r_c__syscalls_8h"/>
-        <childnode refid="2210" relation="include">
-        </childnode>
-      </node>
-      <node id="2221">
-        <label>arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="2216" relation="include">
-        </childnode>
-      </node>
-      <node id="2218">
-        <label>stddef.h</label>
-      </node>
-      <node id="2234">
-        <label>diskio.h</label>
-      </node>
-      <node id="2211">
-        <label>limits.h</label>
-      </node>
-      <node id="2222">
-        <label>arc_timer.h</label>
-        <link refid="arc__timer_8h"/>
-        <childnode refid="2223" relation="include">
-        </childnode>
-        <childnode refid="2221" relation="include">
-        </childnode>
-        <childnode refid="2216" relation="include">
-        </childnode>
-      </node>
-      <node id="2220">
+      <node id="2235">
         <label>embARC_error.h</label>
         <link refid="emb_a_r_c__error_8h"/>
-        <childnode refid="2217" relation="include">
+        <childnode refid="2232" relation="include">
         </childnode>
-        <childnode refid="2221" relation="include">
+        <childnode refid="2236" relation="include">
         </childnode>
-      </node>
-      <node id="2203">
-        <label>string.h</label>
-      </node>
-      <node id="2230">
-        <label>board.h</label>
-        <link refid="board_8h"/>
-      </node>
-      <node id="2225">
-        <label>arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="2216" relation="include">
-        </childnode>
-        <childnode refid="2223" relation="include">
-        </childnode>
-        <childnode refid="2221" relation="include">
-        </childnode>
-      </node>
-      <node id="2227">
-        <label>arc_udma.h</label>
-        <link refid="arc__udma_8h"/>
-        <childnode refid="2217" relation="include">
-        </childnode>
-        <childnode refid="2218" relation="include">
-        </childnode>
-        <childnode refid="2203" relation="include">
-        </childnode>
-        <childnode refid="2216" relation="include">
-        </childnode>
-        <childnode refid="2223" relation="include">
-        </childnode>
-        <childnode refid="2221" relation="include">
-        </childnode>
-        <childnode refid="2226" relation="include">
-        </childnode>
-        <childnode refid="2228" relation="include">
-        </childnode>
-      </node>
-      <node id="2223">
-        <label>arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="2224" relation="include">
-        </childnode>
-      </node>
-      <node id="2231">
-        <label>os_hal_inc.h</label>
-        <link refid="os__hal__inc_8h"/>
-      </node>
-      <node id="2205">
-        <label>time.h</label>
-      </node>
-      <node id="2229">
-        <label>arc_mpu.h</label>
-        <link refid="arc__mpu_8h_source"/>
-        <childnode refid="2223" relation="include">
-        </childnode>
-        <childnode refid="2221" relation="include">
-        </childnode>
-      </node>
-      <node id="2214">
-        <label>xprintf.h</label>
-      </node>
-      <node id="2207">
-        <label>sys/time.h</label>
-      </node>
-      <node id="2228">
-        <label>arc_udma_config.h</label>
-        <link refid="arc__udma__config_8h"/>
-        <childnode refid="2224" relation="include">
-        </childnode>
-        <childnode refid="2225" relation="include">
-        </childnode>
-      </node>
-      <node id="2233">
-        <label>ff.h</label>
-      </node>
-      <node id="2226">
-        <label>arc_cache.h</label>
-        <link refid="arc__cache_8h"/>
-        <childnode refid="2216" relation="include">
-        </childnode>
-        <childnode refid="2223" relation="include">
-        </childnode>
-        <childnode refid="2221" relation="include">
-        </childnode>
-        <childnode refid="2225" relation="include">
-        </childnode>
-      </node>
-      <node id="2206">
-        <label>ctype.h</label>
-      </node>
-      <node id="2212">
-        <label>ya_getopt.h</label>
-        <link refid="ya__getopt_8h_source"/>
-      </node>
-      <node id="2201">
-        <label>stdio.h</label>
-      </node>
-      <node id="2224">
-        <label>arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="define">
@@ -289,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="58" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="58" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="58" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="emb_a_r_c__syscalls_8c_1ad894fa48bdb6402ac026de449da74ffd" prot="public" static="no">
         <name>BOARD_CONSOLE_UART_ID</name>
@@ -300,7 +300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="62" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="62" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="62" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="emb_a_r_c__syscalls_8c_1ab6a5428995eb87c161f554c44e6457ab" prot="public" static="no">
         <name>BOARD_CONSOLE_UART_BAUD</name>
@@ -311,7 +311,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="65" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="65" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="65" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="emb_a_r_c__syscalls_8c_1ad3058010e66f13a11489cbb0edf58daa" prot="public" static="no">
         <name>EMBARC_CFG_STDIO_CRLF</name>
@@ -322,7 +322,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="69" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="69" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="69" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="emb_a_r_c__syscalls_8c_1a010f7c3d63c325f2db0f7eb197ac42c8" prot="public" static="no">
         <name>EMBARC_CFG_USE_RTCTIME</name>
@@ -333,7 +333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="73" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="73" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="73" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="emb_a_r_c__syscalls_8c_1a73c7f7024110d38d9e79fa88f9a286eb" prot="public" static="no">
         <name>STDIO_FID_OFS</name>
@@ -344,7 +344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="76" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="76" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="76" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="emb_a_r_c__syscalls_8c_1ad0b44f374e7c2ddbfcd248bd85cd0a49" prot="public" static="no">
         <name>EMBARC_CFG_MAX_FILEHANDLES</name>
@@ -355,7 +355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="135" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="135" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="135" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="135" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -371,7 +371,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="78" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="78" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="78" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="emb_a_r_c__syscalls_8c_1a2341e7986578085c8b588d438576f687" prot="public" static="no" mutable="no">
         <type><ref refid="group___d_e_v_i_c_e___h_a_l___u_a_r_t___d_e_v_s_t_r_u_c_t_1ga8e8dd2c66ea7a119aec01e976ff4d6b4" kindref="member">DEV_UART</ref> *</type>
@@ -384,7 +384,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="79" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="79" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="79" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="emb_a_r_c__syscalls_8c_1aa9390fed087b47f32c02b55ab6dd5a73" prot="public" static="yes" mutable="no">
         <type>FIL *</type>
@@ -398,7 +398,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="137" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="137" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="137" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="emb_a_r_c__syscalls_8c_1a71ec86742030a1c89c23a98d0700a5fb" prot="public" static="yes" mutable="no">
         <type>char *</type>
@@ -417,7 +417,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="497" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="497" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="497" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="497" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="emb_a_r_c__syscalls_8c_1acf0766f6ff77c0dfc5114652471a9dad" prot="public" static="no" mutable="no">
         <type>char **</type>
@@ -431,7 +431,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="506" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="506" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="506" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="506" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="emb_a_r_c__syscalls_8c_1af29ac34e7c4139afe3dbaa484350e89b" prot="public" static="yes" mutable="no">
         <type>int</type>
@@ -445,7 +445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="580" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="580" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="580" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="580" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="emb_a_r_c__syscalls_8c_1acc548493570f2325d2842498abb70a17" prot="public" static="yes" mutable="no">
         <type>struct tm</type>
@@ -458,7 +458,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="580" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="581" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="580" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="581" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="emb_a_r_c__syscalls_8c_1a0d99008ee3ac519cc565879b4aee085c" prot="public" static="yes" mutable="no">
         <type>time_t</type>
@@ -471,7 +471,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="582" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="582" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="582" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="582" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -489,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="80" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="80" bodyend="91"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="80" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="80" bodyend="91"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a1c6bad08111f7b1073bfc68fb4d7f995" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -510,7 +510,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="93" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="93" bodyend="103"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="93" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="93" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a67e725b1118b93dad4e55a3d7a6342f4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -527,7 +527,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="105" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="105" bodyend="108"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="105" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="105" bodyend="108"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a4784fc2058ebd10d30725c7a615f3043" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -548,7 +548,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="111" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="111" bodyend="128"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="111" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="111" bodyend="128"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a7ca9e24a2a1600e2d8d31ec355ed7de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Inline BYTE</type>
@@ -565,7 +565,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="142" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="142" bodyend="162"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="142" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="142" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1ab91cb2cc2919c2a0c1b1a01dcf1e931e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -589,7 +589,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="167" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="167" bodyend="216"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="167" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="167" bodyend="216"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a36c9eebd680d91682b5517df8c2f5383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -606,7 +606,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="219" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="219" bodyend="241"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="219" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="219" bodyend="241"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1af4b588ff854c00dd725c2568f0ed277e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -631,7 +631,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="244" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="244" bodyend="267"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="244" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="244" bodyend="267"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1ae80cbdee82ce9b766b5b685d72d164c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -656,7 +656,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="270" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="270" bodyend="292"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="270" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="270" bodyend="292"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1ac3f349f113e459e832357fdb994c7a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>long SYSCALL_PREFIX()</type>
@@ -681,7 +681,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="295" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="295" bodyend="323"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="295" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="295" bodyend="323"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a3444da81c30497f2a2aea3abea0bafcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -702,7 +702,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="326" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="326" bodyend="334"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="326" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="326" bodyend="334"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a3356fc0eceee2faddc7415215d9e7682" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -719,7 +719,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="337" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="337" bodyend="353"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="337" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="337" bodyend="353"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1ae810d22b6ec2efb55fcabc789b2d646e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -736,7 +736,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="356" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="356" bodyend="364"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="356" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="356" bodyend="364"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1af08208af1cecdd8ac248b3d7cc177d87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -757,7 +757,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="367" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="367" bodyend="375"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="367" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="367" bodyend="375"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a1d24fdfaec326d37960f06c642b09be5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -774,7 +774,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="378" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="378" bodyend="381"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="378" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="378" bodyend="381"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a5114b323d5ab9c6307230aa97e2923a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -795,7 +795,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="384" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="384" bodyend="406"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="384" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="384" bodyend="406"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1af86e9434e2c42c0d84b7707b619af160" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -816,7 +816,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="409" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="409" bodyend="412"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="409" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="409" bodyend="412"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1ab84553cc4cad5ce3dc552c7fcceb3383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -837,7 +837,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="416" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="416" bodyend="426"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="416" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="416" bodyend="426"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1aa37c36e314c0eba758da024bb373063f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char *SYSCALL_PREFIX()</type>
@@ -858,7 +858,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="432" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="432" bodyend="440"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="432" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="432" bodyend="440"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a1dbc1c0777b600a14c354d5ea9ec523b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -874,7 +874,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="473" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="473" bodyend="476"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="473" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="473" bodyend="476"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a93b9cf91f7623d6d8b100a3693d6d5e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -890,7 +890,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="478" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="478" bodyend="484"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="478" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="478" bodyend="484"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a3e478a5be85aa5ae842bed58084e27da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -911,7 +911,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="487" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="487" bodyend="491"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="487" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="487" bodyend="491"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a6528980618ce24d506197c64c98529fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char *SYSCALL_PREFIX()</type>
@@ -928,7 +928,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="509" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="509" bodyend="524"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="509" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="509" bodyend="524"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1ae17bc5828bdebcdc08baf902b7de5175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -945,7 +945,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="527" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="527" bodyend="547"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="527" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="527" bodyend="547"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a68d1060b3fec56f6b3a40f828c460211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char *</type>
@@ -962,7 +962,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="550" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="550" bodyend="553"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="550" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="550" bodyend="553"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a77170db78991af53c1a5e4b9283ef98f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>unsigned long</type>
@@ -978,7 +978,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="568" column="1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="568" column="1"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a88eb546dee842ce0481fb13563de0781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>clock_t SYSCALL_PREFIX()</type>
@@ -994,7 +994,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="570" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="570" bodyend="577"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="570" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="570" bodyend="577"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1abe8e59ab72e71883ee86d95c064b5a06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>time_t SYSCALL_PREFIX()</type>
@@ -1011,7 +1011,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="585" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="585" bodyend="597"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="585" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="585" bodyend="597"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a9d4d75c1826e644cf6f05fd2d5aed2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -1032,7 +1032,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="611" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="611" bodyend="621"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="611" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="611" bodyend="621"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a7bfc166c08ec21715d0af10af85af949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int SYSCALL_PREFIX()</type>
@@ -1048,7 +1048,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="632" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="632" bodyend="635"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="632" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="632" bodyend="635"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__syscalls_8c_1a29547783f1faba4b4fbc67d8091fc1fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char *SYSCALL_PREFIX()</type>
@@ -1065,7 +1065,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" line="637" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c" bodystart="637" bodyend="640"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" line="637" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c" bodystart="637" bodyend="640"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1112,40 +1112,40 @@
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctype.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNU__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNU__</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/times.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emb_a_r_c__syscalls_8h" kindref="compound">embARC_syscalls.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emb_a_r_c__debug_8h" kindref="compound">embARC_debug.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emb_a_r_c_8h" kindref="compound">embARC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="preprocessor">#ifndef<sp/>_HOSTLINK_<sp/></highlight><highlight class="comment">/*<sp/>Not<sp/>using<sp/>hostlink<sp/>library<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ENVIRON_LEN</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ENVIRON_LEN<sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BOARD_CONSOLE_UART_ID</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_CONSOLE_UART_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BOARD_CONSOLE_UART_BAUD</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_CONSOLE_UART_BAUD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UART_BAUDRATE_115200</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EMBARC_CFG_STDIO_CRLF</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMBARC_CFG_STDIO_CRLF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EMBARC_CFG_USE_RTCTIME</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMBARC_CFG_USE_RTCTIME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STDIO_FID_OFS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor">#ifndef<sp/>_HOSTLINK_<sp/></highlight><highlight class="comment">/*<sp/>Not<sp/>using<sp/>hostlink<sp/>library<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ENVIRON_LEN</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ENVIRON_LEN<sp/><sp/><sp/><sp/>32</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BOARD_CONSOLE_UART_ID</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_CONSOLE_UART_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>BOARD_CONSOLE_UART_BAUD</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_CONSOLE_UART_BAUD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UART_BAUDRATE_115200</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EMBARC_CFG_STDIO_CRLF</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMBARC_CFG_STDIO_CRLF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EMBARC_CFG_USE_RTCTIME</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMBARC_CFG_USE_RTCTIME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STDIO_FID_OFS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stdio_uart_inited<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><ref refid="structdev__uart" kindref="compound">DEV_UART</ref><sp/>*stdio_uart_obj;</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_stdio_serial(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
@@ -1183,8 +1183,8 @@
 <codeline lineno="112"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!stdio_uart_obj)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>EMBARC_CFG_STDIO_CRLF</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>EMBARC_CFG_STDIO_CRLF</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>length)<sp/>{</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_arc_rarely(buffer[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stdio_write_char(</highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">);</highlight></codeline>
@@ -1193,21 +1193,21 @@
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)i;</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)stdio_uart_obj-&gt;<ref refid="group___d_e_v_i_c_e___h_a_l___u_a_r_t___d_e_v_s_t_r_u_c_t_1gadb3f65e65636442af53578c64f2ea2a4" kindref="member">uart_write</ref>((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)buffer,<sp/>(uint32_t)length);</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)stdio_uart_obj-&gt;<ref refid="group___d_e_v_i_c_e___h_a_l___u_a_r_t___d_e_v_s_t_r_u_c_t_1gadb3f65e65636442af53578c64f2ea2a4" kindref="member">uart_write</ref>((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)buffer,<sp/>(uint32_t)length);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
 <codeline lineno="130"><highlight class="comment">//<sp/>File<sp/>Processing<sp/>//</highlight></codeline>
-<codeline lineno="132"><highlight class="comment"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ff.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EMBARC_CFG_MAX_FILEHANDLES</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMBARC_CFG_MAX_FILEHANDLES<sp/><sp/><sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>FIL<sp/>*file_handles[EMBARC_CFG_MAX_FILEHANDLES]<sp/>=<sp/>{<sp/>NULL<sp/>};</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(MID_FATFS)<sp/>&amp;&amp;<sp/>!_FS_READONLY</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="comment"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;ff.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>EMBARC_CFG_MAX_FILEHANDLES</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMBARC_CFG_MAX_FILEHANDLES<sp/><sp/><sp/><sp/><sp/><sp/>32</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>FIL<sp/>*file_handles[EMBARC_CFG_MAX_FILEHANDLES]<sp/>=<sp/>{<sp/>NULL<sp/>};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(MID_FATFS)<sp/>&amp;&amp;<sp/>!_FS_READONLY</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="142"><highlight class="normal">Inline<sp/>BYTE<sp/>conv_openmode(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags)</highlight></codeline>
 <codeline lineno="143"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BYTE<sp/>openmode<sp/>=<sp/>0;</highlight></codeline>
@@ -1229,16 +1229,16 @@
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>openmode;</highlight></codeline>
 <codeline lineno="162"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="preprocessor">#ifdef<sp/>__MW__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_open)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>path,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags,<sp/></highlight><highlight class="comment">/*<sp/>int<sp/>mode<sp/>*/</highlight><highlight class="normal"><sp/>...)</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_open)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>path,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor">#ifdef<sp/>__MW__</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_open)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>path,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags,<sp/></highlight><highlight class="comment">/*<sp/>int<sp/>mode<sp/>*/</highlight><highlight class="normal"><sp/>...)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_open)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>path,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode)</highlight></codeline>
 <codeline lineno="170"><highlight class="normal">#endif</highlight></codeline>
 <codeline lineno="171"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fid;<sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fid;<sp/></highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FIL<sp/>*tmp_filep;<sp/></highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BYTE<sp/>openmode;</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"></highlight></codeline>
@@ -1257,16 +1257,16 @@
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file_handles[fid]<sp/>=<sp/>tmp_filep;</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_FS_READONLY</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flags<sp/>==<sp/>O_RDONLY)<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_FS_READONLY</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(flags<sp/>==<sp/>O_RDONLY)<sp/>{</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>openmode<sp/>=<sp/>FA_READ;</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>openmode<sp/>=<sp/>conv_openmode(flags);</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FRESULT<sp/>res<sp/>=<sp/>f_open(tmp_filep,<sp/>path,<sp/>openmode);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="199"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>openmode<sp/>=<sp/>conv_openmode(flags);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="201"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FRESULT<sp/>res<sp/>=<sp/>f_open(tmp_filep,<sp/>path,<sp/>openmode);</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(res)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>open<sp/>error<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(tmp_filep);</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file_handles[fid]<sp/>=<sp/>NULL;</highlight></codeline>
@@ -1277,18 +1277,18 @@
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fid<sp/>+<sp/>STDIO_FID_OFS;<sp/></highlight><highlight class="comment">/*<sp/>0-2<sp/>are<sp/>stdin/stdout/stderr,<sp/>so<sp/>plus<sp/>3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="212"><highlight class="normal"></highlight></codeline>
-<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>No<sp/>File<sp/>System<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
-<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>No<sp/>File<sp/>System<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="214"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"></highlight></codeline>
 <codeline lineno="219"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_close)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>handle)</highlight></codeline>
 <codeline lineno="220"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(handle<sp/>&lt;<sp/>STDIO_FID_OFS)<sp/>{<sp/></highlight><highlight class="comment">/*<sp/>for<sp/>stdin/stdout/stderr<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((handle-STDIO_FID_OFS)<sp/>&gt;=<sp/>EMBARC_CFG_MAX_FILEHANDLES)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((handle-STDIO_FID_OFS)<sp/>&gt;=<sp/>EMBARC_CFG_MAX_FILEHANDLES)<sp/>{</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;<sp/></highlight><highlight class="comment">/*<sp/>No<sp/>more<sp/>available<sp/>file<sp/>handler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FIL<sp/>*tmp_filep;<sp/></highlight></codeline>
@@ -1302,8 +1302,8 @@
 <codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="239"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="240"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="241"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="242"><highlight class="normal"></highlight></codeline>
 <codeline lineno="244"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_read)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>handle,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length)</highlight></codeline>
@@ -1313,8 +1313,8 @@
 <codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stdio_read(buffer,<sp/>length);</highlight></codeline>
 <codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="250"><highlight class="normal"></highlight></codeline>
-<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((handle-STDIO_FID_OFS)<sp/>&gt;=<sp/>EMBARC_CFG_MAX_FILEHANDLES)<sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="252"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((handle-STDIO_FID_OFS)<sp/>&gt;=<sp/>EMBARC_CFG_MAX_FILEHANDLES)<sp/>{</highlight></codeline>
 <codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;<sp/></highlight><highlight class="comment">/*<sp/>No<sp/>more<sp/>available<sp/>file<sp/>handler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FIL<sp/>*tmp_filep;<sp/></highlight></codeline>
@@ -1327,8 +1327,8 @@
 <codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)br;</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="266"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="267"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"></highlight></codeline>
 <codeline lineno="270"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_write)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>handle,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length)</highlight></codeline>
@@ -1337,8 +1337,8 @@
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_stdio_serial();</highlight></codeline>
 <codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stdio_write(buffer,<sp/>length);</highlight></codeline>
 <codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((handle-STDIO_FID_OFS)<sp/>&gt;=<sp/>EMBARC_CFG_MAX_FILEHANDLES)<sp/>{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="277"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((handle-STDIO_FID_OFS)<sp/>&gt;=<sp/>EMBARC_CFG_MAX_FILEHANDLES)<sp/>{</highlight></codeline>
 <codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;<sp/></highlight><highlight class="comment">/*<sp/>No<sp/>more<sp/>available<sp/>file<sp/>handler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FIL<sp/>*tmp_filep;<sp/></highlight></codeline>
@@ -1351,8 +1351,8 @@
 <codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)bw;</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="291"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="292"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="293"><highlight class="normal"></highlight></codeline>
 <codeline lineno="295"><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_lseek)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>handle,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>method)</highlight></codeline>
@@ -1360,8 +1360,8 @@
 <codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(handle<sp/>&lt;<sp/>STDIO_FID_OFS)<sp/>{</highlight></codeline>
 <codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="300"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((handle-STDIO_FID_OFS)<sp/>&gt;=<sp/>EMBARC_CFG_MAX_FILEHANDLES)<sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="301"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((handle-STDIO_FID_OFS)<sp/>&gt;=<sp/>EMBARC_CFG_MAX_FILEHANDLES)<sp/>{</highlight></codeline>
 <codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;<sp/></highlight><highlight class="comment">/*<sp/>No<sp/>more<sp/>available<sp/>file<sp/>handler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FIL<sp/>*tmp_filep;<sp/></highlight></codeline>
@@ -1381,18 +1381,18 @@
 <codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="319"><highlight class="normal"></highlight></codeline>
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="321"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="322"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="323"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="324"><highlight class="normal"></highlight></codeline>
 <codeline lineno="326"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_access)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode)</highlight></codeline>
 <codeline lineno="327"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="328"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FRESULT<sp/>res<sp/>=<sp/>f_stat((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR<sp/>*)name,<sp/>NULL);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="329"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FRESULT<sp/>res<sp/>=<sp/>f_stat((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR<sp/>*)name,<sp/>NULL);</highlight></codeline>
 <codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(res)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="332"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="333"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="334"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="335"><highlight class="normal"></highlight></codeline>
 <codeline lineno="337"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_isatty)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>handle)</highlight></codeline>
@@ -1400,8 +1400,8 @@
 <codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(handle<sp/>&lt;<sp/>STDIO_FID_OFS)<sp/>{</highlight></codeline>
 <codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
 <codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="342"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((handle-STDIO_FID_OFS)<sp/>&gt;=<sp/>EMBARC_CFG_MAX_FILEHANDLES)<sp/>{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="343"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((handle-STDIO_FID_OFS)<sp/>&gt;=<sp/>EMBARC_CFG_MAX_FILEHANDLES)<sp/>{</highlight></codeline>
 <codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;<sp/></highlight><highlight class="comment">/*<sp/>No<sp/>more<sp/>available<sp/>file<sp/>handler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FIL<sp/>*tmp_filep;<sp/></highlight></codeline>
@@ -1409,28 +1409,28 @@
 <codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp_filep)<sp/>{</highlight></codeline>
 <codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="351"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="352"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="353"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="354"><highlight class="normal"></highlight></codeline>
 <codeline lineno="356"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_unlink)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path)</highlight></codeline>
 <codeline lineno="357"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(f_unlink((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR<sp/>*)path)<sp/>==<sp/>FR_OK)<sp/>{</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="359"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(f_unlink((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR<sp/>*)path)<sp/>==<sp/>FR_OK)<sp/>{</highlight></codeline>
 <codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="362"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="363"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="364"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="365"><highlight class="normal"></highlight></codeline>
 <codeline lineno="367"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(rename)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*old,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="368"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="369"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(f_rename((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR<sp/>*)old,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR<sp/>*)</highlight><highlight class="keyword">new</highlight><highlight class="normal">)<sp/>==<sp/>FR_OK)<sp/>{</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="370"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(f_rename((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR<sp/>*)old,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR<sp/>*)</highlight><highlight class="keyword">new</highlight><highlight class="normal">)<sp/>==<sp/>FR_OK)<sp/>{</highlight></codeline>
 <codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="373"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="374"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="375"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="376"><highlight class="normal"></highlight></codeline>
 <codeline lineno="378"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_rmdir)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pathname)</highlight></codeline>
@@ -1441,14 +1441,14 @@
 <codeline lineno="384"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_stat)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">stat<sp/>*buf)</highlight></codeline>
 <codeline lineno="385"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!buf)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
-<codeline lineno="387"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILINFO<sp/>fno;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="388"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILINFO<sp/>fno;</highlight></codeline>
 <codeline lineno="389"><highlight class="normal"></highlight></codeline>
-<codeline lineno="390"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_USE_LFN</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fno.lfname<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_USE_LFN</highlight></codeline>
+<codeline lineno="391"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fno.lfname<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fno.lfsize<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="393"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(f_stat((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR<sp/>*)path,<sp/>&amp;fno)<sp/>==<sp/>FR_OK)<sp/>{</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="394"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(f_stat((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TCHAR<sp/>*)path,<sp/>&amp;fno)<sp/>==<sp/>FR_OK)<sp/>{</highlight></codeline>
 <codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fno.fattrib<sp/>&amp;<sp/>AM_DIR)<sp/>{</highlight></codeline>
 <codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf-&gt;st_mode<sp/>=<sp/>S_IFDIR;</highlight></codeline>
 <codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
@@ -1458,8 +1458,8 @@
 <codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf-&gt;st_mtime<sp/>=<sp/>fno.ftime;</highlight></codeline>
 <codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="404"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="405"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="406"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="407"><highlight class="normal"></highlight></codeline>
 <codeline lineno="409"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_lstat)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">stat<sp/>*buf)</highlight></codeline>
@@ -1482,40 +1482,40 @@
 <codeline lineno="431"><highlight class="comment"></highlight></codeline>
 <codeline lineno="432"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*SYSCALL_PREFIX(_getcwd)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len)</highlight></codeline>
 <codeline lineno="433"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="434"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(f_getcwd((TCHAR<sp/>*)buf,<sp/>(UINT)len)<sp/>==<sp/>FR_OK)<sp/>{</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="435"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(f_getcwd((TCHAR<sp/>*)buf,<sp/>(UINT)len)<sp/>==<sp/>FR_OK)<sp/>{</highlight></codeline>
 <codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buf;</highlight></codeline>
 <codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="438"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="439"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
 <codeline lineno="440"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="441"><highlight class="normal"></highlight></codeline>
-<codeline lineno="442"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNU__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="443"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*SYSCALL_PREFIX(getcwd)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len)</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNU__</highlight></codeline>
+<codeline lineno="443"><highlight class="preprocessor"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*SYSCALL_PREFIX(getcwd)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len)</highlight></codeline>
 <codeline lineno="444"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_getcwd)(buf,<sp/>len);</highlight></codeline>
 <codeline lineno="446"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="447"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="448"><highlight class="normal"></highlight></codeline>
-<codeline lineno="449"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__MW__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="450"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>open<sp/>=<sp/>_open</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="451"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>close<sp/>=<sp/>_close</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="452"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>read<sp/>=<sp/>_read</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="453"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>write<sp/>=<sp/>_write</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="454"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>lseek<sp/>=<sp/>_lseek</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="455"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>unlink<sp/>=<sp/>_unlink</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="456"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>getcwd<sp/>=<sp/>_getcwd</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="457"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>isatty<sp/>=<sp/>_isatty</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="458"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>getpid<sp/>=<sp/>_getpid</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="459"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>access<sp/>=<sp/>_access</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="460"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>remove<sp/>=<sp/>_unlink</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="461"><highlight class="normal"></highlight></codeline>
-<codeline lineno="462"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>fstat<sp/>=<sp/>_fstat</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="463"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>stat<sp/>=<sp/>_stat</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="464"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>lstat<sp/>=<sp/>_lstat</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="465"><highlight class="normal"></highlight></codeline>
-<codeline lineno="466"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="448"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__MW__</highlight></codeline>
+<codeline lineno="450"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>open<sp/>=<sp/>_open</highlight></codeline>
+<codeline lineno="451"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>close<sp/>=<sp/>_close</highlight></codeline>
+<codeline lineno="452"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>read<sp/>=<sp/>_read</highlight></codeline>
+<codeline lineno="453"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>write<sp/>=<sp/>_write</highlight></codeline>
+<codeline lineno="454"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>lseek<sp/>=<sp/>_lseek</highlight></codeline>
+<codeline lineno="455"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>unlink<sp/>=<sp/>_unlink</highlight></codeline>
+<codeline lineno="456"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>getcwd<sp/>=<sp/>_getcwd</highlight></codeline>
+<codeline lineno="457"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>isatty<sp/>=<sp/>_isatty</highlight></codeline>
+<codeline lineno="458"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>getpid<sp/>=<sp/>_getpid</highlight></codeline>
+<codeline lineno="459"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>access<sp/>=<sp/>_access</highlight></codeline>
+<codeline lineno="460"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>remove<sp/>=<sp/>_unlink</highlight></codeline>
+<codeline lineno="461"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>fstat<sp/>=<sp/>_fstat</highlight></codeline>
+<codeline lineno="463"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>stat<sp/>=<sp/>_stat</highlight></codeline>
+<codeline lineno="464"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>lstat<sp/>=<sp/>_lstat</highlight></codeline>
+<codeline lineno="465"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="467"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="469"><highlight class="comment">//<sp/>Process<sp/>Management<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="470"><highlight class="normal"></highlight><highlight class="comment">//<sp/>\todo<sp/>Integrate<sp/>with<sp/>FreeRTOS<sp/>task<sp/>//</highlight></codeline>
 <codeline lineno="472"><highlight class="comment"></highlight></codeline>
@@ -1589,15 +1589,15 @@
 <codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="547"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="548"><highlight class="normal"></highlight></codeline>
-<codeline lineno="549"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__MW__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="550"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*_mwgetenv2(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*var)</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__MW__</highlight></codeline>
+<codeline lineno="550"><highlight class="preprocessor"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*_mwgetenv2(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*var)</highlight></codeline>
 <codeline lineno="551"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_getenv)(var);</highlight></codeline>
 <codeline lineno="553"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="554"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>getenv<sp/>=<sp/>_getenv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="555"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>putenv<sp/>=<sp/>_putenv</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="556"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="557"><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>getenv<sp/>=<sp/>_getenv</highlight></codeline>
+<codeline lineno="555"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>putenv<sp/>=<sp/>_putenv</highlight></codeline>
+<codeline lineno="556"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="557"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="559"><highlight class="comment">//<sp/>Time<sp/>Calculation<sp/>//</highlight></codeline>
 <codeline lineno="561"><highlight class="comment"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="562"><highlight class="comment"><sp/>*<sp/>\todo</highlight></codeline>
@@ -1616,12 +1616,12 @@
 <codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(clock_t)((uint64_t)(total_ticks*CLOCKS_PER_SEC)<sp/>/<sp/>BOARD_CPU_CLOCK);</highlight></codeline>
 <codeline lineno="577"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="578"><highlight class="normal"></highlight></codeline>
-<codeline lineno="579"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!EMBARC_CFG_USE_RTCTIME</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="580"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buildtime_ready<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!EMBARC_CFG_USE_RTCTIME</highlight></codeline>
+<codeline lineno="580"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buildtime_ready<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="581"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm<sp/>build_tm;</highlight></codeline>
 <codeline lineno="582"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>time_t<sp/>build_time;</highlight></codeline>
-<codeline lineno="583"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="584"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="585"><highlight class="normal">time_t<sp/>SYSCALL_PREFIX(_time)(time_t<sp/>*timer)</highlight></codeline>
 <codeline lineno="586"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!buildtime_ready)<sp/>{</highlight></codeline>
@@ -1636,8 +1636,8 @@
 <codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cur_time;</highlight></codeline>
 <codeline lineno="597"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="598"><highlight class="normal"></highlight></codeline>
-<codeline lineno="599"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNU__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="600"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_times)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tms<sp/>*buf)</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__GNU__</highlight></codeline>
+<codeline lineno="600"><highlight class="preprocessor"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_times)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tms<sp/>*buf)</highlight></codeline>
 <codeline lineno="601"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!buf)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
 <codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf-&gt;tms_utime<sp/>=<sp/>OSP_GET_CUR_MS()/1000;</highlight></codeline>
@@ -1646,8 +1646,8 @@
 <codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf-&gt;tms_cstime<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="608"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="609"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="610"><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="610"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="611"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(_gettimeofday)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timeval<sp/>*tv,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*tz)</highlight></codeline>
 <codeline lineno="612"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tv<sp/>==<sp/>NULL)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
@@ -1660,11 +1660,11 @@
 <codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="621"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="622"><highlight class="normal"></highlight></codeline>
-<codeline lineno="623"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__MW__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="624"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>time<sp/>=<sp/>_time</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="625"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>gettimeofday<sp/>=<sp/>_gettimeofday</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="626"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="627"><highlight class="normal"></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__MW__</highlight></codeline>
+<codeline lineno="624"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>time<sp/>=<sp/>_time</highlight></codeline>
+<codeline lineno="625"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>gettimeofday<sp/>=<sp/>_gettimeofday</highlight></codeline>
+<codeline lineno="626"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="627"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="629"><highlight class="comment">//<sp/>Argument<sp/>Processing<sp/>//</highlight></codeline>
 <codeline lineno="631"><highlight class="comment"></highlight></codeline>
 <codeline lineno="632"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SYSCALL_PREFIX(__argc)(void)</highlight></codeline>
@@ -1676,10 +1676,10 @@
 <codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
 <codeline lineno="640"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="641"><highlight class="normal"></highlight></codeline>
-<codeline lineno="642"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!defined(_HOSTLINK_)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="643"><highlight class="normal"></highlight></codeline>
-<codeline lineno="644"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__GNU__)<sp/>&amp;&amp;<sp/>!defined(_HAVE_LIBGLOSS_)<sp/>&amp;&amp;<sp/>!defined(_HOSTLINK_)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="645"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Support<sp/>newlibc<sp/>for<sp/>newlibc(&lt;=<sp/>ARC<sp/>GNU<sp/>2015.06)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!defined(_HOSTLINK_)<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="643"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="644"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__GNU__)<sp/>&amp;&amp;<sp/>!defined(_HAVE_LIBGLOSS_)<sp/>&amp;&amp;<sp/>!defined(_HOSTLINK_)</highlight></codeline>
+<codeline lineno="645"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Support<sp/>newlibc<sp/>for<sp/>newlibc(&lt;=<sp/>ARC<sp/>GNU<sp/>2015.06)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="646"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">exc_frame<sp/>{</highlight></codeline>
 <codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>erbta;</highlight></codeline>
 <codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>eret;</highlight></codeline>
@@ -1764,6 +1764,6 @@
 <codeline lineno="732"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="733"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__GNU__<sp/>&amp;&amp;<sp/>!_HAVE_LIBGLOSS_<sp/>&amp;&amp;<sp/>_HOSTLINK_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.c"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.c"/>
   </compounddef>
 </doxygen>

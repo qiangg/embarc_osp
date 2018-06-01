@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../../_static/style_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="embARC 2018.01 documentation" href="../../index.html"/>
-        <link rel="up" title="IoT Stacks and Platforms" href="../iot.html"/>
-        <link rel="next" title="MQTT" href="mqtt.html"/>
-        <link rel="prev" title="LwM2M" href="lwm2m.html"/> 
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="MQTT" href="mqtt.html" />
+    <link rel="prev" title="LwM2M" href="lwm2m.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -136,7 +127,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">embARC</a>
@@ -144,9 +135,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -212,13 +204,13 @@ verified for use with embARC. The embARC OSP distribution contains required
 patches to integrate mbed TLS into embARC.</p>
 <p>Steps:</p>
 <ul>
-<li><p class="first">Make sure <code class="docutils literal"><span class="pre">&lt;embARC&gt;/middleware/mbedtls/apply_embARC_patch.sh</span></code> is Unix format.
+<li><p class="first">Make sure <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/middleware/mbedtls/apply_embARC_patch.sh</span></code> is Unix format.
 If not, use dos2unix to convert it first.</p>
 </li>
-<li><p class="first">Run <code class="docutils literal"><span class="pre">bash</span> <span class="pre">&lt;embARC&gt;/middleware/mbedtls/apply_embARC_patch.sh</span></code> in shell
+<li><p class="first">Run <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">&lt;embARC&gt;/middleware/mbedtls/apply_embARC_patch.sh</span></code> in shell
 environment (Linux or Cygwin) to download required source code and patch
 them. The output is as follow:</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> &lt;embARC&gt;/middleware/mbedtls
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> &lt;embARC&gt;/middleware/mbedtls
 <span class="gp">$</span> bash ./apply_embarc_patch.sh
 <span class="go">  Clone repo from https://github.com/ARMmbed/mbedtls.git at commit or tag mbedtls-2.4.1</span>
 <span class="go">  Branch master set up to track remote branch coverity_scan from origin.</span>
@@ -250,9 +242,7 @@ them. The output is as follow:</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -274,7 +264,7 @@ them. The output is as follow:</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -293,6 +283,7 @@ them. The output is as follow:</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
             VERSION:'2018.01',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -310,14 +301,11 @@ them. The output is as follow:</p>
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

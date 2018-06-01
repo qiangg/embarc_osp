@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="emsk__sdcard__spi_8c" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="emsk__sdcard__spi_8c" kind="file">
     <compoundname>emsk_sdcard_spi.c</compoundname>
     <includes local="no">stddef.h</includes>
     <includes local="no">string.h</includes>
@@ -16,128 +16,128 @@
     <includes local="yes">ff_sdcard.h</includes>
     <includes refid="emsk__sdcard__spi_8h" local="yes">emsk_sdcard_spi.h</includes>
     <incdepgraph>
-      <node id="2560">
-        <label>embARC_toolchain.h</label>
-        <link refid="emb_a_r_c__toolchain_8h"/>
-        <childnode refid="2561" relation="include">
-        </childnode>
-        <childnode refid="2562" relation="include">
-        </childnode>
-        <childnode refid="2555" relation="include">
-        </childnode>
-        <childnode refid="2563" relation="include">
-        </childnode>
-      </node>
-      <node id="2563">
+      <node id="2578">
         <label>stdbool.h</label>
       </node>
-      <node id="2561">
+      <node id="2572">
+        <label>arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="2573" relation="include">
+        </childnode>
+      </node>
+      <node id="2576">
         <label>stdint.h</label>
       </node>
-      <node id="2559">
+      <node id="2574">
         <label>arc_builtin.h</label>
         <link refid="arc__builtin_8h"/>
-        <childnode refid="2560" relation="include">
+        <childnode refid="2575" relation="include">
         </childnode>
       </node>
-      <node id="2566">
+      <node id="2570">
+        <label>stddef.h</label>
+      </node>
+      <node id="2582">
+        <label>dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="2576" relation="include">
+        </childnode>
+      </node>
+      <node id="2584">
+        <label>os_hal_inc.h</label>
+        <link refid="os__hal__inc_8h"/>
+      </node>
+      <node id="2577">
+        <label>limits.h</label>
+      </node>
+      <node id="2581">
         <label>dev_spi.h</label>
         <link refid="dev__spi_8h"/>
-        <childnode refid="2567" relation="include">
+        <childnode refid="2582" relation="include">
         </childnode>
       </node>
-      <node id="2554">
+      <node id="2571">
+        <label>string.h</label>
+      </node>
+      <node id="2586">
+        <label>ff_sdcard.h</label>
+      </node>
+      <node id="2583">
+        <label>board.h</label>
+        <link refid="board_8h"/>
+      </node>
+      <node id="2573">
+        <label>arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="2585">
+        <label>ff_diskio.h</label>
+      </node>
+      <node id="2580">
+        <label>arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="2575" relation="include">
+        </childnode>
+        <childnode refid="2572" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+      </node>
+      <node id="2569">
         <label>emsk_sdcard_spi.c</label>
-        <link refid="emsk__sdcard__spi_8c"/>
-        <childnode refid="2555" relation="include">
-        </childnode>
-        <childnode refid="2556" relation="include">
-        </childnode>
-        <childnode refid="2557" relation="include">
-        </childnode>
-        <childnode refid="2559" relation="include">
-        </childnode>
-        <childnode refid="2560" relation="include">
-        </childnode>
-        <childnode refid="2564" relation="include">
-        </childnode>
-        <childnode refid="2565" relation="include">
-        </childnode>
-        <childnode refid="2566" relation="include">
-        </childnode>
-        <childnode refid="2568" relation="include">
-        </childnode>
-        <childnode refid="2569" relation="include">
-        </childnode>
+        <link refid="emsk_sdcard_spi.c"/>
         <childnode refid="2570" relation="include">
         </childnode>
         <childnode refid="2571" relation="include">
         </childnode>
         <childnode refid="2572" relation="include">
         </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2575" relation="include">
+        </childnode>
+        <childnode refid="2579" relation="include">
+        </childnode>
+        <childnode refid="2580" relation="include">
+        </childnode>
+        <childnode refid="2581" relation="include">
+        </childnode>
+        <childnode refid="2583" relation="include">
+        </childnode>
+        <childnode refid="2584" relation="include">
+        </childnode>
+        <childnode refid="2585" relation="include">
+        </childnode>
+        <childnode refid="2586" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
       </node>
-      <node id="2555">
-        <label>stddef.h</label>
-      </node>
-      <node id="2572">
+      <node id="2587">
         <label>emsk_sdcard_spi.h</label>
         <link refid="emsk__sdcard__spi_8h"/>
+        <childnode refid="2585" relation="include">
+        </childnode>
+      </node>
+      <node id="2575">
+        <label>embARC_toolchain.h</label>
+        <link refid="emb_a_r_c__toolchain_8h"/>
+        <childnode refid="2576" relation="include">
+        </childnode>
+        <childnode refid="2577" relation="include">
+        </childnode>
         <childnode refid="2570" relation="include">
         </childnode>
+        <childnode refid="2578" relation="include">
+        </childnode>
       </node>
-      <node id="2562">
-        <label>limits.h</label>
-      </node>
-      <node id="2564">
+      <node id="2579">
         <label>embARC_error.h</label>
         <link refid="emb_a_r_c__error_8h"/>
-        <childnode refid="2561" relation="include">
+        <childnode refid="2576" relation="include">
         </childnode>
-        <childnode refid="2559" relation="include">
+        <childnode refid="2574" relation="include">
         </childnode>
-      </node>
-      <node id="2556">
-        <label>string.h</label>
-      </node>
-      <node id="2571">
-        <label>ff_sdcard.h</label>
-      </node>
-      <node id="2568">
-        <label>board.h</label>
-        <link refid="board_8h"/>
-      </node>
-      <node id="2565">
-        <label>arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="2560" relation="include">
-        </childnode>
-        <childnode refid="2557" relation="include">
-        </childnode>
-        <childnode refid="2559" relation="include">
-        </childnode>
-      </node>
-      <node id="2557">
-        <label>arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="2558" relation="include">
-        </childnode>
-      </node>
-      <node id="2569">
-        <label>os_hal_inc.h</label>
-        <link refid="os__hal__inc_8h"/>
-      </node>
-      <node id="2570">
-        <label>ff_diskio.h</label>
-      </node>
-      <node id="2567">
-        <label>dev_common.h</label>
-        <link refid="dev__common_8h"/>
-        <childnode refid="2561" relation="include">
-        </childnode>
-      </node>
-      <node id="2558">
-        <label>arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="define">
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="74" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="74" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="74" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1gae731bd3eee8f7317075a201578cd2298" prot="public" static="no">
         <name>EMSK_SDCARD_SPI_0_LINE</name>
@@ -161,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="75" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="75" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="75" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1ga7a378b99881cd3645c5698b3887f3686" prot="public" static="no">
         <name>EMSK_SDCARD_SPI_0_FREQ</name>
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="78" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="78" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="78" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1ga4f987d693a48d388b7794e049702c1e3" prot="public" static="no">
         <name>EMSK_SDCARD_SPI_0_CLKMODE</name>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="79" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="79" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="79" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1ga31c50ecfb6886531dd1b0199014ca060" prot="public" static="no">
         <name>EMSK_SDCARD_SPI_0_CPULOCK_ENABLE</name>
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="81" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="81" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="81" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="81" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="124" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="124" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="124" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="124" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1ga6dc3a92c5832ccaf220e95c1e7b7c7dc" prot="public" static="no" mutable="no">
         <type>FATFS_DISKIO</type>
@@ -237,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="132" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="132" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="132" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="132" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -255,7 +255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="84" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="84" bodyend="87"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="84" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="84" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1gaf90d5d49e0bdb463451a52dacf2eef37" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -271,7 +271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="89" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="89" bodyend="92"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="89" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="89" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1ga8eef1686df4be6dd1bc8dd80723c97f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -287,7 +287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="94" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="94" bodyend="97"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="94" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="94" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1gaeb5b16ba3a527fbeeaee1abf50fd644c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -303,7 +303,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="99" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="99" bodyend="102"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="99" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="99" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1ga130977899860bcdcc251b06c5cea0de8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -328,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="104" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="104" bodyend="107"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="104" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="104" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1ga1f74d818dfa8f9d759282ac162fbca80" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -353,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="109" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="109" bodyend="112"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="109" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="109" bodyend="112"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1ga611b5cd343778505a5de15618d8c70d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -374,7 +374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="114" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="114" bodyend="117"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="114" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="114" bodyend="117"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1ga367b6e28e65be7dc88382143e34c9175" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -390,7 +390,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="119" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="119" bodyend="122"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" line="119" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c" bodystart="119" bodyend="122"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -428,8 +428,8 @@
 <codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="29"><highlight class="comment">---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="preprocessor">#ifdef<sp/>MID_FATFS<sp/></highlight><highlight class="comment">/*<sp/>only<sp/>available<sp/>when<sp/>enable<sp/>fatfs<sp/>middleware<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor">#ifdef<sp/>MID_FATFS<sp/></highlight><highlight class="comment">/*<sp/>only<sp/>available<sp/>when<sp/>enable<sp/>fatfs<sp/>middleware<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc_8h" kindref="compound">arc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -441,25 +441,25 @@
 <codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev__spi_8h" kindref="compound">dev_spi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="board_8h" kindref="compound">board.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ENABLE_OS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="os__hal__inc_8h" kindref="compound">os_hal_inc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ENABLE_OS</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="os__hal__inc_8h" kindref="compound">os_hal_inc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ff_diskio.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ff_sdcard.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emsk__sdcard__spi_8h" kindref="compound">emsk_sdcard_spi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USE_EMSK_SDCARD_SPI_0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMSK_SDCARD_SPI_0_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DW_SPI_0_ID)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMSK_SDCARD_SPI_0_LINE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOARD_SDCARD_SPI_LINE</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78" refid="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1ga7a378b99881cd3645c5698b3887f3686" refkind="member"><highlight class="preprocessor">#define<sp/>EMSK_SDCARD_SPI_0_FREQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOARD_SPI_FREQ</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMSK_SDCARD_SPI_0_CLKMODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CLK_MODE_0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMSK_SDCARD_SPI_0_CPULOCK_ENABLE</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USE_EMSK_SDCARD_SPI_0</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMSK_SDCARD_SPI_0_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DW_SPI_0_ID)</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSK_SDCARD_SPI_0_LINE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOARD_SDCARD_SPI_LINE</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="78" refid="group___b_o_a_r_d___e_m_s_k___d_r_v___m_i_d___f_s___s_d_c_a_r_d___s_p_i_1ga7a378b99881cd3645c5698b3887f3686" refkind="member"><highlight class="preprocessor">#define<sp/>EMSK_SDCARD_SPI_0_FREQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOARD_SPI_FREQ</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EMSK_SDCARD_SPI_0_CLKMODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI_CLK_MODE_0</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMSK_SDCARD_SPI_0_CPULOCK_ENABLE</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>sdcard_spi_card_is_writeprotect(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="85"><highlight class="normal">{</highlight></codeline>
@@ -519,11 +519,11 @@
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sdcard_spi_0_diskio_timerproc</highlight></codeline>
 <codeline lineno="140"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_EMSK_SDCARD_SPI_0<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MID_FATFS<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_EMSK_SDCARD_SPI_0<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MID_FATFS<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/sdcard/emsk_sdcard_spi.c"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/sdcard/emsk_sdcard_spi.c"/>
   </compounddef>
 </doxygen>

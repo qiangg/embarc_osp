@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="emb_a_r_c__sbrk_8c" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="emb_a_r_c__sbrk_8c" kind="file">
     <compoundname>embARC_sbrk.c</compoundname>
     <includes local="no">stdint.h</includes>
     <includes local="no">stddef.h</includes>
@@ -9,61 +9,61 @@
     <includes local="no">errno.h</includes>
     <includes refid="emb_a_r_c__syscalls_8h" local="yes">embARC_syscalls.h</includes>
     <incdepgraph>
-      <node id="2186">
-        <label>embARC_sbrk.c</label>
-        <link refid="emb_a_r_c__sbrk_8c"/>
-        <childnode refid="2187" relation="include">
-        </childnode>
-        <childnode refid="2188" relation="include">
-        </childnode>
-        <childnode refid="2189" relation="include">
-        </childnode>
-        <childnode refid="2190" relation="include">
-        </childnode>
-        <childnode refid="2191" relation="include">
-        </childnode>
-        <childnode refid="2192" relation="include">
-        </childnode>
-      </node>
-      <node id="2187">
-        <label>stdint.h</label>
-      </node>
-      <node id="2191">
-        <label>errno.h</label>
-      </node>
-      <node id="2193">
+      <node id="2208">
         <label>embARC_target.h</label>
         <link refid="emb_a_r_c__target_8h"/>
-        <childnode refid="2194" relation="include">
+        <childnode refid="2209" relation="include">
         </childnode>
-        <childnode refid="2195" relation="include">
+        <childnode refid="2210" relation="include">
         </childnode>
-        <childnode refid="2196" relation="include">
-        </childnode>
-      </node>
-      <node id="2192">
-        <label>embARC_syscalls.h</label>
-        <link refid="emb_a_r_c__syscalls_8h"/>
-        <childnode refid="2193" relation="include">
+        <childnode refid="2211" relation="include">
         </childnode>
       </node>
-      <node id="2188">
-        <label>stddef.h</label>
+      <node id="2202">
+        <label>stdint.h</label>
       </node>
-      <node id="2195">
-        <label>limits.h</label>
+      <node id="2206">
+        <label>errno.h</label>
       </node>
-      <node id="2194">
-        <label>time.h</label>
-      </node>
-      <node id="2190">
-        <label>ctype.h</label>
-      </node>
-      <node id="2196">
+      <node id="2211">
         <label>ya_getopt.h</label>
         <link refid="ya__getopt_8h_source"/>
       </node>
-      <node id="2189">
+      <node id="2203">
+        <label>stddef.h</label>
+      </node>
+      <node id="2210">
+        <label>limits.h</label>
+      </node>
+      <node id="2207">
+        <label>embARC_syscalls.h</label>
+        <link refid="emb_a_r_c__syscalls_8h"/>
+        <childnode refid="2208" relation="include">
+        </childnode>
+      </node>
+      <node id="2209">
+        <label>time.h</label>
+      </node>
+      <node id="2201">
+        <label>embARC_sbrk.c</label>
+        <link refid="embARC_sbrk.c"/>
+        <childnode refid="2202" relation="include">
+        </childnode>
+        <childnode refid="2203" relation="include">
+        </childnode>
+        <childnode refid="2204" relation="include">
+        </childnode>
+        <childnode refid="2205" relation="include">
+        </childnode>
+        <childnode refid="2206" relation="include">
+        </childnode>
+        <childnode refid="2207" relation="include">
+        </childnode>
+      </node>
+      <node id="2205">
+        <label>ctype.h</label>
+      </node>
+      <node id="2204">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" line="43" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" bodystart="43" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" line="43" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" bodystart="43" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" line="47" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" bodystart="47" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" line="47" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="emb_a_r_c__sbrk_8c_1acb6cd5e9d5c0eaaf05ab4dd31ae3185a" prot="public" static="yes" mutable="no">
         <type>char *</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" line="48" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" bodystart="48" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" line="48" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="emb_a_r_c__sbrk_8c_1ab8925161e47ba7759233e612c8432156" prot="public" static="yes" mutable="no">
         <type>char *</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" line="48" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" bodystart="48" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" line="48" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="emb_a_r_c__sbrk_8c_1a7ee830c44e7c6d98b3f53041566e85e2" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" line="49" column="1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" line="49" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="emb_a_r_c__sbrk_8c_1aaab87feeec24b89a736bdc9f1c281e8a" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" line="50" column="1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" line="50" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" line="53" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" bodystart="53" bodyend="69"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" line="53" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" bodystart="53" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="emb_a_r_c__sbrk_8c_1ad03515b4a68f4f3411031358791c2aa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *SYSCALL_PREFIX()</type>
@@ -180,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" line="72" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c" bodystart="72" bodyend="76"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" line="72" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c" bodystart="72" bodyend="76"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -224,14 +224,14 @@
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emb_a_r_c__syscalls_8h" kindref="compound">embARC_syscalls.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_HOSTLINK_<sp/></highlight><highlight class="comment">/*<sp/>Not<sp/>using<sp/>hostlink<sp/>library<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_HOSTLINK_<sp/></highlight><highlight class="comment">/*<sp/>Not<sp/>using<sp/>hostlink<sp/>library<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="40"><highlight class="comment">//<sp/>Memory<sp/>Management<sp/>//</highlight></codeline>
 <codeline lineno="42"><highlight class="comment"></highlight></codeline>
-<codeline lineno="43"><highlight class="preprocessor">#define<sp/>EMBARC_WITH_MWSBRK</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Whether<sp/>heap<sp/>has<sp/>been<sp/>initialized.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__MW__)<sp/>&amp;&amp;<sp/>defined(EMBARC_WITH_MWSBRK)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor">#define<sp/>EMBARC_WITH_MWSBRK</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Whether<sp/>heap<sp/>has<sp/>been<sp/>initialized.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__MW__)<sp/>&amp;&amp;<sp/>defined(EMBARC_WITH_MWSBRK)</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>__heap_init<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*__heap_end,<sp/>*__heap_cur;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>_f_heap[];</highlight></codeline>
@@ -261,11 +261,11 @@
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
 <codeline lineno="76"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>sbrk<sp/>=<sp/>_sbrk</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>brk<sp/>=<sp/>_brk</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__GNU__)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>sbrk<sp/>=<sp/>_sbrk</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>weak<sp/>brk<sp/>=<sp/>_brk</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__GNU__)</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>__start_heap;</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>__end_heap;</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
@@ -290,10 +290,10 @@
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>ENOMEM;</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(caddr_t<sp/>*)<sp/>-1;</highlight></codeline>
 <codeline lineno="106"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!defined(_HOSTLINK_)<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_sbrk.c"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_sbrk.c"/>
   </compounddef>
 </doxygen>

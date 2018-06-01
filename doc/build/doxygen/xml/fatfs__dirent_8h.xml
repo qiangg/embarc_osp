@@ -1,58 +1,182 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="fatfs__dirent_8h" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="fatfs__dirent_8h" kind="file">
     <compoundname>fatfs_dirent.h</compoundname>
     <includes refid="emb_a_r_c_8h" local="yes">embARC.h</includes>
     <includes local="no">sys/stat.h</includes>
     <includedby refid="dirent_8h" local="yes">dirent.h</includedby>
     <includedby refid="fatfs__dirent_8c" local="yes">fatfs_dirent.c</includedby>
     <incdepgraph>
-      <node id="2670">
+      <node id="2685">
         <label>sys/stat.h</label>
       </node>
-      <node id="2647">
-        <label>embARC_toolchain.h</label>
-        <link refid="emb_a_r_c__toolchain_8h"/>
-        <childnode refid="2648" relation="include">
-        </childnode>
-        <childnode refid="2649" relation="include">
-        </childnode>
-        <childnode refid="2650" relation="include">
-        </childnode>
-        <childnode refid="2651" relation="include">
-        </childnode>
-      </node>
-      <node id="2651">
+      <node id="2666">
         <label>stdbool.h</label>
       </node>
-      <node id="2665">
+      <node id="2677">
+        <label>arc_mpu.h</label>
+        <link refid="arc__mpu_8h_source"/>
+        <childnode refid="2670" relation="include">
+        </childnode>
+        <childnode refid="2668" relation="include">
+        </childnode>
+      </node>
+      <node id="2680">
         <label>console_io.h</label>
       </node>
-      <node id="2669">
+      <node id="2670">
+        <label>arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="2671" relation="include">
+        </childnode>
+      </node>
+      <node id="2684">
         <label>ntshell_task.h</label>
       </node>
-      <node id="2648">
+      <node id="2660">
+        <label>fatfs_dirent.h</label>
+        <link refid="fatfs_dirent.h"/>
+        <childnode refid="2661" relation="include">
+        </childnode>
+        <childnode refid="2685" relation="include">
+        </childnode>
+      </node>
+      <node id="2663">
         <label>stdint.h</label>
       </node>
-      <node id="2646">
+      <node id="2668">
+        <label>arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="2662" relation="include">
+        </childnode>
+      </node>
+      <node id="2661">
         <label>embARC.h</label>
         <link refid="emb_a_r_c_8h"/>
-        <childnode refid="2647" relation="include">
+        <childnode refid="2662" relation="include">
         </childnode>
-        <childnode refid="2652" relation="include">
+        <childnode refid="2667" relation="include">
         </childnode>
-        <childnode refid="2653" relation="include">
+        <childnode refid="2668" relation="include">
         </childnode>
-        <childnode refid="2654" relation="include">
+        <childnode refid="2669" relation="include">
         </childnode>
-        <childnode refid="2657" relation="include">
+        <childnode refid="2672" relation="include">
         </childnode>
-        <childnode refid="2658" relation="include">
+        <childnode refid="2673" relation="include">
         </childnode>
-        <childnode refid="2659" relation="include">
+        <childnode refid="2674" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+        <childnode refid="2678" relation="include">
+        </childnode>
+        <childnode refid="2679" relation="include">
+        </childnode>
+        <childnode refid="2680" relation="include">
+        </childnode>
+        <childnode refid="2681" relation="include">
+        </childnode>
+        <childnode refid="2682" relation="include">
+        </childnode>
+        <childnode refid="2683" relation="include">
+        </childnode>
+        <childnode refid="2684" relation="include">
+        </childnode>
+      </node>
+      <node id="2676">
+        <label>arc_udma_config.h</label>
+        <link refid="arc__udma__config_8h"/>
+        <childnode refid="2671" relation="include">
+        </childnode>
+        <childnode refid="2672" relation="include">
+        </childnode>
+      </node>
+      <node id="2674">
+        <label>arc_udma.h</label>
+        <link refid="arc__udma_8h"/>
+        <childnode refid="2663" relation="include">
+        </childnode>
+        <childnode refid="2665" relation="include">
+        </childnode>
+        <childnode refid="2675" relation="include">
         </childnode>
         <childnode refid="2662" relation="include">
         </childnode>
+        <childnode refid="2670" relation="include">
+        </childnode>
+        <childnode refid="2668" relation="include">
+        </childnode>
+        <childnode refid="2673" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+      </node>
+      <node id="2665">
+        <label>stddef.h</label>
+      </node>
+      <node id="2679">
+        <label>os_hal_inc.h</label>
+        <link refid="os__hal__inc_8h"/>
+      </node>
+      <node id="2683">
+        <label>diskio.h</label>
+      </node>
+      <node id="2664">
+        <label>limits.h</label>
+      </node>
+      <node id="2675">
+        <label>string.h</label>
+      </node>
+      <node id="2678">
+        <label>board.h</label>
+        <link refid="board_8h"/>
+      </node>
+      <node id="2669">
+        <label>arc_timer.h</label>
+        <link refid="arc__timer_8h"/>
+        <childnode refid="2670" relation="include">
+        </childnode>
+        <childnode refid="2668" relation="include">
+        </childnode>
+        <childnode refid="2662" relation="include">
+        </childnode>
+      </node>
+      <node id="2671">
+        <label>arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="2672">
+        <label>arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="2662" relation="include">
+        </childnode>
+        <childnode refid="2670" relation="include">
+        </childnode>
+        <childnode refid="2668" relation="include">
+        </childnode>
+      </node>
+      <node id="2681">
+        <label>xprintf.h</label>
+      </node>
+      <node id="2673">
+        <label>arc_cache.h</label>
+        <link refid="arc__cache_8h"/>
+        <childnode refid="2662" relation="include">
+        </childnode>
+        <childnode refid="2670" relation="include">
+        </childnode>
+        <childnode refid="2668" relation="include">
+        </childnode>
+        <childnode refid="2672" relation="include">
+        </childnode>
+      </node>
+      <node id="2682">
+        <label>ff.h</label>
+      </node>
+      <node id="2662">
+        <label>embARC_toolchain.h</label>
+        <link refid="emb_a_r_c__toolchain_8h"/>
         <childnode refid="2663" relation="include">
         </childnode>
         <childnode refid="2664" relation="include">
@@ -61,156 +185,32 @@
         </childnode>
         <childnode refid="2666" relation="include">
         </childnode>
-        <childnode refid="2667" relation="include">
+      </node>
+      <node id="2667">
+        <label>embARC_error.h</label>
+        <link refid="emb_a_r_c__error_8h"/>
+        <childnode refid="2663" relation="include">
         </childnode>
         <childnode refid="2668" relation="include">
         </childnode>
-        <childnode refid="2669" relation="include">
-        </childnode>
-      </node>
-      <node id="2653">
-        <label>arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="2647" relation="include">
-        </childnode>
-      </node>
-      <node id="2650">
-        <label>stddef.h</label>
-      </node>
-      <node id="2668">
-        <label>diskio.h</label>
-      </node>
-      <node id="2649">
-        <label>limits.h</label>
-      </node>
-      <node id="2645">
-        <label>fatfs_dirent.h</label>
-        <link refid="fatfs__dirent_8h"/>
-        <childnode refid="2646" relation="include">
-        </childnode>
-        <childnode refid="2670" relation="include">
-        </childnode>
-      </node>
-      <node id="2654">
-        <label>arc_timer.h</label>
-        <link refid="arc__timer_8h"/>
-        <childnode refid="2655" relation="include">
-        </childnode>
-        <childnode refid="2653" relation="include">
-        </childnode>
-        <childnode refid="2647" relation="include">
-        </childnode>
-      </node>
-      <node id="2652">
-        <label>embARC_error.h</label>
-        <link refid="emb_a_r_c__error_8h"/>
-        <childnode refid="2648" relation="include">
-        </childnode>
-        <childnode refid="2653" relation="include">
-        </childnode>
-      </node>
-      <node id="2660">
-        <label>string.h</label>
-      </node>
-      <node id="2663">
-        <label>board.h</label>
-        <link refid="board_8h"/>
-      </node>
-      <node id="2657">
-        <label>arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="2647" relation="include">
-        </childnode>
-        <childnode refid="2655" relation="include">
-        </childnode>
-        <childnode refid="2653" relation="include">
-        </childnode>
-      </node>
-      <node id="2659">
-        <label>arc_udma.h</label>
-        <link refid="arc__udma_8h"/>
-        <childnode refid="2648" relation="include">
-        </childnode>
-        <childnode refid="2650" relation="include">
-        </childnode>
-        <childnode refid="2660" relation="include">
-        </childnode>
-        <childnode refid="2647" relation="include">
-        </childnode>
-        <childnode refid="2655" relation="include">
-        </childnode>
-        <childnode refid="2653" relation="include">
-        </childnode>
-        <childnode refid="2658" relation="include">
-        </childnode>
-        <childnode refid="2661" relation="include">
-        </childnode>
-      </node>
-      <node id="2655">
-        <label>arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="2656" relation="include">
-        </childnode>
-      </node>
-      <node id="2664">
-        <label>os_hal_inc.h</label>
-        <link refid="os__hal__inc_8h"/>
-      </node>
-      <node id="2662">
-        <label>arc_mpu.h</label>
-        <link refid="arc__mpu_8h_source"/>
-        <childnode refid="2655" relation="include">
-        </childnode>
-        <childnode refid="2653" relation="include">
-        </childnode>
-      </node>
-      <node id="2666">
-        <label>xprintf.h</label>
-      </node>
-      <node id="2661">
-        <label>arc_udma_config.h</label>
-        <link refid="arc__udma__config_8h"/>
-        <childnode refid="2656" relation="include">
-        </childnode>
-        <childnode refid="2657" relation="include">
-        </childnode>
-      </node>
-      <node id="2667">
-        <label>ff.h</label>
-      </node>
-      <node id="2658">
-        <label>arc_cache.h</label>
-        <link refid="arc__cache_8h"/>
-        <childnode refid="2647" relation="include">
-        </childnode>
-        <childnode refid="2655" relation="include">
-        </childnode>
-        <childnode refid="2653" relation="include">
-        </childnode>
-        <childnode refid="2657" relation="include">
-        </childnode>
-      </node>
-      <node id="2656">
-        <label>arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2672">
-        <label>dirent.h</label>
-        <link refid="dirent_8h_source"/>
-      </node>
-      <node id="2673">
+      <node id="2688">
         <label>fatfs_dirent.c</label>
         <link refid="fatfs__dirent_8c_source"/>
       </node>
-      <node id="2671">
+      <node id="2686">
         <label>fatfs_dirent.h</label>
-        <link refid="fatfs__dirent_8h"/>
-        <childnode refid="2672" relation="include">
+        <link refid="fatfs_dirent.h"/>
+        <childnode refid="2687" relation="include">
         </childnode>
-        <childnode refid="2673" relation="include">
+        <childnode refid="2688" relation="include">
         </childnode>
+      </node>
+      <node id="2687">
+        <label>dirent.h</label>
+        <link refid="dirent_8h_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structfatfs__stat" prot="public">fatfs_stat</innerclass>
@@ -226,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.h" line="48" column="10" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.h" bodystart="48" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.h" line="48" column="10" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="fatfs__dirent_8h_1a71ceda4f61f88fe43b4bdb6bf5720623" prot="public" static="no">
         <name>FATFS_S_ISREG</name>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.h" line="72" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.h" bodystart="72" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.h" line="72" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -257,7 +257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.h" line="67" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.c" bodystart="37" bodyend="56"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.h" line="67" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.c" bodystart="37" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="fatfs__dirent_8h_1aced3773f8101ee84dd50f0bcad65adf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>struct <ref refid="structdirent" kindref="compound">dirent</ref> *</type>
@@ -274,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.h" line="68" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.c" bodystart="58" bodyend="86"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.h" line="68" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.c" bodystart="58" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="fatfs__dirent_8h_1a110a86aa3a95d25abf7bb1639319be1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -291,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.h" line="69" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.c" bodystart="88" bodyend="102"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.h" line="69" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.c" bodystart="88" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="fatfs__dirent_8h_1a926151575a9629ffc5d7bf71b7249a8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -312,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.h" line="70" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.c" bodystart="105" bodyend="117"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.h" line="70" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.c" bodystart="105" bodyend="117"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -350,26 +350,26 @@
 <codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="29"><highlight class="comment">---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_FATFS_DIRENT_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FATFS_DIRENT_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_FATFS_DIRENT_H_</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_FATFS_DIRENT_H_</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emb_a_r_c_8h" kindref="compound">embARC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MID_FATFS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;FatFs<sp/>should<sp/>be<sp/>enabled&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_USE_LFN</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXNAMLEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>_MAX_LFN</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXNAMLEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>64</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MID_FATFS</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;FatFs<sp/>should<sp/>be<sp/>enabled&quot;</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_USE_LFN</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAXNAMLEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>_MAX_LFN</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAXNAMLEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/>64</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51" refid="structfatfs__stat" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfatfs__stat" kindref="compound">fatfs_stat</ref><sp/>{</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILINFO<sp/>fatfs_filinfo;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>st_mode;</highlight></codeline>
@@ -386,19 +386,19 @@
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdirent" kindref="compound">dirent</ref><sp/>d_dirent;</highlight></codeline>
 <codeline lineno="65"><highlight class="normal">}<sp/><ref refid="struct_f_a_t_f_s___d_i_r" kindref="compound">FATFS_DIR</ref>;</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>FATFS_DIR<sp/>*opendir(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>path);</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdirent" kindref="compound">dirent</ref><sp/>*readdir(FATFS_DIR*<sp/>dp);</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>closedir(FATFS_DIR*<sp/>dp);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_f_a_t_f_s___d_i_r" kindref="compound">FATFS_DIR</ref><sp/>*opendir(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>path);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdirent" kindref="compound">dirent</ref><sp/>*readdir(<ref refid="struct_f_a_t_f_s___d_i_r" kindref="compound">FATFS_DIR</ref>*<sp/>dp);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>closedir(<ref refid="struct_f_a_t_f_s___d_i_r" kindref="compound">FATFS_DIR</ref>*<sp/>dp);</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfatfs__stat" kindref="compound">fatfs_stat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>path,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfatfs__stat" kindref="compound">fatfs_stat</ref><sp/>*buf);</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FATFS_S_ISREG(m)<sp/>(m<sp/>==<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FATFS_S_ISREG(m)<sp/>(m<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*_FATFS_DIRENT_H_*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/fatfs_dirent.h"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/library/clib/fatfs_dirent.h"/>
   </compounddef>
 </doxygen>

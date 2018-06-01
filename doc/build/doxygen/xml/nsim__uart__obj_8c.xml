@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="nsim__uart__obj_8c" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="nsim__uart__obj_8c" kind="file">
     <compoundname>nsim_uart_obj.c</compoundname>
     <includes local="no">stdio.h</includes>
     <includes refid="arc_8h" local="yes">arc.h</includes>
@@ -9,132 +9,132 @@
     <includes refid="emb_a_r_c__error_8h" local="yes">embARC_error.h</includes>
     <includes refid="nsim_8h" local="yes">nsim/nsim.h</includes>
     <incdepgraph>
-      <node id="3075">
-        <label>embARC_toolchain.h</label>
-        <link refid="emb_a_r_c__toolchain_8h"/>
-        <childnode refid="3076" relation="include">
-        </childnode>
-        <childnode refid="3077" relation="include">
-        </childnode>
-        <childnode refid="3078" relation="include">
-        </childnode>
-        <childnode refid="3079" relation="include">
-        </childnode>
-      </node>
-      <node id="3079">
+      <node id="3094">
         <label>stdbool.h</label>
       </node>
-      <node id="3082">
-        <label>arc_em.h</label>
-        <link refid="arc__em_8h"/>
-        <childnode refid="3072" relation="include">
-        </childnode>
-      </node>
-      <node id="3087">
-        <label>ntshell_io_uart.h</label>
-        <link refid="nsim_2drivers_2ntshell_2ntshell__io__uart_8h"/>
-        <childnode refid="3075" relation="include">
-        </childnode>
-        <childnode refid="3088" relation="include">
-        </childnode>
-      </node>
-      <node id="3088">
-        <label>ntshell_task.h</label>
-      </node>
-      <node id="3084">
+      <node id="3099">
         <label>dev_uart.h</label>
         <link refid="dev__uart_8h"/>
-        <childnode refid="3085" relation="include">
+        <childnode refid="3100" relation="include">
         </childnode>
       </node>
-      <node id="3076">
-        <label>stdint.h</label>
-      </node>
-      <node id="3081">
-        <label>nsim/nsim.h</label>
-        <link refid="nsim_8h"/>
-        <childnode refid="3073" relation="include">
-        </childnode>
-        <childnode refid="3082" relation="include">
-        </childnode>
-        <childnode refid="3083" relation="include">
-        </childnode>
-        <childnode refid="3086" relation="include">
-        </childnode>
-        <childnode refid="3089" relation="include">
-        </childnode>
-      </node>
-      <node id="3074">
-        <label>arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="3075" relation="include">
-        </childnode>
-      </node>
-      <node id="3078">
-        <label>stddef.h</label>
-      </node>
-      <node id="3077">
-        <label>limits.h</label>
-      </node>
-      <node id="3080">
-        <label>embARC_error.h</label>
-        <link refid="emb_a_r_c__error_8h"/>
-        <childnode refid="3076" relation="include">
-        </childnode>
-        <childnode refid="3074" relation="include">
-        </childnode>
-      </node>
-      <node id="3072">
-        <label>arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="3073" relation="include">
-        </childnode>
-      </node>
-      <node id="3086">
-        <label>drivers/ntshell/ntshell_io.h</label>
-        <link refid="nsim_2drivers_2ntshell_2ntshell__io_8h"/>
+      <node id="3097">
+        <label>arc_em.h</label>
+        <link refid="arc__em_8h"/>
         <childnode refid="3087" relation="include">
         </childnode>
       </node>
-      <node id="3085">
+      <node id="3087">
+        <label>arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3088" relation="include">
+        </childnode>
+      </node>
+      <node id="3103">
+        <label>ntshell_task.h</label>
+      </node>
+      <node id="3091">
+        <label>stdint.h</label>
+      </node>
+      <node id="3089">
+        <label>arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="3090" relation="include">
+        </childnode>
+      </node>
+      <node id="3093">
+        <label>stddef.h</label>
+      </node>
+      <node id="3100">
         <label>dev_common.h</label>
         <link refid="dev__common_8h"/>
-        <childnode refid="3076" relation="include">
+        <childnode refid="3091" relation="include">
         </childnode>
       </node>
-      <node id="3070">
-        <label>nsim_uart_obj.c</label>
-        <link refid="nsim__uart__obj_8c"/>
-        <childnode refid="3071" relation="include">
+      <node id="3092">
+        <label>limits.h</label>
+      </node>
+      <node id="3096">
+        <label>nsim/nsim.h</label>
+        <link refid="nsim_8h"/>
+        <childnode refid="3088" relation="include">
         </childnode>
-        <childnode refid="3072" relation="include">
+        <childnode refid="3097" relation="include">
         </childnode>
-        <childnode refid="3074" relation="include">
+        <childnode refid="3098" relation="include">
         </childnode>
-        <childnode refid="3075" relation="include">
+        <childnode refid="3101" relation="include">
         </childnode>
-        <childnode refid="3080" relation="include">
-        </childnode>
-        <childnode refid="3081" relation="include">
+        <childnode refid="3104" relation="include">
         </childnode>
       </node>
-      <node id="3083">
-        <label>drivers/uart/nsim_uart_obj.h</label>
-        <link refid="nsim__uart__obj_8h"/>
-        <childnode refid="3084" relation="include">
+      <node id="3101">
+        <label>drivers/ntshell/ntshell_io.h</label>
+        <link refid="nsim_2drivers_2ntshell_2ntshell__io_8h"/>
+        <childnode refid="3102" relation="include">
         </childnode>
       </node>
-      <node id="3071">
-        <label>stdio.h</label>
+      <node id="3102">
+        <label>ntshell_io_uart.h</label>
+        <link refid="nsim_2drivers_2ntshell_2ntshell__io__uart_8h"/>
+        <childnode refid="3090" relation="include">
+        </childnode>
+        <childnode refid="3103" relation="include">
+        </childnode>
       </node>
-      <node id="3073">
+      <node id="3088">
         <label>arc_feature_config.h</label>
         <link refid="arc__feature__config_8h"/>
       </node>
-      <node id="3089">
+      <node id="3085">
+        <label>nsim_uart_obj.c</label>
+        <link refid="nsim_uart_obj.c"/>
+        <childnode refid="3086" relation="include">
+        </childnode>
+        <childnode refid="3087" relation="include">
+        </childnode>
+        <childnode refid="3089" relation="include">
+        </childnode>
+        <childnode refid="3090" relation="include">
+        </childnode>
+        <childnode refid="3095" relation="include">
+        </childnode>
+        <childnode refid="3096" relation="include">
+        </childnode>
+      </node>
+      <node id="3098">
+        <label>drivers/uart/nsim_uart_obj.h</label>
+        <link refid="nsim__uart__obj_8h"/>
+        <childnode refid="3099" relation="include">
+        </childnode>
+      </node>
+      <node id="3104">
         <label>common/nsim_timer.h</label>
         <link refid="nsim__timer_8h"/>
-        <childnode refid="3075" relation="include">
+        <childnode refid="3090" relation="include">
+        </childnode>
+      </node>
+      <node id="3086">
+        <label>stdio.h</label>
+      </node>
+      <node id="3090">
+        <label>embARC_toolchain.h</label>
+        <link refid="emb_a_r_c__toolchain_8h"/>
+        <childnode refid="3091" relation="include">
+        </childnode>
+        <childnode refid="3092" relation="include">
+        </childnode>
+        <childnode refid="3093" relation="include">
+        </childnode>
+        <childnode refid="3094" relation="include">
+        </childnode>
+      </node>
+      <node id="3095">
+        <label>embARC_error.h</label>
+        <link refid="emb_a_r_c__error_8h"/>
+        <childnode refid="3091" relation="include">
+        </childnode>
+        <childnode refid="3089" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -154,7 +154,7 @@
 <para>get an <ref refid="structdev__uart" kindref="compound">uart device</ref> by uart device id. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/uart/nsim_uart_obj.c" line="122" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="122" bodyend="142"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/uart/nsim_uart_obj.c" line="122" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="122" bodyend="142"/>
         <references refid="group___b_o_a_r_d___a_x_s___d_r_v___d_w___u_a_r_t___o_b_j_1ga3b6bf4f01e07d6db0be208fb03f16d84" compoundref="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c" startline="72">dw_uart_0</references>
         <references refid="group___b_o_a_r_d___a_x_s___d_r_v___d_w___u_a_r_t___o_b_j_1ga61cfe53266aacb4cb6a0f8b879507dee" compoundref="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h" startline="56">DW_UART_0_ID</references>
         <references refid="group___b_o_a_r_d___a_x_s___d_r_v___d_w___u_a_r_t___o_b_j_1gaed9bdd3cce9985baa328d3110e07fd71" compoundref="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c" startline="141">dw_uart_1</references>
@@ -180,7 +180,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/uart/nsim_uart_obj.c" line="148" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="148" bodyend="153"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/uart/nsim_uart_obj.c" line="148" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/uart/nsim_uart_obj.c" bodystart="148" bodyend="153"/>
         <referencedby refid="group___b_o_a_r_d___n_s_i_m___d_r_v___u_a_r_t___o_b_j_1gade938afe2174b43b8522bf05cdcb1202" compoundref="nsim__uart__obj_8c" startline="122" endline="142">uart_get_dev</referencedby>
       </memberdef>
       </sectiondef>
@@ -228,8 +228,8 @@
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nsim_8h" kindref="compound">nsim/nsim.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="preprocessor">#if<sp/>(USE_NSIM_UART_0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor">#if<sp/>(USE_NSIM_UART_0)</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><ref refid="structdev__uart" kindref="compound">DEV_UART</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nsim_uart_0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="66"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>nsim_uart_0_open(uint32_t<sp/>baud)</highlight></codeline>
 <codeline lineno="67"><highlight class="normal">{</highlight></codeline>
@@ -277,8 +277,8 @@
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nsim_uart_ptr-&gt;<ref refid="group___d_e_v_i_c_e___h_a_l___u_a_r_t___d_e_v_s_t_r_u_c_t_1ga8fa470ea11eca6e728e802b64501cbb5" kindref="member">uart_read</ref><sp/>=<sp/>nsim_uart_0_read;</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight></codeline>
 <codeline lineno="117"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_UART_0<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_UART_0<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="122" refid="group___b_o_a_r_d___n_s_i_m___d_r_v___u_a_r_t___o_b_j_1gade938afe2174b43b8522bf05cdcb1202" refkind="member"><highlight class="normal"><ref refid="structdev__uart" kindref="compound">DEV_UART_PTR</ref><sp/><ref refid="group___b_o_a_r_d___n_s_i_m___d_r_v___u_a_r_t___o_b_j_1gade938afe2174b43b8522bf05cdcb1202" kindref="member">uart_get_dev</ref>(int32_t<sp/>uart_id)</highlight></codeline>
 <codeline lineno="123"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>install_flag<sp/>=<sp/>0;</highlight></codeline>
@@ -290,12 +290,12 @@
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(uart_id)<sp/>{</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_NSIM_UART_0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___n_s_i_m___d_r_v___u_a_r_t___o_b_j_1gaa58d5c5132eb7df47a321e29ff103b32" kindref="member">NSIM_UART_0_ID</ref>:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_NSIM_UART_0)</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___n_s_i_m___d_r_v___u_a_r_t___o_b_j_1gaa58d5c5132eb7df47a321e29ff103b32" kindref="member">NSIM_UART_0_ID</ref>:</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;nsim_uart_0;</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
@@ -303,12 +303,12 @@
 <codeline lineno="143"><highlight class="normal"></highlight></codeline>
 <codeline lineno="148" refid="group___b_o_a_r_d___n_s_i_m___d_r_v___u_a_r_t___o_b_j_1gaefd6a6323b5795b9adf0edb919608107" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___n_s_i_m___d_r_v___u_a_r_t___o_b_j_1gaefd6a6323b5795b9adf0edb919608107" kindref="member">nsim_uart_all_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="149"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_NSIM_UART_0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nsim_uart_0_install();</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_NSIM_UART_0)</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nsim_uart_0_install();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
 <codeline lineno="154"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/uart/nsim_uart_obj.c"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/uart/nsim_uart_obj.c"/>
   </compounddef>
 </doxygen>

@@ -1,79 +1,79 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="secureshield__vmpu__exports_8h" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="secureshield__vmpu__exports_8h" kind="file">
     <compoundname>secureshield_vmpu_exports.h</compoundname>
     <includedby refid="secureshield__vmpu_8h" local="yes">secureshield_vmpu.h</includedby>
     <includedby refid="secureshield__lib_8h" local="yes">secureshield_lib.h</includedby>
     <invincdepgraph>
-      <node id="4008">
-        <label>secureshield_vmpu.c</label>
-        <link refid="secureshield__vmpu_8c_source"/>
-      </node>
-      <node id="4011">
-        <label>secureshield_sjli.c</label>
-        <link refid="secureshield__sjli_8c_source"/>
-      </node>
-      <node id="4009">
-        <label>secureshield_vmpu_arc.c</label>
-        <link refid="secureshield__vmpu__arc_8c_source"/>
-      </node>
-      <node id="4003">
-        <label>secureshield_vmpu_exports.h</label>
-        <link refid="secureshield__vmpu__exports_8h"/>
-        <childnode refid="4004" relation="include">
-        </childnode>
-        <childnode refid="4012" relation="include">
-        </childnode>
-      </node>
-      <node id="4006">
+      <node id="4035">
         <label>secureshield.c</label>
         <link refid="secureshield_8c_source"/>
       </node>
-      <node id="4012">
-        <label>secureshield_lib.h</label>
-        <link refid="secureshield__lib_8h_source"/>
-        <childnode refid="4013" relation="include">
-        </childnode>
-        <childnode refid="4014" relation="include">
-        </childnode>
+      <node id="4040">
+        <label>secureshield_sjli.c</label>
+        <link refid="secureshield__sjli_8c_source"/>
       </node>
-      <node id="4004">
+      <node id="4033">
         <label>secureshield_vmpu.h</label>
         <link refid="secureshield__vmpu_8h_source"/>
-        <childnode refid="4005" relation="include">
+        <childnode refid="4034" relation="include">
         </childnode>
-        <childnode refid="4006" relation="include">
+        <childnode refid="4035" relation="include">
         </childnode>
-        <childnode refid="4007" relation="include">
+        <childnode refid="4036" relation="include">
         </childnode>
-        <childnode refid="4008" relation="include">
+        <childnode refid="4037" relation="include">
         </childnode>
-        <childnode refid="4009" relation="include">
+        <childnode refid="4038" relation="include">
         </childnode>
-        <childnode refid="4010" relation="include">
+        <childnode refid="4039" relation="include">
         </childnode>
-        <childnode refid="4011" relation="include">
+        <childnode refid="4040" relation="include">
         </childnode>
       </node>
-      <node id="4005">
+      <node id="4042">
+        <label>interrupts.c</label>
+        <link refid="interrupts_8c_source"/>
+      </node>
+      <node id="4034">
         <label>secureshield_int.c</label>
         <link refid="secureshield__int_8c_source"/>
       </node>
-      <node id="4007">
-        <label>secureshield_sys.c</label>
-        <link refid="secureshield__sys_8c_source"/>
+      <node id="4037">
+        <label>secureshield_vmpu.c</label>
+        <link refid="secureshield__vmpu_8c_source"/>
       </node>
-      <node id="4010">
-        <label>secureshield_trap.c</label>
-        <link refid="secureshield__trap_8c_source"/>
-      </node>
-      <node id="4014">
+      <node id="4043">
         <label>sys_ops.c</label>
         <link refid="sys__ops_8c_source"/>
       </node>
-      <node id="4013">
-        <label>interrupts.c</label>
-        <link refid="interrupts_8c_source"/>
+      <node id="4039">
+        <label>secureshield_trap.c</label>
+        <link refid="secureshield__trap_8c_source"/>
+      </node>
+      <node id="4032">
+        <label>secureshield_vmpu_exports.h</label>
+        <link refid="secureshield_vmpu_exports.h"/>
+        <childnode refid="4033" relation="include">
+        </childnode>
+        <childnode refid="4041" relation="include">
+        </childnode>
+      </node>
+      <node id="4038">
+        <label>secureshield_vmpu_arc.c</label>
+        <link refid="secureshield__vmpu__arc_8c_source"/>
+      </node>
+      <node id="4041">
+        <label>secureshield_lib.h</label>
+        <link refid="secureshield__lib_8h_source"/>
+        <childnode refid="4042" relation="include">
+        </childnode>
+        <childnode refid="4043" relation="include">
+        </childnode>
+      </node>
+      <node id="4036">
+        <label>secureshield_sys.c</label>
+        <link refid="secureshield__sys_8c_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="struct_e_m_b_a_r_c___p_a_c_k_e_d" prot="public">EMBARC_PACKED</innerclass>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="35" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="35" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="35" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a4134d743b4b081033a30a4ee7ee936ea" prot="public" static="no">
         <name>SECURESHIELD_AC_UWRITE</name>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="36" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="36" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="36" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1aa9dc99a57a36de2a6a35afa1e1b14aa9" prot="public" static="no">
         <name>SECURESHIELD_AC_UREAD</name>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="37" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="37" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="37" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1ac92eccf30f90ff0324d89a751708da78" prot="public" static="no">
         <name>SECURESHIELD_AC_UAC</name>
@@ -123,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="38" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="38" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="38" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a974564055668a3424965e959be3fc801" prot="public" static="no">
         <name>SECURESHIELD_AC_KEXECUTE</name>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="43" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="43" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="43" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1ab31e21070af2028adbfa32a26c46e07e" prot="public" static="no">
         <name>SECURESHIELD_AC_KWRITE</name>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="44" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="44" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="44" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1ac693793a68aee6e97a3ef0849f482872" prot="public" static="no">
         <name>SECURESHIELD_AC_KREAD</name>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="45" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="45" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="45" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a9f9503b1517c8d51bacf7d15111a645e" prot="public" static="no">
         <name>SECURESHIELD_AC_KAC</name>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="46" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="46" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="46" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a8ab17ccf0be2c6484a5dc23489487e44" prot="public" static="no">
         <name>SECURESHIELD_AC_EXECUTE</name>
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="50" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="50" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="50" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1afafef5f2f80f0014d99f1c858dce45ff" prot="public" static="no">
         <name>SECURESHIELD_AC_ACCESS</name>
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="54" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="54" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="54" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a165988f6e1fefd0244a154e52c98dc69" prot="public" static="no">
         <name>SECURESHIELD_AC_MEMORY</name>
@@ -204,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="58" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="58" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="58" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1af8e4518763bc83c54ee4328206000938" prot="public" static="no">
         <name>SECURESHIELD_AC_PERIPHERAL</name>
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="59" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="59" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="59" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1afbe627967eff5df0f8942dd8ba0b88d8" prot="public" static="no">
         <name>SECURESHIELD_AC_INTERFACE</name>
@@ -226,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="60" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="60" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="60" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a019772ae2eb41b8058b3c6a5da2a062a" prot="public" static="no">
         <name>SECURESHIELD_AC_IRQ</name>
@@ -237,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="61" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="61" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="61" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a8a82ec944cbb9bc1873d6191ea2f48d7" prot="public" static="no">
         <name>SECURESHIELD_AC_AUX</name>
@@ -248,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="62" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="62" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="62" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1ad90e9abe6db297909ec9ef314b38e5a4" prot="public" static="no">
         <name>SECURESHIELD_AC_SIZE_ROUND_UP</name>
@@ -259,7 +259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="65" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="65" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="65" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a15400e0dc1ef697ab648a69b2b29cd22" prot="public" static="no">
         <name>SECURESHIELD_AC_SIZE_ROUND_DOWN</name>
@@ -270,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="66" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="66" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="66" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a6f8f6759171f368973197dbcafc347e4" prot="public" static="no">
         <name>SECURESHIELD_AC_SHARED</name>
@@ -281,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="67" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="67" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="67" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1af930c0760b65dfd205e4af0fafc4db64" prot="public" static="no">
         <name>SECURESHIELD_AC_SECURE</name>
@@ -292,7 +292,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="68" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="68" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="68" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1ae4f66aff20548253e10cc397b58b3d15" prot="public" static="no">
         <name>SECURESHIELD_AC_NORMAL</name>
@@ -303,7 +303,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="69" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="69" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="69" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a8d8164c443ce6ac283decc3f7a130459" prot="public" static="no">
         <name>SECURESHIELD_ACDEF_UROM</name>
@@ -316,7 +316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="74" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="74" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="74" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1ac1d8d10f125268bb05031ab0310d1367" prot="public" static="no">
         <name>SECURESHIELD_ACDEF_URAM</name>
@@ -331,7 +331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="78" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="78" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="78" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a106cb5b864c88c271afd4ce5365ba0ea" prot="public" static="no">
         <name>SECURESHIELD_ACDEF_UTEXT</name>
@@ -343,7 +343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="85" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="85" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="85" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a8921f683f2165bd8fda373d6b33bfe76" prot="public" static="no">
         <name>SECURESHIELD_ACDEF_UDATA</name>
@@ -354,7 +354,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="88" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="88" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="88" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="88" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a3b5eadc8810e87a8c7312f18fb774213" prot="public" static="no">
         <name>SECURESHIELD_ACDEF_UBSS</name>
@@ -365,7 +365,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="89" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="89" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="89" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a661bcfa53f38dded87a0ed1a60cdb0b7" prot="public" static="no">
         <name>SECURESHIELD_ACDEF_UPERIPH</name>
@@ -380,7 +380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="93" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="93" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="93" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="93" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1afd5ac25499f72cbbbaec7624844abc63" prot="public" static="no">
         <name>SECURESHIELD_ACDEF_KROM</name>
@@ -392,7 +392,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="99" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="99" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="99" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a0f78ec02dd12b7c56733069218b532e7" prot="public" static="no">
         <name>SECURESHIELD_ACDEF_KRAM</name>
@@ -405,7 +405,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="103" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="103" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="103" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a04d7e92209166a7d69ba379703f8bc31" prot="public" static="no">
         <name>SECURESHIELD_ACDEF_KTEXT</name>
@@ -417,7 +417,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="108" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="108" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="108" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1adc2b6751ef1a72c86ee3e3da050c4ac8" prot="public" static="no">
         <name>SECURESHIELD_ACDEF_KDATA</name>
@@ -428,7 +428,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="111" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="111" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="111" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a5a6de368c4568dd93c6433cf6e088097" prot="public" static="no">
         <name>SECURESHIELD_ACDEF_KBSS</name>
@@ -439,7 +439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="112" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="112" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="112" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1aee118abe8d0b1cc5e6c289d7c547b79f" prot="public" static="no">
         <name>SECURESHIELD_ACDEF_KPERIPH</name>
@@ -452,7 +452,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="115" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="115" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="115" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a3f4b7293b94658bf1b97f715272596d1" prot="public" static="no">
         <name>SECURESHIELD_PAD32</name>
@@ -464,7 +464,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="120" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="120" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="120" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a56090aa49179a9a80f66f543e2b445bf" prot="public" static="no">
         <name>SECURESHIELD_CONTAINER_MAGIC</name>
@@ -475,7 +475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="121" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="121" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="121" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="121" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1aa1916a5cfdb45e322700ae7d763e6832" prot="public" static="no">
         <name>SECURESHIELD_CONTAINER_SECURE</name>
@@ -486,7 +486,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="122" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="122" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="122" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="122" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a2143a70ca3d930069b9f8c8fe8d1020f" prot="public" static="no">
         <name>SECURESHIELD_CONTAINER_NORMAL</name>
@@ -497,7 +497,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="123" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="123" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="123" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="123" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1af231dd741ddd7e34373e2f2869f22f46" prot="public" static="no">
         <name>SECURESHIELD_MEM_SIZE_ROUND</name>
@@ -509,7 +509,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="125" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="125" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="125" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a14ec3ce4fd010072105f29288a7dc53b" prot="public" static="no">
         <name>SECURESHIELD_REGION_ROUND_DOWN</name>
@@ -521,7 +521,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="128" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="128" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="128" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="128" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a2e06c90753e570e36c3274e1f1cbd705" prot="public" static="no">
         <name>SECURESHIELD_REGION_ROUND_UP</name>
@@ -533,7 +533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="129" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="129" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="129" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a27b50f3d72dc72dc2329c08d80c36d77" prot="public" static="no">
         <name>SECURESHIELD_STACK_SIZE_ROUND</name>
@@ -545,7 +545,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="130" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="130" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="130" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="130" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1a428a74c168e8db5b13f46fb6d5cf4525" prot="public" static="no">
         <name>CONTAINER_SECURE_STACK_SIZE</name>
@@ -556,7 +556,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="132" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="132" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="132" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="secureshield__vmpu__exports_8h_1ad640921c7655953923c4868ff7bb69d9" prot="public" static="no">
         <name>CONTAINER_DEFAUTL_STACK_SIZE</name>
@@ -567,7 +567,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="133" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="133" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="133" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="133" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -582,7 +582,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="135" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="135" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" line="135" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h" bodystart="135" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -619,111 +619,111 @@
 <codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
 <codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="29"><highlight class="comment">---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_SECURESHIELD_VMPU_EXPORTS_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_SECURESHIELD_VMPU_EXPORTS_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_SECURESHIELD_VMPU_EXPORTS_H_</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_SECURESHIELD_VMPU_EXPORTS_H_</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>basic<sp/>resource<sp/>access<sp/>control<sp/>attribute<sp/>definitions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>access<sp/>control<sp/>right<sp/>in<sp/>user<sp/>mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_UEXECUTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0001UL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_UWRITE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0002UL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_UREAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0004UL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_UAC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_AC_UREAD<sp/>|\</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_UEXECUTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0001UL</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_UWRITE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0002UL</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_UREAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0004UL</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_UAC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_AC_UREAD<sp/>|\</highlight></codeline>
 <codeline lineno="39"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_UWRITE<sp/>|\</highlight></codeline>
-<codeline lineno="40"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_UEXECUTE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_UEXECUTE)</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>access<sp/>control<sp/>right<sp/>in<sp/>kernel<sp/>mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_KEXECUTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0008UL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_KWRITE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0010UL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_KREAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0020UL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_KAC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_AC_KREAD<sp/>|\</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_KEXECUTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0008UL</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_KWRITE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0010UL</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_KREAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0020UL</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_KAC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_AC_KREAD<sp/>|\</highlight></codeline>
 <codeline lineno="47"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KWRITE<sp/>|\</highlight></codeline>
-<codeline lineno="48"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KEXECUTE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KEXECUTE)</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_EXECUTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_AC_UEXECUTE<sp/>|\</highlight></codeline>
-<codeline lineno="51"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KEXECUTE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KEXECUTE)</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>all<sp/>possible<sp/>access<sp/>control<sp/>flags<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_ACCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_AC_UAC<sp/>|<sp/>SECURESHIELD_AC_KAC<sp/>|\</highlight></codeline>
-<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_SECURE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_SECURE)</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>container<sp/>resource<sp/>definitions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_MEMORY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0100UL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_PERIPHERAL<sp/><sp/><sp/><sp/><sp/><sp/>0x0400UL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_INTERFACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0800UL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_IRQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1000UL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_AUX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2000UL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_MEMORY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0100UL</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_PERIPHERAL<sp/><sp/><sp/><sp/><sp/><sp/>0x0400UL</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_INTERFACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0800UL</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_IRQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1000UL</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_AUX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2000UL</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>extended<sp/>container<sp/>resource<sp/>access<sp/>control<sp/>attribute<sp/>definitions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_SIZE_ROUND_UP<sp/><sp/><sp/>0x10000000UL<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>resource<sp/>size<sp/>should<sp/>be<sp/>rounded<sp/>up<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_SIZE_ROUND_DOWN<sp/>0x20000000UL<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>resource<sp/>size<sp/>should<sp/>be<sp/>rounded<sp/>down<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_SHARED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40000000UL<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>resource<sp/>is<sp/>a<sp/>shared<sp/>resource<sp/>(no<sp/>implementation<sp/>now)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_SECURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80000000UL<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>resource<sp/>is<sp/>a<sp/>secure<sp/>resource<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_NORMAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0UL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>resource<sp/>is<sp/>a<sp/>normal<sp/>resource<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_SIZE_ROUND_UP<sp/><sp/><sp/>0x10000000UL<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>resource<sp/>size<sp/>should<sp/>be<sp/>rounded<sp/>up<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_SIZE_ROUND_DOWN<sp/>0x20000000UL<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>resource<sp/>size<sp/>should<sp/>be<sp/>rounded<sp/>down<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_SHARED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40000000UL<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>resource<sp/>is<sp/>a<sp/>shared<sp/>resource<sp/>(no<sp/>implementation<sp/>now)<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_SECURE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80000000UL<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>resource<sp/>is<sp/>a<sp/>secure<sp/>resource<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_AC_NORMAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0UL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>resource<sp/>is<sp/>a<sp/>normal<sp/>resource<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>the<sp/>following<sp/>macros<sp/>are<sp/>combinations<sp/>based<sp/>on<sp/>resource<sp/>type<sp/>and<sp/>resource<sp/>attribute<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ROM<sp/>area<sp/>requires<sp/>user<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_UROM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_AC_MEMORY<sp/>|\</highlight></codeline>
 <codeline lineno="75"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_UREAD<sp/><sp/><sp/>|\</highlight></codeline>
-<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KREAD<sp/><sp/><sp/>)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>RAM<sp/>area<sp/>requires<sp/>user<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KREAD<sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>RAM<sp/>area<sp/>requires<sp/>user<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_URAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_AC_MEMORY<sp/>|\</highlight></codeline>
 <codeline lineno="79"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_UREAD<sp/><sp/><sp/>|\</highlight></codeline>
 <codeline lineno="80"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_UWRITE<sp/><sp/>|\</highlight></codeline>
 <codeline lineno="81"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KREAD<sp/><sp/><sp/>|\</highlight></codeline>
-<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KWRITE<sp/><sp/>)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KWRITE<sp/><sp/>)</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>instruction<sp/>area<sp/>(.text)<sp/>requires<sp/>user<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_UTEXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_ACDEF_UROM<sp/>|\</highlight></codeline>
-<codeline lineno="86"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_EXECUTE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>memory<sp/>area<sp/>(.data,<sp/>.bss)<sp/>requires<sp/>user<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_UDATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_ACDEF_URAM</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_UBSS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_ACDEF_URAM</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_EXECUTE)</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>memory<sp/>area<sp/>(.data,<sp/>.bss)<sp/>requires<sp/>user<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_UDATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_ACDEF_URAM</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_UBSS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_ACDEF_URAM</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>peripheral<sp/>area<sp/>requires<sp/>user<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_UPERIPH<sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_AC_PERIPHERAL<sp/>|\</highlight></codeline>
 <codeline lineno="94"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_UREAD<sp/><sp/><sp/>|\</highlight></codeline>
 <codeline lineno="95"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_UWRITE<sp/><sp/>|\</highlight></codeline>
 <codeline lineno="96"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KREAD<sp/><sp/><sp/>|\</highlight></codeline>
-<codeline lineno="97"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KWRITE<sp/><sp/>)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ROM<sp/>area<sp/>requires<sp/>kernel<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KWRITE<sp/><sp/>)</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>ROM<sp/>area<sp/>requires<sp/>kernel<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_KROM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_AC_MEMORY<sp/>|\</highlight></codeline>
-<codeline lineno="100"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KREAD<sp/><sp/><sp/>)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KREAD<sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>RAM<sp/>area<sp/>requires<sp/>kernel<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_KRAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_AC_MEMORY<sp/>|\</highlight></codeline>
 <codeline lineno="104"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KREAD<sp/><sp/><sp/>|\</highlight></codeline>
-<codeline lineno="105"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KWRITE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KWRITE)</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>instruction<sp/>area<sp/>(.text)<sp/>requires<sp/>kernel<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_KTEXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_ACDEF_KROM<sp/>|\</highlight></codeline>
-<codeline lineno="109"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KEXECUTE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>memory<sp/>area<sp/>(.data,<sp/>.bss)<sp/>requires<sp/>user<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_KDATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_ACDEF_KRAM</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_KBSS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_ACDEF_KRAM</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KEXECUTE)</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>memory<sp/>area<sp/>(.data,<sp/>.bss)<sp/>requires<sp/>user<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_KDATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_ACDEF_KRAM</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_KBSS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_ACDEF_KRAM</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>peripheral<sp/>area<sp/>requires<sp/>kernel<sp/>privilege<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_ACDEF_KPERIPH<sp/><sp/><sp/><sp/><sp/><sp/>(SECURESHIELD_AC_PERIPHERAL<sp/><sp/><sp/><sp/><sp/>|\</highlight></codeline>
 <codeline lineno="116"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KREAD<sp/><sp/><sp/>|\</highlight></codeline>
-<codeline lineno="117"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KWRITE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_AC_KWRITE)</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_PAD32(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(32<sp/>-<sp/>(sizeof(x)<sp/>&amp;<sp/>~0x1FUL))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_CONTAINER_MAGIC<sp/><sp/><sp/><sp/>0x42CFB66FUL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>magic<sp/>number<sp/>to<sp/>identify<sp/>container<sp/>configuration<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_CONTAINER_SECURE<sp/><sp/><sp/>0x1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>container<sp/>type:<sp/>secure<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_CONTAINER_NORMAL<sp/><sp/><sp/>0x0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>container<sp/>type:<sp/>normal<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_MEM_SIZE_ROUND(x)<sp/><sp/>SECURESHIELD_REGION_ROUND_UP(x)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_PAD32(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(32<sp/>-<sp/>(sizeof(x)<sp/>&amp;<sp/>~0x1FUL))</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_CONTAINER_MAGIC<sp/><sp/><sp/><sp/>0x42CFB66FUL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>magic<sp/>number<sp/>to<sp/>identify<sp/>container<sp/>configuration<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_CONTAINER_SECURE<sp/><sp/><sp/>0x1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>container<sp/>type:<sp/>secure<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_CONTAINER_NORMAL<sp/><sp/><sp/>0x0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>container<sp/>type:<sp/>normal<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_MEM_SIZE_ROUND(x)<sp/><sp/>SECURESHIELD_REGION_ROUND_UP(x)</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_REGION_ROUND_DOWN(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EMBARC_POW2_CEIL(x)<sp/>&gt;&gt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_REGION_ROUND_UP(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EMBARC_POW2_CEIL(x)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_STACK_SIZE_ROUND(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_REGION_ROUND_UP(x)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONTAINER_SECURE_STACK_SIZE<sp/><sp/><sp/><sp/><sp/>512</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONTAINER_DEFAUTL_STACK_SIZE<sp/><sp/><sp/><sp/>1024</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_REGION_ROUND_DOWN(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(EMBARC_POW2_CEIL(x)<sp/>&gt;&gt;<sp/>1)</highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_REGION_ROUND_UP(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EMBARC_POW2_CEIL(x)</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SECURESHIELD_STACK_SIZE_ROUND(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SECURESHIELD_REGION_ROUND_UP(x)</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONTAINER_SECURE_STACK_SIZE<sp/><sp/><sp/><sp/><sp/>512</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CONTAINER_DEFAUTL_STACK_SIZE<sp/><sp/><sp/><sp/>1024</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/>CONTAINER_AC;</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
@@ -759,6 +759,6 @@
 <codeline lineno="167"><highlight class="normal"></highlight></codeline>
 <codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*_SECURESHIELD_VMPU_EXPORTS_H_*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/inc/secureshield_vmpu_exports.h"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/inc/secureshield_vmpu_exports.h"/>
   </compounddef>
 </doxygen>

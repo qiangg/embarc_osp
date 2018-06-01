@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="group___d_e_v_i_c_e___h_a_l___g_p_i_o___c_t_r_l_c_m_d" kind="group">
     <compoundname>DEVICE_HAL_GPIO_CTRLCMD</compoundname>
     <title>GPIO Device Control Commands</title>
@@ -15,7 +15,10 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="169" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="169" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" line="178" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" bodystart="178" bodyend="-1"/>
+        <referencedby refid="dw__gpio_8h_1aded8e591ccd8f0c63e0516dc7776d3f7" compoundref="dw__gpio_8c" startline="370" endline="470">dw_gpio_control</referencedby>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o_1ga1c5aeb4ab0898b4d756415644ff65c68" compoundref="emsk__gpio_8c" startline="91" endline="104">emsk_button_init</referencedby>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o_1ga17c90e6a42b9c2952d406d0136a390ba" compoundref="emsk__gpio_8c" startline="107" endline="120">emsk_switch_init</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___g_p_i_o___c_t_r_l_c_m_d_1ga012ec483702c3346090ed3990fb5c424" prot="public" static="no">
         <name>GPIO_CMD_SET_BIT_DIR_OUTPUT</name>
@@ -28,7 +31,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="176" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="176" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" line="185" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" bodystart="185" bodyend="-1"/>
+        <referencedby refid="dw__gpio_8h_1aded8e591ccd8f0c63e0516dc7776d3f7" compoundref="dw__gpio_8c" startline="370" endline="470">dw_gpio_control</referencedby>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o_1gac9f916612edd3260bf1282c25ceea192" compoundref="emsk__gpio_8c" startline="73" endline="88">emsk_led_init</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___g_p_i_o___c_t_r_l_c_m_d_1gaad16affb5d8e7ec732e904be45328c96" prot="public" static="no">
         <name>GPIO_CMD_GET_BIT_DIR</name>
@@ -41,7 +46,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="183" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="183" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" line="192" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" bodystart="192" bodyend="-1"/>
+        <referencedby refid="dw__gpio_8h_1aded8e591ccd8f0c63e0516dc7776d3f7" compoundref="dw__gpio_8c" startline="370" endline="470">dw_gpio_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___g_p_i_o___c_t_r_l_c_m_d_1gada822221fb039eb5549af98e8c88ce9b" prot="public" static="no">
         <name>GPIO_CMD_SET_BIT_INT_CFG</name>
@@ -54,7 +60,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="190" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="190" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" line="199" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" bodystart="199" bodyend="-1"/>
+        <referencedby refid="dw__gpio_8h_1aded8e591ccd8f0c63e0516dc7776d3f7" compoundref="dw__gpio_8c" startline="370" endline="470">dw_gpio_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___g_p_i_o___c_t_r_l_c_m_d_1ga75fc7807746e1c9a4fecbb2ac17a23a6" prot="public" static="no">
         <name>GPIO_CMD_GET_BIT_INT_CFG</name>
@@ -67,7 +74,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="199" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="199" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" line="208" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" bodystart="208" bodyend="-1"/>
+        <referencedby refid="dw__gpio_8h_1aded8e591ccd8f0c63e0516dc7776d3f7" compoundref="dw__gpio_8c" startline="370" endline="470">dw_gpio_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___g_p_i_o___c_t_r_l_c_m_d_1gad43d27e0971a8cbca838dc69af2639a7" prot="public" static="no">
         <name>GPIO_CMD_SET_BIT_ISR</name>
@@ -80,7 +88,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="206" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="206" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" line="215" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" bodystart="215" bodyend="-1"/>
+        <referencedby refid="dw__gpio_8h_1aded8e591ccd8f0c63e0516dc7776d3f7" compoundref="dw__gpio_8c" startline="370" endline="470">dw_gpio_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___g_p_i_o___c_t_r_l_c_m_d_1ga35168af88b6a2ddef118c55687d23bfa" prot="public" static="no">
         <name>GPIO_CMD_GET_BIT_ISR</name>
@@ -93,7 +102,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="214" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="214" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" line="223" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" bodystart="223" bodyend="-1"/>
+        <referencedby refid="dw__gpio_8h_1aded8e591ccd8f0c63e0516dc7776d3f7" compoundref="dw__gpio_8c" startline="370" endline="470">dw_gpio_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___g_p_i_o___c_t_r_l_c_m_d_1ga0dc3ba08f56ab2c5ca64e4beab70fed5" prot="public" static="no">
         <name>GPIO_CMD_ENA_BIT_INT</name>
@@ -106,7 +116,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="221" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="221" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" line="230" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" bodystart="230" bodyend="-1"/>
+        <referencedby refid="dw__gpio_8h_1aded8e591ccd8f0c63e0516dc7776d3f7" compoundref="dw__gpio_8c" startline="370" endline="470">dw_gpio_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___g_p_i_o___c_t_r_l_c_m_d_1ga628f933ae67d4f0acdedffd3b8b3ae99" prot="public" static="no">
         <name>GPIO_CMD_DIS_BIT_INT</name>
@@ -119,7 +130,11 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="228" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="228" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" line="237" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" bodystart="237" bodyend="-1"/>
+        <referencedby refid="dw__gpio_8h_1aded8e591ccd8f0c63e0516dc7776d3f7" compoundref="dw__gpio_8c" startline="370" endline="470">dw_gpio_control</referencedby>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o_1ga1c5aeb4ab0898b4d756415644ff65c68" compoundref="emsk__gpio_8c" startline="91" endline="104">emsk_button_init</referencedby>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o_1gac9f916612edd3260bf1282c25ceea192" compoundref="emsk__gpio_8c" startline="73" endline="88">emsk_led_init</referencedby>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o_1ga17c90e6a42b9c2952d406d0136a390ba" compoundref="emsk__gpio_8c" startline="107" endline="120">emsk_switch_init</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___g_p_i_o___c_t_r_l_c_m_d_1ga5c4b788e2447b60ec5e67dea7fc96104" prot="public" static="no">
         <name>GPIO_CMD_GET_BIT_MTHD</name>
@@ -132,7 +147,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="235" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="235" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" line="244" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" bodystart="244" bodyend="-1"/>
+        <referencedby refid="dw__gpio_8h_1aded8e591ccd8f0c63e0516dc7776d3f7" compoundref="dw__gpio_8c" startline="370" endline="470">dw_gpio_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___g_p_i_o___c_t_r_l_c_m_d_1ga1bdac03e82e12781a8196fd300753a4d" prot="public" static="no">
         <name>GPIO_CMD_TOGGLE_BITS</name>
@@ -145,7 +161,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" line="242" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_gpio.h" bodystart="242" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" line="251" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_gpio.h" bodystart="251" bodyend="-1"/>
+        <referencedby refid="dw__gpio_8h_1aded8e591ccd8f0c63e0516dc7776d3f7" compoundref="dw__gpio_8c" startline="370" endline="470">dw_gpio_control</referencedby>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___g_p_i_o_1ga37c8d684dfd11fe1900c93fa1fe7cc0b" compoundref="emsk__gpio_8c" startline="137" endline="144">led_toggle</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>

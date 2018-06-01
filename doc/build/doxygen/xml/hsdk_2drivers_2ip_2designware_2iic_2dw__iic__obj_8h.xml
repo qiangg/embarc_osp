@@ -1,110 +1,110 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8h" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8h" kind="file">
     <compoundname>hsdk/drivers/ip/designware/iic/dw_iic_obj.h</compoundname>
     <includes refid="dev__iic_8h" local="yes">dev_iic.h</includes>
     <includedby refid="hsdk__io_8h" local="yes">hsdk_io.h</includedby>
     <includedby refid="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" local="yes">dw_iic_obj.c</includedby>
     <includedby refid="hsdk_8h" local="yes">hsdk.h</includedby>
     <incdepgraph>
-      <node id="1642">
+      <node id="1657">
         <label>stdint.h</label>
       </node>
-      <node id="1639">
+      <node id="1654">
         <label>dw_iic_obj.h</label>
-        <link refid="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8h"/>
-        <childnode refid="1640" relation="include">
+        <link refid="hsdk/drivers/ip/designware/iic/dw_iic_obj.h"/>
+        <childnode refid="1655" relation="include">
         </childnode>
       </node>
-      <node id="1640">
-        <label>dev_iic.h</label>
-        <link refid="dev__iic_8h"/>
-        <childnode refid="1641" relation="include">
-        </childnode>
-      </node>
-      <node id="1641">
+      <node id="1656">
         <label>dev_common.h</label>
         <link refid="dev__common_8h"/>
-        <childnode refid="1642" relation="include">
+        <childnode refid="1657" relation="include">
+        </childnode>
+      </node>
+      <node id="1655">
+        <label>dev_iic.h</label>
+        <link refid="dev__iic_8h"/>
+        <childnode refid="1656" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1651">
+      <node id="1661">
+        <label>hsdk.h</label>
+        <link refid="hsdk_8h"/>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1662" relation="include">
+        </childnode>
+        <childnode refid="1663" relation="include">
+        </childnode>
+        <childnode refid="1664" relation="include">
+        </childnode>
+        <childnode refid="1665" relation="include">
+        </childnode>
+        <childnode refid="1666" relation="include">
+        </childnode>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1668" relation="include">
+        </childnode>
+        <childnode refid="1669" relation="include">
+        </childnode>
+      </node>
+      <node id="1666">
         <label>dw_uart_obj.c</label>
         <link refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
       </node>
-      <node id="1647">
-        <label>dw_gpio_obj.c</label>
-        <link refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
-      </node>
-      <node id="1650">
-        <label>dw_spi_obj.c</label>
-        <link refid="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
-      </node>
-      <node id="1652">
+      <node id="1667">
         <label>mux.c</label>
         <link refid="hsdk_2drivers_2mux_2mux_8c"/>
       </node>
-      <node id="1653">
-        <label>ntshell_io_uart.c</label>
-        <link refid="hsdk_2drivers_2ntshell_2ntshell__io__uart_8c"/>
-      </node>
-      <node id="1649">
-        <label>dw_sdio_obj.c</label>
-        <link refid="dw__sdio__obj_8c_source"/>
-      </node>
-      <node id="1648">
+      <node id="1663">
         <label>dw_iic_obj.c</label>
         <link refid="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
       </node>
-      <node id="1643">
+      <node id="1658">
         <label>dw_iic_obj.h</label>
-        <link refid="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8h"/>
-        <childnode refid="1644" relation="include">
+        <link refid="hsdk/drivers/ip/designware/iic/dw_iic_obj.h"/>
+        <childnode refid="1659" relation="include">
         </childnode>
-        <childnode refid="1648" relation="include">
+        <childnode refid="1663" relation="include">
         </childnode>
-        <childnode refid="1646" relation="include">
-        </childnode>
-      </node>
-      <node id="1646">
-        <label>hsdk.h</label>
-        <link refid="hsdk_8h"/>
-        <childnode refid="1645" relation="include">
-        </childnode>
-        <childnode refid="1647" relation="include">
-        </childnode>
-        <childnode refid="1648" relation="include">
-        </childnode>
-        <childnode refid="1649" relation="include">
-        </childnode>
-        <childnode refid="1650" relation="include">
-        </childnode>
-        <childnode refid="1651" relation="include">
-        </childnode>
-        <childnode refid="1652" relation="include">
-        </childnode>
-        <childnode refid="1653" relation="include">
-        </childnode>
-        <childnode refid="1654" relation="include">
+        <childnode refid="1661" relation="include">
         </childnode>
       </node>
-      <node id="1645">
+      <node id="1660">
         <label>hsdk_io.c</label>
         <link refid="hsdk__io_8c"/>
       </node>
-      <node id="1644">
+      <node id="1659">
         <label>hsdk_io.h</label>
         <link refid="hsdk__io_8h"/>
-        <childnode refid="1645" relation="include">
+        <childnode refid="1660" relation="include">
         </childnode>
-        <childnode refid="1646" relation="include">
+        <childnode refid="1661" relation="include">
         </childnode>
       </node>
-      <node id="1654">
+      <node id="1664">
+        <label>dw_sdio_obj.c</label>
+        <link refid="dw__sdio__obj_8c_source"/>
+      </node>
+      <node id="1662">
+        <label>dw_gpio_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+      <node id="1668">
+        <label>ntshell_io_uart.c</label>
+        <link refid="hsdk_2drivers_2ntshell_2ntshell__io__uart_8c"/>
+      </node>
+      <node id="1669">
         <label>pmwifi.c</label>
         <link refid="hsdk_2drivers_2pmwifi_2pmwifi_8c"/>
+      </node>
+      <node id="1665">
+        <label>dw_spi_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="user-defined">
@@ -118,7 +118,7 @@
 <para>DesignWare IIC valid number </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="49" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="49" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="49" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -132,7 +132,7 @@
 <para>iic 0 id macro </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="56" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="56" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="56" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1gae817f416141131c7db1520bf0f4310a5" prot="public" static="no">
         <name>DW_IIC_1_ID</name>
@@ -143,7 +143,7 @@
 <para>iic 1 id macro </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="57" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="57" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="57" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga40361880fc1455f097af3ac1b23e69b3" prot="public" static="no">
         <name>DW_IIC_2_ID</name>
@@ -154,7 +154,7 @@
 <para>iic 2 id macro </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="58" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="58" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="58" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="58" bodyend="-1"/>
         <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga0ce322e609d92e655c3bd4a16d6bff6c" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="350" endline="380">iic_get_dev</referencedby>
       </memberdef>
       </sectiondef>
@@ -169,7 +169,7 @@
 <para>enable use designware iic 0 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="65" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="65" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="65" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga2e36257b25f1a40cbaf5f0e1c6cd1bff" prot="public" static="no">
         <name>USE_DW_IIC_1</name>
@@ -180,7 +180,7 @@
 <para>enable use designware iic 1 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="66" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="66" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="66" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga109b45ec9cd2307ae19371455b6abb37" prot="public" static="no">
         <name>USE_DW_IIC_2</name>
@@ -191,7 +191,7 @@
 <para>enable use designware iic 2 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="67" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="67" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" line="67" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -210,7 +210,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.c" line="386" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="386" bodyend="397"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.c" line="386" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="386" bodyend="397"/>
         <references refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="111" endline="153">dw_iic_0_install</references>
         <references refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga7c8ad461a10a131f032af0fe9364da2f" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="207" endline="249">dw_iic_1_install</references>
         <references refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1gaaa3ce722b8be4c8bf33f6670b7d8987f" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="303" endline="345">dw_iic_2_install</references>
@@ -251,9 +251,9 @@
 <codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
 <codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="29"><highlight class="comment">---------------------------------------------<sp/>*/</highlight></codeline>
-<codeline lineno="40"><highlight class="preprocessor">#ifndef<sp/>_DW_IIC_OBJ_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_DW_IIC_OBJ_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor">#ifndef<sp/>_DW_IIC_OBJ_H_</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_DW_IIC_OBJ_H_</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev__iic_8h" kindref="compound">dev_iic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49" refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1gaa1bd07d69cdda9322156f54705b265e0" refkind="member"><highlight class="preprocessor">#define<sp/>DW_IIC_NUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(3)<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -263,19 +263,19 @@
 <codeline lineno="65" refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga3b19d229b16227184baa09f36adaba34" refkind="member"><highlight class="preprocessor">#define<sp/>USE_DW_IIC_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="66" refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga2e36257b25f1a40cbaf5f0e1c6cd1bff" refkind="member"><highlight class="preprocessor">#define<sp/>USE_DW_IIC_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="67" refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga109b45ec9cd2307ae19371455b6abb37" refkind="member"><highlight class="preprocessor">#define<sp/>USE_DW_IIC_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="70"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaab099b120feacae6d8ca167725b9ad5f" kindref="member">dw_iic_all_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_DW_IIC_OBJ_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_DW_IIC_OBJ_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/ip/designware/iic/dw_iic_obj.h"/>
   </compounddef>
 </doxygen>

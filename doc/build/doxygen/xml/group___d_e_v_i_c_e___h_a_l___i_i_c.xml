@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="group___d_e_v_i_c_e___h_a_l___i_i_c" kind="group">
     <compoundname>DEVICE_HAL_IIC</compoundname>
     <title>IIC Device HAL Interface</title>
@@ -48,7 +48,7 @@
 get an <ref refid="structdev__iic" kindref="compound">iic device</ref> by iic device id. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_iic.h" line="509" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="255" bodyend="280"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_iic.h" line="519" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="255" bodyend="280"/>
         <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gae3634028ee4e9ec4a8d2b58d1354c46f" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="78">dw_iic_0</references>
         <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga9dad39587e7f20b0e80aca04791dbb09" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8h" startline="60">DW_IIC_0_ID</references>
         <references refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga0bf1815935410074872879ce748c75d4" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="173">dw_iic_1</references>
@@ -56,11 +56,19 @@ get an <ref refid="structdev__iic" kindref="compound">iic device</ref> by iic de
         <references refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga40c66146be6fed76b61443b935cbbea7" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="269">dw_iic_2</references>
         <references refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga40361880fc1455f097af3ac1b23e69b3" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8h" startline="58">DW_IIC_2_ID</references>
         <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaab099b120feacae6d8ca167725b9ad5f" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="286" endline="294">dw_iic_all_install</references>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1ga701d2fab00f692f41c27c1b5d0a5d24d" compoundref="hsdk__io_8c" startline="71" endline="114">hsdk_led_init</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>definitions for iic device hardware layer (<ref refid="dev__iic_8h" kindref="compound">dev_iic.h</ref>) </para>    </briefdescription>
     <detaileddescription>
-<para>provide interfaces for iic driver to implement </para>    </detaileddescription>
+<para>provide interfaces for iic driver to implement Here is a diagram for the iic interface.</para><para><htmlonly> 
+ &lt;div class=&quot;imagebox&quot;&gt;
+     &lt;div style=&quot;width: 600px&quot;&gt;
+         &lt;img src=&quot;pic/dev_iic_hal.jpg&quot; alt=&quot;IIC Device HAL Interface Diagram&quot;/&gt;
+         &lt;p&gt;IIC Device HAL Interface Diagram&lt;/p&gt;
+     &lt;/div&gt;
+ &lt;/div&gt;
+ </htmlonly> </para>    </detaileddescription>
   </compounddef>
 </doxygen>

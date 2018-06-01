@@ -1,90 +1,90 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="creg__hsdc__reg__map_8h" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="creg__hsdc__reg__map_8h" kind="file">
     <compoundname>creg_hsdc_reg_map.h</compoundname>
     <includedby refid="creg__hsdc__reg_8h" local="yes">creg_hsdc_reg.h</includedby>
     <invincdepgraph>
-      <node id="1008">
-        <label>creg_hsdc_reg_map.h</label>
-        <link refid="creg__hsdc__reg__map_8h"/>
-        <childnode refid="1009" relation="include">
+      <node id="1027">
+        <label>hsdk.h</label>
+        <link refid="hsdk_8h"/>
+        <childnode refid="1028" relation="include">
+        </childnode>
+        <childnode refid="1029" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+        <childnode refid="1031" relation="include">
+        </childnode>
+        <childnode refid="1032" relation="include">
+        </childnode>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
         </childnode>
       </node>
-      <node id="1018">
+      <node id="1033">
         <label>dw_uart_obj.c</label>
         <link refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
       </node>
-      <node id="1014">
-        <label>dw_gpio_obj.c</label>
-        <link refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
-      </node>
-      <node id="1017">
-        <label>dw_spi_obj.c</label>
-        <link refid="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
-      </node>
-      <node id="1019">
+      <node id="1034">
         <label>mux.c</label>
         <link refid="hsdk_2drivers_2mux_2mux_8c"/>
       </node>
-      <node id="1020">
-        <label>ntshell_io_uart.c</label>
-        <link refid="hsdk_2drivers_2ntshell_2ntshell__io__uart_8c"/>
-      </node>
-      <node id="1009">
-        <label>creg_hsdc_reg.h</label>
-        <link refid="creg__hsdc__reg_8h_source"/>
-        <childnode refid="1010" relation="include">
-        </childnode>
-      </node>
-      <node id="1016">
-        <label>dw_sdio_obj.c</label>
-        <link refid="dw__sdio__obj_8c_source"/>
-      </node>
-      <node id="1015">
+      <node id="1030">
         <label>dw_iic_obj.c</label>
         <link refid="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
       </node>
-      <node id="1012">
-        <label>hsdk.h</label>
-        <link refid="hsdk_8h"/>
-        <childnode refid="1013" relation="include">
-        </childnode>
-        <childnode refid="1014" relation="include">
-        </childnode>
-        <childnode refid="1015" relation="include">
-        </childnode>
-        <childnode refid="1016" relation="include">
-        </childnode>
-        <childnode refid="1017" relation="include">
-        </childnode>
-        <childnode refid="1018" relation="include">
-        </childnode>
-        <childnode refid="1019" relation="include">
-        </childnode>
-        <childnode refid="1020" relation="include">
-        </childnode>
-        <childnode refid="1021" relation="include">
-        </childnode>
-      </node>
-      <node id="1013">
-        <label>hsdk_io.c</label>
-        <link refid="hsdk__io_8c"/>
-      </node>
-      <node id="1011">
+      <node id="1026">
         <label>creg_hsdc.c</label>
         <link refid="creg__hsdc_8c_source"/>
       </node>
-      <node id="1010">
+      <node id="1025">
         <label>creg_hsdc.h</label>
         <link refid="creg__hsdc_8h_source"/>
-        <childnode refid="1011" relation="include">
+        <childnode refid="1026" relation="include">
         </childnode>
-        <childnode refid="1012" relation="include">
+        <childnode refid="1027" relation="include">
         </childnode>
       </node>
-      <node id="1021">
+      <node id="1023">
+        <label>creg_hsdc_reg_map.h</label>
+        <link refid="creg_hsdc_reg_map.h"/>
+        <childnode refid="1024" relation="include">
+        </childnode>
+      </node>
+      <node id="1028">
+        <label>hsdk_io.c</label>
+        <link refid="hsdk__io_8c"/>
+      </node>
+      <node id="1031">
+        <label>dw_sdio_obj.c</label>
+        <link refid="dw__sdio__obj_8c_source"/>
+      </node>
+      <node id="1024">
+        <label>creg_hsdc_reg.h</label>
+        <link refid="creg__hsdc__reg_8h_source"/>
+        <childnode refid="1025" relation="include">
+        </childnode>
+      </node>
+      <node id="1029">
+        <label>dw_gpio_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+      <node id="1035">
+        <label>ntshell_io_uart.c</label>
+        <link refid="hsdk_2drivers_2ntshell_2ntshell__io__uart_8c"/>
+      </node>
+      <node id="1036">
         <label>pmwifi.c</label>
         <link refid="hsdk_2drivers_2pmwifi_2pmwifi_8c"/>
+      </node>
+      <node id="1032">
+        <label>dw_spi_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structcreg__hsdc__reg" prot="public">creg_hsdc_reg</innerclass>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/creg/creg_hsdc_reg_map.h" line="164" column="1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/creg/creg_hsdc_reg_map.h" line="164" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="creg__hsdc__reg__map_8h_1ad215784547b8d76390839c0c4e352d9f" prot="public" static="no">
         <type>struct <ref refid="structcreg__hsdc__reg" kindref="compound">creg_hsdc_reg</ref> *</type>
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/creg/creg_hsdc_reg_map.h" line="164" column="1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/creg/creg_hsdc_reg_map.h" line="164" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -154,9 +154,9 @@
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>!!!<sp/>This<sp/>file<sp/>was<sp/>automatically<sp/>generated<sp/>!!!</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_CREG_HSDC_REG_MAP_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CREG_HSDC_REG_MAP_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36" refid="structcreg__hsdc__reg" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcreg__hsdc__reg" kindref="compound">creg_hsdc_reg</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_CREG_HSDC_REG_MAP_H_</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CREG_HSDC_REG_MAP_H_</highlight></codeline>
+<codeline lineno="36" refid="structcreg__hsdc__reg" refkind="compound"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcreg__hsdc__reg" kindref="compound">creg_hsdc_reg</ref></highlight></codeline>
 <codeline lineno="37"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CREG_AXI_M_0_SLV0;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RW<sp/><sp/><sp/>0x000<sp/><sp/><sp/>Address<sp/>decoder<sp/>slave<sp/>select<sp/>register<sp/>0</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CREG_AXI_M_0_SLV1;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RW<sp/><sp/><sp/>0x004<sp/><sp/><sp/>Address<sp/>decoder<sp/>slave<sp/>select<sp/>register<sp/>1</highlight><highlight class="normal"></highlight></codeline>
@@ -287,6 +287,6 @@
 <codeline lineno="164"><highlight class="normal">}<sp/><sp/>CREG_HSDC_STRUCT,<sp/>*<sp/>CREG_HSDC_STRUCT_PTR;</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/creg/creg_hsdc_reg_map.h"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/creg/creg_hsdc_reg_map.h"/>
   </compounddef>
 </doxygen>

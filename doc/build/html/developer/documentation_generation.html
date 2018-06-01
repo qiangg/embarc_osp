@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="embARC 2018.01 documentation" href="../index.html"/>
-        <link rel="up" title="Developer Guides" href="developer_guides.html"/>
-        <link rel="next" title="Usage Guide FAQ" href="../faq/faq.html"/>
-        <link rel="prev" title="Add New OS" href="add_new_os.html"/> 
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Usage Guide FAQ" href="../faq/faq.html" />
+    <link rel="prev" title="Add New OS" href="add_new_os.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -130,7 +121,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">embARC</a>
@@ -138,9 +129,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -190,58 +182,51 @@
 <h2>Building Document in Windows<a class="headerlink" href="#building-document-in-windows" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p class="first">Install <a class="reference external" href="http://www.sphinx-doc.org/en/master/">Sphinx</a> in the Windows machine.</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">&gt;</span>sphinx-build --version
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span>sphinx-build --version
 <span class="go">Sphinx (sphinx-build) 1.6.3</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">Install <a class="reference external" href="http://www.doxygen.nl/">Doxygen</a> in the Windows machine.</p>
-<blockquote>
-<div><div class="highlight-console"><div class="highlight"><pre><span></span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span>doxygen --version
+<span class="go">1.8.13</span>
 </pre></div>
 </div>
-<p>&gt;doxygen –version
-1.8.13</p>
-</div></blockquote>
 </li>
-<li><p class="first">Open a command prompt as administrator. Go to <em>&lt;embARC&gt;/doc/documents/example</em>. Enter <code class="docutils literal"><span class="pre">mklink</span> <span class="pre">/D</span> <span class="pre">example</span> <span class="pre">..\..\..\example</span></code> to create a folder link to <em>&lt;embARC&gt;/example</em>.</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">&gt;</span>mklink /D example ..<span class="se">\.</span>.<span class="se">\.</span>.<span class="se">\e</span>xample
+<li><p class="first">Open a command prompt as administrator. Go to <em>&lt;embARC&gt;/doc/documents/example</em>. Enter <code class="docutils literal notranslate"><span class="pre">mklink</span> <span class="pre">/D</span> <span class="pre">example</span> <span class="pre">..\..\..\example</span></code> to create a folder link to <em>&lt;embARC&gt;/example</em>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span>mklink /D example ..<span class="se">\.</span>.<span class="se">\.</span>.<span class="se">\e</span>xample
 <span class="go">symbolic link created for example &lt;&lt;===&gt;&gt; ..\..\..\example</span>
 </pre></div>
 </div>
-<ul>
-<li><p class="first">If <code class="docutils literal"><span class="pre">Cannot</span> <span class="pre">create</span> <span class="pre">a</span> <span class="pre">file</span> <span class="pre">when</span> <span class="pre">that</span> <span class="pre">file</span> <span class="pre">already</span> <span class="pre">exists.</span></code>, it means you have already have a file or folder <em>example</em>. Make sure the link is accessible to <em>&lt;embARC&gt;/example</em>.</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">&gt;</span>mklink /D example ..<span class="se">\.</span>.<span class="se">\.</span>.<span class="se">\e</span>xample
+</li>
+<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">Cannot</span> <span class="pre">create</span> <span class="pre">a</span> <span class="pre">file</span> <span class="pre">when</span> <span class="pre">that</span> <span class="pre">file</span> <span class="pre">already</span> <span class="pre">exists.</span></code>, it means you have already have a file or folder <em>example</em>. Make sure the link is accessible to <em>&lt;embARC&gt;/example</em>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span>mklink /D example ..<span class="se">\.</span>.<span class="se">\.</span>.<span class="se">\e</span>xample
 <span class="go">Cannot create a file when that file already exists.</span>
 </pre></div>
 </div>
 </li>
-</ul>
-</li>
 <li><p class="first">Go to <em>&lt;embARC&gt;/doc</em> and generate xml files by Doxygen.</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">&gt;</span>mkdir build<span class="se">\d</span>oxygen<span class="se">\x</span>ml
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span>mkdir build<span class="se">\d</span>oxygen<span class="se">\x</span>ml
 <span class="gp">&gt;</span>make doxygen
 </pre></div>
 </div>
 </li>
-<li><p class="first">Go to <em>&lt;embARC&gt;/doc</em> and enter <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code> to generate html. The html files are in <em>&lt;embARC&gt;/doc/build/html</em>.</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">&gt;</span>make html
+<li><p class="first">Go to <em>&lt;embARC&gt;/doc</em> and enter <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> to generate html. The html files are in <em>&lt;embARC&gt;/doc/build/html</em>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span>make html
 </pre></div>
 </div>
 </li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Enter <code class="docutils literal"><span class="pre">make</span></code> in <em>&lt;embARC&gt;/doc</em> to see the details of make target.</p>
+<p class="last">Enter <code class="docutils literal notranslate"><span class="pre">make</span></code> in <em>&lt;embARC&gt;/doc</em> to see the details of make target.</p>
 </div>
 </div>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -263,7 +248,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -282,6 +267,7 @@
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'2018.01',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -299,14 +285,11 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

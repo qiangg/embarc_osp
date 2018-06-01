@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../../../../_static/style_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../../../genindex.html"/>
-        <link rel="search" title="Search" href="../../../../search.html"/>
-    <link rel="top" title="embARC 2018.01 documentation" href="../../../../index.html"/>
-        <link rel="up" title="Baremetal examples" href="../baremetal_based_example.html"/>
-        <link rel="next" title="CPP Build" href="../cxx/README.html"/>
-        <link rel="prev" title="Blinky" href="../blinky/README.html"/> 
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="CPP Build" href="../cxx/README.html" />
+    <link rel="prev" title="Blinky" href="../blinky/README.html" /> 
 
   
   <script src="../../../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -107,7 +98,6 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../../../example.html#overview">Overview</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="../../example.html">Examples and Demos</a><ul class="current">
 <li class="toctree-l4 current"><a class="reference internal" href="../baremetal_based_example.html">Baremetal examples</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../freertos/os_based_example.html">OS Based Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -131,7 +121,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">embARC</a>
@@ -139,9 +129,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -224,7 +215,7 @@
 <dd><p class="first">As shown in the following picture, when the EMSK configuration in SPI flash is loaded into the FPGA, a simple primary bootloader is also loaded in ICCM. Through the primary bootloader, the application or secondary bootloader can be loaded into external memory (DDR memory), bootloader start address is 0x17F00004, ram address is 0x17F00000.</p>
 <p>For EMSK1.x, bootloader core configuration must be arcem6, for EMSK2.x, bootloader core configuration must be arcem7d.
 For EMSK 1.0, it can be upgraded to 1.1 by 1.1’s firmware. For EMSK 2.0/2.1/2.2, it can be upgraded to 2.3 by 2.3’s firmware.</p>
-<img alt="../../../../_images/bootloader.jpg" src="../../../../_images/bootloader.jpg" />
+<img alt="example/example/baremetal/bootloader/../../../../pic/bootloader.jpg" src="example/example/baremetal/bootloader/../../../../pic/bootloader.jpg" />
 <p>Here are steps for how to program the secondary bootloader application into onboard SPIFlash (Take EMSK2.3 - ARC EM7D as example) and automatically load and run <em>boot.hex</em> or <em>boot.bin</em> in SDCard.</p>
 <ul>
 <li><p class="first">Generate a secondary bootloader binary file</p>
@@ -244,7 +235,7 @@ For EMSK 1.0, it can be upgraded to 1.1 by 1.1’s firmware. For EMSK 2.0/2.1/2.
 <li>Thirdly, run <em>spirw -w em7d_2bt.bin 0x17f00000 0x17f00004</em> to program spiflash</li>
 <li>Check the output message to see if it was programmed successfully.</li>
 </ul>
-<img alt="../../../../_images/emsk_bootloader_program2splflash.jpg" class="last" src="../../../../_images/emsk_bootloader_program2splflash.jpg" />
+<img alt="example/example/baremetal/bootloader/../../../../pic/images/example/baremetal_bootloader/emsk_bootloader_program2splflash.jpg" class="last" src="example/example/baremetal/bootloader/../../../../pic/images/example/baremetal_bootloader/emsk_bootloader_program2splflash.jpg" />
 </dd>
 </dl>
 </li>
@@ -255,7 +246,7 @@ For EMSK 1.0, it can be upgraded to 1.1 by 1.1’s firmware. For EMSK 2.0/2.1/2.
 <li><p class="first">You can goto the next step to generate the <em>boot.bin</em> for proper application you want to be auto-loaded in sdcard.</p>
 </li>
 </ul>
-<img alt="../../../../_images/emsk_bootloader_onspiflash.jpg" class="last" src="../../../../_images/emsk_bootloader_onspiflash.jpg" />
+<img alt="example/example/baremetal/bootloader/../../../../pic/images/example/baremetal_bootloader/emsk_bootloader_onspiflash.jpg" class="last" src="example/example/baremetal/bootloader/../../../../pic/images/example/baremetal_bootloader/emsk_bootloader_onspiflash.jpg" />
 </dd>
 </dl>
 </li>
@@ -302,7 +293,7 @@ For EMSK 1.0, it can be upgraded to 1.1 by 1.1’s firmware. For EMSK 2.0/2.1/2.
 </ul>
 </dd>
 </dl>
-<img alt="../../../../_images/emsk_bootloader.jpg" class="last" src="../../../../_images/emsk_bootloader.jpg" />
+<img alt="example/example/baremetal/bootloader/../../../../pic/images/example/baremetal_bootloader/emsk_bootloader.jpg" class="last" src="example/example/baremetal/bootloader/../../../../pic/images/example/baremetal_bootloader/emsk_bootloader.jpg" />
 </dd>
 </dl>
 </li>
@@ -338,12 +329,12 @@ For EMSK 1.0, it can be upgraded to 1.1 by 1.1’s firmware. For EMSK 2.0/2.1/2.
 <ul class="simple">
 <li>Generate a secondary bootloader binary file</li>
 </ul>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> &lt;embarc_root&gt;/example/baremetal/bootloader
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> &lt;embarc_root&gt;/example/baremetal/bootloader
 <span class="gp">$</span> gmake <span class="nv">BOARD</span><span class="o">=</span>emsk <span class="nv">BD_VER</span><span class="o">=</span><span class="m">22</span> <span class="nv">CUR_CORE</span><span class="o">=</span>arcem7d <span class="nv">TOOLCHAIN</span><span class="o">=</span>mw bin
 </pre></div>
 </div>
 <p>If the binary file is generated successfully, you will output as follows:</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">&quot;Compiling       : &quot; ../../../middleware/ntshell/cmds/cmds_fs/ymodem/ymodemio.c</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">&quot;Compiling       : &quot; ../../../middleware/ntshell/cmds/cmds_fs/ymodem/ymodemio.c</span>
 <span class="go">&quot;Compiling       : &quot; ../../../middleware/ntshell/port/ntshell_usrcmd.c</span>
 <span class="go">&quot;Compiling       : &quot; ../../../middleware/ntshell/port/ntshell_task.c</span>
 <span class="go">&quot;Archiving       : &quot; obj_emsk_23/gnu_arcem7d/libmidntshell.a</span>
@@ -374,7 +365,7 @@ For EMSK 1.0, it can be upgraded to 1.1 by 1.1’s firmware. For EMSK 2.0/2.1/2.
 <dd><ul class="first simple">
 <li>Here take <em>&lt;embarc_root&gt;/example/freertos/kernel</em> for example</li>
 </ul>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> &lt;embarc_root&gt;/example/freertos/kernel
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> &lt;embarc_root&gt;/example/freertos/kernel
 <span class="gp">        $</span> gmake <span class="nv">BOARD</span><span class="o">=</span>emsk <span class="nv">BD_VER</span><span class="o">=</span><span class="m">22</span> <span class="nv">CUR_CORE</span><span class="o">=</span>arcem7d <span class="nv">TOOLCHAIN</span><span class="o">=</span>mw bin
 </pre></div>
 </div>
@@ -393,16 +384,14 @@ For EMSK 1.0, it can be upgraded to 1.1 by 1.1’s firmware. For EMSK 2.0/2.1/2.
 <div class="section" id="sample-output">
 <h3>Sample Output<a class="headerlink" href="#sample-output" title="Permalink to this headline">¶</a></h3>
 <p>The output depends on the <em>boot.bin</em>. This sample is using <em>&lt;embarc_root&gt;/example/freertos/kernel</em>.</p>
-<img alt="../../../../_images/emsk_bootloader_loadbootbin.jpg" src="../../../../_images/emsk_bootloader_loadbootbin.jpg" />
+<img alt="example/example/baremetal/bootloader/../../../../pic/images/example/baremetal_bootloader/emsk_bootloader_loadbootbin.jpg" src="example/example/baremetal/bootloader/../../../../pic/images/example/baremetal_bootloader/emsk_bootloader_loadbootbin.jpg" />
 </div>
 </div>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -424,7 +413,7 @@ For EMSK 1.0, it can be upgraded to 1.1 by 1.1’s firmware. For EMSK 2.0/2.1/2.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -443,6 +432,7 @@ For EMSK 1.0, it can be upgraded to 1.1 by 1.1’s firmware. For EMSK 2.0/2.1/2.
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../../',
             VERSION:'2018.01',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -460,14 +450,11 @@ For EMSK 1.0, it can be upgraded to 1.1 by 1.1’s firmware. For EMSK 2.0/2.1/2.
     <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

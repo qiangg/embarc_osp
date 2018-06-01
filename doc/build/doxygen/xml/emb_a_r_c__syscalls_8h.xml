@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="emb_a_r_c__syscalls_8h" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="emb_a_r_c__syscalls_8h" kind="file">
     <compoundname>embARC_syscalls.h</compoundname>
     <includes refid="emb_a_r_c__target_8h" local="yes">embARC_target.h</includes>
     <includedby refid="emb_a_r_c__misc_8c" local="yes">embARC_misc.c</includedby>
@@ -8,61 +8,61 @@
     <includedby refid="emb_a_r_c__syscalls_8c" local="yes">embARC_syscalls.c</includedby>
     <includedby refid="emb_a_r_c__target_8c" local="yes">embARC_target.c</includedby>
     <incdepgraph>
-      <node id="2238">
+      <node id="2253">
         <label>embARC_target.h</label>
         <link refid="emb_a_r_c__target_8h"/>
-        <childnode refid="2239" relation="include">
+        <childnode refid="2254" relation="include">
         </childnode>
-        <childnode refid="2240" relation="include">
+        <childnode refid="2255" relation="include">
         </childnode>
-        <childnode refid="2241" relation="include">
-        </childnode>
-      </node>
-      <node id="2237">
-        <label>embARC_syscalls.h</label>
-        <link refid="emb_a_r_c__syscalls_8h"/>
-        <childnode refid="2238" relation="include">
+        <childnode refid="2256" relation="include">
         </childnode>
       </node>
-      <node id="2240">
-        <label>limits.h</label>
-      </node>
-      <node id="2239">
-        <label>time.h</label>
-      </node>
-      <node id="2241">
+      <node id="2256">
         <label>ya_getopt.h</label>
         <link refid="ya__getopt_8h_source"/>
       </node>
+      <node id="2255">
+        <label>limits.h</label>
+      </node>
+      <node id="2252">
+        <label>embARC_syscalls.h</label>
+        <link refid="embARC_syscalls.h"/>
+        <childnode refid="2253" relation="include">
+        </childnode>
+      </node>
+      <node id="2254">
+        <label>time.h</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2244">
-        <label>embARC_sbrk.c</label>
-        <link refid="emb_a_r_c__sbrk_8c_source"/>
-      </node>
-      <node id="2246">
+      <node id="2261">
         <label>embARC_target.c</label>
         <link refid="emb_a_r_c__target_8c_source"/>
       </node>
-      <node id="2245">
+      <node id="2260">
         <label>embARC_syscalls.c</label>
         <link refid="emb_a_r_c__syscalls_8c_source"/>
       </node>
-      <node id="2242">
+      <node id="2257">
         <label>embARC_syscalls.h</label>
-        <link refid="emb_a_r_c__syscalls_8h"/>
-        <childnode refid="2243" relation="include">
+        <link refid="embARC_syscalls.h"/>
+        <childnode refid="2258" relation="include">
         </childnode>
-        <childnode refid="2244" relation="include">
+        <childnode refid="2259" relation="include">
         </childnode>
-        <childnode refid="2245" relation="include">
+        <childnode refid="2260" relation="include">
         </childnode>
-        <childnode refid="2246" relation="include">
+        <childnode refid="2261" relation="include">
         </childnode>
       </node>
-      <node id="2243">
+      <node id="2258">
         <label>embARC_misc.c</label>
         <link refid="emb_a_r_c__misc_8c_source"/>
+      </node>
+      <node id="2259">
+        <label>embARC_sbrk.c</label>
+        <link refid="emb_a_r_c__sbrk_8c_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.h" line="51" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.h" bodystart="51" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.h" line="51" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -114,36 +114,36 @@
 <codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="29"><highlight class="comment">---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="preprocessor">#ifndef<sp/>_EMBARC_SYSCALLS_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_EMBARC_SYSCALLS_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__GNU__)<sp/>&amp;&amp;<sp/>!defined(_HAVE_LIBGLOSS_)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>_HAVE_LIBGLOSS_<sp/>is<sp/>defined<sp/>in<sp/>options/toolchain/toolchain_gnu.mk<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#ifndef<sp/>_EMBARC_SYSCALLS_</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_EMBARC_SYSCALLS_</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__GNU__)<sp/>&amp;&amp;<sp/>!defined(_HAVE_LIBGLOSS_)</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>_HAVE_LIBGLOSS_<sp/>is<sp/>defined<sp/>in<sp/>options/toolchain/toolchain_gnu.mk<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/syscall.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYSCALL_PREFIX(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>syscall##x</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__GNU__<sp/>&amp;&amp;<sp/>!_HAVE_LIBGLOSS_<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SYSCALL_PREFIX</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYSCALL_PREFIX(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__GNU__)<sp/>&amp;&amp;<sp/>!defined(_HAVE_LIBGLOSS_)<sp/>&amp;&amp;<sp/>!defined(_HOSTLINK_)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>syscall_swi(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYSCALL_PREFIX(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>syscall##x</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__GNU__<sp/>&amp;&amp;<sp/>!_HAVE_LIBGLOSS_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SYSCALL_PREFIX</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSCALL_PREFIX(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__GNU__)<sp/>&amp;&amp;<sp/>!defined(_HAVE_LIBGLOSS_)<sp/>&amp;&amp;<sp/>!defined(_HOSTLINK_)</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>syscall_swi(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emb_a_r_c__target_8h" kindref="compound">embARC_target.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>_EMBARC_SYSCALLS_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/clib/embARC_syscalls.h"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/library/clib/embARC_syscalls.h"/>
   </compounddef>
 </doxygen>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="structdev__sdio" kind="struct" language="C++" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structdev__sdio" kind="struct" prot="public">
     <compoundname>dev_sdio</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdev__sdio_1a7c9fef3dc00e3c4fe0b90cdc981281a0" prot="public" static="no" mutable="no">
@@ -14,11 +14,11 @@
 <para>sdio device information </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" line="109" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" bodystart="109" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" line="109" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" bodystart="109" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdev__sdio_1ad519643a82804a4168650ca78001f804" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structdev__sdio_1a771ec3ffdef69b286642002184a2a87a" prot="public" static="no" mutable="no">
         <type>int32_t(*</type>
-        <definition>int32_t(* dev_sdio::open) (uint32_t card)</definition>
+        <definition>int32_t(* dev_sdio::open)(uint32_t card)</definition>
         <argsstring>)(uint32_t card)</argsstring>
         <name>open</name>
         <briefdescription>
@@ -27,11 +27,11 @@
 <para>Open sdio device </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" line="110" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" bodystart="110" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" line="110" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" bodystart="110" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdev__sdio_1ae5c28518743b61c9cb419495016dfaa6" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structdev__sdio_1ae2b8b80f1e4ca97a0b3e84e40999d1fd" prot="public" static="no" mutable="no">
         <type>int32_t(*</type>
-        <definition>int32_t(* dev_sdio::close) (uint32_t card)</definition>
+        <definition>int32_t(* dev_sdio::close)(uint32_t card)</definition>
         <argsstring>)(uint32_t card)</argsstring>
         <name>close</name>
         <briefdescription>
@@ -40,11 +40,11 @@
 <para>Close sdio device </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" line="111" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" bodystart="111" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" line="111" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" bodystart="111" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdev__sdio_1a4f3faa95dae3efe34fa293afd6ba7479" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structdev__sdio_1ab00a3caa4f94c12981e49ad7b2747dd1" prot="public" static="no" mutable="no">
         <type>int32_t(*</type>
-        <definition>int32_t(* dev_sdio::control) (SDIO_CTRL_CMD_PTR ctrl_cmd, void *param)</definition>
+        <definition>int32_t(* dev_sdio::control)(SDIO_CTRL_CMD_PTR ctrl_cmd, void *param)</definition>
         <argsstring>)(SDIO_CTRL_CMD_PTR ctrl_cmd, void *param)</argsstring>
         <name>control</name>
         <briefdescription>
@@ -53,11 +53,11 @@
 <para>Control sdio device </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" line="112" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" bodystart="112" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" line="112" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" bodystart="112" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdev__sdio_1a116f1dc033d41da435518728d40d7bce" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structdev__sdio_1a03a246ab77c81d6bb752a19d13baf63a" prot="public" static="no" mutable="no">
         <type>int32_t(*</type>
-        <definition>int32_t(* dev_sdio::cmd_poll) (SDIO_CMD_PTR cmd, SDIO_DATA_PTR data)</definition>
+        <definition>int32_t(* dev_sdio::cmd_poll)(SDIO_CMD_PTR cmd, SDIO_DATA_PTR data)</definition>
         <argsstring>)(SDIO_CMD_PTR cmd, SDIO_DATA_PTR data)</argsstring>
         <name>cmd_poll</name>
         <briefdescription>
@@ -66,11 +66,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" line="113" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" bodystart="113" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" line="113" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" bodystart="113" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdev__sdio_1a969691682fd2c4e9685668122bb1960a" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structdev__sdio_1a0b94a4d8f03c3b3918dde14da121e141" prot="public" static="no" mutable="no">
         <type>int32_t(*</type>
-        <definition>int32_t(* dev_sdio::cmd_int) (SDIO_CMD_PTR cmd, SDIO_DATA_PTR data, DEV_CALLBACK cb)</definition>
+        <definition>int32_t(* dev_sdio::cmd_int)(SDIO_CMD_PTR cmd, SDIO_DATA_PTR data, DEV_CALLBACK cb)</definition>
         <argsstring>)(SDIO_CMD_PTR cmd, SDIO_DATA_PTR data, DEV_CALLBACK cb)</argsstring>
         <name>cmd_int</name>
         <briefdescription>
@@ -79,11 +79,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" line="114" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" bodystart="114" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" line="114" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" bodystart="114" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdev__sdio_1a2be2b6a1cd4ddcc7b72634705779086f" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structdev__sdio_1a13adcace69ff9404eade87d45bc2bc44" prot="public" static="no" mutable="no">
         <type>int32_t(*</type>
-        <definition>int32_t(* dev_sdio::cd) (uint32_t card)</definition>
+        <definition>int32_t(* dev_sdio::cd)(uint32_t card)</definition>
         <argsstring>)(uint32_t card)</argsstring>
         <name>cd</name>
         <briefdescription>
@@ -92,11 +92,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" line="115" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" bodystart="115" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" line="115" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" bodystart="115" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structdev__sdio_1a4ba6bd55cb287b6734b679cd38b835a4" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structdev__sdio_1ad35803aee77b37d0d0ca6050a571e338" prot="public" static="no" mutable="no">
         <type>int32_t(*</type>
-        <definition>int32_t(* dev_sdio::wp) (uint32_t card)</definition>
+        <definition>int32_t(* dev_sdio::wp)(uint32_t card)</definition>
         <argsstring>)(uint32_t card)</argsstring>
         <name>wp</name>
         <briefdescription>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" line="116" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" bodystart="116" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" line="116" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -125,16 +125,16 @@
         <link refid="structdev__sdio__info"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" line="108" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_sdio.h" bodystart="108" bodyend="117"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" line="108" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_sdio.h" bodystart="108" bodyend="117"/>
     <listofallmembers>
-      <member refid="structdev__sdio_1a2be2b6a1cd4ddcc7b72634705779086f" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>cd</name></member>
-      <member refid="structdev__sdio_1ae5c28518743b61c9cb419495016dfaa6" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>close</name></member>
-      <member refid="structdev__sdio_1a969691682fd2c4e9685668122bb1960a" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>cmd_int</name></member>
-      <member refid="structdev__sdio_1a116f1dc033d41da435518728d40d7bce" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>cmd_poll</name></member>
-      <member refid="structdev__sdio_1a4f3faa95dae3efe34fa293afd6ba7479" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>control</name></member>
-      <member refid="structdev__sdio_1ad519643a82804a4168650ca78001f804" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>open</name></member>
+      <member refid="structdev__sdio_1a13adcace69ff9404eade87d45bc2bc44" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>cd</name></member>
+      <member refid="structdev__sdio_1ae2b8b80f1e4ca97a0b3e84e40999d1fd" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>close</name></member>
+      <member refid="structdev__sdio_1a0b94a4d8f03c3b3918dde14da121e141" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>cmd_int</name></member>
+      <member refid="structdev__sdio_1a03a246ab77c81d6bb752a19d13baf63a" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>cmd_poll</name></member>
+      <member refid="structdev__sdio_1ab00a3caa4f94c12981e49ad7b2747dd1" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>control</name></member>
+      <member refid="structdev__sdio_1a771ec3ffdef69b286642002184a2a87a" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>open</name></member>
       <member refid="structdev__sdio_1a7c9fef3dc00e3c4fe0b90cdc981281a0" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>sdio_info</name></member>
-      <member refid="structdev__sdio_1a4ba6bd55cb287b6734b679cd38b835a4" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>wp</name></member>
+      <member refid="structdev__sdio_1ad35803aee77b37d0d0ca6050a571e338" prot="public" virt="non-virtual"><scope>dev_sdio</scope><name>wp</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

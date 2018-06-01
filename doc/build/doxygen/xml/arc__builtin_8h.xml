@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="arc__builtin_8h" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="arc__builtin_8h" kind="file">
     <compoundname>arc_builtin.h</compoundname>
     <includes refid="emb_a_r_c__toolchain_8h" local="yes">embARC_toolchain.h</includes>
     <includedby refid="sys__ops_8c" local="yes">sys_ops.c</includedby>
@@ -33,520 +33,572 @@
     <includedby refid="nsim__uart__obj_8c" local="yes">nsim_uart_obj.c</includedby>
     <includedby refid="dw__sdio_8h" local="yes">dw_sdio.h</includedby>
     <incdepgraph>
-      <node id="95">
-        <label>embARC_toolchain.h</label>
-        <link refid="emb_a_r_c__toolchain_8h"/>
-        <childnode refid="96" relation="include">
-        </childnode>
-        <childnode refid="97" relation="include">
-        </childnode>
-        <childnode refid="98" relation="include">
-        </childnode>
-        <childnode refid="99" relation="include">
-        </childnode>
-      </node>
-      <node id="99">
+      <node id="106">
         <label>stdbool.h</label>
       </node>
-      <node id="96">
+      <node id="103">
         <label>stdint.h</label>
       </node>
-      <node id="94">
+      <node id="101">
         <label>arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="95" relation="include">
+        <link refid="arc_builtin.h"/>
+        <childnode refid="102" relation="include">
         </childnode>
       </node>
-      <node id="98">
+      <node id="105">
         <label>stddef.h</label>
       </node>
-      <node id="97">
+      <node id="104">
         <label>limits.h</label>
+      </node>
+      <node id="102">
+        <label>embARC_toolchain.h</label>
+        <link refid="emb_a_r_c__toolchain_8h"/>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="186">
-        <label>ntshell_io_netconn.c</label>
-        <link refid="emsk_2drivers_2ntshell_2ntshell__io__netconn_8c"/>
-      </node>
-      <node id="135">
-        <label>pmwifi.c</label>
-        <link refid="emsk_2drivers_2pmwifi_2pmwifi_8c"/>
-      </node>
-      <node id="115">
-        <label>hsdk_interrupt.c</label>
-        <link refid="hsdk__interrupt_8c"/>
-      </node>
-      <node id="189">
-        <label>ntshell_io_uart.c</label>
-        <link refid="nsim_2drivers_2ntshell_2ntshell__io__uart_8c"/>
-      </node>
-      <node id="153">
-        <label>axs_hardware.h</label>
-        <link refid="axs__hardware_8h"/>
+      <node id="172">
+        <label>hsdk.h</label>
+        <link refid="hsdk_8h"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
         <childnode refid="150" relation="include">
         </childnode>
-        <childnode refid="152" relation="include">
+      </node>
+      <node id="176">
+        <label>dw_iic.c</label>
+        <link refid="dw__iic_8c"/>
+      </node>
+      <node id="134">
+        <label>secureshield.c</label>
+        <link refid="secureshield_8c_source"/>
+      </node>
+      <node id="131">
+        <label>secureshield_container_stack.h</label>
+        <link refid="secureshield__container__stack_8h_source"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
         </childnode>
       </node>
-      <node id="109">
-        <label>dirent.h</label>
-        <link refid="dirent_8h_source"/>
+      <node id="120">
+        <label>axs_103_interrupt.c</label>
+        <link refid="axs__103__interrupt_8c"/>
       </node>
-      <node id="142">
+      <node id="185">
+        <label>secureshield_arc_mpu.c</label>
+        <link refid="secureshield__arc__mpu_8c_source"/>
+      </node>
+      <node id="183">
+        <label>arc_mpu.h</label>
+        <link refid="arc__mpu_8h_source"/>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>secureshield_sjli.c</label>
+        <link refid="secureshield__sjli_8c_source"/>
+      </node>
+      <node id="178">
+        <label>dw_spi.c</label>
+        <link refid="dw__spi_8c"/>
+      </node>
+      <node id="160">
+        <label>axs_hardware.h</label>
+        <link refid="axs__hardware_8h"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>axs.h</label>
+        <link refid="axs_8h"/>
+      </node>
+      <node id="149">
         <label>dw_uart_obj.c</label>
         <link refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
       </node>
-      <node id="119">
-        <label>secureshield_container_call.h</label>
-        <link refid="secureshield__container__call_8h_source"/>
+      <node id="135">
+        <label>interrupts.c</label>
+        <link refid="interrupts_8c_source"/>
+      </node>
+      <node id="127">
+        <label>secureshield_int.c</label>
+        <link refid="secureshield__int_8c_source"/>
+      </node>
+      <node id="162">
+        <label>dw_gpio_obj.c</label>
+        <link refid="axs_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+      <node id="156">
+        <label>dw_gpio_obj.h</label>
+        <link refid="axs_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h"/>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>dw_uart_obj.c</label>
+        <link refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="174">
+        <label>mux.c</label>
+        <link refid="hsdk_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="195">
+        <label>ntshell_io_netconn.c</label>
+        <link refid="hsdk_2drivers_2ntshell_2ntshell__io__netconn_8c"/>
+      </node>
+      <node id="184">
+        <label>arc_mpu.c</label>
+        <link refid="arc__mpu_8c_source"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>emsk_gpio.c</label>
+        <link refid="emsk__gpio_8c"/>
+      </node>
+      <node id="117">
+        <label>fatfs_dirent.c</label>
+        <link refid="fatfs__dirent_8c_source"/>
+      </node>
+      <node id="164">
+        <label>emsk_gpio.h</label>
+        <link refid="emsk__gpio_8h"/>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>fatfs_dirent.h</label>
+        <link refid="fatfs__dirent_8h_source"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>ntshell_io_uart.c</label>
+        <link refid="emsk_2drivers_2ntshell_2ntshell__io__uart_8c"/>
+      </node>
+      <node id="107">
+        <label>arc_builtin.h</label>
+        <link refid="arc_builtin.h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>secureshield_vmpu.c</label>
+        <link refid="secureshield__vmpu_8c_source"/>
+      </node>
+      <node id="147">
+        <label>dw_iic_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
+      </node>
+      <node id="140">
+        <label>dw_iic_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
+      </node>
+      <node id="114">
+        <label>embARC.h</label>
+        <link refid="emb_a_r_c_8h"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
         <childnode refid="120" relation="include">
         </childnode>
         <childnode refid="121" relation="include">
         </childnode>
         <childnode refid="122" relation="include">
         </childnode>
-        <childnode refid="123" relation="include">
-        </childnode>
       </node>
-      <node id="175">
-        <label>arc_connect.c</label>
-        <link refid="arc__connect_8c_source"/>
-      </node>
-      <node id="188">
-        <label>ntshell_io_netconn.c</label>
-        <link refid="hsdk_2drivers_2ntshell_2ntshell__io__netconn_8c"/>
-      </node>
-      <node id="103">
-        <label>arc_cache.c</label>
-        <link refid="arc__cache_8c"/>
-      </node>
-      <node id="133">
-        <label>dw_iic_obj.c</label>
-        <link refid="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
-      </node>
-      <node id="126">
-        <label>secureshield_vmpu.c</label>
-        <link refid="secureshield__vmpu_8c_source"/>
-      </node>
-      <node id="139">
-        <label>dw_gpio_obj.c</label>
-        <link refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
-      </node>
-      <node id="164">
-        <label>dw_gpio_obj.h</label>
-        <link refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h"/>
-        <childnode refid="139" relation="include">
-        </childnode>
-        <childnode refid="165" relation="include">
-        </childnode>
-      </node>
-      <node id="132">
-        <label>emsk_timer.c</label>
-        <link refid="emsk__timer_8c"/>
-      </node>
-      <node id="123">
-        <label>secureshield_sjli.c</label>
-        <link refid="secureshield__sjli_8c_source"/>
-      </node>
-      <node id="130">
-        <label>axs_timer.c</label>
-        <link refid="axs__timer_8c"/>
-      </node>
-      <node id="147">
-        <label>dw_gpio.c</label>
-        <link refid="dw__gpio_8c"/>
-      </node>
-      <node id="148">
-        <label>dw_gpio.h</label>
-        <link refid="dw__gpio_8h"/>
-        <childnode refid="149" relation="include">
-        </childnode>
-        <childnode refid="152" relation="include">
-        </childnode>
-        <childnode refid="155" relation="include">
-        </childnode>
-        <childnode refid="156" relation="include">
-        </childnode>
-        <childnode refid="157" relation="include">
-        </childnode>
-        <childnode refid="159" relation="include">
-        </childnode>
-        <childnode refid="162" relation="include">
-        </childnode>
-        <childnode refid="163" relation="include">
-        </childnode>
-        <childnode refid="139" relation="include">
-        </childnode>
-        <childnode refid="164" relation="include">
-        </childnode>
-        <childnode refid="147" relation="include">
-        </childnode>
-      </node>
-      <node id="121">
-        <label>secureshield_vmpu_arc.c</label>
-        <link refid="secureshield__vmpu__arc_8c_source"/>
-      </node>
-      <node id="141">
-        <label>dw_spi_obj.c</label>
-        <link refid="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
-      </node>
-      <node id="107">
-        <label>embARC.h</label>
-        <link refid="emb_a_r_c_8h"/>
-        <childnode refid="108" relation="include">
-        </childnode>
-        <childnode refid="111" relation="include">
-        </childnode>
-        <childnode refid="112" relation="include">
-        </childnode>
-        <childnode refid="113" relation="include">
-        </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
-      </node>
-      <node id="167">
-        <label>mux.c</label>
-        <link refid="hsdk_2drivers_2mux_2mux_8c"/>
-      </node>
-      <node id="168">
-        <label>ntshell_io_uart.c</label>
-        <link refid="hsdk_2drivers_2ntshell_2ntshell__io__uart_8c"/>
-      </node>
-      <node id="187">
-        <label>ntshell_io_uart.c</label>
-        <link refid="emsk_2drivers_2ntshell_2ntshell__io__uart_8c"/>
-      </node>
-      <node id="172">
-        <label>dw_uart.c</label>
-        <link refid="dw__uart_8c"/>
-      </node>
-      <node id="173">
-        <label>dw_uart.h</label>
-        <link refid="dw__uart_8h"/>
-        <childnode refid="112" relation="include">
+      <node id="125">
+        <label>secureshield.h</label>
+        <link refid="secureshield_8h_source"/>
+        <childnode refid="126" relation="include">
         </childnode>
         <childnode refid="131" relation="include">
         </childnode>
-        <childnode refid="160" relation="include">
+        <childnode refid="127" relation="include">
         </childnode>
-        <childnode refid="142" relation="include">
-        </childnode>
-        <childnode refid="172" relation="include">
-        </childnode>
-      </node>
-      <node id="181">
-        <label>secureshield_arc_timer.c</label>
-        <link refid="secureshield__arc__timer_8c_source"/>
-      </node>
-      <node id="169">
-        <label>dw_iic.c</label>
-        <link refid="dw__iic_8c"/>
-      </node>
-      <node id="171">
-        <label>dw_spi.c</label>
-        <link refid="dw__spi_8c"/>
-      </node>
-      <node id="127">
-        <label>secureshield.c</label>
-        <link refid="secureshield_8c_source"/>
-      </node>
-      <node id="111">
-        <label>embARC_syscalls.c</label>
-        <link refid="emb_a_r_c__syscalls_8c_source"/>
-      </node>
-      <node id="144">
-        <label>sdcard_sdio.c</label>
-        <link refid="sdcard__sdio_8c"/>
-      </node>
-      <node id="106">
-        <label>arc_udma.c</label>
-        <link refid="arc__udma_8c"/>
-      </node>
-      <node id="174">
-        <label>arc_connect.h</label>
-        <link refid="arc__connect_8h"/>
-        <childnode refid="175" relation="include">
-        </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
-      </node>
-      <node id="100">
-        <label>arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="101" relation="include">
-        </childnode>
-        <childnode refid="102" relation="include">
-        </childnode>
-        <childnode refid="116" relation="include">
-        </childnode>
-        <childnode refid="174" relation="include">
-        </childnode>
-        <childnode refid="176" relation="include">
-        </childnode>
-        <childnode refid="179" relation="include">
-        </childnode>
-        <childnode refid="105" relation="include">
-        </childnode>
-        <childnode refid="185" relation="include">
-        </childnode>
-        <childnode refid="107" relation="include">
-        </childnode>
-        <childnode refid="182" relation="include">
-        </childnode>
-        <childnode refid="130" relation="include">
-        </childnode>
-        <childnode refid="152" relation="include">
-        </childnode>
-        <childnode refid="155" relation="include">
-        </childnode>
-        <childnode refid="131" relation="include">
-        </childnode>
-        <childnode refid="132" relation="include">
-        </childnode>
-        <childnode refid="161" relation="include">
-        </childnode>
-        <childnode refid="158" relation="include">
-        </childnode>
-        <childnode refid="135" relation="include">
-        </childnode>
-        <childnode refid="136" relation="include">
-        </childnode>
-        <childnode refid="184" relation="include">
-        </childnode>
-        <childnode refid="137" relation="include">
-        </childnode>
-        <childnode refid="138" relation="include">
-        </childnode>
-        <childnode refid="191" relation="include">
-        </childnode>
-        <childnode refid="143" relation="include">
-        </childnode>
-        <childnode refid="144" relation="include">
-        </childnode>
-        <childnode refid="145" relation="include">
-        </childnode>
-        <childnode refid="146" relation="include">
-        </childnode>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="192" relation="include">
-        </childnode>
-      </node>
-      <node id="136">
-        <label>emsk_sdcard_spi.c</label>
-        <link refid="emsk__sdcard__spi_8c"/>
-      </node>
-      <node id="182">
-        <label>axs_init.c</label>
-        <link refid="axs__init_8c"/>
-      </node>
-      <node id="166">
-        <label>dw_sdio_obj.c</label>
-        <link refid="dw__sdio__obj_8c_source"/>
-      </node>
-      <node id="140">
-        <label>dw_iic_obj.c</label>
-        <link refid="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
-      </node>
-      <node id="170">
-        <label>dw_sdio.c</label>
-        <link refid="dw__sdio_8c_source"/>
-      </node>
-      <node id="165">
-        <label>hsdk.h</label>
-        <link refid="hsdk_8h"/>
-        <childnode refid="163" relation="include">
-        </childnode>
-        <childnode refid="139" relation="include">
-        </childnode>
-        <childnode refid="140" relation="include">
-        </childnode>
-        <childnode refid="166" relation="include">
-        </childnode>
-        <childnode refid="141" relation="include">
-        </childnode>
-        <childnode refid="142" relation="include">
-        </childnode>
-        <childnode refid="167" relation="include">
-        </childnode>
-        <childnode refid="168" relation="include">
-        </childnode>
-        <childnode refid="143" relation="include">
-        </childnode>
-      </node>
-      <node id="192">
-        <label>dw_sdio.h</label>
-        <link refid="dw__sdio_8h_source"/>
-        <childnode refid="166" relation="include">
-        </childnode>
-        <childnode refid="170" relation="include">
-        </childnode>
-      </node>
-      <node id="160">
-        <label>dw_uart_obj.c</label>
-        <link refid="emsk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
-      </node>
-      <node id="110">
-        <label>fatfs_dirent.c</label>
-        <link refid="fatfs__dirent_8c_source"/>
-      </node>
-      <node id="134">
-        <label>dw_spi_obj.c</label>
-        <link refid="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
-      </node>
-      <node id="108">
-        <label>fatfs_dirent.h</label>
-        <link refid="fatfs__dirent_8h_source"/>
-        <childnode refid="109" relation="include">
-        </childnode>
-        <childnode refid="110" relation="include">
-        </childnode>
-      </node>
-      <node id="138">
-        <label>cgu_hsdc.c</label>
-        <link refid="cgu__hsdc_8c_source"/>
-      </node>
-      <node id="120">
-        <label>secureshield_int.c</label>
-        <link refid="secureshield__int_8c_source"/>
-      </node>
-      <node id="161">
-        <label>mux.c</label>
-        <link refid="emsk_2drivers_2mux_2mux_8c"/>
-      </node>
-      <node id="150">
-        <label>axs.h</label>
-        <link refid="axs_8h"/>
-      </node>
-      <node id="179">
-        <label>arc_timer.h</label>
-        <link refid="arc__timer_8h"/>
-        <childnode refid="180" relation="include">
-        </childnode>
-        <childnode refid="107" relation="include">
-        </childnode>
-        <childnode refid="182" relation="include">
-        </childnode>
-        <childnode refid="130" relation="include">
-        </childnode>
-        <childnode refid="183" relation="include">
-        </childnode>
-        <childnode refid="132" relation="include">
-        </childnode>
-        <childnode refid="184" relation="include">
-        </childnode>
-        <childnode refid="137" relation="include">
-        </childnode>
-        <childnode refid="145" relation="include">
-        </childnode>
-        <childnode refid="146" relation="include">
-        </childnode>
-      </node>
-      <node id="183">
-        <label>emsk_init.c</label>
-        <link refid="emsk__init_8c"/>
-      </node>
-      <node id="177">
-        <label>arc_mpu.c</label>
-        <link refid="arc__mpu_8c_source"/>
-        <childnode refid="178" relation="include">
-        </childnode>
-      </node>
-      <node id="185">
-        <label>embARC_error.h</label>
-        <link refid="emb_a_r_c__error_8h"/>
-        <childnode refid="107" relation="include">
-        </childnode>
-        <childnode refid="152" relation="include">
-        </childnode>
-        <childnode refid="131" relation="include">
-        </childnode>
-        <childnode refid="156" relation="include">
-        </childnode>
-        <childnode refid="161" relation="include">
-        </childnode>
-        <childnode refid="186" relation="include">
-        </childnode>
-        <childnode refid="187" relation="include">
-        </childnode>
-        <childnode refid="135" relation="include">
-        </childnode>
-        <childnode refid="136" relation="include">
-        </childnode>
-        <childnode refid="163" relation="include">
-        </childnode>
-        <childnode refid="167" relation="include">
-        </childnode>
-        <childnode refid="188" relation="include">
-        </childnode>
-        <childnode refid="168" relation="include">
-        </childnode>
-        <childnode refid="143" relation="include">
-        </childnode>
-        <childnode refid="144" relation="include">
-        </childnode>
-        <childnode refid="189" relation="include">
-        </childnode>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="147" relation="include">
-        </childnode>
-        <childnode refid="169" relation="include">
-        </childnode>
-        <childnode refid="170" relation="include">
-        </childnode>
-        <childnode refid="171" relation="include">
-        </childnode>
-        <childnode refid="172" relation="include">
-        </childnode>
-      </node>
-      <node id="104">
-        <label>arc_exception.c</label>
-        <link refid="arc__exception_8c"/>
-      </node>
-      <node id="114">
-        <label>board.c</label>
-        <link refid="board_8c_source"/>
-      </node>
-      <node id="112">
-        <label>secure_console.c</label>
-        <link refid="emsk_2common_2secure__console_8c_source"/>
-      </node>
-      <node id="116">
-        <label>arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="117" relation="include">
-        </childnode>
-        <childnode refid="118" relation="include">
-        </childnode>
-        <childnode refid="128" relation="include">
-        </childnode>
-        <childnode refid="101" relation="include">
-        </childnode>
-        <childnode refid="104" relation="include">
-        </childnode>
-        <childnode refid="102" relation="include">
-        </childnode>
-        <childnode refid="129" relation="include">
-        </childnode>
-        <childnode refid="107" relation="include">
-        </childnode>
-        <childnode refid="130" relation="include">
-        </childnode>
-        <childnode refid="131" relation="include">
+        <childnode refid="134" relation="include">
         </childnode>
         <childnode refid="132" relation="include">
         </childnode>
         <childnode refid="133" relation="include">
         </childnode>
-        <childnode refid="134" relation="include">
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>arc_exception.c</label>
+        <link refid="arc__exception_8c"/>
+      </node>
+      <node id="191">
+        <label>hsdk_init.c</label>
+        <link refid="hsdk__init_8c"/>
+      </node>
+      <node id="198">
+        <label>creg_hsdc.c</label>
+        <link refid="creg__hsdc_8c_source"/>
+      </node>
+      <node id="136">
+        <label>arc_udma_config.h</label>
+        <link refid="arc__udma__config_8h"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>hsdk_interrupt.c</label>
+        <link refid="hsdk__interrupt_8c"/>
+      </node>
+      <node id="165">
+        <label>emsk.h</label>
+        <link refid="emsk_8h"/>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>arc_udma.h</label>
+        <link refid="arc__udma_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>dw_uart_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
+      </node>
+      <node id="108">
+        <label>sys_ops.c</label>
+        <link refid="sys__ops_8c_source"/>
+      </node>
+      <node id="166">
+        <label>dw_gpio_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+      <node id="151">
+        <label>sdcard_sdio.c</label>
+        <link refid="sdcard__sdio_8c"/>
+      </node>
+      <node id="169">
+        <label>dw_gpio_obj.h</label>
+        <link refid="emsk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>secureshield_trap.c</label>
+        <link refid="secureshield__trap_8c_source"/>
+      </node>
+      <node id="126">
+        <label>secureshield_container_call.h</label>
+        <link refid="secureshield__container__call_8h_source"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>arc_connect.h</label>
+        <link refid="arc__connect_8h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>secureshield_vmpu_arc.c</label>
+        <link refid="secureshield__vmpu__arc_8c_source"/>
+      </node>
+      <node id="179">
+        <label>dw_uart.c</label>
+        <link refid="dw__uart_8c"/>
+      </node>
+      <node id="180">
+        <label>dw_uart.h</label>
+        <link refid="dw__uart_8h"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>secureshield_sys.c</label>
+        <link refid="secureshield__sys_8c_source"/>
+      </node>
+      <node id="113">
+        <label>arc_udma.c</label>
+        <link refid="arc__udma_8c"/>
+      </node>
+      <node id="190">
+        <label>emsk_init.c</label>
+        <link refid="emsk__init_8c"/>
+      </node>
+      <node id="139">
+        <label>emsk_timer.c</label>
+        <link refid="emsk__timer_8c"/>
+      </node>
+      <node id="170">
+        <label>hsdk_io.c</label>
+        <link refid="hsdk__io_8c"/>
+      </node>
+      <node id="187">
+        <label>arc_timer.c</label>
+        <link refid="arc__timer_8c"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>dw_sdio_obj.c</label>
+        <link refid="dw__sdio__obj_8c_source"/>
+      </node>
+      <node id="141">
+        <label>dw_spi_obj.c</label>
+        <link refid="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="159">
+        <label>axc003_gpio.c</label>
+        <link refid="axc003__gpio_8c"/>
+      </node>
+      <node id="188">
+        <label>secureshield_arc_timer.c</label>
+        <link refid="secureshield__arc__timer_8c_source"/>
+      </node>
+      <node id="158">
+        <label>axc003_gpio.h</label>
+        <link refid="axc003__gpio_8h"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>dw_gpio_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+      <node id="171">
+        <label>dw_gpio_obj.h</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h"/>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>board.c</label>
+        <link refid="board_8c_source"/>
+      </node>
+      <node id="186">
+        <label>arc_timer.h</label>
+        <link refid="arc__timer_8h"/>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>nsim_init.c</label>
+        <link refid="nsim__init_8c"/>
+      </node>
+      <node id="119">
+        <label>secure_console.c</label>
+        <link refid="emsk_2common_2secure__console_8c_source"/>
+      </node>
+      <node id="175">
+        <label>ntshell_io_uart.c</label>
+        <link refid="hsdk_2drivers_2ntshell_2ntshell__io__uart_8c"/>
+      </node>
+      <node id="161">
+        <label>axs_103_init.c</label>
+        <link refid="axs__103__init_8c"/>
+      </node>
+      <node id="150">
+        <label>pmwifi.c</label>
+        <link refid="hsdk_2drivers_2pmwifi_2pmwifi_8c"/>
+      </node>
+      <node id="196">
+        <label>ntshell_io_uart.c</label>
+        <link refid="nsim_2drivers_2ntshell_2ntshell__io__uart_8c"/>
+      </node>
+      <node id="118">
+        <label>embARC_syscalls.c</label>
+        <link refid="emb_a_r_c__syscalls_8c_source"/>
+      </node>
+      <node id="124">
+        <label>embARC_misc.c</label>
+        <link refid="emb_a_r_c__misc_8c_source"/>
+      </node>
+      <node id="110">
+        <label>arc_cache.c</label>
+        <link refid="arc__cache_8c"/>
+      </node>
+      <node id="116">
+        <label>dirent.h</label>
+        <link refid="dirent_8h_source"/>
+      </node>
+      <node id="123">
+        <label>arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
         </childnode>
         <childnode refid="135" relation="include">
         </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
         <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
         </childnode>
         <childnode refid="137" relation="include">
         </childnode>
@@ -572,232 +624,180 @@
         </childnode>
         <childnode refid="148" relation="include">
         </childnode>
-        <childnode refid="169" relation="include">
+        <childnode refid="149" relation="include">
         </childnode>
-        <childnode refid="170" relation="include">
-        </childnode>
-        <childnode refid="171" relation="include">
-        </childnode>
-        <childnode refid="172" relation="include">
-        </childnode>
-        <childnode refid="173" relation="include">
-        </childnode>
-      </node>
-      <node id="105">
-        <label>arc_udma.h</label>
-        <link refid="arc__udma_8h"/>
-        <childnode refid="106" relation="include">
-        </childnode>
-        <childnode refid="107" relation="include">
-        </childnode>
-      </node>
-      <node id="159">
-        <label>dw_gpio_obj.c</label>
-        <link refid="emsk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
-      </node>
-      <node id="162">
-        <label>dw_gpio_obj.h</label>
-        <link refid="emsk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h"/>
-        <childnode refid="159" relation="include">
-        </childnode>
-        <childnode refid="158" relation="include">
-        </childnode>
-      </node>
-      <node id="125">
-        <label>secureshield_sys.c</label>
-        <link refid="secureshield__sys_8c_source"/>
-      </node>
-      <node id="180">
-        <label>arc_timer.c</label>
-        <link refid="arc__timer_8c"/>
-        <childnode refid="181" relation="include">
-        </childnode>
-      </node>
-      <node id="122">
-        <label>secureshield_trap.c</label>
-        <link refid="secureshield__trap_8c_source"/>
-      </node>
-      <node id="155">
-        <label>dw_gpio_obj.c</label>
-        <link refid="axs_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
-      </node>
-      <node id="149">
-        <label>dw_gpio_obj.h</label>
-        <link refid="axs_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h"/>
         <childnode refid="150" relation="include">
         </childnode>
         <childnode refid="151" relation="include">
         </childnode>
-        <childnode refid="155" relation="include">
-        </childnode>
-      </node>
-      <node id="101">
-        <label>sys_ops.c</label>
-        <link refid="sys__ops_8c_source"/>
-      </node>
-      <node id="176">
-        <label>arc_mpu.h</label>
-        <link refid="arc__mpu_8h_source"/>
-        <childnode refid="121" relation="include">
-        </childnode>
-        <childnode refid="177" relation="include">
-        </childnode>
-        <childnode refid="107" relation="include">
-        </childnode>
-      </node>
-      <node id="137">
-        <label>hsdk_timer.c</label>
-        <link refid="hsdk__timer_8c"/>
-      </node>
-      <node id="163">
-        <label>hsdk_io.c</label>
-        <link refid="hsdk__io_8c"/>
-      </node>
-      <node id="145">
-        <label>nsim_init.c</label>
-        <link refid="nsim__init_8c"/>
-      </node>
-      <node id="117">
-        <label>embARC_misc.c</label>
-        <link refid="emb_a_r_c__misc_8c_source"/>
-      </node>
-      <node id="178">
-        <label>secureshield_arc_mpu.c</label>
-        <link refid="secureshield__arc__mpu_8c_source"/>
-      </node>
-      <node id="129">
-        <label>arc_udma_config.h</label>
-        <link refid="arc__udma__config_8h"/>
-        <childnode refid="105" relation="include">
-        </childnode>
-      </node>
-      <node id="102">
-        <label>arc_cache.h</label>
-        <link refid="arc__cache_8h"/>
-        <childnode refid="103" relation="include">
-        </childnode>
-        <childnode refid="104" relation="include">
-        </childnode>
-        <childnode refid="105" relation="include">
-        </childnode>
-        <childnode refid="107" relation="include">
-        </childnode>
-      </node>
-      <node id="118">
-        <label>secureshield.h</label>
-        <link refid="secureshield_8h_source"/>
-        <childnode refid="119" relation="include">
-        </childnode>
-        <childnode refid="124" relation="include">
-        </childnode>
-        <childnode refid="120" relation="include">
-        </childnode>
-        <childnode refid="127" relation="include">
-        </childnode>
-        <childnode refid="125" relation="include">
-        </childnode>
-        <childnode refid="126" relation="include">
-        </childnode>
-        <childnode refid="121" relation="include">
-        </childnode>
-        <childnode refid="122" relation="include">
-        </childnode>
-        <childnode refid="123" relation="include">
-        </childnode>
-      </node>
-      <node id="152">
-        <label>axc003_gpio.c</label>
-        <link refid="axc003__gpio_8c"/>
-      </node>
-      <node id="151">
-        <label>axc003_gpio.h</label>
-        <link refid="axc003__gpio_8h"/>
         <childnode refid="152" relation="include">
         </childnode>
         <childnode refid="153" relation="include">
         </childnode>
         <childnode refid="154" relation="include">
         </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
       </node>
-      <node id="184">
-        <label>hsdk_init.c</label>
-        <link refid="hsdk__init_8c"/>
+      <node id="182">
+        <label>arc_connect.c</label>
+        <link refid="arc__connect_8c_source"/>
       </node>
-      <node id="191">
-        <label>creg_hsdc.c</label>
-        <link refid="creg__hsdc_8c_source"/>
-      </node>
-      <node id="154">
-        <label>axs_103_init.c</label>
-        <link refid="axs__103__init_8c"/>
-      </node>
-      <node id="128">
-        <label>interrupts.c</label>
-        <link refid="interrupts_8c_source"/>
-      </node>
-      <node id="113">
-        <label>axs_103_interrupt.c</label>
-        <link refid="axs__103__interrupt_8c"/>
-      </node>
-      <node id="156">
-        <label>emsk_gpio.c</label>
-        <link refid="emsk__gpio_8c"/>
-      </node>
-      <node id="190">
+      <node id="197">
         <label>nsim_uart_obj.c</label>
         <link refid="nsim__uart__obj_8c"/>
       </node>
-      <node id="157">
-        <label>emsk_gpio.h</label>
-        <link refid="emsk__gpio_8h"/>
-        <childnode refid="156" relation="include">
+      <node id="148">
+        <label>dw_spi_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="145">
+        <label>cgu_hsdc.c</label>
+        <link refid="cgu__hsdc_8c_source"/>
+      </node>
+      <node id="109">
+        <label>arc_cache.h</label>
+        <link refid="arc__cache_8h"/>
+        <childnode refid="110" relation="include">
         </childnode>
-        <childnode refid="158" relation="include">
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
         </childnode>
       </node>
-      <node id="124">
-        <label>secureshield_container_stack.h</label>
-        <link refid="secureshield__container__stack_8h_source"/>
-        <childnode refid="120" relation="include">
+      <node id="193">
+        <label>ntshell_io_netconn.c</label>
+        <link refid="emsk_2drivers_2ntshell_2ntshell__io__netconn_8c"/>
+      </node>
+      <node id="177">
+        <label>dw_sdio.c</label>
+        <link refid="dw__sdio_8c_source"/>
+      </node>
+      <node id="199">
+        <label>dw_sdio.h</label>
+        <link refid="dw__sdio_8h_source"/>
+        <childnode refid="173" relation="include">
         </childnode>
-        <childnode refid="125" relation="include">
-        </childnode>
-        <childnode refid="126" relation="include">
-        </childnode>
-        <childnode refid="121" relation="include">
-        </childnode>
-        <childnode refid="122" relation="include">
-        </childnode>
-        <childnode refid="123" relation="include">
+        <childnode refid="177" relation="include">
         </childnode>
       </node>
-      <node id="158">
-        <label>emsk.h</label>
-        <link refid="emsk_8h"/>
+      <node id="143">
+        <label>emsk_sdcard_spi.c</label>
+        <link refid="emsk__sdcard__spi_8c"/>
+      </node>
+      <node id="153">
+        <label>nsim_timer.c</label>
+        <link refid="nsim__timer_8c"/>
+      </node>
+      <node id="168">
+        <label>mux.c</label>
+        <link refid="emsk_2drivers_2mux_2mux_8c"/>
+      </node>
+      <node id="137">
+        <label>axs_timer.c</label>
+        <link refid="axs__timer_8c"/>
+      </node>
+      <node id="144">
+        <label>hsdk_timer.c</label>
+        <link refid="hsdk__timer_8c"/>
+      </node>
+      <node id="189">
+        <label>axs_init.c</label>
+        <link refid="axs__init_8c"/>
+      </node>
+      <node id="142">
+        <label>pmwifi.c</label>
+        <link refid="emsk_2drivers_2pmwifi_2pmwifi_8c"/>
+      </node>
+      <node id="154">
+        <label>dw_gpio.c</label>
+        <link refid="dw__gpio_8c"/>
+      </node>
+      <node id="192">
+        <label>embARC_error.h</label>
+        <link refid="emb_a_r_c__error_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>dw_gpio.h</label>
+        <link refid="dw__gpio_8h"/>
         <childnode refid="156" relation="include">
         </childnode>
         <childnode refid="159" relation="include">
         </childnode>
-        <childnode refid="133" relation="include">
+        <childnode refid="162" relation="include">
         </childnode>
-        <childnode refid="134" relation="include">
+        <childnode refid="163" relation="include">
         </childnode>
-        <childnode refid="160" relation="include">
+        <childnode refid="164" relation="include">
         </childnode>
-        <childnode refid="161" relation="include">
+        <childnode refid="166" relation="include">
         </childnode>
-      </node>
-      <node id="131">
-        <label>dw_uart_obj.c</label>
-        <link refid="axs_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
-      </node>
-      <node id="146">
-        <label>nsim_timer.c</label>
-        <link refid="nsim__timer_8c"/>
-      </node>
-      <node id="143">
-        <label>pmwifi.c</label>
-        <link refid="hsdk_2drivers_2pmwifi_2pmwifi_8c"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
       <sectiondef kind="user-defined">
@@ -826,7 +826,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="234" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="234" bodyend="240"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="234" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="234" bodyend="240"/>
       </memberdef>
       <memberdef kind="function" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gae6a4acaab3f1a05455dfd4a8daa17964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Inline void</type>
@@ -862,7 +862,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="247" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="247" bodyend="250"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="247" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="247" bodyend="250"/>
         <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___s_p_i___o_b_j_1ga1acbe06806a36412c40ce0bbf67875be" compoundref="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c" startline="93" endline="107">dw_spi_0_control</referencedby>
       </memberdef>
       <memberdef kind="function" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga5c784703529f421a8c6a0fd3a2749e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -889,7 +889,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="257" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="257" bodyend="263"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="257" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="257" bodyend="263"/>
       </memberdef>
       <memberdef kind="function" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga6e637ed3b936c2f87739981e7087fdff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Inline void</type>
@@ -926,7 +926,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="271" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="271" bodyend="274"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="271" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="271" bodyend="274"/>
       </memberdef>
       <memberdef kind="function" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gab41428f421e9539fb507467584998b43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Inline int32_t</type>
@@ -970,7 +970,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="282" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="282" bodyend="294"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="282" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="282" bodyend="294"/>
       </memberdef>
       <memberdef kind="function" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gaeda112966176865ad5182340a80f43ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Inline uint32_t</type>
@@ -988,7 +988,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="307" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="307" bodyend="318"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="307" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="307" bodyend="318"/>
       </memberdef>
       <memberdef kind="function" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gade2fbcddaaa9e3de0c0769fd7a3b7cee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Inline uint32_t</type>
@@ -1006,7 +1006,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="331" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="331" bodyend="343"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="331" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="331" bodyend="343"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -1019,7 +1019,7 @@
 <para>no operation, generate a nop instruction produces a single NOP instruction in the compiled code </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="55" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="55" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="55" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga7974888f34d00304cbeaf8ab948d1269" prot="public" static="no">
         <name>_arc_brk</name>
@@ -1030,7 +1030,7 @@
 <para>generate a brk instruction </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="57" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="57" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="57" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga72cb582da8bcbe8bd56fd701e5e022bf" prot="public" static="no">
         <name>_arc_clri</name>
@@ -1041,7 +1041,8 @@
 <para>generate a clri instruction </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="59" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="59" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="59" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="group___a_r_c___h_a_l___e_x_c_e_p_t_i_o_n___i_n_t_e_r_r_u_p_t_1ga740985b8ca473a2a4060b87ecdeafac6" compoundref="arc__exception_8h" startline="427" endline="430">arc_lock_save</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gac88768a7f4c0cdba77e0adfbb8a5aebd" prot="public" static="no">
         <name>_arc_seti</name>
@@ -1053,7 +1054,8 @@
 <para>generate a seti instruction </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="61" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="61" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="61" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="group___a_r_c___h_a_l___e_x_c_e_p_t_i_o_n___i_n_t_e_r_r_u_p_t_1ga43d5a1597a3599dc8547a3f633369973" compoundref="arc__exception_8h" startline="437" endline="440">arc_unlock_restore</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga04aedd6ff5e8bd995f276a4c5e996290" prot="public" static="no">
         <name>_arc_core_write</name>
@@ -1066,7 +1068,7 @@
 <para>write core register </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="63" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="63" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="63" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga13a91ed1f6deafab4253accdb2976af9" prot="public" static="no">
         <name>_arc_core_read</name>
@@ -1078,7 +1080,7 @@
 <para>read core register </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="65" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="65" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="65" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga9a3e0a1903d9a64e35b3ad3866ce5b0f" prot="public" static="no">
         <name>_arc_lr_reg</name>
@@ -1090,7 +1092,7 @@
 <para>read auxiliary register </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="67" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="67" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="67" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga8ee255d46720ce1489efdc9d18f2756e" prot="public" static="no">
         <name>_arc_sr_reg</name>
@@ -1103,7 +1105,7 @@
 <para>write auxiliary register </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="69" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="69" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="69" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gae3ae996a22713a4641a075a97b3447ca" prot="public" static="no">
         <name>_arc_sleep</name>
@@ -1115,7 +1117,7 @@
 <para>generate a sleep instruction </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="71" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="71" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="71" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gaaa9cdf00a9a835f7fee4f8cafeded961" prot="public" static="no">
         <name>_arc_flag</name>
@@ -1127,7 +1129,7 @@
 <para>generate a flag instruction </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="73" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="73" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="73" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga4fa8d13932607ff0aa7c5d336a18ba34" prot="public" static="no">
         <name>_arc_kflag</name>
@@ -1138,7 +1140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="75" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="75" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="75" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gae036cd29e75a50a6e98090522cbb3968" prot="public" static="no">
         <name>_arc_sync</name>
@@ -1149,7 +1151,7 @@
 <para>generate a sync instruction </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="77" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="77" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="77" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga7fa12f3bfa73b4d00f4227a60908a6af" prot="public" static="no">
         <name>_arc_usually</name>
@@ -1161,7 +1163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="83" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="83" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="83" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga738da33c7d2c393be489f7361f77e6ef" prot="public" static="no">
         <name>_arc_rarely</name>
@@ -1173,7 +1175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="89" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="89" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="89" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gac5e596c9be37023b785d097061ec14d7" prot="public" static="no">
         <name>_arc_swi</name>
@@ -1184,7 +1186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="127" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="127" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="127" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga7094653bc3c70be9328907de9b57eab8" prot="public" static="no">
         <name>_arc_aux_read</name>
@@ -1196,7 +1198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="221" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="221" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="221" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="221" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga107ac7b60c49fcc1badee5a9d36095bc" prot="public" static="no">
         <name>_arc_aux_write</name>
@@ -1209,7 +1211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="222" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="222" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="222" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="222" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -1228,7 +1230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="105" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="105" bodyend="110"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="105" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="105" bodyend="110"/>
       </memberdef>
       <memberdef kind="function" id="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga40ad4dd8aaed6a59d6ab59c7dde33cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Inline uint16_t</type>
@@ -1245,7 +1247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" line="112" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h" bodystart="112" bodyend="119"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" line="112" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h" bodystart="112" bodyend="119"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1283,17 +1285,17 @@
 <codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="29"><highlight class="comment">---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="preprocessor">#ifndef<sp/>_ARC_HAL_BUILTIN_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ARC_HAL_BUILTIN_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor">#ifndef<sp/>_ARC_HAL_BUILTIN_H_</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ARC_HAL_BUILTIN_H_</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emb_a_r_c__toolchain_8h" kindref="compound">embARC_toolchain.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(__MW__)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Metaware<sp/>toolchain<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(__MW__)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Metaware<sp/>toolchain<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="55" refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gaf3f0dc7e55ccccc48b5221b044fea76c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_nop<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_nop<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="57" refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga7974888f34d00304cbeaf8ab948d1269" refkind="member"><highlight class="preprocessor">#define<sp/>_arc_brk<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_brk<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="59" refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga72cb582da8bcbe8bd56fd701e5e022bf" refkind="member"><highlight class="preprocessor">#define<sp/>_arc_clri<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_clri<sp/><sp/><sp/></highlight></codeline>
@@ -1304,28 +1306,28 @@
 <codeline lineno="69" refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga8ee255d46720ce1489efdc9d18f2756e" refkind="member"><highlight class="preprocessor">#define<sp/>_arc_sr_reg(aux,<sp/>val)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_sr(val,<sp/>aux)<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="71" refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gae3ae996a22713a4641a075a97b3447ca" refkind="member"><highlight class="preprocessor">#define<sp/>_arc_sleep(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_sleep(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="73" refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gaaa9cdf00a9a835f7fee4f8cafeded961" refkind="member"><highlight class="preprocessor">#define<sp/>_arc_flag(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_flag(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="75"><highlight class="preprocessor">#define<sp/>_arc_kflag(a)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor">#define<sp/>_arc_kflag(a)</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="77" refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gae036cd29e75a50a6e98090522cbb3968" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_sync<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_sync<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="80"><highlight class="comment"><sp/>*<sp/>!&lt;<sp/>_arc_usually<sp/>(expr)<sp/>evaluates<sp/>expression<sp/>expr<sp/>and</highlight></codeline>
 <codeline lineno="81"><highlight class="comment"><sp/>*<sp/>informs<sp/>the<sp/>compiler<sp/>that<sp/>the<sp/>value<sp/>is<sp/>usually<sp/>true.</highlight></codeline>
-<codeline lineno="82"><highlight class="comment"><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_usually(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Usually((a))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_arc_usually(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Usually((a))</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="86"><highlight class="comment"><sp/>*<sp/>!&lt;<sp/>_arc_rarely<sp/>(expr)<sp/>evaluates<sp/>expression<sp/>expr<sp/>and</highlight></codeline>
 <codeline lineno="87"><highlight class="comment"><sp/>*<sp/>informs<sp/>the<sp/>compiler<sp/>that<sp/>the<sp/>value<sp/>is<sp/>rarely<sp/>true.</highlight></codeline>
 <codeline lineno="88"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_rarely(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Rarely((a))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="preprocessor">#define<sp/>_arc_swap16(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_swap16(a)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="preprocessor">#define<sp/>_arc_swap32(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_swap32(a)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal">Inline<sp/>uint32_t<sp/>_arc_swap32(uint32_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_rarely(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Rarely((a))</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor">#define<sp/>_arc_swap16(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_swap16(a)</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor">#define<sp/>_arc_swap32(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_swap32(a)</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="normal">Inline<sp/>uint32_t<sp/>_arc_swap32(uint32_t<sp/>val)<sp/>{</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>v;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Asm(</highlight><highlight class="stringliteral">&quot;swape<sp/>%0,<sp/>%1&quot;</highlight><highlight class="normal"><sp/>:</highlight><highlight class="stringliteral">&quot;=r&quot;</highlight><highlight class="normal">(v):<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">(val));</highlight></codeline>
@@ -1340,33 +1342,33 @@
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Asm(</highlight><highlight class="stringliteral">&quot;lsr16<sp/>%0,<sp/>%1&quot;</highlight><highlight class="normal"><sp/>:</highlight><highlight class="stringliteral">&quot;=r&quot;</highlight><highlight class="normal">(v):<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">(temp));</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal">)v;</highlight></codeline>
 <codeline lineno="119"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="127" refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gac5e596c9be37023b785d097061ec14d7" refkind="member"><highlight class="preprocessor">#define<sp/>_arc_swi<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_swi</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="127" refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gac5e596c9be37023b785d097061ec14d7" refkind="member"><highlight class="preprocessor">#define<sp/>_arc_swi<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_swi</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>\todo<sp/>add<sp/>more<sp/>builtin<sp/>functions<sp/>of<sp/>metaware<sp/>tool<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>(__GNU__)<sp/></highlight><highlight class="comment">/*<sp/>GNU<sp/>toolchain<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_nop<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_nop</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_brk<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_brk</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_seti(c)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_seti(c)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_core_write(regno,<sp/>val)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_core_write(regno,val)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_core_read(regno)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_core_read(regno)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_flag(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_flag(a)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_kflag(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_kflag(a)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_lr_reg(aux)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_lr(aux)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>don&apos;t<sp/>uncomment<sp/>this<sp/>now<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>(__GNU__)<sp/></highlight><highlight class="comment">/*<sp/>GNU<sp/>toolchain<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_nop<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_nop</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_arc_brk<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_brk</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_arc_seti(c)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_seti(c)</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_arc_core_write(regno,<sp/>val)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_core_write(regno,val)</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_arc_core_read(regno)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_core_read(regno)</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_arc_flag(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_flag(a)</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_arc_kflag(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_kflag(a)</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_arc_lr_reg(aux)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_lr(aux)</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>don&apos;t<sp/>uncomment<sp/>this<sp/>now<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>_arc_sr_reg(aux,<sp/>val)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_sr(aux,<sp/>val)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_sleep(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_sleep(a)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>_arc_sync<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_sync</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_sleep(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_sleep(a)</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="comment">//#define<sp/>_arc_sync<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_sync</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight></codeline>
-<codeline lineno="150"><highlight class="preprocessor">#define<sp/>_arc_usually(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_expect((int)(a),<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="preprocessor">#define<sp/>_arc_rarely(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_expect((int)(a),<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="157"><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="preprocessor">#define<sp/>_arc_swi<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_swi</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor">#define<sp/>_arc_usually(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_expect((int)(a),<sp/>1)</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor">#define<sp/>_arc_rarely(a)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_expect((int)(a),<sp/>0)</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor">#define<sp/>_arc_swi<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__builtin_arc_swi</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="165"><highlight class="normal">Inline<sp/>uint32_t<sp/><ref refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga72cb582da8bcbe8bd56fd701e5e022bf" kindref="member">_arc_clri</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>v;</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"></highlight></codeline>
@@ -1409,17 +1411,17 @@
 <codeline lineno="210"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/><sp/><sp/>%0,<sp/>[%1]<sp/><sp/><sp/>\n&quot;<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
 <codeline lineno="211"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
 <codeline lineno="212"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;ir&quot;(val),<sp/>&quot;r&quot;(reg_imm));<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="213"><highlight class="preprocessor">})</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="214"><highlight class="normal"></highlight></codeline>
-<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_sr_reg(aux,<sp/>val)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_aux_reg(aux,<sp/>val)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="216"><highlight class="normal"></highlight></codeline>
-<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor">})</highlight></codeline>
+<codeline lineno="214"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_sr_reg(aux,<sp/>val)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_aux_reg(aux,<sp/>val)</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="218"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>\todo<sp/>add<sp/>more<sp/>helper<sp/>functions<sp/>here,<sp/>such<sp/>as<sp/>memory<sp/>operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="220"><highlight class="normal"></highlight></codeline>
-<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_aux_read(aux)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_arc_lr_reg(aux)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_aux_write(aux,<sp/>val)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_arc_sr_reg(aux,<sp/>val)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_arc_aux_read(aux)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_arc_lr_reg(aux)</highlight></codeline>
+<codeline lineno="222"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_arc_aux_write(aux,<sp/>val)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_arc_sr_reg(aux,<sp/>val)</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="234" refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gaa94be405be89c127168cb98cc47ffdf2" refkind="member"><highlight class="normal">Inline<sp/>uint32_t<sp/><ref refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1gaa94be405be89c127168cb98cc47ffdf2" kindref="member">_arc_read_uncached_32</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr)</highlight></codeline>
 <codeline lineno="235"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>__ret;</highlight></codeline>
@@ -1487,17 +1489,17 @@
 <codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bit;</highlight></codeline>
 <codeline lineno="343"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="344"><highlight class="normal"></highlight></codeline>
-<codeline lineno="345"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="346"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="347"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="348"><highlight class="normal"></highlight></codeline>
-<codeline lineno="349"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LIB_SECURESHIELD)<sp/>&amp;&amp;<sp/>defined(LIB_SECURESHIELD_OVERRIDES)<sp/>&amp;&amp;<sp/>(SECURESHIELD_VERSION<sp/>==<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="350"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OVERRIDE_ARC_HAL_BUILTIN_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="351"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;secureshield_overrides.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="352"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="346"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="348"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(LIB_SECURESHIELD)<sp/>&amp;&amp;<sp/>defined(LIB_SECURESHIELD_OVERRIDES)<sp/>&amp;&amp;<sp/>(SECURESHIELD_VERSION<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="350"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OVERRIDE_ARC_HAL_BUILTIN_H</highlight></codeline>
+<codeline lineno="351"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;secureshield_overrides.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="353"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="355"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_ARC_HAL_BUILTIN_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/inc/arc/arc_builtin.h"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/inc/arc/arc_builtin.h"/>
   </compounddef>
 </doxygen>

@@ -1,90 +1,90 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="cgu__hsdc__reg__map_8h" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="cgu__hsdc__reg__map_8h" kind="file">
     <compoundname>cgu_hsdc_reg_map.h</compoundname>
     <includedby refid="cgu__hsdc__reg_8h" local="yes">cgu_hsdc_reg.h</includedby>
     <invincdepgraph>
-      <node id="916">
+      <node id="923">
+        <label>hsdk.h</label>
+        <link refid="hsdk_8h"/>
+        <childnode refid="924" relation="include">
+        </childnode>
+        <childnode refid="925" relation="include">
+        </childnode>
+        <childnode refid="926" relation="include">
+        </childnode>
+        <childnode refid="927" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+        <childnode refid="929" relation="include">
+        </childnode>
+        <childnode refid="930" relation="include">
+        </childnode>
+        <childnode refid="931" relation="include">
+        </childnode>
+        <childnode refid="932" relation="include">
+        </childnode>
+      </node>
+      <node id="920">
+        <label>cgu_hsdc_reg.h</label>
+        <link refid="cgu__hsdc__reg_8h_source"/>
+        <childnode refid="921" relation="include">
+        </childnode>
+      </node>
+      <node id="929">
         <label>dw_uart_obj.c</label>
         <link refid="hsdk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8c"/>
       </node>
-      <node id="912">
-        <label>dw_gpio_obj.c</label>
-        <link refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
-      </node>
-      <node id="915">
-        <label>dw_spi_obj.c</label>
-        <link refid="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
-      </node>
-      <node id="917">
+      <node id="930">
         <label>mux.c</label>
         <link refid="hsdk_2drivers_2mux_2mux_8c"/>
       </node>
-      <node id="918">
-        <label>ntshell_io_uart.c</label>
-        <link refid="hsdk_2drivers_2ntshell_2ntshell__io__uart_8c"/>
-      </node>
-      <node id="907">
-        <label>cgu_hsdc_reg.h</label>
-        <link refid="cgu__hsdc__reg_8h_source"/>
-        <childnode refid="908" relation="include">
-        </childnode>
-      </node>
-      <node id="914">
-        <label>dw_sdio_obj.c</label>
-        <link refid="dw__sdio__obj_8c_source"/>
-      </node>
-      <node id="913">
+      <node id="926">
         <label>dw_iic_obj.c</label>
         <link refid="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
       </node>
-      <node id="910">
-        <label>hsdk.h</label>
-        <link refid="hsdk_8h"/>
-        <childnode refid="911" relation="include">
-        </childnode>
-        <childnode refid="912" relation="include">
-        </childnode>
-        <childnode refid="913" relation="include">
-        </childnode>
-        <childnode refid="914" relation="include">
-        </childnode>
-        <childnode refid="915" relation="include">
-        </childnode>
-        <childnode refid="916" relation="include">
-        </childnode>
-        <childnode refid="917" relation="include">
-        </childnode>
-        <childnode refid="918" relation="include">
-        </childnode>
-        <childnode refid="919" relation="include">
-        </childnode>
-      </node>
-      <node id="909">
-        <label>cgu_hsdc.c</label>
-        <link refid="cgu__hsdc_8c_source"/>
-      </node>
-      <node id="908">
-        <label>cgu_hsdc.h</label>
-        <link refid="cgu__hsdc_8h_source"/>
-        <childnode refid="909" relation="include">
-        </childnode>
-        <childnode refid="910" relation="include">
-        </childnode>
-      </node>
-      <node id="906">
+      <node id="919">
         <label>cgu_hsdc_reg_map.h</label>
-        <link refid="cgu__hsdc__reg__map_8h"/>
-        <childnode refid="907" relation="include">
+        <link refid="cgu_hsdc_reg_map.h"/>
+        <childnode refid="920" relation="include">
         </childnode>
       </node>
-      <node id="911">
+      <node id="924">
         <label>hsdk_io.c</label>
         <link refid="hsdk__io_8c"/>
       </node>
-      <node id="919">
+      <node id="927">
+        <label>dw_sdio_obj.c</label>
+        <link refid="dw__sdio__obj_8c_source"/>
+      </node>
+      <node id="925">
+        <label>dw_gpio_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8c"/>
+      </node>
+      <node id="931">
+        <label>ntshell_io_uart.c</label>
+        <link refid="hsdk_2drivers_2ntshell_2ntshell__io__uart_8c"/>
+      </node>
+      <node id="932">
         <label>pmwifi.c</label>
         <link refid="hsdk_2drivers_2pmwifi_2pmwifi_8c"/>
+      </node>
+      <node id="928">
+        <label>dw_spi_obj.c</label>
+        <link refid="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c"/>
+      </node>
+      <node id="922">
+        <label>cgu_hsdc.c</label>
+        <link refid="cgu__hsdc_8c_source"/>
+      </node>
+      <node id="921">
+        <label>cgu_hsdc.h</label>
+        <link refid="cgu__hsdc_8h_source"/>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="923" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="structcgu__hsdc__reg" prot="public">cgu_hsdc_reg</innerclass>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/cgu/cgu_hsdc_reg_map.h" line="135" column="1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/cgu/cgu_hsdc_reg_map.h" line="135" column="1"/>
       </memberdef>
       <memberdef kind="typedef" id="cgu__hsdc__reg__map_8h_1aa3eb3e092bad96d282cfc607af7dd6ba" prot="public" static="no">
         <type>struct <ref refid="structcgu__hsdc__reg" kindref="compound">cgu_hsdc_reg</ref> *</type>
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/cgu/cgu_hsdc_reg_map.h" line="135" column="1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/cgu/cgu_hsdc_reg_map.h" line="135" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -153,9 +153,9 @@
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>!!!<sp/>This<sp/>file<sp/>was<sp/>automatically<sp/>generated<sp/>!!!</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>----------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_CGU_HSDC_REG_MAP_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CGU_HSDC_REG_MAP_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35" refid="structcgu__hsdc__reg" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcgu__hsdc__reg" kindref="compound">cgu_hsdc_reg</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_CGU_HSDC_REG_MAP_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_CGU_HSDC_REG_MAP_H_</highlight></codeline>
+<codeline lineno="35" refid="structcgu__hsdc__reg" refkind="compound"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcgu__hsdc__reg" kindref="compound">cgu_hsdc_reg</ref></highlight></codeline>
 <codeline lineno="36"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CGU_ARC_PLL_CTRL;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RW<sp/><sp/><sp/>0x000<sp/><sp/><sp/>ARC<sp/>PLL<sp/>control<sp/>register</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CGU_ARC_PLL_STATUS;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>R<sp/><sp/><sp/><sp/>0x004<sp/><sp/><sp/>ARC<sp/>PLL<sp/>status<sp/>register</highlight><highlight class="normal"></highlight></codeline>
@@ -258,6 +258,6 @@
 <codeline lineno="135"><highlight class="normal">}<sp/><sp/>CGU_HSDC_STRUCT,<sp/>*<sp/>CGU_HSDC_STRUCT_PTR;</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/hsdk/drivers/cgu/cgu_hsdc_reg_map.h"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/board/hsdk/drivers/cgu/cgu_hsdc_reg_map.h"/>
   </compounddef>
 </doxygen>

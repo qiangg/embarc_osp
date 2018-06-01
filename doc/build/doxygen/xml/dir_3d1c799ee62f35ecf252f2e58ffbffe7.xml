@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="dir_3d1c799ee62f35ecf252f2e58ffbffe7" kind="dir">
     <compoundname>startup</compoundname>
     <innerfile refid="arc__cxx__support_8c">arc_cxx_support.c</innerfile>
@@ -8,6 +8,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/arc/startup/"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/arc/startup/"/>
   </compounddef>
 </doxygen>

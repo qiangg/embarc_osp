@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d" kind="group">
     <compoundname>DEVICE_HAL_SPI_CTRLCMD</compoundname>
     <title>SPI Device Control Commands</title>
@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="83" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="83" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="93" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="93" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga94130fb83502b5e6eeb5f09d2d0d96ac" prot="public" static="no">
         <name>DEV_SET_SPI_MST_SYSCMD</name>
@@ -26,7 +26,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="85" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="85" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="95" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga96903dc38692c28e8c22b53db0555dbb" prot="public" static="no">
         <name>DEV_SET_SPI_SLV_SYSCMD</name>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="87" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="87" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="97" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="97" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga07faf812e62a669b6e428ea3c127574b" prot="public" static="no">
         <name>SPI_CMD_GET_STATUS</name>
@@ -51,7 +51,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="97" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="97" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="107" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="107" bodyend="-1"/>
         <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1gab5418cf6273988439379b02902fcb27d" prot="public" static="no">
@@ -65,7 +65,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="104" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="104" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="114" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="114" bodyend="-1"/>
         <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga889c4f0fdbafe192d17e9d59e4d5894a" prot="public" static="no">
@@ -79,7 +79,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="111" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="111" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="121" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="121" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga2e348e96f3ad86f51c990ea546c1b7d2" prot="public" static="no">
         <name>SPI_CMD_SET_DUMMY_DATA</name>
@@ -92,7 +93,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="118" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="118" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="128" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1gadd6fe8eb6f1aef1f37555b18642af704" prot="public" static="no">
         <name>SPI_CMD_SET_TXCB</name>
@@ -101,11 +103,12 @@
 <para>Set <ref refid="structdev__spi__cbs_1ab808d6e675f4fca72e20c9f52499c312" kindref="member">spi transmit success callback</ref> function when all required bytes are transmitted for interrupt method. </para>        </briefdescription>
         <detaileddescription>
 <para><itemizedlist>
-<listitem><para>Param type : <ref refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n_1gad799b59590746b2af9531e870ae176c8" kindref="member">DEV_CALLBACK</ref> * or NULL</para></listitem><listitem><para>Param usage : transmit success callback function for spi</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+<listitem><para>Param type : <ref refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref> * or NULL</para></listitem><listitem><para>Param usage : transmit success callback function for spi</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="126" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="126" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="136" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="136" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1gaab7ebc257270040743263b2d13838720" prot="public" static="no">
         <name>SPI_CMD_SET_RXCB</name>
@@ -114,11 +117,12 @@
 <para>Set <ref refid="structdev__spi__cbs_1a7435666ba9fd9f3a8723b3751de22f28" kindref="member">spi receive success callback</ref> function when all required bytes are received for interrupt method. </para>        </briefdescription>
         <detaileddescription>
 <para><itemizedlist>
-<listitem><para>Param type : <ref refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n_1gad799b59590746b2af9531e870ae176c8" kindref="member">DEV_CALLBACK</ref> * or NULL</para></listitem><listitem><para>Param usage : receive success callback function for spi</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+<listitem><para>Param type : <ref refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref> * or NULL</para></listitem><listitem><para>Param usage : receive success callback function for spi</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="134" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="134" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="144" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="144" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga29205b1bd7b48857f1ce708105b8be5b" prot="public" static="no">
         <name>SPI_CMD_SET_XFERCB</name>
@@ -127,11 +131,12 @@
 <para>Set <ref refid="structdev__spi__cbs_1a0934f94ce7e95deb10e819abe3d84d4c" kindref="member">spi transfer success callback</ref> function when all required transfer are done for interrupt method. </para>        </briefdescription>
         <detaileddescription>
 <para><itemizedlist>
-<listitem><para>Param type : <ref refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n_1gad799b59590746b2af9531e870ae176c8" kindref="member">DEV_CALLBACK</ref> * or NULL</para></listitem><listitem><para>Param usage : transfer success callback function for spi</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+<listitem><para>Param type : <ref refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref> * or NULL</para></listitem><listitem><para>Param usage : transfer success callback function for spi</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="142" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="142" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="152" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="152" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1gac3161834c5139af02ec6bd4f4485b092" prot="public" static="no">
         <name>SPI_CMD_SET_ERRCB</name>
@@ -140,11 +145,12 @@
 <para>Set <ref refid="structdev__spi__cbs_1a3fb5e12efbf68a61d576c342eefd009c" kindref="member">spi transfer error callback</ref> function when something error happened for interrupt method. </para>        </briefdescription>
         <detaileddescription>
 <para><itemizedlist>
-<listitem><para>Param type : <ref refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n_1gad799b59590746b2af9531e870ae176c8" kindref="member">DEV_CALLBACK</ref> * or NULL</para></listitem><listitem><para>Param usage : transfer error callback function for spi</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
+<listitem><para>Param type : <ref refid="group___d_e_v_i_c_e___h_a_l___c_o_m_m_o_n_1ga91091c2a8f895b2d00ae61e6b607335e" kindref="member">DEV_CALLBACK</ref> * or NULL</para></listitem><listitem><para>Param usage : transfer error callback function for spi</para></listitem><listitem><para>Return value explanation : </para></listitem></itemizedlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="150" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="150" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="160" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="160" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1gab1fe612207c3ecd3173b6657330741a9" prot="public" static="no">
         <name>SPI_CMD_SET_TXINT_BUF</name>
@@ -158,7 +164,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="162" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="162" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="172" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="172" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga6edf9172ca7348d6bf661ae150c9d37c" prot="public" static="no">
         <name>SPI_CMD_SET_RXINT_BUF</name>
@@ -173,7 +180,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="173" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="173" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="183" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="183" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga5e77d46c6d3afc24d1eab7687e94c251" prot="public" static="no">
         <name>SPI_CMD_SET_TXINT</name>
@@ -186,7 +194,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="182" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="182" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="192" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="192" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1gaada5ac76ada6ec36cfd640d20cc5dc73" prot="public" static="no">
         <name>SPI_CMD_SET_RXINT</name>
@@ -199,7 +208,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="191" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="191" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="201" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="201" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1gaa452500b09f0649f72ae32684f1ae786" prot="public" static="no">
         <name>SPI_CMD_TRANSFER_POLLING</name>
@@ -212,7 +222,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="198" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="198" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="208" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="208" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga4d11433bee4b6efefb38d66d1684347f" prot="public" static="no">
         <name>SPI_CMD_TRANSFER_INT</name>
@@ -225,7 +236,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="205" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="205" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="215" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="215" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga1dd7742bde427b68944f1acb692e1636" prot="public" static="no">
         <name>SPI_CMD_ABORT_TX</name>
@@ -238,7 +250,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="216" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="216" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="226" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="226" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1gae22e6cf12a44ee61040413af42b01db1" prot="public" static="no">
         <name>SPI_CMD_ABORT_RX</name>
@@ -251,7 +264,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="227" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="227" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="237" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="237" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga38ff05e4c8bee717e18aed1764fc4511" prot="public" static="no">
         <name>SPI_CMD_ABORT_XFER</name>
@@ -264,7 +278,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="238" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="238" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="248" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="248" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1gad3fc32efcadce65959944f318774226e" prot="public" static="no">
         <name>SPI_CMD_RESET</name>
@@ -277,7 +292,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="246" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="246" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="256" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="256" bodyend="-1"/>
         <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga57cc316e89c27c457006c438764b479e" prot="public" static="no">
@@ -291,7 +306,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="253" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="253" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="263" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="263" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1gac37a6e48742f62360fe3a45be56290ab" prot="public" static="no">
         <name>SPI_CMD_FLUSH_RX</name>
@@ -304,7 +320,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="260" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="260" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="270" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="270" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga4ddb74987f9f8025775f0f01ca6f0da4" prot="public" static="no">
         <name>SPI_CMD_ENA_DEV</name>
@@ -317,7 +334,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="267" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="267" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="277" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="277" bodyend="-1"/>
         <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga0a6862a5bb74f4998cec6312984942c0" prot="public" static="no">
@@ -331,7 +348,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="277" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="277" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="287" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="287" bodyend="-1"/>
         <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga44a95a4b812f719c9f7d8384ca78f777" prot="public" static="no">
@@ -345,7 +362,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="286" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="286" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="296" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="296" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga94705749900008c3264905b1a58f182f" prot="public" static="no">
         <name>SPI_CMD_GET_RXAVAIL</name>
@@ -358,7 +376,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="295" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="295" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="305" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="305" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga3917a1fd406a1d67750f3d0f2fd4d767" prot="public" static="no">
         <name>SPI_CMD_MST_SEL_DEV</name>
@@ -371,10 +390,11 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="305" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="305" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="315" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="315" bodyend="-1"/>
         <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___s_p_i___o_b_j_1ga1acbe06806a36412c40ce0bbf67875be" compoundref="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c" startline="93" endline="107">dw_spi_0_control</referencedby>
         <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___s_p_i___o_b_j_1ga052906e638ca3a174d3b7ea42d80a575" compoundref="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c" startline="200" endline="213">dw_spi_1_control</referencedby>
         <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___s_p_i___o_b_j_1ga843f0655b0bb074c7e1a9fa757a8c41e" compoundref="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c" startline="308" endline="321">dw_spi_2_control</referencedby>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga8f6ad6c20c16aa1a0dcd696f27a7af5c" prot="public" static="no">
         <name>SPI_CMD_MST_DSEL_DEV</name>
@@ -387,8 +407,11 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="312" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="312" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="322" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="322" bodyend="-1"/>
         <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___s_p_i___o_b_j_1ga1acbe06806a36412c40ce0bbf67875be" compoundref="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c" startline="93" endline="107">dw_spi_0_control</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___s_p_i___o_b_j_1ga052906e638ca3a174d3b7ea42d80a575" compoundref="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c" startline="200" endline="213">dw_spi_1_control</referencedby>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___s_p_i___o_b_j_1ga843f0655b0bb074c7e1a9fa757a8c41e" compoundref="hsdk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8c" startline="308" endline="321">dw_spi_2_control</referencedby>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___d_e_v_i_c_e___h_a_l___s_p_i___c_t_r_l_c_m_d_1ga3800261c450f77f92c20cad49d64de72" prot="public" static="no">
         <name>SPI_CMD_MST_SET_FREQ</name>
@@ -401,7 +424,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" line="319" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/device/ip/ip_hal/inc/dev_spi.h" bodystart="319" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" line="329" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/device/ip/ip_hal/inc/dev_spi.h" bodystart="329" bodyend="-1"/>
+        <referencedby refid="group___d_e_v_i_c_e___d_w___s_p_i___f_u_n_c_d_l_r_1ga9d8a5b3a14d5b4ef1ca1dfdc082854d2" compoundref="dw__spi_8c" startline="963" endline="1194">dw_spi_control</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>

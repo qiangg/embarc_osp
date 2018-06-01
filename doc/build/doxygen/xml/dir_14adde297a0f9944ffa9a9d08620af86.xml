@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="dir_14adde297a0f9944ffa9a9d08620af86" kind="dir">
     <compoundname>secureshield</compoundname>
     <innerdir refid="dir_a8868ef3ea272e265582ea31596b3cd5">board</innerdir>
@@ -9,6 +9,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/"/>
   </compounddef>
 </doxygen>

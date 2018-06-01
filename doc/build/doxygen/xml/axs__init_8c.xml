@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="axs__init_8c" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="axs__init_8c" kind="file">
     <compoundname>axs_init.c</compoundname>
     <includes refid="arc__builtin_8h" local="yes">arc_builtin.h</includes>
     <includes refid="arc_8h" local="yes">arc.h</includes>
@@ -9,90 +9,90 @@
     <includes refid="board_8h" local="yes">board.h</includes>
     <includes refid="axs__timer_8h" local="yes">axs_timer.h</includes>
     <incdepgraph>
-      <node id="761">
-        <label>embARC_toolchain.h</label>
-        <link refid="emb_a_r_c__toolchain_8h"/>
-        <childnode refid="762" relation="include">
-        </childnode>
-        <childnode refid="763" relation="include">
-        </childnode>
-        <childnode refid="764" relation="include">
-        </childnode>
-        <childnode refid="765" relation="include">
-        </childnode>
-      </node>
-      <node id="765">
+      <node id="778">
         <label>stdbool.h</label>
       </node>
-      <node id="762">
+      <node id="779">
+        <label>arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="780" relation="include">
+        </childnode>
+      </node>
+      <node id="775">
         <label>stdint.h</label>
       </node>
-      <node id="772">
-        <label>axs_timer.h</label>
-        <link refid="axs__timer_8h"/>
-        <childnode refid="761" relation="include">
-        </childnode>
-      </node>
-      <node id="769">
-        <label>embARC_debug.h</label>
-        <link refid="emb_a_r_c__debug_8h"/>
-        <childnode refid="770" relation="include">
-        </childnode>
-      </node>
-      <node id="760">
+      <node id="773">
         <label>arc_builtin.h</label>
         <link refid="arc__builtin_8h"/>
-        <childnode refid="761" relation="include">
+        <childnode refid="774" relation="include">
         </childnode>
       </node>
-      <node id="764">
+      <node id="777">
         <label>stddef.h</label>
       </node>
-      <node id="759">
-        <label>axs_init.c</label>
-        <link refid="axs__init_8c"/>
-        <childnode refid="760" relation="include">
-        </childnode>
-        <childnode refid="766" relation="include">
-        </childnode>
-        <childnode refid="768" relation="include">
-        </childnode>
-        <childnode refid="769" relation="include">
-        </childnode>
-        <childnode refid="771" relation="include">
-        </childnode>
-        <childnode refid="772" relation="include">
-        </childnode>
-      </node>
-      <node id="763">
+      <node id="776">
         <label>limits.h</label>
       </node>
-      <node id="768">
-        <label>arc_timer.h</label>
-        <link refid="arc__timer_8h"/>
-        <childnode refid="766" relation="include">
-        </childnode>
-        <childnode refid="760" relation="include">
-        </childnode>
-        <childnode refid="761" relation="include">
+      <node id="782">
+        <label>embARC_debug.h</label>
+        <link refid="emb_a_r_c__debug_8h"/>
+        <childnode refid="783" relation="include">
         </childnode>
       </node>
-      <node id="771">
+      <node id="784">
         <label>board.h</label>
         <link refid="board_8h"/>
       </node>
-      <node id="766">
-        <label>arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="767" relation="include">
+      <node id="781">
+        <label>arc_timer.h</label>
+        <link refid="arc__timer_8h"/>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+        <childnode refid="774" relation="include">
         </childnode>
       </node>
-      <node id="770">
-        <label>xprintf.h</label>
-      </node>
-      <node id="767">
+      <node id="780">
         <label>arc_feature_config.h</label>
         <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="783">
+        <label>xprintf.h</label>
+      </node>
+      <node id="774">
+        <label>embARC_toolchain.h</label>
+        <link refid="emb_a_r_c__toolchain_8h"/>
+        <childnode refid="775" relation="include">
+        </childnode>
+        <childnode refid="776" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+      </node>
+      <node id="785">
+        <label>axs_timer.h</label>
+        <link refid="axs__timer_8h"/>
+        <childnode refid="774" relation="include">
+        </childnode>
+      </node>
+      <node id="772">
+        <label>axs_init.c</label>
+        <link refid="axs_init.c"/>
+        <childnode refid="773" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+        <childnode refid="782" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="785" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
@@ -111,7 +111,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/axs/axs.h" line="103" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/axs/common/axs_init.c" bodystart="62" bodyend="67"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/axs/axs.h" line="103" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/axs/common/axs_init.c" bodystart="62" bodyend="67"/>
         <references refid="group___b_o_a_r_d___a_x_s___a_x_c003___d_r_v___g_p_i_o_1ga6609ed8941af83902dd542ce6963405d" compoundref="axs__103__init_8c" startline="54" endline="58">axs_hardware_init</references>
         <references refid="group___b_o_a_r_d___a_x_s___c_o_m_m_o_n___t_i_m_e_r_1gaeccce732e5de08bf886129fab8e2583f" compoundref="axs__timer_8c" startline="124" endline="133">axs_timer_init</references>
         <references refid="group___a_r_c___h_a_l___m_i_s_c___t_i_m_e_r_1ga7b8ab79df77b57475a5494f5f81c3bd9" compoundref="arc__timer_8c" startline="201" endline="206">timer_init</references>
@@ -167,6 +167,6 @@
 <codeline lineno="67"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/axs/common/axs_init.c"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/board/axs/common/axs_init.c"/>
   </compounddef>
 </doxygen>

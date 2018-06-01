@@ -25,28 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="embARC 2018.01 documentation" href="../index.html"/>
-        <link rel="next" title="ARC Software Development Platform" href="axs.html"/>
-        <link rel="prev" title="WNIC HAL" href="../device/wnic.html"/> 
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ARC Software Development Platform" href="axs.html" />
+    <link rel="prev" title="WNIC HAL" href="../device/wnic.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -132,7 +124,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">embARC</a>
@@ -140,9 +132,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -194,29 +187,29 @@ boards based on DesignWare® ARC® processors. The layer contains the following 
 <li><strong>Drivers instantiation</strong>   In embARC OSP, an object-oriented design is applied
 for device drivers. The peripheral driver implementations are similar to the
 definition of class in the device abstraction layer. So the peripheral drivers
-should be instantiated for every board.   For example, <code class="docutils literal"><span class="pre">dw_gpio_obj.c</span></code> /
-<code class="docutils literal"><span class="pre">dw_gpio_obj.h</span></code> is the instantiation of the DesignWare GPIO driver
+should be instantiated for every board.   For example, <code class="docutils literal notranslate"><span class="pre">dw_gpio_obj.c</span></code> /
+<code class="docutils literal notranslate"><span class="pre">dw_gpio_obj.h</span></code> is the instantiation of the DesignWare GPIO driver
 implementation in device abstraction layer, which contains the information of
 register address, interrupt number, etc.</li>
 <li><strong>Common board initialization process</strong> A standard bootup process is
-defined for each board. The entry of this process is <code class="docutils literal"><span class="pre">board_main</span></code> defined
-in <code class="docutils literal"><span class="pre">board/board.c</span></code>, it will cover board initialization, os environment
-setup, fatfs and ntshell initialization, finally it will enter to <code class="docutils literal"><span class="pre">main</span></code>
+defined for each board. The entry of this process is <code class="docutils literal notranslate"><span class="pre">board_main</span></code> defined
+in <code class="docutils literal notranslate"><span class="pre">board/board.c</span></code>, it will cover board initialization, os environment
+setup, fatfs and ntshell initialization, finally it will enter to <code class="docutils literal notranslate"><span class="pre">main</span></code>
 function if required.</li>
 <li><strong>Board resource unified definition</strong>  Most boards share common peripherals.
 Unified definitions are provided such as UART used to print messages, SD card
 interface, buttons, LEDs.</li>
 <li><strong>Linker script for boards</strong> Linker script now is auto-generated from
 template using the ICCM/DCCM and DDR memory information. embARC OSP provides template
-for both gnu and metaware tool, located in <code class="docutils literal"><span class="pre">board</span></code> folder, called
-<code class="docutils literal"><span class="pre">linker_template_gnu.ld</span></code> and <code class="docutils literal"><span class="pre">linker_template_mw.ld</span></code>.</li>
+for both gnu and metaware tool, located in <code class="docutils literal notranslate"><span class="pre">board</span></code> folder, called
+<code class="docutils literal notranslate"><span class="pre">linker_template_gnu.ld</span></code> and <code class="docutils literal notranslate"><span class="pre">linker_template_mw.ld</span></code>.</li>
 </ul>
 </div>
 <div class="section" id="common-board-initialization-process">
 <h2>Common Board Initialization Process<a class="headerlink" href="#common-board-initialization-process" title="Permalink to this headline">¶</a></h2>
-<p>The common <code class="docutils literal"><span class="pre">board_main</span></code> function in <code class="docutils literal"><span class="pre">board.c</span></code> will do the following operations:</p>
+<p>The common <code class="docutils literal notranslate"><span class="pre">board_main</span></code> function in <code class="docutils literal notranslate"><span class="pre">board.c</span></code> will do the following operations:</p>
 <ul class="simple">
-<li>Board initialization steps - defined in <code class="docutils literal"><span class="pre">board_init</span></code> function.<ul>
+<li>Board initialization steps - defined in <code class="docutils literal notranslate"><span class="pre">board_init</span></code> function.<ul>
 <li>Install required device driver objects, such as UART/SPI/IIC device objects.</li>
 <li>Clear and disable all interrupts.</li>
 <li>Initialize 1 ms timer interrupt.</li>
@@ -227,7 +220,7 @@ for both gnu and metaware tool, located in <code class="docutils literal"><span 
 <li>xprintf library setup to provide printf functionality</li>
 <li>Initialization of fatfs if FatFs middleware is selected</li>
 <li>Initialization of FreeRTOS tasks if defined</li>
-<li>Go to <code class="docutils literal"><span class="pre">main</span></code> function</li>
+<li>Go to <code class="docutils literal notranslate"><span class="pre">main</span></code> function</li>
 </ul>
 </div>
 <div class="section" id="supported-boards">
@@ -243,35 +236,35 @@ for both gnu and metaware tool, located in <code class="docutils literal"><span 
 </ul>
 </div>
 <ul class="simple">
-<li>AXS board support can be found in <code class="docutils literal"><span class="pre">board/ax</span></code>, detailed in ARC AXS Software
+<li>AXS board support can be found in <code class="docutils literal notranslate"><span class="pre">board/ax</span></code>, detailed in ARC AXS Software
 Development Platform (AXS). It includes the following sub-folders:<ul>
-<li><code class="file docutils literal"><span class="pre">common</span></code>: AXS board initialization functions and 1 ms interrupt timer function</li>
-<li><code class="file docutils literal"><span class="pre">drivers</span></code>: Various peripheral drivers for various examples</li>
-<li><code class="file docutils literal"><span class="pre">configs</span></code>: Different versions of axs, and various core configurations for different version</li>
+<li><code class="file docutils literal notranslate"><span class="pre">common</span></code>: AXS board initialization functions and 1 ms interrupt timer function</li>
+<li><code class="file docutils literal notranslate"><span class="pre">drivers</span></code>: Various peripheral drivers for various examples</li>
+<li><code class="file docutils literal notranslate"><span class="pre">configs</span></code>: Different versions of axs, and various core configurations for different version</li>
 </ul>
 </li>
-<li>EM Starter Kit (EMSK) support can be found in <code class="docutils literal"><span class="pre">board/emsk</span></code>. It includes the following sub-folders.<ul>
-<li><code class="file docutils literal"><span class="pre">common</span></code>: EMSK board initialization functions and 1 ms interrupt timer function</li>
-<li><code class="file docutils literal"><span class="pre">drivers</span></code>: Various peripheral drivers for various examples</li>
-<li><code class="file docutils literal"><span class="pre">configs</span></code>: Different versions of emsk, and various core configurations for different version</li>
+<li>EM Starter Kit (EMSK) support can be found in <code class="docutils literal notranslate"><span class="pre">board/emsk</span></code>. It includes the following sub-folders.<ul>
+<li><code class="file docutils literal notranslate"><span class="pre">common</span></code>: EMSK board initialization functions and 1 ms interrupt timer function</li>
+<li><code class="file docutils literal notranslate"><span class="pre">drivers</span></code>: Various peripheral drivers for various examples</li>
+<li><code class="file docutils literal notranslate"><span class="pre">configs</span></code>: Different versions of emsk, and various core configurations for different version</li>
 </ul>
 </li>
-<li>HS Development Kit (HSDK) board support can be found in <code class="docutils literal"><span class="pre">board/hsdk</span></code>. It includes the following sub-folders.<ul>
-<li><code class="file docutils literal"><span class="pre">common</span></code>: HSDK board initialization functions and 1 ms interrupt timer function</li>
-<li><code class="file docutils literal"><span class="pre">drivers</span></code>: Various peripheral drivers for various examples</li>
-<li><code class="file docutils literal"><span class="pre">configs</span></code>: Support for different board versions (if applicable), and support for different core configurations for each board version (if applicable)</li>
+<li>HS Development Kit (HSDK) board support can be found in <code class="docutils literal notranslate"><span class="pre">board/hsdk</span></code>. It includes the following sub-folders.<ul>
+<li><code class="file docutils literal notranslate"><span class="pre">common</span></code>: HSDK board initialization functions and 1 ms interrupt timer function</li>
+<li><code class="file docutils literal notranslate"><span class="pre">drivers</span></code>: Various peripheral drivers for various examples</li>
+<li><code class="file docutils literal notranslate"><span class="pre">configs</span></code>: Support for different board versions (if applicable), and support for different core configurations for each board version (if applicable)</li>
 </ul>
 </li>
-<li>IoT Development Kit (IoTDK) board support can be found in <code class="docutils literal"><span class="pre">board/iotdk</span></code>. It includes the following sub-folders.<ul>
-<li><code class="file docutils literal"><span class="pre">common</span></code>: IoTDK board initialization functions and 1 ms interrupt timer function</li>
-<li><code class="file docutils literal"><span class="pre">drivers</span></code>: Various peripheral drivers for various examples</li>
-<li><code class="file docutils literal"><span class="pre">configs</span></code>: Support for different board versions (if applicable), and support for different core configurations for each board version (if applicable)</li>
+<li>IoT Development Kit (IoTDK) board support can be found in <code class="docutils literal notranslate"><span class="pre">board/iotdk</span></code>. It includes the following sub-folders.<ul>
+<li><code class="file docutils literal notranslate"><span class="pre">common</span></code>: IoTDK board initialization functions and 1 ms interrupt timer function</li>
+<li><code class="file docutils literal notranslate"><span class="pre">drivers</span></code>: Various peripheral drivers for various examples</li>
+<li><code class="file docutils literal notranslate"><span class="pre">configs</span></code>: Support for different board versions (if applicable), and support for different core configurations for each board version (if applicable)</li>
 </ul>
 </li>
-<li>nSIM virtual board support can be found in <code class="docutils literal"><span class="pre">board/nsim</span></code>. It includes the following sub-folders.<ul>
-<li><code class="file docutils literal"><span class="pre">common</span></code>: nSIM virtual board initialization functions and 1 ms interrupt timer function</li>
-<li><code class="file docutils literal"><span class="pre">drivers</span></code>: Basic hostlink UART driver for message input and output</li>
-<li><code class="file docutils literal"><span class="pre">configs</span></code>: Different versions of nsim, and various core configurations for different version</li>
+<li>nSIM virtual board support can be found in <code class="docutils literal notranslate"><span class="pre">board/nsim</span></code>. It includes the following sub-folders.<ul>
+<li><code class="file docutils literal notranslate"><span class="pre">common</span></code>: nSIM virtual board initialization functions and 1 ms interrupt timer function</li>
+<li><code class="file docutils literal notranslate"><span class="pre">drivers</span></code>: Basic hostlink UART driver for message input and output</li>
+<li><code class="file docutils literal notranslate"><span class="pre">configs</span></code>: Different versions of nsim, and various core configurations for different version</li>
 </ul>
 </li>
 </ul>
@@ -282,7 +275,7 @@ Development Platform (AXS). It includes the following sub-folders:<ul>
 </div>
 <div class="section" id="board-resource-unified-definitions">
 <h2>Board Resource Unified Definitions<a class="headerlink" href="#board-resource-unified-definitions" title="Permalink to this headline">¶</a></h2>
-<p>The board resource definitions are defined in <code class="docutils literal"><span class="pre">board.h</span></code>, where the hardware header files of each board are included. The following are the common board resources definitions. For each board, it can implement these definitions according to its own configurations. Through these common definitions, the code re-usability is improved.</p>
+<p>The board resource definitions are defined in <code class="docutils literal notranslate"><span class="pre">board.h</span></code>, where the hardware header files of each board are included. The following are the common board resources definitions. For each board, it can implement these definitions according to its own configurations. Through these common definitions, the code re-usability is improved.</p>
 <table border="1" class="colwidths-auto docutils" id="id1">
 <caption><span class="caption-text">Board resource definition</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <thead valign="bottom">
@@ -481,9 +474,7 @@ Development Platform (AXS). It includes the following sub-folders:<ul>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -505,7 +496,7 @@ Development Platform (AXS). It includes the following sub-folders:<ul>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -524,6 +515,7 @@ Development Platform (AXS). It includes the following sub-folders:<ul>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'2018.01',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -541,14 +533,11 @@ Development Platform (AXS). It includes the following sub-folders:<ul>
     <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

@@ -25,29 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="embARC 2018.01 documentation" href="../index.html"/>
-        <link rel="up" title="Developer Guides" href="developer_guides.html"/>
-        <link rel="next" title="Build System Documentaion" href="build_system_documentation.html"/>
-        <link rel="prev" title="Coding style" href="coding_style.html"/> 
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Build System Documentaion" href="build_system_documentation.html" />
+    <link rel="prev" title="Coding style" href="coding_style.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -136,7 +127,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">embARC</a>
@@ -144,9 +135,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -195,46 +187,46 @@
 <div class="section" id="general-build-and-run-steps">
 <h2>General Build and Run Steps<a class="headerlink" href="#general-build-and-run-steps" title="Permalink to this headline">¶</a></h2>
 <p>There are a lot of examples and demos in embARC OSP which are located in
-<code class="docutils literal"><span class="pre">&lt;embarc&gt;/example</span></code> folder. General steps are shown below to build the
+<code class="docutils literal notranslate"><span class="pre">&lt;embarc&gt;/example</span></code> folder. General steps are shown below to build the
 provded examples and demos, e.g. the example in
-<code class="docutils literal"><span class="pre">&lt;embARC&gt;/example/baremetal/bootloader</span></code> for the EMSK 2.2 board and ARC EM7D
+<code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/example/baremetal/bootloader</span></code> for the EMSK 2.2 board and ARC EM7D
 core configuration.</p>
 <blockquote>
-<div><p>1. Go to the example directory, <code class="docutils literal"><span class="pre">cd</span>
-<span class="pre">&lt;embARC&gt;/example/baremetal/bootloader</span></code>. <code class="docutils literal"><span class="pre">&lt;embARC&gt;``should</span> <span class="pre">be</span> <span class="pre">replaced</span> <span class="pre">by</span>
-<span class="pre">your</span> <span class="pre">actual</span> <span class="pre">path</span> <span class="pre">such</span> <span class="pre">as</span> <span class="pre">``c:/embARC</span></code>. Use <code class="docutils literal"><span class="pre">\</span></code> instead of <code class="docutils literal"><span class="pre">/</span></code> in the
+<div><p>1. Go to the example directory, <code class="docutils literal notranslate"><span class="pre">cd</span>
+<span class="pre">&lt;embARC&gt;/example/baremetal/bootloader</span></code>. <code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;``should</span> <span class="pre">be</span> <span class="pre">replaced</span> <span class="pre">by</span>
+<span class="pre">your</span> <span class="pre">actual</span> <span class="pre">path</span> <span class="pre">such</span> <span class="pre">as</span> <span class="pre">``c:/embARC</span></code>. Use <code class="docutils literal notranslate"><span class="pre">\</span></code> instead of <code class="docutils literal notranslate"><span class="pre">/</span></code> in the
 Windows environment.</p>
 <ol class="arabic" start="2">
-<li><p class="first">Run the <code class="docutils literal"><span class="pre">make</span></code> commands
+<li><p class="first">Run the <code class="docutils literal notranslate"><span class="pre">make</span></code> commands
 * Commands for using MetaWare toolchain</p>
 <blockquote>
 <div><ul class="simple">
-<li>Command common part: <code class="docutils literal"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span></code></li>
-<li>Build: <code class="docutils literal"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span></code></li>
-<li>Run: <code class="docutils literal"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">JTAG=usb</span> <span class="pre">run</span></code></li>
-<li>Debug: <code class="docutils literal"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">JTAG=usb</span> <span class="pre">gui</span></code></li>
-<li>Generate binary: <code class="docutils literal"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">JTAG=usb</span> <span class="pre">bin</span></code></li>
-<li>Show build configuration: <code class="docutils literal"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">JTAG=usb</span> <span class="pre">cfg</span></code></li>
-<li>Show build options: <code class="docutils literal"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">JTAG=usb</span> <span class="pre">opt</span></code></li>
-<li>Clean current build configuration: <code class="docutils literal"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">clean</span></code></li>
-<li>Clean current all configurations for the same board: <code class="docutils literal"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">boardclean</span></code></li>
-<li>Clean current all configurations in this example: <code class="docutils literal"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">distclean</span></code></li>
+<li>Command common part: <code class="docutils literal notranslate"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span></code></li>
+<li>Build: <code class="docutils literal notranslate"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span></code></li>
+<li>Run: <code class="docutils literal notranslate"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">JTAG=usb</span> <span class="pre">run</span></code></li>
+<li>Debug: <code class="docutils literal notranslate"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">JTAG=usb</span> <span class="pre">gui</span></code></li>
+<li>Generate binary: <code class="docutils literal notranslate"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">JTAG=usb</span> <span class="pre">bin</span></code></li>
+<li>Show build configuration: <code class="docutils literal notranslate"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">JTAG=usb</span> <span class="pre">cfg</span></code></li>
+<li>Show build options: <code class="docutils literal notranslate"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">JTAG=usb</span> <span class="pre">opt</span></code></li>
+<li>Clean current build configuration: <code class="docutils literal notranslate"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">clean</span></code></li>
+<li>Clean current all configurations for the same board: <code class="docutils literal notranslate"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">boardclean</span></code></li>
+<li>Clean current all configurations in this example: <code class="docutils literal notranslate"><span class="pre">gmake</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">distclean</span></code></li>
 </ul>
 </div></blockquote>
 <ul>
 <li><p class="first">Commands for using ARC GNU toolchain</p>
 <blockquote>
 <div><ul class="simple">
-<li>Command common part: <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span></code></li>
-<li>Build: <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span></code></li>
-<li>Run: <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">JTAG=usb</span> <span class="pre">run</span></code></li>
-<li>Debug: <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">JTAG=usb</span> <span class="pre">gui</span></code></li>
-<li>Generate binary: <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">JTAG=usb</span> <span class="pre">bin</span></code></li>
-<li>Show build configuration: <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">JTAG=usb</span> <span class="pre">cfg</span></code></li>
-<li>Show build options: <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">JTAG=usb</span> <span class="pre">opt</span></code></li>
-<li>Clean current build configuration: <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">clean</span></code></li>
-<li>Clean current all configurations for the same board: <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">boardclean</span></code></li>
-<li>Clean current all configurations in this example: <code class="docutils literal"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">distclean</span></code></li>
+<li>Command common part: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span></code></li>
+<li>Build: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span></code></li>
+<li>Run: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">JTAG=usb</span> <span class="pre">run</span></code></li>
+<li>Debug: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">JTAG=usb</span> <span class="pre">gui</span></code></li>
+<li>Generate binary: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">JTAG=usb</span> <span class="pre">bin</span></code></li>
+<li>Show build configuration: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">JTAG=usb</span> <span class="pre">cfg</span></code></li>
+<li>Show build options: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">JTAG=usb</span> <span class="pre">opt</span></code></li>
+<li>Clean current build configuration: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">clean</span></code></li>
+<li>Clean current all configurations for the same board: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">boardclean</span></code></li>
+<li>Clean current all configurations in this example: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">BOARD=emsk</span> <span class="pre">BD_VER=22</span> <span class="pre">CUR_CORE=arcem7d</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">distclean</span></code></li>
 </ul>
 </div></blockquote>
 </li>
@@ -246,7 +238,7 @@ Windows environment.</p>
 </div>
 <div class="section" id="create-a-new-application">
 <h2>Create a New Application<a class="headerlink" href="#create-a-new-application" title="Permalink to this headline">¶</a></h2>
-<p>Here, we will show how to create a new application in embARC OSP,  taking a simple <code class="docutils literal"><span class="pre">hello</span> <span class="pre">world</span></code> as an example.</p>
+<p>Here, we will show how to create a new application in embARC OSP,  taking a simple <code class="docutils literal notranslate"><span class="pre">hello</span> <span class="pre">world</span></code> as an example.</p>
 <ul>
 <li><p class="first">Goals</p>
 <blockquote>
@@ -260,72 +252,72 @@ Windows environment.</p>
 </li>
 </ul>
 <ol class="arabic">
-<li><p class="first">Creat a folder named <code class="docutils literal"><span class="pre">hello_world</span></code> under <code class="docutils literal"><span class="pre">embarc/example</span></code>.</p>
+<li><p class="first">Creat a folder named <code class="docutils literal notranslate"><span class="pre">hello_world</span></code> under <code class="docutils literal notranslate"><span class="pre">embarc/example</span></code>.</p>
 </li>
-<li><p class="first">Copy the makefile template <code class="docutils literal"><span class="pre">example/example.makefile</span></code> and <code class="docutils literal"><span class="pre">main.c.tmpl</span></code>
-into <code class="docutils literal"><span class="pre">hello_world</span></code> folder and rename <code class="docutils literal"><span class="pre">example.makefile</span></code> to <code class="docutils literal"><span class="pre">makefile</span></code>,
-rename <code class="docutils literal"><span class="pre">main.c.tmpl</span></code> to <code class="docutils literal"><span class="pre">main.c</span></code>.</p>
+<li><p class="first">Copy the makefile template <code class="docutils literal notranslate"><span class="pre">example/example.makefile</span></code> and <code class="docutils literal notranslate"><span class="pre">main.c.tmpl</span></code>
+into <code class="docutils literal notranslate"><span class="pre">hello_world</span></code> folder and rename <code class="docutils literal notranslate"><span class="pre">example.makefile</span></code> to <code class="docutils literal notranslate"><span class="pre">makefile</span></code>,
+rename <code class="docutils literal notranslate"><span class="pre">main.c.tmpl</span></code> to <code class="docutils literal notranslate"><span class="pre">main.c</span></code>.</p>
 </li>
 <li><p class="first">Change the configurations in makefile according to your hardware configuration and application.</p>
 <blockquote>
 <div><ul>
-<li><p class="first">Change the application name: change the value of <code class="docutils literal"><span class="pre">APPL</span></code> to <code class="docutils literal"><span class="pre">helloworld</span></code>.</p>
+<li><p class="first">Change the application name: change the value of <code class="docutils literal notranslate"><span class="pre">APPL</span></code> to <code class="docutils literal notranslate"><span class="pre">helloworld</span></code>.</p>
 </li>
-<li><p class="first">Change the board name: change the value of <code class="docutils literal"><span class="pre">BOARD</span></code> to <code class="docutils literal"><span class="pre">emsk</span></code>. This
+<li><p class="first">Change the board name: change the value of <code class="docutils literal notranslate"><span class="pre">BOARD</span></code> to <code class="docutils literal notranslate"><span class="pre">emsk</span></code>. This
 option can also be given in cmd line       If not specified, the default value
-will be <code class="docutils literal"><span class="pre">emsk</span></code></p>
+will be <code class="docutils literal notranslate"><span class="pre">emsk</span></code></p>
 </li>
-<li><p class="first">Change the board version: change the value of <code class="docutils literal"><span class="pre">BD_VER</span></code> to <code class="docutils literal"><span class="pre">22</span></code>.This
+<li><p class="first">Change the board version: change the value of <code class="docutils literal notranslate"><span class="pre">BD_VER</span></code> to <code class="docutils literal notranslate"><span class="pre">22</span></code>.This
 option can also be given in cmd line       If not specified, the default value
-will be <code class="docutils literal"><span class="pre">22</span></code> for board <code class="docutils literal"><span class="pre">emsk</span></code>.</p>
+will be <code class="docutils literal notranslate"><span class="pre">22</span></code> for board <code class="docutils literal notranslate"><span class="pre">emsk</span></code>.</p>
 </li>
 <li><p class="first">Change the core configuration: change the value of <strong>CUR_CORE</strong> to
 <strong>arcem7d</strong> This option can also be given in cmd line       If not specified,
-the default value will <code class="docutils literal"><span class="pre">arcem7d</span></code> for board <code class="docutils literal"><span class="pre">emsk</span></code> and version <code class="docutils literal"><span class="pre">22</span></code>.</p>
+the default value will <code class="docutils literal notranslate"><span class="pre">arcem7d</span></code> for board <code class="docutils literal notranslate"><span class="pre">emsk</span></code> and version <code class="docutils literal notranslate"><span class="pre">22</span></code>.</p>
 </li>
-<li><p class="first">Change the embARC OSP root: change the value of <code class="docutils literal"><span class="pre">EMBARC_ROOT</span></code> to
-<code class="docutils literal"><span class="pre">../..</span></code>. <code class="docutils literal"><span class="pre">EMBARC_ROOT</span></code> can be relative path or an absolute path.</p>
+<li><p class="first">Change the embARC OSP root: change the value of <code class="docutils literal notranslate"><span class="pre">EMBARC_ROOT</span></code> to
+<code class="docutils literal notranslate"><span class="pre">../..</span></code>. <code class="docutils literal notranslate"><span class="pre">EMBARC_ROOT</span></code> can be relative path or an absolute path.</p>
 </li>
 <li><p class="first">Add the middleware that you need for this application: Change the value
 of MID_SEL.</p>
 <blockquote>
 <div><ul class="simple">
-<li>The value of <code class="docutils literal"><span class="pre">MID_SEL</span></code> must be the folder name in
-<code class="docutils literal"><span class="pre">&lt;embARC&gt;/middleware</span></code>, such as <code class="docutils literal"><span class="pre">common</span></code> or <code class="docutils literal"><span class="pre">lwip</span></code>.</li>
-<li>If using <code class="docutils literal"><span class="pre">lwip</span></code>, <code class="docutils literal"><span class="pre">ntshell</span></code>, <code class="docutils literal"><span class="pre">fatfs</span></code>, and <code class="docutils literal"><span class="pre">common</span></code>, set
-<code class="docutils literal"><span class="pre">MID_SEL</span></code> to <code class="docutils literal"><span class="pre">lwip</span> <span class="pre">ntshell</span> <span class="pre">fatfs</span> <span class="pre">common</span></code>.</li>
-<li>Set it to <code class="docutils literal"><span class="pre">common</span></code> in the “HelloWorld” application.</li>
+<li>The value of <code class="docutils literal notranslate"><span class="pre">MID_SEL</span></code> must be the folder name in
+<code class="docutils literal notranslate"><span class="pre">&lt;embARC&gt;/middleware</span></code>, such as <code class="docutils literal notranslate"><span class="pre">common</span></code> or <code class="docutils literal notranslate"><span class="pre">lwip</span></code>.</li>
+<li>If using <code class="docutils literal notranslate"><span class="pre">lwip</span></code>, <code class="docutils literal notranslate"><span class="pre">ntshell</span></code>, <code class="docutils literal notranslate"><span class="pre">fatfs</span></code>, and <code class="docutils literal notranslate"><span class="pre">common</span></code>, set
+<code class="docutils literal notranslate"><span class="pre">MID_SEL</span></code> to <code class="docutils literal notranslate"><span class="pre">lwip</span> <span class="pre">ntshell</span> <span class="pre">fatfs</span> <span class="pre">common</span></code>.</li>
+<li>Set it to <code class="docutils literal notranslate"><span class="pre">common</span></code> in the “HelloWorld” application.</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first">Change your toolchain: change the value of <code class="docutils literal"><span class="pre">TOOLCHAIN</span></code> to <code class="docutils literal"><span class="pre">gnu</span></code>.</p>
+<li><p class="first">Change your toolchain: change the value of <code class="docutils literal notranslate"><span class="pre">TOOLCHAIN</span></code> to <code class="docutils literal notranslate"><span class="pre">gnu</span></code>.</p>
 </li>
 <li><p class="first">Update source folders and include folder settings.</p>
 <blockquote>
 <div><ul class="simple">
 <li>Update the C code folder settings: change the value of
-<code class="docutils literal"><span class="pre">APPL_CSRC_DIR</span></code> to <code class="docutils literal"><span class="pre">.</span></code>. <code class="docutils literal"><span class="pre">APPL_CSRC_DIR</span></code> is the C code relative
+<code class="docutils literal notranslate"><span class="pre">APPL_CSRC_DIR</span></code> to <code class="docutils literal notranslate"><span class="pre">.</span></code>. <code class="docutils literal notranslate"><span class="pre">APPL_CSRC_DIR</span></code> is the C code relative
 path to the application folder</li>
-<li>Update the assembly source-folder settings: change the value of <code class="docutils literal"><span class="pre">APPL_ASMSRC_DIR</span></code>.</li>
+<li>Update the assembly source-folder settings: change the value of <code class="docutils literal notranslate"><span class="pre">APPL_ASMSRC_DIR</span></code>.</li>
 <li>Update the include-folders settings: change the value of
-<code class="docutils literal"><span class="pre">APPL_INC_DIR</span></code> which is the application include path to the
+<code class="docutils literal notranslate"><span class="pre">APPL_INC_DIR</span></code> which is the application include path to the
 application folder (-I).</li>
 <li>If more than one directory is needed, use whitespace between the folder paths.</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first">Set your application defined macros: Change the value of <code class="docutils literal"><span class="pre">APPL_DEFINES</span></code>.</p>
+<li><p class="first">Set your application defined macros: Change the value of <code class="docutils literal notranslate"><span class="pre">APPL_DEFINES</span></code>.</p>
 <blockquote>
 <div><ul class="simple">
-<li>For example, if define <code class="docutils literal"><span class="pre">APPLICATION=1</span></code>, set APPL_DEFINES to <code class="docutils literal"><span class="pre">-DAPPLICATION=1</span></code>.</li>
+<li>For example, if define <code class="docutils literal notranslate"><span class="pre">APPLICATION=1</span></code>, set APPL_DEFINES to <code class="docutils literal notranslate"><span class="pre">-DAPPLICATION=1</span></code>.</li>
 </ul>
 </div></blockquote>
 </li>
 </ul>
 </div></blockquote>
-<p>Then <code class="docutils literal"><span class="pre">hello</span> <span class="pre">world</span></code> application’s makefile will be like this</p>
+<p>Then <code class="docutils literal notranslate"><span class="pre">hello</span> <span class="pre">world</span></code> application’s makefile will be like this</p>
 <blockquote>
-<div><div class="highlight-makefile"><div class="highlight"><pre><span></span><span class="c">## embARC application makefile template ##</span>
+<div><div class="highlight-makefile notranslate"><div class="highlight"><pre><span></span><span class="c">## embARC application makefile template ##</span>
 <span class="c">### You can copy this file to your application folder</span>
 <span class="c">### and rename it to makefile.</span>
 <span class="c">##</span>
@@ -425,10 +417,10 @@ application folder (-I).</li>
 <blockquote>
 <div><ul class="simple">
 <li>Set your EMSK 2.2 hardware configuration to ARC EM7D, and connect it to
-your PC. Open <code class="docutils literal"><span class="pre">PuTTY</span></code> or <code class="docutils literal"><span class="pre">Tera-term</span></code>, and connect to the right COM
+your PC. Open <code class="docutils literal notranslate"><span class="pre">PuTTY</span></code> or <code class="docutils literal notranslate"><span class="pre">Tera-term</span></code>, and connect to the right COM
 port. Set the baudrate to <strong>115200 bps</strong>.</li>
-<li>Enter <code class="docutils literal"><span class="pre">make</span> <span class="pre">run</span></code> in the command line to run this application.</li>
-<li>Enter <code class="docutils literal"><span class="pre">make</span> <span class="pre">gui</span></code> in the command line to debug this application. Press <strong>CTRL + C</strong> to stop the program. Enter <code class="docutils literal"><span class="pre">q</span></code> to exit the debugger. See the GDB manual for how to debug an application using arc-elf32-gdb.</li>
+<li>Enter <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">run</span></code> in the command line to run this application.</li>
+<li>Enter <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">gui</span></code> in the command line to debug this application. Press <strong>CTRL + C</strong> to stop the program. Enter <code class="docutils literal notranslate"><span class="pre">q</span></code> to exit the debugger. See the GDB manual for how to debug an application using arc-elf32-gdb.</li>
 </ul>
 </div></blockquote>
 </div></blockquote>
@@ -436,7 +428,7 @@ port. Set the baudrate to <strong>115200 bps</strong>.</li>
 <p class="first admonition-title">Note</p>
 <p class="last">See <a class="reference internal" href="build_system_documentation.html#make-options-for-embarc"><span class="std std-ref">Make Options</span></a> for make options in detail. You can
 also refer to other embARC examples, e.g.,
-<code class="docutils literal"><span class="pre">example/baremetal/openthread</span></code>, <code class="docutils literal"><span class="pre">example/freertos/net/ntshell</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">example/baremetal/openthread</span></code>, <code class="docutils literal notranslate"><span class="pre">example/freertos/net/ntshell</span></code>.</p>
 </div>
 </div>
 <div class="section" id="ide-project-usage">
@@ -483,13 +475,13 @@ also refer to other embARC examples, e.g.,
 <p>Multiple EMSK boards are required to run or debug application code on a single PC for some examples in embARC, especially the Pmod RF examples. Here are alternative ways for two EMSK boards running and debugging with using one PC.</p>
 <ul class="simple">
 <li>MetaWare Toolchain<ul>
-<li>In command-line mode, Ashling JTAG and USB-JTAG are necessary rather than multi-USB JTAGs. One node runs <code class="docutils literal"><span class="pre">make</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">xxxx</span> <span class="pre">JTAG=opella</span> <span class="pre">xx</span></code>. the other node runs <code class="docutils literal"><span class="pre">make</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">xxxx</span> <span class="pre">JTAG=usb</span> <span class="pre">xx</span></code>.</li>
+<li>In command-line mode, Ashling JTAG and USB-JTAG are necessary rather than multi-USB JTAGs. One node runs <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">xxxx</span> <span class="pre">JTAG=opella</span> <span class="pre">xx</span></code>. the other node runs <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">TOOLCHAIN=mw</span> <span class="pre">xxxx</span> <span class="pre">JTAG=usb</span> <span class="pre">xx</span></code>.</li>
 <li>In IDE mode, change the debugger configuration in one of the two nodes for Ashling JTAG. Because the Digilent JTAG Cable is the default option.</li>
-<li>Another way for command-line mode is to modify the DIG_NAME option to choose different boards. DIG_NAME is a MetaWare debugger property corresponding to <code class="docutils literal"><span class="pre">-prop=dig_device=name</span></code>.</li>
+<li>Another way for command-line mode is to modify the DIG_NAME option to choose different boards. DIG_NAME is a MetaWare debugger property corresponding to <code class="docutils literal notranslate"><span class="pre">-prop=dig_device=name</span></code>.</li>
 </ul>
 </li>
 <li>ARC GNU Toolchain<ul>
-<li>In command-line mode, all nodes run <code class="docutils literal"><span class="pre">make</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">xxx</span> <span class="pre">JTAG=usb</span> <span class="pre">xx</span></code>. OpenOCD selects the right board automatically. OpenOCD supports multi-USB-JTAG.</li>
+<li>In command-line mode, all nodes run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">TOOLCHAIN=gnu</span> <span class="pre">xxx</span> <span class="pre">JTAG=usb</span> <span class="pre">xx</span></code>. OpenOCD selects the right board automatically. OpenOCD supports multi-USB-JTAG.</li>
 <li>In IDE mode, all projects share the same port for the OpenOCD configuration. The same GNU debugger port (49105) is used. To avoid a conflict with GNU debugger ports, set the different GNU debugger ports in the debug configuration.</li>
 </ul>
 </li>
@@ -503,9 +495,7 @@ also refer to other embARC examples, e.g.,
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -527,7 +517,7 @@ also refer to other embARC examples, e.g.,
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -546,6 +536,7 @@ also refer to other embARC examples, e.g.,
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'2018.01',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -563,14 +554,11 @@ also refer to other embARC examples, e.g.,
     <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

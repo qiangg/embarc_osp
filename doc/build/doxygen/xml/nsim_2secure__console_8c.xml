@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="nsim_2secure__console_8c" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="nsim_2secure__console_8c" kind="file">
     <compoundname>nsim/secure_console.c</compoundname>
       <sectiondef kind="func">
       <memberdef kind="function" id="nsim_2secure__console_8c_1ab49cf6d849c0fc67b7aa491c021f12cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/board/nsim/secure_console.c" line="31" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/board/nsim/secure_console.c" bodystart="31" bodyend="34"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/board/nsim/secure_console.c" line="31" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/board/nsim/secure_console.c" bodystart="31" bodyend="34"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -60,6 +60,6 @@
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/board/nsim/secure_console.c"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/board/nsim/secure_console.c"/>
   </compounddef>
 </doxygen>

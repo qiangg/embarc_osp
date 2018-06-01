@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" kind="file">
     <compoundname>emsk/drivers/ip/designware/iic/dw_iic_obj.c</compoundname>
     <includes refid="emb_a_r_c__toolchain_8h" local="yes">embARC_toolchain.h</includes>
     <includes refid="arc__exception_8h" local="yes">arc_exception.h</includes>
@@ -8,249 +8,249 @@
     <includes refid="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8h" local="yes">dw_iic_obj.h</includes>
     <includes refid="emsk_8h" local="yes">emsk/emsk.h</includes>
     <incdepgraph>
-      <node id="1547">
-        <label>embARC_toolchain.h</label>
-        <link refid="emb_a_r_c__toolchain_8h"/>
-        <childnode refid="1548" relation="include">
-        </childnode>
-        <childnode refid="1549" relation="include">
-        </childnode>
-        <childnode refid="1550" relation="include">
-        </childnode>
-        <childnode refid="1551" relation="include">
-        </childnode>
-      </node>
-      <node id="1551">
+      <node id="1566">
         <label>stdbool.h</label>
       </node>
-      <node id="1576">
-        <label>drivers/pmwifi/pmwifi.h</label>
-        <link refid="emsk_2drivers_2pmwifi_2pmwifi_8h"/>
-        <childnode refid="1577" relation="include">
-        </childnode>
-      </node>
-      <node id="1572">
-        <label>ntshell_io_netconn.h</label>
-        <link refid="emsk_2drivers_2ntshell_2ntshell__io__netconn_8h"/>
-        <childnode refid="1547" relation="include">
-        </childnode>
-        <childnode refid="1571" relation="include">
-        </childnode>
-      </node>
-      <node id="1561">
-        <label>arc_em.h</label>
-        <link refid="arc__em_8h"/>
-        <childnode refid="1553" relation="include">
-        </childnode>
-      </node>
-      <node id="1546">
-        <label>dw_iic_obj.c</label>
-        <link refid="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c"/>
-        <childnode refid="1547" relation="include">
-        </childnode>
-        <childnode refid="1552" relation="include">
-        </childnode>
-        <childnode refid="1556" relation="include">
-        </childnode>
-        <childnode refid="1559" relation="include">
-        </childnode>
-        <childnode refid="1560" relation="include">
-        </childnode>
-      </node>
-      <node id="1559">
-        <label>dw_iic_obj.h</label>
-        <link refid="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8h"/>
-        <childnode refid="1557" relation="include">
-        </childnode>
-      </node>
-      <node id="1571">
-        <label>ntshell_task.h</label>
-      </node>
-      <node id="1565">
-        <label>dev_uart.h</label>
-        <link refid="dev__uart_8h"/>
-        <childnode refid="1558" relation="include">
-        </childnode>
-      </node>
-      <node id="1579">
-        <label>common/emsk_timer.h</label>
-        <link refid="emsk__timer_8h"/>
-        <childnode refid="1547" relation="include">
-        </childnode>
-      </node>
-      <node id="1548">
-        <label>stdint.h</label>
-      </node>
-      <node id="1567">
-        <label>dw_gpio.h</label>
-        <link refid="dw__gpio_8h"/>
-        <childnode refid="1568" relation="include">
-        </childnode>
-        <childnode refid="1552" relation="include">
-        </childnode>
-      </node>
-      <node id="1570">
-        <label>ntshell_io_uart.h</label>
-        <link refid="emsk_2drivers_2ntshell_2ntshell__io__uart_8h"/>
-        <childnode refid="1547" relation="include">
-        </childnode>
-        <childnode refid="1571" relation="include">
-        </childnode>
-      </node>
-      <node id="1556">
-        <label>dw_iic.h</label>
-        <link refid="dw__iic_8h"/>
-        <childnode refid="1557" relation="include">
-        </childnode>
-      </node>
-      <node id="1555">
-        <label>arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="1547" relation="include">
-        </childnode>
-      </node>
-      <node id="1563">
-        <label>dev_spi.h</label>
-        <link refid="dev__spi_8h"/>
-        <childnode refid="1558" relation="include">
-        </childnode>
-      </node>
-      <node id="1550">
-        <label>stddef.h</label>
-      </node>
-      <node id="1574">
-        <label>emsk_sdcard_spi.h</label>
-        <link refid="emsk__sdcard__spi_8h"/>
-        <childnode refid="1575" relation="include">
-        </childnode>
-      </node>
-      <node id="1564">
-        <label>drivers/ip/designware/uart/dw_uart_obj.h</label>
-        <link refid="emsk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h"/>
-        <childnode refid="1565" relation="include">
-        </childnode>
-      </node>
-      <node id="1549">
-        <label>limits.h</label>
-      </node>
-      <node id="1569">
-        <label>drivers/ntshell/ntshell_io.h</label>
-        <link refid="emsk_2drivers_2ntshell_2ntshell__io_8h"/>
-        <childnode refid="1570" relation="include">
-        </childnode>
-        <childnode refid="1572" relation="include">
-        </childnode>
-      </node>
-      <node id="1562">
-        <label>drivers/ip/designware/spi/dw_spi_obj.h</label>
-        <link refid="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8h"/>
-        <childnode refid="1563" relation="include">
-        </childnode>
-      </node>
-      <node id="1568">
-        <label>dev_gpio.h</label>
-        <link refid="dev__gpio_8h"/>
-        <childnode refid="1558" relation="include">
-        </childnode>
-      </node>
-      <node id="1552">
-        <label>arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="1547" relation="include">
-        </childnode>
-        <childnode refid="1553" relation="include">
-        </childnode>
-        <childnode refid="1555" relation="include">
-        </childnode>
-      </node>
-      <node id="1573">
-        <label>drivers/sdcard/emsk_sdcard.h</label>
-        <link refid="emsk__sdcard_8h"/>
-        <childnode refid="1547" relation="include">
-        </childnode>
-        <childnode refid="1574" relation="include">
-        </childnode>
-      </node>
-      <node id="1566">
-        <label>drivers/ip/designware/gpio/dw_gpio_obj.h</label>
-        <link refid="emsk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h"/>
-        <childnode refid="1567" relation="include">
-        </childnode>
-      </node>
-      <node id="1553">
-        <label>arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="1554" relation="include">
-        </childnode>
-      </node>
-      <node id="1557">
-        <label>dev_iic.h</label>
-        <link refid="dev__iic_8h"/>
-        <childnode refid="1558" relation="include">
-        </childnode>
-      </node>
-      <node id="1575">
-        <label>ff_diskio.h</label>
-      </node>
-      <node id="1581">
-        <label>emsk_hardware.h</label>
-      </node>
-      <node id="1558">
-        <label>dev_common.h</label>
-        <link refid="dev__common_8h"/>
-        <childnode refid="1548" relation="include">
-        </childnode>
-      </node>
-      <node id="1577">
+      <node id="1592">
         <label>dev_wnic.h</label>
         <link refid="dev__wnic_8h"/>
-        <childnode refid="1558" relation="include">
+        <childnode refid="1573" relation="include">
         </childnode>
       </node>
       <node id="1580">
-        <label>common/emsk_gpio.h</label>
-        <link refid="emsk__gpio_8h"/>
-        <childnode refid="1567" relation="include">
-        </childnode>
-      </node>
-      <node id="1560">
-        <label>emsk/emsk.h</label>
-        <link refid="emsk_8h"/>
-        <childnode refid="1561" relation="include">
-        </childnode>
-        <childnode refid="1555" relation="include">
-        </childnode>
-        <childnode refid="1559" relation="include">
-        </childnode>
-        <childnode refid="1562" relation="include">
-        </childnode>
-        <childnode refid="1564" relation="include">
-        </childnode>
-        <childnode refid="1566" relation="include">
-        </childnode>
-        <childnode refid="1569" relation="include">
-        </childnode>
+        <label>dev_uart.h</label>
+        <link refid="dev__uart_8h"/>
         <childnode refid="1573" relation="include">
         </childnode>
+      </node>
+      <node id="1571">
+        <label>dw_iic.h</label>
+        <link refid="dw__iic_8h"/>
+        <childnode refid="1572" relation="include">
+        </childnode>
+      </node>
+      <node id="1576">
+        <label>arc_em.h</label>
+        <link refid="arc__em_8h"/>
+        <childnode refid="1568" relation="include">
+        </childnode>
+      </node>
+      <node id="1568">
+        <label>arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="1569" relation="include">
+        </childnode>
+      </node>
+      <node id="1583">
+        <label>dev_gpio.h</label>
+        <link refid="dev__gpio_8h"/>
+        <childnode refid="1573" relation="include">
+        </childnode>
+      </node>
+      <node id="1586">
+        <label>ntshell_task.h</label>
+      </node>
+      <node id="1595">
+        <label>common/emsk_gpio.h</label>
+        <link refid="emsk__gpio_8h"/>
+        <childnode refid="1582" relation="include">
+        </childnode>
+      </node>
+      <node id="1585">
+        <label>ntshell_io_uart.h</label>
+        <link refid="emsk_2drivers_2ntshell_2ntshell__io__uart_8h"/>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1586" relation="include">
+        </childnode>
+      </node>
+      <node id="1563">
+        <label>stdint.h</label>
+      </node>
+      <node id="1570">
+        <label>arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="1562" relation="include">
+        </childnode>
+      </node>
+      <node id="1561">
+        <label>dw_iic_obj.c</label>
+        <link refid="emsk/drivers/ip/designware/iic/dw_iic_obj.c"/>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1567" relation="include">
+        </childnode>
+        <childnode refid="1571" relation="include">
+        </childnode>
+        <childnode refid="1574" relation="include">
+        </childnode>
+        <childnode refid="1575" relation="include">
+        </childnode>
+      </node>
+      <node id="1574">
+        <label>dw_iic_obj.h</label>
+        <link refid="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8h"/>
+        <childnode refid="1572" relation="include">
+        </childnode>
+      </node>
+      <node id="1575">
+        <label>emsk/emsk.h</label>
+        <link refid="emsk_8h"/>
         <childnode refid="1576" relation="include">
         </childnode>
-        <childnode refid="1578" relation="include">
+        <childnode refid="1570" relation="include">
+        </childnode>
+        <childnode refid="1574" relation="include">
+        </childnode>
+        <childnode refid="1577" relation="include">
         </childnode>
         <childnode refid="1579" relation="include">
         </childnode>
-        <childnode refid="1580" relation="include">
-        </childnode>
         <childnode refid="1581" relation="include">
         </childnode>
+        <childnode refid="1584" relation="include">
+        </childnode>
+        <childnode refid="1588" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1593" relation="include">
+        </childnode>
+        <childnode refid="1594" relation="include">
+        </childnode>
+        <childnode refid="1595" relation="include">
+        </childnode>
+        <childnode refid="1596" relation="include">
+        </childnode>
       </node>
-      <node id="1554">
+      <node id="1579">
+        <label>drivers/ip/designware/uart/dw_uart_obj.h</label>
+        <link refid="emsk_2drivers_2ip_2designware_2uart_2dw__uart__obj_8h"/>
+        <childnode refid="1580" relation="include">
+        </childnode>
+      </node>
+      <node id="1581">
+        <label>drivers/ip/designware/gpio/dw_gpio_obj.h</label>
+        <link refid="emsk_2drivers_2ip_2designware_2gpio_2dw__gpio__obj_8h"/>
+        <childnode refid="1582" relation="include">
+        </childnode>
+      </node>
+      <node id="1588">
+        <label>drivers/sdcard/emsk_sdcard.h</label>
+        <link refid="emsk__sdcard_8h"/>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1589" relation="include">
+        </childnode>
+      </node>
+      <node id="1565">
+        <label>stddef.h</label>
+      </node>
+      <node id="1573">
+        <label>dev_common.h</label>
+        <link refid="dev__common_8h"/>
+        <childnode refid="1563" relation="include">
+        </childnode>
+      </node>
+      <node id="1564">
+        <label>limits.h</label>
+      </node>
+      <node id="1578">
+        <label>dev_spi.h</label>
+        <link refid="dev__spi_8h"/>
+        <childnode refid="1573" relation="include">
+        </childnode>
+      </node>
+      <node id="1594">
+        <label>common/emsk_timer.h</label>
+        <link refid="emsk__timer_8h"/>
+        <childnode refid="1562" relation="include">
+        </childnode>
+      </node>
+      <node id="1572">
+        <label>dev_iic.h</label>
+        <link refid="dev__iic_8h"/>
+        <childnode refid="1573" relation="include">
+        </childnode>
+      </node>
+      <node id="1577">
+        <label>drivers/ip/designware/spi/dw_spi_obj.h</label>
+        <link refid="emsk_2drivers_2ip_2designware_2spi_2dw__spi__obj_8h"/>
+        <childnode refid="1578" relation="include">
+        </childnode>
+      </node>
+      <node id="1569">
         <label>arc_feature_config.h</label>
         <link refid="arc__feature__config_8h"/>
       </node>
-      <node id="1578">
+      <node id="1590">
+        <label>ff_diskio.h</label>
+      </node>
+      <node id="1567">
+        <label>arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1568" relation="include">
+        </childnode>
+        <childnode refid="1570" relation="include">
+        </childnode>
+      </node>
+      <node id="1593">
         <label>dev_pinmux.h</label>
         <link refid="dev__pinmux_8h_source"/>
-        <childnode refid="1547" relation="include">
+        <childnode refid="1562" relation="include">
+        </childnode>
+      </node>
+      <node id="1596">
+        <label>emsk_hardware.h</label>
+      </node>
+      <node id="1587">
+        <label>ntshell_io_netconn.h</label>
+        <link refid="emsk_2drivers_2ntshell_2ntshell__io__netconn_8h"/>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1586" relation="include">
+        </childnode>
+      </node>
+      <node id="1589">
+        <label>emsk_sdcard_spi.h</label>
+        <link refid="emsk__sdcard__spi_8h"/>
+        <childnode refid="1590" relation="include">
+        </childnode>
+      </node>
+      <node id="1562">
+        <label>embARC_toolchain.h</label>
+        <link refid="emb_a_r_c__toolchain_8h"/>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1564" relation="include">
+        </childnode>
+        <childnode refid="1565" relation="include">
+        </childnode>
+        <childnode refid="1566" relation="include">
+        </childnode>
+      </node>
+      <node id="1584">
+        <label>drivers/ntshell/ntshell_io.h</label>
+        <link refid="emsk_2drivers_2ntshell_2ntshell__io_8h"/>
+        <childnode refid="1585" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+      </node>
+      <node id="1591">
+        <label>drivers/pmwifi/pmwifi.h</label>
+        <link refid="emsk_2drivers_2pmwifi_2pmwifi_8h"/>
+        <childnode refid="1592" relation="include">
+        </childnode>
+      </node>
+      <node id="1582">
+        <label>dw_gpio.h</label>
+        <link refid="dw__gpio_8h"/>
+        <childnode refid="1583" relation="include">
+        </childnode>
+        <childnode refid="1567" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -265,7 +265,8 @@
 <para>designware iic 0 relative baseaddr </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="68" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="68" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="68" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="68" bodyend="-1"/>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="112" endline="154">dw_iic_0_install</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga056effa24c346eea093468b972964193" prot="public" static="no">
         <name>DW_IIC_0_INTNO</name>
@@ -276,7 +277,8 @@
 <para>designware iic 0 interrupt number </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="69" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="69" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="69" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="69" bodyend="-1"/>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="112" endline="154">dw_iic_0_install</referencedby>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga01e2a1d8eb593115c5e92f000365cefb" prot="public" static="no">
         <name>DW_IIC_0_SLVADDR</name>
@@ -287,7 +289,7 @@
 <para>iic 0 slave address working in slave mode </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="70" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="70" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="70" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga473145ac625e95c22073e74f34865ba3" prot="public" static="no">
         <name>DW_IIC_0_TX_FIFO_LEN</name>
@@ -298,7 +300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="71" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="71" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="71" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga2ec4cb783379197492295b7472e88db0" prot="public" static="no">
         <name>DW_IIC_0_RX_FIFO_LEN</name>
@@ -309,7 +311,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="72" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="72" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="72" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga28b561c434a62b8687cad65102248b34" prot="public" static="no">
         <name>DW_IIC_0_MASTER_CODE</name>
@@ -320,7 +322,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="73" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="73" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="73" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga988a4267afba8e9989d9b5f41b3e7098" prot="public" static="no">
         <name>DW_IIC_0_TARADDR</name>
@@ -331,7 +333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="74" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="74" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="74" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf81dd399c19134baa12abcecfd77b983" prot="public" static="no">
         <name>DW_IIC_0_CLK</name>
@@ -342,7 +344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="75" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="75" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="75" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga673226adbc7ed19ba9d9bf7f8a420992" prot="public" static="no">
         <name>DW_IIC_0_IC_CAPLOADING</name>
@@ -353,7 +355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="76" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="76" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="76" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gae3634028ee4e9ec4a8d2b58d1354c46f" prot="public" static="no" mutable="no">
         <type><ref refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gaf976c496ff5f91bfaa0eeb8383fbdd5a" kindref="member">DEV_IIC</ref></type>
@@ -366,7 +368,7 @@
 <para>designware iic object </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="78" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="78" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="78" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="78" bodyend="-1"/>
         <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="112" endline="154">dw_iic_0_install</referencedby>
         <referencedby refid="group___d_e_v_i_c_e___h_a_l___i_i_c_1ga0ce322e609d92e655c3bd4a16d6bff6c" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="255" endline="280">iic_get_dev</referencedby>
       </memberdef>
@@ -381,7 +383,7 @@
 <para>designware iic 0 ctrl </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="79" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="79" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="79" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="79" bodyend="-1"/>
         <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="112" endline="154">dw_iic_0_install</referencedby>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga7f4abe9efd60ed468860ee6dd7bf219c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -399,8 +401,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="67" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="107" bodyend="110"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="67" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="107" bodyend="110"/>
         <references refid="group___d_e_v_i_c_e___d_w___i_i_c___i_m_p_l_e_m_e_n_t_1gacd0ef0be9b50cb36286b1ec5ca663d64" compoundref="dw__iic_8c" startline="1679" endline="1700">dw_iic_isr</references>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="112" endline="154">dw_iic_0_install</referencedby>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga5dce75365e6d96d49e49449540dcf77f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -421,8 +424,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="82" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="82" bodyend="85"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="82" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="82" bodyend="85"/>
         <references refid="group___d_e_v_i_c_e___d_w___i_i_c___i_m_p_l_e_m_e_n_t_1gad75471c3a8e98385a58d6b887316f8f5" compoundref="dw__iic_8c" startline="1170" endline="1264">dw_iic_open</references>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="112" endline="154">dw_iic_0_install</referencedby>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga4fec7bafe9e89e314348234784b8ae18" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -438,8 +442,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="87" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="87" bodyend="90"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="87" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="87" bodyend="90"/>
         <references refid="group___d_e_v_i_c_e___d_w___i_i_c___i_m_p_l_e_m_e_n_t_1ga0d998694893c2cb383ff14e0d0bb7fc7" compoundref="dw__iic_8c" startline="1273" endline="1301">dw_iic_close</references>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="112" endline="154">dw_iic_0_install</referencedby>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga8a90bee5ad034d1eee4677467ea15564" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -460,8 +465,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="92" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="92" bodyend="95"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="92" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="92" bodyend="95"/>
         <references refid="group___d_e_v_i_c_e___d_w___i_i_c___i_m_p_l_e_m_e_n_t_1ga9b0726e986686e7279abb1c4005ce93d" compoundref="dw__iic_8c" startline="1317" endline="1524">dw_iic_control</references>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="112" endline="154">dw_iic_0_install</referencedby>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gac261255f8afde57d9db77b80a938c0b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -482,8 +488,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="97" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="97" bodyend="100"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="97" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="97" bodyend="100"/>
         <references refid="group___d_e_v_i_c_e___d_w___i_i_c___i_m_p_l_e_m_e_n_t_1ga303d46be4dadd7fedf77e96e1144d14e" compoundref="dw__iic_8c" startline="1538" endline="1595">dw_iic_write</references>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="112" endline="154">dw_iic_0_install</referencedby>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gacb7b813dddebcba44fd4383646fd1654" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -504,8 +511,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="102" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="102" bodyend="105"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="102" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="102" bodyend="105"/>
         <references refid="group___d_e_v_i_c_e___d_w___i_i_c___i_m_p_l_e_m_e_n_t_1ga4f612550978cf8c1543325ed9b4a5dbd" compoundref="dw__iic_8c" startline="1609" endline="1672">dw_iic_read</references>
+        <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="112" endline="154">dw_iic_0_install</referencedby>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -521,15 +529,41 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="112" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="112" bodyend="154"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="112" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="112" bodyend="154"/>
         <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gae3634028ee4e9ec4a8d2b58d1354c46f" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="78">dw_iic_0</references>
-        <references refid="structdev__iic_1abaccd43eb5eff8e589fd54529abf3deb" compoundref="dev__iic_8h" startline="416">dev_iic::iic_info</references>
+        <references refid="structdev__iic_1abaccd43eb5eff8e589fd54529abf3deb" compoundref="dev__iic_8h" startline="426">dev_iic::iic_info</references>
         <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gac4b852330a462d4b9345078bea8ae676" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="79">dw_iic_0_ctrl</references>
-        <references refid="structdev__iic__info_1a13f93fe4cc7af7293b1671e8f1ff4d42" compoundref="dev__iic_8h" startline="384">dev_iic_info::iic_ctrl</references>
-        <references refid="structdev__iic__info_1af6488d79474addfec5a4b34993c69251" compoundref="dev__iic_8h" startline="385">dev_iic_info::opn_cnt</references>
-        <references refid="structdev__iic__info_1afa0cae75f31df2cdc3230ead0c25a115" compoundref="dev__iic_8h" startline="391">dev_iic_info::addr_mode</references>
-        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1ggabb0fc11890f54f9950aea71a61531b5ba0d2d3865e7df7b55f8b71a8b29e688ac" compoundref="dev__iic_8h" startline="96">IIC_7BIT_ADDRESS</references>
-        <references refid="structdev__iic__info_1a053f6977e28df5bdc0ed484681aa3a0a" compoundref="dev__iic_8h" startline="393">dev_iic_info::tar_addr</references>
+        <references refid="structdev__iic__info_1a13f93fe4cc7af7293b1671e8f1ff4d42" compoundref="dev__iic_8h" startline="394">dev_iic_info::iic_ctrl</references>
+        <references refid="structdev__iic__info_1af6488d79474addfec5a4b34993c69251" compoundref="dev__iic_8h" startline="395">dev_iic_info::opn_cnt</references>
+        <references refid="structdev__iic__info_1afa0cae75f31df2cdc3230ead0c25a115" compoundref="dev__iic_8h" startline="401">dev_iic_info::addr_mode</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___c_f_g_1ggabb0fc11890f54f9950aea71a61531b5ba0d2d3865e7df7b55f8b71a8b29e688ac" compoundref="dev__iic_8h" startline="106">IIC_7BIT_ADDRESS</references>
+        <references refid="structdev__iic__info_1a053f6977e28df5bdc0ed484681aa3a0a" compoundref="dev__iic_8h" startline="403">dev_iic_info::tar_addr</references>
+        <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gac3800c967368ae4de7b98857fb8d663d" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="68">DW_IIC_0_RELBASE</references>
+        <references refid="structdw__iic__ctrl_1ac932344f1a0028b710e44591ec589443" compoundref="dw__iic_8h" startline="163">dw_iic_ctrl::dw_iic_regs</references>
+        <references refid="structdw__iic__ctrl_1a1111c430b78e5aec9db2d727da82c332" compoundref="dw__iic_8h" startline="165">dw_iic_ctrl::ic_clkhz</references>
+        <references refid="structdw__iic__ctrl_1a669a5a21b1e6c1454c4b8d6beafe2406" compoundref="dw__iic_8h" startline="166">dw_iic_ctrl::ic_caploading</references>
+        <references refid="structdw__iic__ctrl_1a108a29c499446a29626d61ffa11bcafa" compoundref="dw__iic_8h" startline="167">dw_iic_ctrl::support_modes</references>
+        <references refid="structdw__iic__ctrl_1a59f80eae8a76e157428aaa3e9aa461f6" compoundref="dw__iic_8h" startline="168">dw_iic_ctrl::tx_fifo_len</references>
+        <references refid="structdw__iic__ctrl_1a6dcc169444abe7a8b61207931b0fdc60" compoundref="dw__iic_8h" startline="169">dw_iic_ctrl::rx_fifo_len</references>
+        <references refid="structdw__iic__ctrl_1ad0338e1f62ed746e39bc90c0c1bd0be5" compoundref="dw__iic_8h" startline="170">dw_iic_ctrl::iic_master_code</references>
+        <references refid="structdw__iic__ctrl_1a1a53ab552a5a91f80ed594bee71b34e2" compoundref="dw__iic_8h" startline="171">dw_iic_ctrl::retry_cnt</references>
+        <references refid="structdw__iic__ctrl_1a6aa058c9d876223db794e2aae3da1cc4" compoundref="dw__iic_8h" startline="172">dw_iic_ctrl::intno</references>
+        <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga056effa24c346eea093468b972964193" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="69">DW_IIC_0_INTNO</references>
+        <references refid="structdw__iic__ctrl_1a68e06e6698d8ec4a0f1e5e56c6a7f8cf" compoundref="dw__iic_8h" startline="173">dw_iic_ctrl::dw_iic_int_handler</references>
+        <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga7f4abe9efd60ed468860ee6dd7bf219c" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="107" endline="110">dw_iic_0_isr</references>
+        <references refid="structdw__iic__ctrl_1a9603a357f04cfc58b375e81bdf54aaf0" compoundref="dw__iic_8h" startline="177">dw_iic_ctrl::int_status</references>
+        <references refid="structdw__iic__ctrl_1ad2907c210e4c412abbef6b53425e3355" compoundref="dw__iic_8h" startline="178">dw_iic_ctrl::iic_tx_over</references>
+        <references refid="structdw__iic__ctrl_1a5e02b4f313833fbd8da93cab93545c23" compoundref="dw__iic_8h" startline="179">dw_iic_ctrl::iic_rx_over</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1ga0d6e561d2179ad140a99cc270d4ae958" compoundref="dev__iic_8h" startline="427">dev_iic::iic_open</references>
+        <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga5dce75365e6d96d49e49449540dcf77f" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="82" endline="85">dw_iic_0_open</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1ga0bcfec862c7286995496cd125b0192e2" compoundref="dev__iic_8h" startline="430">dev_iic::iic_close</references>
+        <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga4fec7bafe9e89e314348234784b8ae18" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="87" endline="90">dw_iic_0_close</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gae81e4eb8e99d15f417da9f63bf7fe7fd" compoundref="dev__iic_8h" startline="431">dev_iic::iic_control</references>
+        <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga8a90bee5ad034d1eee4677467ea15564" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="92" endline="95">dw_iic_0_control</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gac8d366fcedfd479e5f00c4680e89e2c6" compoundref="dev__iic_8h" startline="432">dev_iic::iic_write</references>
+        <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gac261255f8afde57d9db77b80a938c0b2" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="97" endline="100">dw_iic_0_write</references>
+        <references refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gaf907d1ec86dd20714b655241f9804adb" compoundref="dev__iic_8h" startline="433">dev_iic::iic_read</references>
+        <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gacb7b813dddebcba44fd4383646fd1654" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="102" endline="105">dw_iic_0_read</references>
         <referencedby refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaab099b120feacae6d8ca167725b9ad5f" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="286" endline="294">dw_iic_all_install</referencedby>
       </memberdef>
       </sectiondef>
@@ -543,7 +577,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="60" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="60" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="60" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="60" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -562,7 +596,8 @@
 <para>get an <ref refid="structdev__iic" kindref="compound">iic device</ref> by iic device id. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="255" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="255" bodyend="280"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="255" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="255" bodyend="280"/>
+        <referencedby refid="group___b_o_a_r_d___h_s_d_k___d_r_v___i_o_1ga701d2fab00f692f41c27c1b5d0a5d24d" compoundref="hsdk__io_8c" startline="71" endline="114">hsdk_led_init</referencedby>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaab099b120feacae6d8ca167725b9ad5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -579,7 +614,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="286" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="286" bodyend="294"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" line="286" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c" bodystart="286" bodyend="294"/>
         <references refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="112" endline="154">dw_iic_0_install</references>
         <references refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga7c8ad461a10a131f032af0fe9364da2f" compoundref="hsdk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="207" endline="249">dw_iic_1_install</references>
         <referencedby refid="group___d_e_v_i_c_e___h_a_l___i_i_c_1ga0ce322e609d92e655c3bd4a16d6bff6c" compoundref="emsk_2drivers_2ip_2designware_2iic_2dw__iic__obj_8c" startline="255" endline="280">iic_get_dev</referencedby>
@@ -629,20 +664,20 @@
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emsk_8h" kindref="compound">emsk/emsk.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_CLOCK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CLK_BUS_APB</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="preprocessor">#if<sp/>(USE_DW_IIC_0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga7f4abe9efd60ed468860ee6dd7bf219c" kindref="member">dw_iic_0_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_CLOCK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CLK_BUS_APB</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor">#if<sp/>(USE_DW_IIC_0)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga7f4abe9efd60ed468860ee6dd7bf219c" kindref="member">dw_iic_0_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
 <codeline lineno="68" refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gac3800c967368ae4de7b98857fb8d663d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_0_RELBASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(REL_REGBASE_I2C0)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="69" refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga056effa24c346eea093468b972964193" refkind="member"><highlight class="preprocessor">#define<sp/>DW_IIC_0_INTNO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(INTNO_I2C0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="70" refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga01e2a1d8eb593115c5e92f000365cefb" refkind="member"><highlight class="preprocessor">#define<sp/>DW_IIC_0_SLVADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x55)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="71"><highlight class="preprocessor">#define<sp/>DW_IIC_0_TX_FIFO_LEN<sp/><sp/><sp/><sp/>(32)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_0_RX_FIFO_LEN<sp/><sp/><sp/><sp/>(32)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_0_MASTER_CODE<sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_0_TARADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x55)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_0_CLK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DW_IIC_CLOCK)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_0_IC_CAPLOADING<sp/><sp/>(DW_IIC_CAP_LOADING_100PF)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor">#define<sp/>DW_IIC_0_TX_FIFO_LEN<sp/><sp/><sp/><sp/>(32)</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_0_RX_FIFO_LEN<sp/><sp/><sp/><sp/>(32)</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_0_MASTER_CODE<sp/><sp/><sp/><sp/>(0)</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_0_TARADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x55)</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_0_CLK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DW_IIC_CLOCK)</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_0_IC_CAPLOADING<sp/><sp/>(DW_IIC_CAP_LOADING_100PF)</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="78" refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gae3634028ee4e9ec4a8d2b58d1354c46f" refkind="member"><highlight class="normal"><ref refid="structdev__iic" kindref="compound">DEV_IIC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gae3634028ee4e9ec4a8d2b58d1354c46f" kindref="member">dw_iic_0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="79" refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gac4b852330a462d4b9345078bea8ae676" refkind="member"><highlight class="normal"><ref refid="structdw__iic__ctrl" kindref="compound">DW_IIC_CTRL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gac4b852330a462d4b9345078bea8ae676" kindref="member">dw_iic_0_ctrl</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="82" refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga5dce75365e6d96d49e49449540dcf77f" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga5dce75365e6d96d49e49449540dcf77f" kindref="member">dw_iic_0_open</ref><sp/>(uint32_t<sp/>mode,<sp/>uint32_t<sp/>param)</highlight></codeline>
@@ -711,20 +746,20 @@
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dw_iic_ptr-&gt;<ref refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gac8d366fcedfd479e5f00c4680e89e2c6" kindref="member">iic_write</ref><sp/>=<sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gac261255f8afde57d9db77b80a938c0b2" kindref="member">dw_iic_0_write</ref>;</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dw_iic_ptr-&gt;<ref refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gaf907d1ec86dd20714b655241f9804adb" kindref="member">iic_read</ref><sp/>=<sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gacb7b813dddebcba44fd4383646fd1654" kindref="member">dw_iic_0_read</ref>;</highlight></codeline>
 <codeline lineno="154"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_IIC_0<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"></highlight></codeline>
-<codeline lineno="162"><highlight class="preprocessor">#if<sp/>(USE_DW_IIC_1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga9b7402764577f9e616c33bd6100ce2b6" kindref="member">dw_iic_1_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_IIC_0<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor">#if<sp/>(USE_DW_IIC_1)</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga9b7402764577f9e616c33bd6100ce2b6" kindref="member">dw_iic_1_isr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_1_RELBASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(REL_REGBASE_I2C1)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="165"><highlight class="preprocessor">#define<sp/>DW_IIC_1_INTNO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(INTNO_I2C1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="166"><highlight class="preprocessor">#define<sp/>DW_IIC_1_SLVADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x56)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="167"><highlight class="preprocessor">#define<sp/>DW_IIC_1_TX_FIFO_LEN<sp/><sp/><sp/><sp/>(32)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_1_RX_FIFO_LEN<sp/><sp/><sp/><sp/>(32)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_1_MASTER_CODE<sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_1_TARADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x56)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_1_CLK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DW_IIC_CLOCK)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_1_IC_CAPLOADING<sp/><sp/>(DW_IIC_CAP_LOADING_100PF)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor">#define<sp/>DW_IIC_1_TX_FIFO_LEN<sp/><sp/><sp/><sp/>(32)</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_1_RX_FIFO_LEN<sp/><sp/><sp/><sp/>(32)</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_1_MASTER_CODE<sp/><sp/><sp/><sp/>(1)</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_1_TARADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x56)</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_1_CLK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(DW_IIC_CLOCK)</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DW_IIC_1_IC_CAPLOADING<sp/><sp/>(DW_IIC_CAP_LOADING_100PF)</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><ref refid="structdev__iic" kindref="compound">DEV_IIC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga0bf1815935410074872879ce748c75d4" kindref="member">dw_iic_1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><ref refid="structdw__iic__ctrl" kindref="compound">DW_IIC_CTRL</ref><sp/><sp/><sp/><sp/><sp/><ref refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga82a54be5198e4415eb21ce9e072ca075" kindref="member">dw_iic_1_ctrl</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="178"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga03581b49a4d71c080bf437b7c80e2d90" kindref="member">dw_iic_1_open</ref><sp/>(uint32_t<sp/>mode,<sp/>uint32_t<sp/>param)</highlight></codeline>
@@ -793,8 +828,8 @@
 <codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dw_iic_ptr-&gt;<ref refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gac8d366fcedfd479e5f00c4680e89e2c6" kindref="member">iic_write</ref><sp/>=<sp/><ref refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga1e67e271a1a610c03118862455fddb5a" kindref="member">dw_iic_1_write</ref>;</highlight></codeline>
 <codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dw_iic_ptr-&gt;<ref refid="group___d_e_v_i_c_e___h_a_l___i_i_c___d_e_v_s_t_r_u_c_t_1gaf907d1ec86dd20714b655241f9804adb" kindref="member">iic_read</ref><sp/>=<sp/><ref refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga08f73e294271c5f7cad81a42e7dce290" kindref="member">dw_iic_1_read</ref>;</highlight></codeline>
 <codeline lineno="250"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_IIC_1<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_DW_IIC_1<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="252"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="255" refid="group___d_e_v_i_c_e___h_a_l___i_i_c_1ga0ce322e609d92e655c3bd4a16d6bff6c" refkind="member"><highlight class="normal"><ref refid="structdev__iic" kindref="compound">DEV_IIC_PTR</ref><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga0ce322e609d92e655c3bd4a16d6bff6c" kindref="member">iic_get_dev</ref>(int32_t<sp/>iic_id)</highlight></codeline>
 <codeline lineno="256"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>install_flag<sp/>=<sp/>0;</highlight></codeline>
@@ -806,17 +841,17 @@
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"></highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(iic_id)<sp/>{</highlight></codeline>
-<codeline lineno="266"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_IIC_0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga9dad39587e7f20b0e80aca04791dbb09" kindref="member">DW_IIC_0_ID</ref>:</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_IIC_0)</highlight></codeline>
+<codeline lineno="267"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1ga9dad39587e7f20b0e80aca04791dbb09" kindref="member">DW_IIC_0_ID</ref>:</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gae3634028ee4e9ec4a8d2b58d1354c46f" kindref="member">dw_iic_0</ref>;</highlight></codeline>
 <codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="271"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_IIC_1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gae817f416141131c7db1520bf0f4310a5" kindref="member">DW_IIC_1_ID</ref>:</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="271"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_IIC_1)</highlight></codeline>
+<codeline lineno="272"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gae817f416141131c7db1520bf0f4310a5" kindref="member">DW_IIC_1_ID</ref>:</highlight></codeline>
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga0bf1815935410074872879ce748c75d4" kindref="member">dw_iic_1</ref>;</highlight></codeline>
 <codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="276"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
@@ -824,15 +859,15 @@
 <codeline lineno="281"><highlight class="normal"></highlight></codeline>
 <codeline lineno="286" refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaab099b120feacae6d8ca167725b9ad5f" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaab099b120feacae6d8ca167725b9ad5f" kindref="member">dw_iic_all_install</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="287"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_IIC_0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" kindref="member">dw_iic_0_install</ref>();</highlight></codeline>
-<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="291"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_IIC_1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga7c8ad461a10a131f032af0fe9364da2f" kindref="member">dw_iic_1_install</ref>();</highlight></codeline>
-<codeline lineno="293"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="294"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_IIC_0)</highlight></codeline>
+<codeline lineno="289"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___b_o_a_r_d___e_m_s_k___d_r_v___d_w___i_i_c___o_b_j_1gaf86393b646405226bfee2c08903deb5e" kindref="member">dw_iic_0_install</ref>();</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="291"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>(USE_DW_IIC_1)</highlight></codeline>
+<codeline lineno="292"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___b_o_a_r_d___h_s_d_k___d_r_v___d_w___i_i_c___o_b_j_1ga7c8ad461a10a131f032af0fe9364da2f" kindref="member">dw_iic_1_install</ref>();</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="294"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
 <codeline lineno="295"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/board/emsk/drivers/ip/designware/iic/dw_iic_obj.c"/>
   </compounddef>
 </doxygen>

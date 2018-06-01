@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="nsim_2drivers_2ntshell_2ntshell__io__uart_8c" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="nsim_2drivers_2ntshell_2ntshell__io__uart_8c" kind="file">
     <compoundname>nsim/drivers/ntshell/ntshell_io_uart.c</compoundname>
     <includes refid="emb_a_r_c__toolchain_8h" local="yes">embARC_toolchain.h</includes>
     <includes refid="emb_a_r_c__error_8h" local="yes">embARC_error.h</includes>
@@ -11,76 +11,125 @@
     <includes local="yes">ntshell_task.h</includes>
     <includes refid="nsim_8h" local="yes">nsim/nsim.h</includes>
     <incdepgraph>
-      <node id="3332">
-        <label>embARC_toolchain.h</label>
-        <link refid="emb_a_r_c__toolchain_8h"/>
-        <childnode refid="3333" relation="include">
-        </childnode>
-        <childnode refid="3334" relation="include">
-        </childnode>
-        <childnode refid="3335" relation="include">
-        </childnode>
-        <childnode refid="3336" relation="include">
-        </childnode>
-      </node>
-      <node id="3336">
+      <node id="3351">
         <label>stdbool.h</label>
       </node>
-      <node id="3347">
+      <node id="3355">
+        <label>dev_uart.h</label>
+        <link refid="dev__uart_8h"/>
+        <childnode refid="3356" relation="include">
+        </childnode>
+      </node>
+      <node id="3354">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3362">
         <label>arc_em.h</label>
         <link refid="arc__em_8h"/>
+        <childnode refid="3363" relation="include">
+        </childnode>
+      </node>
+      <node id="3363">
+        <label>arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3361" relation="include">
+        </childnode>
+      </node>
+      <node id="3359">
+        <label>ntshell_task.h</label>
+      </node>
+      <node id="3348">
+        <label>stdint.h</label>
+      </node>
+      <node id="3353">
+        <label>arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="3347" relation="include">
+        </childnode>
+      </node>
+      <node id="3350">
+        <label>stddef.h</label>
+      </node>
+      <node id="3356">
+        <label>dev_common.h</label>
+        <link refid="dev__common_8h"/>
         <childnode refid="3348" relation="include">
         </childnode>
       </node>
-      <node id="3339">
-        <label>stdarg.h</label>
+      <node id="3349">
+        <label>limits.h</label>
       </node>
-      <node id="3331">
-        <label>ntshell_io_uart.c</label>
-        <link refid="nsim_2drivers_2ntshell_2ntshell__io__uart_8c"/>
-        <childnode refid="3332" relation="include">
-        </childnode>
-        <childnode refid="3337" relation="include">
-        </childnode>
-        <childnode refid="3339" relation="include">
-        </childnode>
-        <childnode refid="3340" relation="include">
-        </childnode>
-        <childnode refid="3342" relation="include">
-        </childnode>
-        <childnode refid="3343" relation="include">
-        </childnode>
-        <childnode refid="3344" relation="include">
-        </childnode>
-        <childnode refid="3345" relation="include">
-        </childnode>
-      </node>
-      <node id="3343">
-        <label>ntshell_io_uart.h</label>
-        <link refid="nsim_2drivers_2ntshell_2ntshell__io__uart_8h"/>
-        <childnode refid="3332" relation="include">
-        </childnode>
-        <childnode refid="3344" relation="include">
-        </childnode>
-      </node>
-      <node id="3344">
-        <label>ntshell_task.h</label>
-      </node>
-      <node id="3340">
-        <label>dev_uart.h</label>
-        <link refid="dev__uart_8h"/>
-        <childnode refid="3341" relation="include">
-        </childnode>
-      </node>
-      <node id="3333">
-        <label>stdint.h</label>
-      </node>
-      <node id="3345">
+      <node id="3360">
         <label>nsim/nsim.h</label>
         <link refid="nsim_8h"/>
-        <childnode refid="3346" relation="include">
+        <childnode refid="3361" relation="include">
         </childnode>
+        <childnode refid="3362" relation="include">
+        </childnode>
+        <childnode refid="3364" relation="include">
+        </childnode>
+        <childnode refid="3365" relation="include">
+        </childnode>
+        <childnode refid="3366" relation="include">
+        </childnode>
+      </node>
+      <node id="3365">
+        <label>drivers/ntshell/ntshell_io.h</label>
+        <link refid="nsim_2drivers_2ntshell_2ntshell__io_8h"/>
+        <childnode refid="3358" relation="include">
+        </childnode>
+      </node>
+      <node id="3346">
+        <label>ntshell_io_uart.c</label>
+        <link refid="nsim/drivers/ntshell/ntshell_io_uart.c"/>
         <childnode refid="3347" relation="include">
+        </childnode>
+        <childnode refid="3352" relation="include">
+        </childnode>
+        <childnode refid="3354" relation="include">
+        </childnode>
+        <childnode refid="3355" relation="include">
+        </childnode>
+        <childnode refid="3357" relation="include">
+        </childnode>
+        <childnode refid="3358" relation="include">
+        </childnode>
+        <childnode refid="3359" relation="include">
+        </childnode>
+        <childnode refid="3360" relation="include">
+        </childnode>
+      </node>
+      <node id="3358">
+        <label>ntshell_io_uart.h</label>
+        <link refid="nsim_2drivers_2ntshell_2ntshell__io__uart_8h"/>
+        <childnode refid="3347" relation="include">
+        </childnode>
+        <childnode refid="3359" relation="include">
+        </childnode>
+      </node>
+      <node id="3361">
+        <label>arc_feature_config.h</label>
+        <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="3357">
+        <label>xprintf.h</label>
+      </node>
+      <node id="3364">
+        <label>drivers/uart/nsim_uart_obj.h</label>
+        <link refid="nsim__uart__obj_8h"/>
+        <childnode refid="3355" relation="include">
+        </childnode>
+      </node>
+      <node id="3366">
+        <label>common/nsim_timer.h</label>
+        <link refid="nsim__timer_8h"/>
+        <childnode refid="3347" relation="include">
+        </childnode>
+      </node>
+      <node id="3347">
+        <label>embARC_toolchain.h</label>
+        <link refid="emb_a_r_c__toolchain_8h"/>
+        <childnode refid="3348" relation="include">
         </childnode>
         <childnode refid="3349" relation="include">
         </childnode>
@@ -89,61 +138,12 @@
         <childnode refid="3351" relation="include">
         </childnode>
       </node>
-      <node id="3338">
-        <label>arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="3332" relation="include">
-        </childnode>
-      </node>
-      <node id="3335">
-        <label>stddef.h</label>
-      </node>
-      <node id="3334">
-        <label>limits.h</label>
-      </node>
-      <node id="3337">
+      <node id="3352">
         <label>embARC_error.h</label>
         <link refid="emb_a_r_c__error_8h"/>
-        <childnode refid="3333" relation="include">
+        <childnode refid="3348" relation="include">
         </childnode>
-        <childnode refid="3338" relation="include">
-        </childnode>
-      </node>
-      <node id="3348">
-        <label>arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="3346" relation="include">
-        </childnode>
-      </node>
-      <node id="3342">
-        <label>xprintf.h</label>
-      </node>
-      <node id="3350">
-        <label>drivers/ntshell/ntshell_io.h</label>
-        <link refid="nsim_2drivers_2ntshell_2ntshell__io_8h"/>
-        <childnode refid="3343" relation="include">
-        </childnode>
-      </node>
-      <node id="3341">
-        <label>dev_common.h</label>
-        <link refid="dev__common_8h"/>
-        <childnode refid="3333" relation="include">
-        </childnode>
-      </node>
-      <node id="3349">
-        <label>drivers/uart/nsim_uart_obj.h</label>
-        <link refid="nsim__uart__obj_8h"/>
-        <childnode refid="3340" relation="include">
-        </childnode>
-      </node>
-      <node id="3346">
-        <label>arc_feature_config.h</label>
-        <link refid="arc__feature__config_8h"/>
-      </node>
-      <node id="3351">
-        <label>common/nsim_timer.h</label>
-        <link refid="nsim__timer_8h"/>
-        <childnode refid="3332" relation="include">
+        <childnode refid="3353" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="63" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="63" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="63" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="63" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -175,7 +175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="57" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="65" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="57" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group___b_o_a_r_d___n_s_i_m___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o___u_a_r_t_1gaf8d5a72faf358cc9f95a96814de4323c" prot="public" static="no">
         <type>struct <ref refid="structntshell__io__uart" kindref="compound">ntshell_io_uart</ref> *</type>
@@ -188,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="65" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="65" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="65" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="65" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -203,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="204" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="204" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="204" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="204" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group___b_o_a_r_d___n_s_i_m___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o___u_a_r_t_1ga2def4fccecf537f066324fe30c81d88f" prot="public" static="yes" mutable="no">
         <type><ref refid="structntshell__io__uart" kindref="compound">NTSHELL_IO_UART</ref></type>
@@ -220,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="205" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="205" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="205" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="205" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="group___b_o_a_r_d___n_s_i_m___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o___u_a_r_t_1ga01a183299e72c9e9831763eaf55041aa" prot="public" static="no" mutable="no">
         <type>NTSHELL_IO</type>
@@ -244,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="215" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="215" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="215" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="215" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -263,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="74" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="74" bodyend="96"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="74" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="74" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___n_s_i_m___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o___u_a_r_t_1gaab9cc355ebf70b63b89d7fd8bd563b56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -288,7 +288,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="98" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="98" bodyend="116"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="98" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="98" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___n_s_i_m___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o___u_a_r_t_1gab2d1b17072fa9f34f01162186bf93cfc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -313,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="118" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="118" bodyend="136"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="118" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="118" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___n_s_i_m___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o___u_a_r_t_1ga2cc00590749cf33db11ef7fb221784a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -338,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="138" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="138" bodyend="158"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="138" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="138" bodyend="158"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___n_s_i_m___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o___u_a_r_t_1ga9452d501bdcf02b298c0b192dcc14680" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -359,7 +359,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="160" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="160" bodyend="174"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="160" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="160" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___n_s_i_m___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o___u_a_r_t_1gaba9e7538ef347e695afac43761a539a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -375,7 +375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="178" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="178" bodyend="181"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="178" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="178" bodyend="181"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___n_s_i_m___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o___u_a_r_t_1ga1be0028ffde9b9fd33fa597f9914e1c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -396,7 +396,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="183" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="183" bodyend="186"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="183" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="183" bodyend="186"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___n_s_i_m___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o___u_a_r_t_1gaf9cd527f2cedd06ba8758b838d9c9922" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -417,7 +417,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="188" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="188" bodyend="191"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="188" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="188" bodyend="191"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___n_s_i_m___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o___u_a_r_t_1ga32dea110a2dc181f165c0e2a3ef91910" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -437,7 +437,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="193" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="193" bodyend="200"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="193" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="193" bodyend="200"/>
       </memberdef>
       <memberdef kind="function" id="group___b_o_a_r_d___n_s_i_m___d_r_v___m_i_d___n_t_s_h_e_l_l___i_o___u_a_r_t_1ga836fec0e8b665adf827955775dca185b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -454,7 +454,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="202" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="210" bodyend="213"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" line="202" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c" bodystart="210" bodyend="213"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -496,8 +496,8 @@
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="emb_a_r_c__error_8h" kindref="compound">embARC_error.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_NTSHELL<sp/></highlight><highlight class="comment">/*<sp/>only<sp/>available<sp/>when<sp/>enable<sp/>ntshell<sp/>middleware<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev__uart_8h" kindref="compound">dev_uart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MID_NTSHELL<sp/></highlight><highlight class="comment">/*<sp/>only<sp/>available<sp/>when<sp/>enable<sp/>ntshell<sp/>middleware<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dev__uart_8h" kindref="compound">dev_uart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;xprintf.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nsim_2drivers_2ntshell_2ntshell__io__uart_8h" kindref="compound">ntshell_io_uart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -505,8 +505,8 @@
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nsim_8h" kindref="compound">nsim/nsim.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NSIM_NTSHELL_UART_CHECK_EXP(EXPR,<sp/>ERROR_CODE)<sp/><sp/><sp/>CHECK_EXP(EXPR,<sp/>ercd,<sp/>ERROR_CODE,<sp/>error_exit)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NSIM_NTSHELL_UART_CHECK_EXP(EXPR,<sp/>ERROR_CODE)<sp/><sp/><sp/>CHECK_EXP(EXPR,<sp/>ercd,<sp/>ERROR_CODE,<sp/>error_exit)</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structntshell__io__uart" kindref="compound">ntshell_io_uart</ref><sp/><ref refid="structntshell__io__uart" kindref="compound">NTSHELL_IO_UART</ref>,<sp/>*<ref refid="structntshell__io__uart" kindref="compound">NTSHELL_IO_UART_PTR</ref>;</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structntshell__io__uart" kindref="compound">ntshell_io_uart</ref><sp/>{</highlight></codeline>
@@ -619,8 +619,8 @@
 <codeline lineno="174"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"></highlight></codeline>
 <codeline lineno="176"><highlight class="normal"></highlight></codeline>
-<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USE_NSIM_NTSHELL_UART_1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>ntshell_uart_1_nt_ioinit(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>USE_NSIM_NTSHELL_UART_1</highlight></codeline>
+<codeline lineno="178"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int32_t<sp/>ntshell_uart_1_nt_ioinit(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="179"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ntshell_uart_nt_ioinit(&amp;ntshell_uart_1);</highlight></codeline>
 <codeline lineno="181"><highlight class="normal">}</highlight></codeline>
@@ -672,6 +672,6 @@
 <codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
 <codeline lineno="229"><highlight class="preprocessor">#endif<sp/></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/board/nsim/drivers/ntshell/ntshell_io_uart.c"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/board/nsim/drivers/ntshell/ntshell_io_uart.c"/>
   </compounddef>
 </doxygen>

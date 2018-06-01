@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="board__nsim__declaration_8doc" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="board__nsim__declaration_8doc" kind="file">
     <compoundname>board_nsim_declaration.doc</compoundname>
     <briefdescription>
     </briefdescription>
@@ -32,6 +32,6 @@
 <codeline lineno="52"><highlight class="comment"><sp/>*<sp/>4th<sp/>level<sp/>group<sp/>definition</highlight></codeline>
 <codeline lineno="53"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="documents/doxygen/board_nsim_declaration.doc"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/doc/documents/doxygen/board_nsim_declaration.doc"/>
   </compounddef>
 </doxygen>

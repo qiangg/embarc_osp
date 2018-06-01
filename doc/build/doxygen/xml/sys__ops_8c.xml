@@ -1,125 +1,125 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="sys__ops_8c" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="sys__ops_8c" kind="file">
     <compoundname>sys_ops.c</compoundname>
     <includes refid="arc__builtin_8h" local="yes">arc_builtin.h</includes>
     <includes refid="arc__exception_8h" local="yes">arc_exception.h</includes>
     <includes refid="secureshield__lib_8h" local="yes">secureshield_lib.h</includes>
     <incdepgraph>
-      <node id="4017">
-        <label>embARC_toolchain.h</label>
-        <link refid="emb_a_r_c__toolchain_8h"/>
-        <childnode refid="4018" relation="include">
-        </childnode>
-        <childnode refid="4019" relation="include">
-        </childnode>
-        <childnode refid="4020" relation="include">
-        </childnode>
-        <childnode refid="4021" relation="include">
-        </childnode>
-      </node>
-      <node id="4021">
+      <node id="4050">
         <label>stdbool.h</label>
       </node>
-      <node id="4018">
-        <label>stdint.h</label>
-      </node>
-      <node id="4027">
-        <label>secureshield_vmpu_exports.h</label>
-        <link refid="secureshield__vmpu__exports_8h_source"/>
-      </node>
-      <node id="4025">
-        <label>secureshield_lib.h</label>
-        <link refid="secureshield__lib_8h_source"/>
-        <childnode refid="4018" relation="include">
-        </childnode>
-        <childnode refid="4026" relation="include">
-        </childnode>
-        <childnode refid="4027" relation="include">
-        </childnode>
-        <childnode refid="4028" relation="include">
-        </childnode>
-        <childnode refid="4029" relation="include">
-        </childnode>
-        <childnode refid="4030" relation="include">
-        </childnode>
-        <childnode refid="4031" relation="include">
-        </childnode>
-        <childnode refid="4033" relation="include">
-        </childnode>
-      </node>
-      <node id="4016">
-        <label>arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="4017" relation="include">
-        </childnode>
-      </node>
-      <node id="4020">
-        <label>stddef.h</label>
-      </node>
-      <node id="4019">
-        <label>limits.h</label>
-      </node>
-      <node id="4031">
-        <label>container_config.h</label>
-        <link refid="container__config_8h_source"/>
-        <childnode refid="4032" relation="include">
-        </childnode>
-      </node>
-      <node id="4022">
-        <label>arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="4017" relation="include">
-        </childnode>
-        <childnode refid="4023" relation="include">
-        </childnode>
-        <childnode refid="4016" relation="include">
-        </childnode>
-      </node>
-      <node id="4023">
-        <label>arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="4024" relation="include">
-        </childnode>
-      </node>
-      <node id="4015">
-        <label>sys_ops.c</label>
-        <link refid="sys__ops_8c"/>
-        <childnode refid="4016" relation="include">
-        </childnode>
-        <childnode refid="4022" relation="include">
-        </childnode>
-        <childnode refid="4025" relation="include">
-        </childnode>
-      </node>
-      <node id="4032">
-        <label>code_gen_macros.h</label>
-        <link refid="code__gen__macros_8h_source"/>
-      </node>
-      <node id="4029">
-        <label>secureshield_int_exports.h</label>
-        <link refid="secureshield__int__exports_8h_source"/>
-      </node>
-      <node id="4028">
-        <label>secureshield_secure_call_exports.h</label>
-        <link refid="secureshield__secure__call__exports_8h_source"/>
-      </node>
-      <node id="4026">
+      <node id="4055">
         <label>secureshield_exports.h</label>
         <link refid="secureshield__exports_8h_source"/>
       </node>
-      <node id="4030">
+      <node id="4052">
+        <label>arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="4053" relation="include">
+        </childnode>
+      </node>
+      <node id="4060">
+        <label>container_config.h</label>
+        <link refid="container__config_8h_source"/>
+        <childnode refid="4061" relation="include">
+        </childnode>
+      </node>
+      <node id="4059">
         <label>secureshield_sys_ops_exports.h</label>
         <link refid="secureshield__sys__ops__exports_8h_source"/>
       </node>
-      <node id="4024">
+      <node id="4047">
+        <label>stdint.h</label>
+      </node>
+      <node id="4045">
+        <label>arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="4046" relation="include">
+        </childnode>
+      </node>
+      <node id="4044">
+        <label>sys_ops.c</label>
+        <link refid="sys_ops.c"/>
+        <childnode refid="4045" relation="include">
+        </childnode>
+        <childnode refid="4051" relation="include">
+        </childnode>
+        <childnode refid="4054" relation="include">
+        </childnode>
+      </node>
+      <node id="4056">
+        <label>secureshield_vmpu_exports.h</label>
+        <link refid="secureshield__vmpu__exports_8h_source"/>
+      </node>
+      <node id="4049">
+        <label>stddef.h</label>
+      </node>
+      <node id="4057">
+        <label>secureshield_secure_call_exports.h</label>
+        <link refid="secureshield__secure__call__exports_8h_source"/>
+      </node>
+      <node id="4054">
+        <label>secureshield_lib.h</label>
+        <link refid="secureshield__lib_8h_source"/>
+        <childnode refid="4047" relation="include">
+        </childnode>
+        <childnode refid="4055" relation="include">
+        </childnode>
+        <childnode refid="4056" relation="include">
+        </childnode>
+        <childnode refid="4057" relation="include">
+        </childnode>
+        <childnode refid="4058" relation="include">
+        </childnode>
+        <childnode refid="4059" relation="include">
+        </childnode>
+        <childnode refid="4060" relation="include">
+        </childnode>
+        <childnode refid="4062" relation="include">
+        </childnode>
+      </node>
+      <node id="4048">
+        <label>limits.h</label>
+      </node>
+      <node id="4062">
+        <label>container_call.h</label>
+        <link refid="container__call_8h_source"/>
+        <childnode refid="4053" relation="include">
+        </childnode>
+      </node>
+      <node id="4053">
         <label>arc_feature_config.h</label>
         <link refid="arc__feature__config_8h"/>
       </node>
-      <node id="4033">
-        <label>container_call.h</label>
-        <link refid="container__call_8h_source"/>
-        <childnode refid="4024" relation="include">
+      <node id="4051">
+        <label>arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="4046" relation="include">
+        </childnode>
+        <childnode refid="4052" relation="include">
+        </childnode>
+        <childnode refid="4045" relation="include">
+        </childnode>
+      </node>
+      <node id="4061">
+        <label>code_gen_macros.h</label>
+        <link refid="code__gen__macros_8h_source"/>
+      </node>
+      <node id="4058">
+        <label>secureshield_int_exports.h</label>
+        <link refid="secureshield__int__exports_8h_source"/>
+      </node>
+      <node id="4046">
+        <label>embARC_toolchain.h</label>
+        <link refid="emb_a_r_c__toolchain_8h"/>
+        <childnode refid="4047" relation="include">
+        </childnode>
+        <childnode refid="4048" relation="include">
+        </childnode>
+        <childnode refid="4049" relation="include">
+        </childnode>
+        <childnode refid="4050" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -157,13 +157,13 @@
 <codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
 <codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
 <codeline lineno="29"><highlight class="comment">---------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LIB_SECURESHIELD_OVERRIDES</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__builtin_8h" kindref="compound">arc_builtin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>LIB_SECURESHIELD_OVERRIDES</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__builtin_8h" kindref="compound">arc_builtin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arc__exception_8h" kindref="compound">arc_exception.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;secureshield_lib.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>SECURESHIELD_VERSION<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal">uint32_t<sp/>secureshield_arc_lr_reg(uint32_t<sp/>addr)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>SECURESHIELD_VERSION<sp/>==<sp/>1</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal">uint32_t<sp/>secureshield_arc_lr_reg(uint32_t<sp/>addr)</highlight></codeline>
 <codeline lineno="37"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group___a_r_c___h_a_l___c_o_r_e___c_o_m_m_1ga547f9841aa3efb0af6448e4106e19701" kindref="member">_arc_in_user_mode</ref>()<sp/>==<sp/>0)<sp/>{</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group___a_r_c___h_a_l___b_u_i_l_t_i_n_1ga9a3e0a1903d9a64e35b3ad3866ce5b0f" kindref="member">_arc_lr_reg</ref>(addr);</highlight></codeline>
@@ -190,8 +190,8 @@
 <codeline lineno="60"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SECURESHIELD_SECURE_CALL(SECURESHIELD_SECURE_CALL_SYS,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>SECURESHIELD_SYS_CONTAINER_ID_CALLER);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>SECURESHIELD_VERSION<sp/>==<sp/>2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>SECURESHIELD_VERSION<sp/>==<sp/>2</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal">uint32_t<sp/>secureshield_arc_lr_reg(uint32_t<sp/>addr)</highlight></codeline>
 <codeline lineno="66"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SECURESHIELD_SECURE_CALL(SECURESHIELD_SECURE_CALL_SYS,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>SECURESHIELD_SYS_LR,<sp/>addr);</highlight></codeline>
@@ -232,6 +232,6 @@
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/export/src/sys_ops.c"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/export/src/sys_ops.c"/>
   </compounddef>
 </doxygen>

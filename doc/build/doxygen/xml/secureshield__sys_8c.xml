@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="secureshield__sys_8c" kind="file" language="C++">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="secureshield__sys_8c" kind="file">
     <compoundname>secureshield_sys.c</compoundname>
     <includes refid="secureshield_8h" local="yes">secureshield.h</includes>
     <includes refid="secureshield__vmpu_8h" local="yes">secureshield_vmpu.h</includes>
@@ -8,137 +8,137 @@
     <includes refid="secureshield__container__stack_8h" local="yes">secureshield_container_stack.h</includes>
     <includes refid="secureshield__secure__call__exports_8h" local="yes">secureshield_secure_call_exports.h</includes>
     <incdepgraph>
-      <node id="3890">
-        <label>embARC_toolchain.h</label>
-        <link refid="emb_a_r_c__toolchain_8h"/>
-        <childnode refid="3891" relation="include">
-        </childnode>
-        <childnode refid="3892" relation="include">
-        </childnode>
-        <childnode refid="3893" relation="include">
-        </childnode>
-        <childnode refid="3894" relation="include">
-        </childnode>
-      </node>
-      <node id="3894">
+      <node id="3923">
         <label>stdbool.h</label>
       </node>
-      <node id="3891">
-        <label>stdint.h</label>
-      </node>
-      <node id="3905">
-        <label>secureshield_vmpu_exports.h</label>
-        <link refid="secureshield__vmpu__exports_8h_source"/>
-      </node>
-      <node id="3898">
-        <label>embARC_debug.h</label>
-        <link refid="emb_a_r_c__debug_8h"/>
-        <childnode refid="3899" relation="include">
-        </childnode>
-      </node>
-      <node id="3897">
-        <label>arc_builtin.h</label>
-        <link refid="arc__builtin_8h"/>
-        <childnode refid="3890" relation="include">
-        </childnode>
-      </node>
-      <node id="3902">
-        <label>secureshield_config.h</label>
-        <link refid="secureshield__config_8h_source"/>
-        <childnode refid="3903" relation="include">
-        </childnode>
-      </node>
-      <node id="3893">
-        <label>stddef.h</label>
-      </node>
-      <node id="3904">
-        <label>secureshield_vmpu.h</label>
-        <link refid="secureshield__vmpu_8h_source"/>
-        <childnode refid="3905" relation="include">
-        </childnode>
-      </node>
-      <node id="3892">
-        <label>limits.h</label>
-      </node>
-      <node id="3900">
-        <label>embARC_assert.h</label>
-        <link refid="emb_a_r_c__assert_8h"/>
-        <childnode refid="3899" relation="include">
-        </childnode>
-        <childnode refid="3890" relation="include">
-        </childnode>
-      </node>
-      <node id="3889">
-        <label>arc_exception.h</label>
-        <link refid="arc__exception_8h"/>
-        <childnode refid="3890" relation="include">
-        </childnode>
-        <childnode refid="3895" relation="include">
-        </childnode>
-        <childnode refid="3897" relation="include">
-        </childnode>
-      </node>
-      <node id="3903">
-        <label>secureshield_board_config.h</label>
-      </node>
-      <node id="3887">
-        <label>secureshield_sys.c</label>
-        <link refid="secureshield__sys_8c"/>
-        <childnode refid="3888" relation="include">
-        </childnode>
-        <childnode refid="3904" relation="include">
-        </childnode>
-        <childnode refid="3906" relation="include">
-        </childnode>
-        <childnode refid="3907" relation="include">
-        </childnode>
-        <childnode refid="3908" relation="include">
-        </childnode>
-      </node>
-      <node id="3895">
-        <label>arc.h</label>
-        <link refid="arc_8h"/>
-        <childnode refid="3896" relation="include">
-        </childnode>
-      </node>
-      <node id="3906">
-        <label>secureshield_sys.h</label>
-        <link refid="secureshield__sys_8h_source"/>
-      </node>
-      <node id="3899">
-        <label>xprintf.h</label>
-      </node>
-      <node id="3888">
-        <label>secureshield.h</label>
-        <link refid="secureshield_8h_source"/>
-        <childnode refid="3889" relation="include">
-        </childnode>
-        <childnode refid="3898" relation="include">
-        </childnode>
-        <childnode refid="3900" relation="include">
-        </childnode>
-        <childnode refid="3901" relation="include">
-        </childnode>
-        <childnode refid="3902" relation="include">
-        </childnode>
-      </node>
-      <node id="3908">
-        <label>secureshield_secure_call_exports.h</label>
-        <link refid="secureshield__secure__call__exports_8h_source"/>
-      </node>
-      <node id="3901">
+      <node id="3930">
         <label>secureshield_exports.h</label>
         <link refid="secureshield__exports_8h_source"/>
       </node>
-      <node id="3907">
+      <node id="3936">
         <label>secureshield_container_stack.h</label>
         <link refid="secureshield__container__stack_8h_source"/>
-        <childnode refid="3888" relation="include">
+        <childnode refid="3917" relation="include">
         </childnode>
       </node>
-      <node id="3896">
+      <node id="3933">
+        <label>secureshield_vmpu.h</label>
+        <link refid="secureshield__vmpu_8h_source"/>
+        <childnode refid="3934" relation="include">
+        </childnode>
+      </node>
+      <node id="3924">
+        <label>arc.h</label>
+        <link refid="arc_8h"/>
+        <childnode refid="3925" relation="include">
+        </childnode>
+      </node>
+      <node id="3929">
+        <label>embARC_assert.h</label>
+        <link refid="emb_a_r_c__assert_8h"/>
+        <childnode refid="3928" relation="include">
+        </childnode>
+        <childnode refid="3919" relation="include">
+        </childnode>
+      </node>
+      <node id="3920">
+        <label>stdint.h</label>
+      </node>
+      <node id="3935">
+        <label>secureshield_sys.h</label>
+        <link refid="secureshield__sys_8h_source"/>
+      </node>
+      <node id="3926">
+        <label>arc_builtin.h</label>
+        <link refid="arc__builtin_8h"/>
+        <childnode refid="3919" relation="include">
+        </childnode>
+      </node>
+      <node id="3917">
+        <label>secureshield.h</label>
+        <link refid="secureshield_8h_source"/>
+        <childnode refid="3918" relation="include">
+        </childnode>
+        <childnode refid="3927" relation="include">
+        </childnode>
+        <childnode refid="3929" relation="include">
+        </childnode>
+        <childnode refid="3930" relation="include">
+        </childnode>
+        <childnode refid="3931" relation="include">
+        </childnode>
+      </node>
+      <node id="3934">
+        <label>secureshield_vmpu_exports.h</label>
+        <link refid="secureshield__vmpu__exports_8h_source"/>
+      </node>
+      <node id="3922">
+        <label>stddef.h</label>
+      </node>
+      <node id="3937">
+        <label>secureshield_secure_call_exports.h</label>
+        <link refid="secureshield__secure__call__exports_8h_source"/>
+      </node>
+      <node id="3916">
+        <label>secureshield_sys.c</label>
+        <link refid="secureshield_sys.c"/>
+        <childnode refid="3917" relation="include">
+        </childnode>
+        <childnode refid="3933" relation="include">
+        </childnode>
+        <childnode refid="3935" relation="include">
+        </childnode>
+        <childnode refid="3936" relation="include">
+        </childnode>
+        <childnode refid="3937" relation="include">
+        </childnode>
+      </node>
+      <node id="3921">
+        <label>limits.h</label>
+      </node>
+      <node id="3927">
+        <label>embARC_debug.h</label>
+        <link refid="emb_a_r_c__debug_8h"/>
+        <childnode refid="3928" relation="include">
+        </childnode>
+      </node>
+      <node id="3932">
+        <label>secureshield_board_config.h</label>
+      </node>
+      <node id="3925">
         <label>arc_feature_config.h</label>
         <link refid="arc__feature__config_8h"/>
+      </node>
+      <node id="3918">
+        <label>arc_exception.h</label>
+        <link refid="arc__exception_8h"/>
+        <childnode refid="3919" relation="include">
+        </childnode>
+        <childnode refid="3924" relation="include">
+        </childnode>
+        <childnode refid="3926" relation="include">
+        </childnode>
+      </node>
+      <node id="3928">
+        <label>xprintf.h</label>
+      </node>
+      <node id="3931">
+        <label>secureshield_config.h</label>
+        <link refid="secureshield__config_8h_source"/>
+        <childnode refid="3932" relation="include">
+        </childnode>
+      </node>
+      <node id="3919">
+        <label>embARC_toolchain.h</label>
+        <link refid="emb_a_r_c__toolchain_8h"/>
+        <childnode refid="3920" relation="include">
+        </childnode>
+        <childnode refid="3921" relation="include">
+        </childnode>
+        <childnode refid="3922" relation="include">
+        </childnode>
+        <childnode refid="3923" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="struct_c_o_n_t_a_i_n_e_r___a_u_x" prot="public">CONTAINER_AUX</innerclass>
@@ -153,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" line="42" column="9" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" bodystart="42" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" line="42" column="9" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" bodystart="42" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" line="58" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" bodystart="58" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" line="58" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="secureshield__sys_8c_1a8056c6ecd00bfbff91896198ad158059" prot="public" static="yes" mutable="no">
         <type><ref refid="struct_c_o_n_t_a_i_n_e_r___a_u_x" kindref="compound">CONTAINER_AUX</ref></type>
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" line="60" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" bodystart="60" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" line="60" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="secureshield__sys_8c_1a545c89b53934d2f5aaa7b4ca326bbe04" prot="public" static="yes" mutable="no">
         <type><ref refid="struct_a_u_x___c_o_n_t_a_i_n_e_r" kindref="compound">AUX_CONTAINER</ref></type>
@@ -194,7 +194,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" line="61" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" bodystart="61" bodyend="-1"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" line="61" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" bodystart="61" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -232,7 +232,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" line="69" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" bodystart="69" bodyend="111"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" line="69" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" bodystart="69" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="secureshield__sys_8c_1a2f2a3a546b667cdbcc7ce0258d323151" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -258,7 +258,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" line="119" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" bodystart="119" bodyend="126"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" line="119" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" bodystart="119" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="secureshield__sys_8c_1a6fcd01fdb9a88127edfcc7511504d38d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -294,7 +294,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" line="133" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" bodystart="133" bodyend="138"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" line="133" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" bodystart="133" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="secureshield__sys_8c_1abdb7cd39b31397c7ecee2250e11fddd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -342,7 +342,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" line="148" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" bodystart="148" bodyend="184"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" line="148" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" bodystart="148" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="secureshield__sys_8c_1a054d2dff4580938f0336cdbfd14bbeed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -359,7 +359,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" line="190" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" bodystart="190" bodyend="193"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" line="190" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" bodystart="190" bodyend="193"/>
       </memberdef>
       <memberdef kind="function" id="secureshield__sys_8c_1a74f419ab95c609c659420894f6ea264e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -376,7 +376,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" line="200" column="1" bodyfile="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c" bodystart="200" bodyend="210"/>
+        <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" line="200" column="1" bodyfile="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c" bodystart="200" bodyend="210"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -424,10 +424,10 @@
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>max<sp/>aux<sp/>entries<sp/>in<sp/>container<sp/>configurations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CONTAINER_AUX_COUNT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONTAINER_AUX_COUNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CONTAINER_AUX_COUNT</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CONTAINER_AUX_COUNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>the<sp/>aux<sp/>reg<sp/>address<sp/>allocated<sp/>to<sp/>a<sp/>normal<sp/>container<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46" refid="struct_c_o_n_t_a_i_n_e_r___a_u_x" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>start;<sp/></highlight><highlight class="comment">/*<sp/>start<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
@@ -565,8 +565,8 @@
 <codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>g_container_stack[g_container_stack_ptr<sp/>-<sp/>1].src_id;</highlight></codeline>
 <codeline lineno="210"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"></highlight></codeline>
-<codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>SECURESHIELD_VERSION<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>SECURESHIELD_VERSION<sp/>==<sp/>1</highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="217"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>secureshield_sys_ops(<ref refid="structint__exc__frame" kindref="compound">INT_EXC_FRAME</ref><sp/>*frame)</highlight></codeline>
 <codeline lineno="218"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>FIXME:<sp/>remove<sp/>switch<sp/>case<sp/>structure,<sp/>use<sp/>jump<sp/>table<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
@@ -592,8 +592,8 @@
 <codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="240"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="241"><highlight class="normal"></highlight></codeline>
-<codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>SECURESHIELD_VERSION<sp/>==<sp/>2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>SECURESHIELD_VERSION<sp/>==<sp/>2</highlight></codeline>
+<codeline lineno="243"><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="252"><highlight class="normal">int32_t<sp/>secureshield_sys_ops(uint32_t<sp/>sys_id,<sp/>uint32_t<sp/>par1,<sp/>uint32_t<sp/>par2,<sp/>uint32_t<sp/>par3,<sp/>uint32_t<sp/>par4)</highlight></codeline>
 <codeline lineno="253"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>ret<sp/>=<sp/>-1;</highlight></codeline>
@@ -619,10 +619,10 @@
 <codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
 <codeline lineno="276"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="278"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="279"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/qiangg/Documents/code/snps_embarc_osp_doc/library/secureshield/core/src/secureshield_sys.c"/>
+    <location file="/home/travis/build/qiangg/embarc_osp/library/secureshield/core/src/secureshield_sys.c"/>
   </compounddef>
 </doxygen>

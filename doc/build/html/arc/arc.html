@@ -25,28 +25,20 @@
   
 
   
-  
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="embARC 2018.01 documentation" href="../index.html"/>
-        <link rel="next" title="Devices" href="../device/device.html"/>
-        <link rel="prev" title="Hardware Requirement" href="../getting_started/hardware_requirement.html"/> 
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Devices" href="../device/device.html" />
+    <link rel="prev" title="Hardware Requirement" href="../getting_started/hardware_requirement.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -142,7 +134,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">embARC</a>
@@ -150,9 +142,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -217,15 +210,15 @@ and build configuration registers.</li>
 <p>The start up in embARC OSP can be divided into two parts:</p>
 <div class="section" id="processor-level-start-up">
 <h3>Processor level start up<a class="headerlink" href="#processor-level-start-up" title="Permalink to this headline">¶</a></h3>
-<p>The processor level start up process is implemented in <code class="docutils literal"><span class="pre">arc_startup.s</span></code>. The
-program jumps to the <code class="docutils literal"><span class="pre">board_main()</span></code> function after the startup process,
+<p>The processor level start up process is implemented in <code class="docutils literal notranslate"><span class="pre">arc_startup.s</span></code>. The
+program jumps to the <code class="docutils literal notranslate"><span class="pre">board_main()</span></code> function after the startup process,
 which runs in three stages:</p>
 <img alt="processor-level start up" src="../_images/startup.jpg" />
 <ul class="simple">
 <li>Stage 1: Hardware Initialization<ul>
 <li>Initialize necessayr status and registers.</li>
-<li>Initialize system clock (if necessary, in user defined <code class="docutils literal"><span class="pre">hardware_init_hook</span></code>).</li>
-<li>Initialize memory controller (if necessary, in user defined <code class="docutils literal"><span class="pre">hardware_init_hook</span></code>).</li>
+<li>Initialize system clock (if necessary, in user defined <code class="docutils literal notranslate"><span class="pre">hardware_init_hook</span></code>).</li>
+<li>Initialize memory controller (if necessary, in user defined <code class="docutils literal notranslate"><span class="pre">hardware_init_hook</span></code>).</li>
 </ul>
 </li>
 <li>Stage 2: C Run-time Initialization<ul>
@@ -234,36 +227,36 @@ which runs in three stages:</p>
 <li>Clear Block Started by Symbol (BSS) section.</li>
 </ul>
 </li>
-<li>Stage 3: Go to <code class="docutils literal"><span class="pre">board_main()</span></code><ul>
-<li>Early initialization of software (if necessary, in user defined <code class="docutils literal"><span class="pre">software_init_hook</span></code>).</li>
+<li>Stage 3: Go to <code class="docutils literal notranslate"><span class="pre">board_main()</span></code><ul>
+<li>Early initialization of software (if necessary, in user defined <code class="docutils literal notranslate"><span class="pre">software_init_hook</span></code>).</li>
 <li>Call arc_exc_init, or other initialization functions.</li>
-<li>Jump to <code class="docutils literal"><span class="pre">board_main()</span></code> function.</li>
+<li>Jump to <code class="docutils literal notranslate"><span class="pre">board_main()</span></code> function.</li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="board-level-start-up">
 <h3>Board level start up<a class="headerlink" href="#board-level-start-up" title="Permalink to this headline">¶</a></h3>
-<p>The board level start up process is implemented <code class="docutils literal"><span class="pre">board.c</span></code> with an entry of <code class="docutils literal"><span class="pre">board_main</span></code>.</p>
-<p>The following pre-defined work is done in <code class="docutils literal"><span class="pre">board_main</span></code> function:</p>
+<p>The board level start up process is implemented <code class="docutils literal notranslate"><span class="pre">board.c</span></code> with an entry of <code class="docutils literal notranslate"><span class="pre">board_main</span></code>.</p>
+<p>The following pre-defined work is done in <code class="docutils literal notranslate"><span class="pre">board_main</span></code> function:</p>
 <ul class="simple">
-<li>board-level hardware initialization in <code class="docutils literal"><span class="pre">board_init</span></code></li>
+<li>board-level hardware initialization in <code class="docutils literal notranslate"><span class="pre">board_init</span></code></li>
 <li>Middleware initialization<ul>
-<li>initialize the <code class="docutils literal"><span class="pre">xprintf</span></code> function to have a console output</li>
-<li>initialize the FatFs and mount the sd card if <code class="docutils literal"><span class="pre">MID_FATFS</span></code> is enabled</li>
-<li>initialize NT-Shel if <code class="docutils literal"><span class="pre">MID_NTSHELL</span></code> is enabled</li>
+<li>initialize the <code class="docutils literal notranslate"><span class="pre">xprintf</span></code> function to have a console output</li>
+<li>initialize the FatFs and mount the sd card if <code class="docutils literal notranslate"><span class="pre">MID_FATFS</span></code> is enabled</li>
+<li>initialize NT-Shel if <code class="docutils literal notranslate"><span class="pre">MID_NTSHELL</span></code> is enabled</li>
 </ul>
 </li>
-<li>OS specific initialization if <code class="docutils literal"><span class="pre">ENABLE_OS</span></code> is defined<ul>
-<li>create main task for user <code class="docutils literal"><span class="pre">main</span></code> function</li>
-<li>create WiFi task if ·<code class="docutils literal"><span class="pre">MID_LWIP</span></code> is enabled and WiFi module is used</li>
+<li>OS specific initialization if <code class="docutils literal notranslate"><span class="pre">ENABLE_OS</span></code> is defined<ul>
+<li>create main task for user <code class="docutils literal notranslate"><span class="pre">main</span></code> function</li>
+<li>create WiFi task if ·<code class="docutils literal notranslate"><span class="pre">MID_LWIP</span></code> is enabled and WiFi module is used</li>
 </ul>
 </li>
-<li>jump to <code class="docutils literal"><span class="pre">main</span></code> function.</li>
+<li>jump to <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">User can undefine the macro <code class="docutils literal"><span class="pre">EMBARC_USE_BOARD_MAIN</span></code> to bypass the pre-defined board-level initialization and do customized initialization.</p>
+<p class="last">User can undefine the macro <code class="docutils literal notranslate"><span class="pre">EMBARC_USE_BOARD_MAIN</span></code> to bypass the pre-defined board-level initialization and do customized initialization.</p>
 </div>
 </div>
 </div>
@@ -280,7 +273,7 @@ exceptions. CPU exceptions are triggered by errors such as illegal
 instructions, invalid or illegal memory accesses, and protection violations.
 Most CPU exceptions are synchronous. Interrupt exceptions are triggered by
 device interrupts and are always asynchronous.</p>
-<p>Exception vectors are fetched in the instruction space (<code class="docutils literal"><span class="pre">ICCM</span> <span class="pre">or</span> <span class="pre">main</span> <span class="pre">memory,</span>
+<p>Exception vectors are fetched in the instruction space (<code class="docutils literal notranslate"><span class="pre">ICCM</span> <span class="pre">or</span> <span class="pre">main</span> <span class="pre">memory,</span>
 <span class="pre">but</span> <span class="pre">not</span> <span class="pre">DCCM</span></code>) with an alignment 1024 bytes. Every exception contains the
 following information:</p>
 <ul class="simple">
@@ -293,7 +286,7 @@ the position of the appropriate exception or interrupt service routine.</li>
 <li>Parameter is an eight-bit field to pass a single parameter from the exception
 to the exception handler and identify exceptions with the same cause code.</li>
 </ul>
-<p>For more details, see the <code class="docutils literal"><span class="pre">ARCv2</span> <span class="pre">ISA</span> <span class="pre">Programmer's</span> <span class="pre">Reference</span> <span class="pre">Manual</span> <span class="pre">(PRM)</span></code>.</p>
+<p>For more details, see the <code class="docutils literal notranslate"><span class="pre">ARCv2</span> <span class="pre">ISA</span> <span class="pre">Programmer's</span> <span class="pre">Reference</span> <span class="pre">Manual</span> <span class="pre">(PRM)</span></code>.</p>
 </div>
 <div class="section" id="exception-and-interrupt-processing-framework">
 <h3>Exception and interrupt processing framework<a class="headerlink" href="#exception-and-interrupt-processing-framework" title="Permalink to this headline">¶</a></h3>
@@ -301,8 +294,8 @@ to the exception handler and identify exceptions with the same cause code.</li>
 Through this framework, you can handle specific exceptions or interrupts by
 installing the desired handlers. This can help you analyze the underlying
 details of saving and operating registers.</p>
-<p>For CPU exceptions and interrupts, entry(<code class="docutils literal"><span class="pre">exc_entry_cpu</span></code> for CPU exception, <code class="docutils literal"><span class="pre">exc_entry_int</span></code> for interrupts) is called first, then handler is
-called in entry. You can define your own entry using <code class="docutils literal"><span class="pre">exc_entry_install</span></code>.</p>
+<p>For CPU exceptions and interrupts, entry(<code class="docutils literal notranslate"><span class="pre">exc_entry_cpu</span></code> for CPU exception, <code class="docutils literal notranslate"><span class="pre">exc_entry_int</span></code> for interrupts) is called first, then handler is
+called in entry. You can define your own entry using <code class="docutils literal notranslate"><span class="pre">exc_entry_install</span></code>.</p>
 <p>A standard interrupt processing model is shown in the picture below.</p>
 <img alt="interrupt and exception processing" src="../_images/interrupt.jpg" />
 <p>In this model, interrupts have the following features:</p>
@@ -323,7 +316,7 @@ Priority 0 (highest priority) is always assigned to the OS scheduler. A
 higher-priority task can preempt a lower-priority task. The OS scheduler can
 preempt any other tasks. But interrupt handling tasks with negative numbers
 cannot be scheduled or switched by the OS scheduler.</p>
-<p>See <code class="docutils literal"><span class="pre">arc_exception.h</span></code> for further details.</p>
+<p>See <code class="docutils literal notranslate"><span class="pre">arc_exception.h</span></code> for further details.</p>
 </div>
 </div>
 <div class="section" id="built-in-functions">
@@ -331,15 +324,15 @@ cannot be scheduled or switched by the OS scheduler.</p>
 <p>Compiler built-in functions are used to invoke certain processor operations
 without writing assembly code. In embARC OSP, a series of built-in functions are
 provided for both the MetaWare and GNU toolchains.</p>
-<p>See <code class="docutils literal"><span class="pre">arc_builtin.h</span></code> for further details.</p>
+<p>See <code class="docutils literal notranslate"><span class="pre">arc_builtin.h</span></code> for further details.</p>
 </div>
 <div class="section" id="resource-definitions">
 <span id="arc-hal-res-def"></span><h2>Resource Definitions<a class="headerlink" href="#resource-definitions" title="Permalink to this headline">¶</a></h2>
 <p>The structure of resource definitions is
 architecture-&gt;series-&gt;processor-&gt;board.</p>
-<p><code class="docutils literal"><span class="pre">arc.h</span></code> includes the common resource definitions for the DesignWare® ARC® processors,
+<p><code class="docutils literal notranslate"><span class="pre">arc.h</span></code> includes the common resource definitions for the DesignWare® ARC® processors,
 such as macros for exceptions and auxiliary register access.</p>
-<p><code class="docutils literal"><span class="pre">arc_em.h</span></code> includes the common resource definitions for ARC EM Processors.</p>
+<p><code class="docutils literal notranslate"><span class="pre">arc_em.h</span></code> includes the common resource definitions for ARC EM Processors.</p>
 </div>
 <div class="section" id="access-to-resources">
 <span id="arc-hal-res-access"></span><h2>Access to Resources<a class="headerlink" href="#access-to-resources" title="Permalink to this headline">¶</a></h2>
@@ -360,7 +353,7 @@ generate an interrupt or a system reset if they reach the limit value. The
 64-bit RTC cannot generate any interrupts. This timer is used to count the
 clock cycles automatically.</p>
 <p>embARC OSP provides interfaces for internal timers such as start, stop, poll, and read.</p>
-<p>See <code class="docutils literal"><span class="pre">arc_timer.h</span></code> for further details</p>
+<p>See <code class="docutils literal notranslate"><span class="pre">arc_timer.h</span></code> for further details</p>
 </div>
 <div class="section" id="caches">
 <h3>Caches<a class="headerlink" href="#caches" title="Permalink to this headline">¶</a></h3>
@@ -369,7 +362,7 @@ instruction cache (icache). The cache configuration can be selected as
 desired. The cache can be controlled through specific auxiliary registers.</p>
 <p>embARC provides unified interfaces to enable/disable, flush, invalidate, lock,
 and unlock cache lines and to access cache-internal RAM.</p>
-<p>See <code class="docutils literal"><span class="pre">arc_cache.h</span></code> for further details.</p>
+<p>See <code class="docutils literal notranslate"><span class="pre">arc_cache.h</span></code> for further details.</p>
 </div>
 <div class="section" id="udma">
 <h3>uDMA<a class="headerlink" href="#udma" title="Permalink to this headline">¶</a></h3>
@@ -394,7 +387,7 @@ Read, Write, and Execute. If an attempt is made to access a region for which
 an associated attribute is not permitted, the ARCv2-based processors raises a
 Protection Violation exception, and this exception prevents the faulting
 instruction from completing.</p>
-<p>See <code class="docutils literal"><span class="pre">arc_mpu.h</span></code> for further details</p>
+<p>See <code class="docutils literal notranslate"><span class="pre">arc_mpu.h</span></code> for further details</p>
 </div>
 </div>
 <div class="section" id="related-files">
@@ -443,9 +436,7 @@ instruction from completing.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -467,7 +458,7 @@ instruction from completing.</p>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -486,6 +477,7 @@ instruction from completing.</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'2018.01',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -503,14 +495,11 @@ instruction from completing.</p>
     <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>
