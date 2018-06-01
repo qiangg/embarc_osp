@@ -8,6 +8,9 @@ branches:
   except:
     - gh-pages
 
+python:
+  - "3.6"
+
 before_install:
   - bash .travis/before_install.sh
   # setup git
