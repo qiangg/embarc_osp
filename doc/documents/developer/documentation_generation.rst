@@ -13,7 +13,7 @@ Building Document in Windows
     Sphinx (sphinx-build) 1.6.3
 
 * Install `Doxygen <http://www.doxygen.nl/>`_ in the Windows machine.
-  
+
   .. code-block:: console
 
     >doxygen --version
@@ -29,7 +29,7 @@ Building Document in Windows
 * If ``Cannot create a file when that file already exists.``, it means you have already have a file or folder *example*. Make sure the link is accessible to *<embARC>/example*.
 
   .. code-block:: console
-  
+
     >mklink /D example ..\..\..\example
     Cannot create a file when that file already exists.
 
