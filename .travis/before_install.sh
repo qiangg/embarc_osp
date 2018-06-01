@@ -22,4 +22,5 @@ cd /tmp || die
     sudo pip install --upgrade pip || die
     sudo pip install git+https://github.com/sphinx-doc/sphinx || die
     sudo pip install breathe || die
+    sudo pip install recommonmark || die 
 }
